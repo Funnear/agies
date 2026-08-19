@@ -28,7 +28,7 @@ It makes tools executable, creates venv, installs deps, registers Jupyter kernel
 
 ```bash
 chmod +x tools/shell_scripts/setup_dev.sh; \
-.tools/shell_scripts/setup_dev.sh
+./tools/shell_scripts/setup_dev.sh
 ```
 
 or better:
