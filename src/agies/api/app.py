@@ -6,6 +6,7 @@ from fastapi.responses import FileResponse, RedirectResponse
 from agies.api.routes import (
     analytics_router,
     audio_router,
+    discovery_router,
     graph_router,
     keys_router,
     memory_router,
@@ -54,6 +55,7 @@ X-API-Key: agies_test_key_123
     app.include_router(keys_router, prefix="/api/v1")
     app.include_router(memory_router, prefix="/api/v1")
     app.include_router(venues_router, prefix="/api/v1")
+    app.include_router(discovery_router, prefix="/api/v1")
 
     frontend_file = Path(__file__).resolve().parent.parent.parent.parent / "frontend" / "index.html"
 

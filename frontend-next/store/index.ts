@@ -4,6 +4,7 @@ import playerReducer from "./playerSlice";
 import studioReducer from "./studioSlice";
 import venuesReducer from "./venuesSlice";
 import memoryReducer from "./memorySlice";
+import discoveryReducer from "./discoverySlice";
 
 export const store = configureStore({
   reducer: {
@@ -11,6 +12,7 @@ export const store = configureStore({
     studio: studioReducer,
     venues: venuesReducer,
     memory: memoryReducer,
+    discovery: discoveryReducer,
   },
 });
 

@@ -6,6 +6,7 @@ from agies.api.routes.analytics import router as analytics_router
 from agies.api.routes.keys import router as keys_router
 from agies.api.routes.memory import router as memory_router
 from agies.api.routes.venues import router as venues_router
+from agies.api.routes.discovery import router as discovery_router
 
 __all__ = [
     "audio_router",
@@ -14,4 +15,5 @@ __all__ = [
     "keys_router",
     "memory_router",
     "venues_router",
+    "discovery_router",
 ]

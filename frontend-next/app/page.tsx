@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { AudioVisualizer3D } from "@/components/AudioVisualizer3D";
 import { NetworkGraph3D } from "@/components/NetworkGraph3D";
 import { useAppDispatch, useAppSelector } from "@/store";
@@ -29,6 +29,13 @@ import {
 } from "@/store/venuesSlice";
 import { addUserMessage, sendMemoryRecall } from "@/store/memorySlice";
 import {
+  setCrawledUrl,
+  setSelectedDiscoveredArtist,
+  crawlArtistWebsite,
+  fetchDiscoveryFeed,
+  DiscoveredArtistProfile,
+} from "@/store/discoverySlice";
+import {
   Home as HomeIcon,
   Radio,
   Building2,
@@ -55,20 +62,21 @@ import {
   Flame,
   Library,
   UploadCloud,
-  FileAudio,
   CheckSquare,
   Square,
   FileText,
   X,
   ExternalLink,
-  Music,
   Download,
+  Link2,
+  Search,
+  Waves,
 } from "lucide-react";
 
 export default function SpotifyPolishedApp() {
   const dispatch = useAppDispatch();
   const [activeNav, setActiveNav] = useState<
-    "home" | "studio" | "venues" | "galaxy" | "memory" | "analytics"
+    "home" | "studio" | "venues" | "discovery" | "galaxy" | "memory" | "analytics"
   >("home");
 
   // Redux Global State
@@ -82,7 +90,6 @@ export default function SpotifyPolishedApp() {
     targetGenre,
     bpm,
     isDiagnosing,
-    diagnosticResult,
   } = useAppSelector((state) => state.studio);
 
   const { venuesList, selectedVenue, inquiryFee, inquiryDate, inquiryReceipt } =
@@ -91,6 +98,13 @@ export default function SpotifyPolishedApp() {
   const { messages: chatMessages, isRecalling } = useAppSelector(
     (state) => state.memory
   );
+
+  const {
+    crawledUrl,
+    isCrawling,
+    discoveredArtists,
+    selectedDiscoveredArtist,
+  } = useAppSelector((state) => state.discovery);
 
   // Local UI State
   const [chatInput, setChatInput] = useState("");
@@ -127,7 +141,9 @@ export default function SpotifyPolishedApp() {
     if (isPlaying) {
       interval = setInterval(() => {
         dispatch(
-          setProgress((currentTrack.progress >= 100 ? 0 : currentTrack.progress + 0.5))
+          setProgress(
+            currentTrack.progress >= 100 ? 0 : currentTrack.progress + 0.5
+          )
         );
       }, 500);
     }
@@ -152,6 +168,12 @@ export default function SpotifyPolishedApp() {
     dispatch(setTrack({ ...trackData, progress: 0 }));
     dispatch(setIsPlaying(true));
     showToast(`Now Playing: ${trackData.artist} — ${trackData.title}`);
+  };
+
+  const handleCrawlWebsite = () => {
+    if (!crawledUrl.trim()) return;
+    dispatch(crawlArtistWebsite({ website_url: crawledUrl }));
+    showToast(`Crawling ${crawledUrl} and downloading audio snippets...`);
   };
 
   const runStudioDiagnostic = () => {
@@ -249,6 +271,7 @@ Contact: booking@${artistName.toLowerCase().replace(/\s+/g, "")}-official.com`;
           <div className="space-y-1 mt-3">
             {[
               { id: "home", label: "Home Feed", icon: HomeIcon },
+              { id: "discovery", label: "Website Harvester & Discovery", icon: Globe2 },
               { id: "studio", label: "Bedroom Studio", icon: Radio },
               { id: "venues", label: "Venue Matchmaker", icon: Building2 },
               { id: "galaxy", label: "3D Universe", icon: Share2 },
@@ -333,7 +356,7 @@ Contact: booking@${artistName.toLowerCase().replace(/\s+/g, "")}-official.com`;
             <div className="flex items-center gap-3">
               <span className="text-xs font-mono text-white/60 bg-black/40 px-3 py-1 rounded-full border border-white/10 flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-[#1DB954] animate-pulse"></span>
-                API ONLINE :8000 • REDUX TOOLKIT • 507 NODES
+                API ONLINE :8000 • HARVESTER ACTIVE • 507 NODES
               </span>
             </div>
             <div className="flex items-center gap-3">
@@ -348,6 +371,239 @@ Contact: booking@${artistName.toLowerCase().replace(/\s+/g, "")}-official.com`;
           </div>
 
           <div className="p-6 flex-1 space-y-8">
+            {/* ---------------------------------------------------- */}
+            {/* VIEW: WEBSITE HARVESTER & DUAL DISCOVERY             */}
+            {/* ---------------------------------------------------- */}
+            {activeNav === "discovery" && (
+              <div className="space-y-6">
+                {/* Harvester Ingestion Bar */}
+                <div className="bg-[#181818] p-6 rounded-2xl border border-white/[0.06] shadow-xl space-y-4">
+                  <div className="flex justify-between items-center pb-2 border-b border-white/10">
+                    <div className="font-bold text-white flex items-center gap-2">
+                      <Globe2 className="w-5 h-5 text-[#1DB954]" /> Artist Website Ingestor & Audio Snippet Downloader
+                    </div>
+                    <span className="text-[10px] font-mono text-[#1DB954] bg-[#1DB954]/10 px-2.5 py-1 rounded-full font-bold">
+                      arXiv:2110.08862 Mel-Tempogram Profiler
+                    </span>
+                  </div>
+
+                  <div className="flex gap-2">
+                    <div className="flex-1 relative">
+                      <Link2 className="w-4 h-4 text-white/40 absolute left-3.5 top-3" />
+                      <input
+                        type="url"
+                        placeholder="Enter artist website URL (e.g., https://tychomusic.com, https://bicepmusic.com)..."
+                        value={crawledUrl}
+                        onChange={(e) => dispatch(setCrawledUrl(e.target.value))}
+                        className="w-full bg-black/60 border border-white/10 rounded-xl pl-10 pr-4 py-2.5 text-xs text-white focus:border-[#1DB954] focus:outline-none"
+                      />
+                    </div>
+                    <button
+                      onClick={handleCrawlWebsite}
+                      disabled={isCrawling}
+                      className="px-6 bg-[#1DB954] hover:bg-[#1ed760] text-black font-extrabold rounded-xl text-xs transition-transform active:scale-95 flex items-center gap-2 shadow-lg shadow-[#1DB954]/20"
+                    >
+                      <Sparkles className="w-4 h-4" />
+                      {isCrawling ? "Downloading Snippets..." : "Crawl & Harvest Snippets"}
+                    </button>
+                  </div>
+
+                  {/* Quick-Select Artists */}
+                  <div className="flex items-center gap-2 text-xs flex-wrap">
+                    <span className="text-white/40 font-mono text-[11px]">Popular Domains:</span>
+                    {[
+                      { name: "Tycho", url: "https://tychomusic.com" },
+                      { name: "BICEP", url: "https://bicepmusic.com" },
+                      { name: "Nils Frahm", url: "https://www.nilsfrahm.com" },
+                      { name: "Stephan Bodzin", url: "https://stephanbodzin.com" },
+                      { name: "Kelly Lee Owens", url: "https://kellyleeowens.com" },
+                      { name: "Rival Consoles", url: "https://rivalconsoles.net" },
+                    ].map((seed) => (
+                      <button
+                        key={seed.name}
+                        onClick={() => {
+                          dispatch(setCrawledUrl(seed.url));
+                          dispatch(crawlArtistWebsite({ website_url: seed.url }));
+                          showToast(`Harvesting ${seed.name} (${seed.url})...`);
+                        }}
+                        className="px-2.5 py-1 rounded-full bg-white/[0.05] hover:bg-white/[0.12] text-white/80 hover:text-white border border-white/5 transition-all text-[11px]"
+                      >
+                        {seed.name}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Dual Discovery Matrix (Artists & Venues) */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  {/* Left: Harvester Artist List */}
+                  <div className="bg-[#181818] p-6 rounded-2xl border border-white/[0.06] space-y-4 shadow-xl">
+                    <div className="font-bold text-white text-sm pb-2 border-b border-white/10 flex justify-between items-center">
+                      <span>🎧 Verified Discovered Artists (Downloaded Snippets)</span>
+                      <span className="text-[10px] font-mono text-[#1DB954]">
+                        {discoveredArtists.length} Artists Mined
+                      </span>
+                    </div>
+
+                    <div className="space-y-3 max-h-[520px] overflow-y-auto pr-1">
+                      {discoveredArtists.map((artist) => {
+                        const isSelected =
+                          selectedDiscoveredArtist?.artist_slug ===
+                          artist.artist_slug;
+                        return (
+                          <div
+                            key={artist.artist_slug}
+                            onClick={() =>
+                              dispatch(setSelectedDiscoveredArtist(artist))
+                            }
+                            className={`p-4 rounded-xl border cursor-pointer transition-all ${
+                              isSelected
+                                ? "bg-white/10 border-[#1DB954] shadow-lg text-white"
+                                : "bg-black/40 border-white/5 hover:border-white/20 text-[#b3b3b3]"
+                            }`}
+                          >
+                            <div className="flex justify-between items-start">
+                              <div>
+                                <div className="font-bold text-sm text-white flex items-center gap-2">
+                                  {artist.artist_name}
+                                  <a
+                                    href={artist.website_url}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="text-white/40 hover:text-[#1DB954]"
+                                    onClick={(e) => e.stopPropagation()}
+                                  >
+                                    <ExternalLink className="w-3.5 h-3.5" />
+                                  </a>
+                                </div>
+                                <div className="text-xs text-[#b3b3b3] mt-0.5">
+                                  {artist.home_city}, {artist.home_country} •{" "}
+                                  {artist.genres.join(", ")}
+                                </div>
+                              </div>
+                              <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded bg-[#1DB954]/10 text-[#1DB954] border border-[#1DB954]/30">
+                                {artist.acoustic_signature.detected_bpm} BPM
+                              </span>
+                            </div>
+
+                            <p className="text-xs text-white/50 mt-2 line-clamp-2 leading-relaxed">
+                              {artist.bio_snippet}
+                            </p>
+
+                            {/* Downloaded Audio Snippet Player */}
+                            <div className="mt-3 pt-3 border-t border-white/5 flex items-center justify-between">
+                              <div className="flex items-center gap-2">
+                                <button
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    playTitanTrack({
+                                      title:
+                                        artist.audio_snippets[0]?.title ||
+                                        "Live Demo Snippet",
+                                      artist: artist.artist_name,
+                                      cover:
+                                        "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=300&q=80",
+                                      genre:
+                                        artist.acoustic_signature
+                                          .classified_subgenre,
+                                      bpm: artist.acoustic_signature.detected_bpm,
+                                      duration: "0:30",
+                                    });
+                                  }}
+                                  className="w-7 h-7 rounded-full bg-[#1DB954] flex items-center justify-center text-black hover:scale-105 transition-transform"
+                                >
+                                  <Play className="w-3.5 h-3.5 fill-black ml-0.5" />
+                                </button>
+                                <div className="text-[11px] font-mono text-white/80">
+                                  {artist.audio_snippets[0]?.title ||
+                                    "Audio Snippet"}
+                                </div>
+                              </div>
+                              <span className="text-[10px] font-mono text-[#1DB954] bg-white/5 px-2 py-0.5 rounded">
+                                WAV Downloaded (100%)
+                              </span>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+
+                  {/* Right: Matched Venues for Discovered Artist */}
+                  <div className="bg-[#181818] p-6 rounded-2xl border border-white/[0.06] space-y-4 shadow-xl">
+                    <div className="font-bold text-white text-sm pb-2 border-b border-white/10 flex justify-between items-center">
+                      <span>🏟️ Matched Venues & Promoters</span>
+                      <span className="text-xs font-mono text-[#1DB954] bg-[#1DB954]/10 px-2.5 py-0.5 rounded-full">
+                        {selectedDiscoveredArtist?.artist_name}
+                      </span>
+                    </div>
+
+                    <div className="space-y-3">
+                      {selectedDiscoveredArtist?.matched_venues.map((venue) => (
+                        <div
+                          key={venue.venue_id}
+                          className="p-4 bg-black/40 rounded-xl border border-white/5 hover:border-white/20 transition-all"
+                        >
+                          <div className="flex justify-between items-start">
+                            <div>
+                              <div className="font-bold text-sm text-white">
+                                {venue.venue_name}
+                              </div>
+                              <div className="text-xs text-[#b3b3b3] mt-0.5">
+                                {venue.city}, {venue.country} • Capacity:{" "}
+                                {venue.capacity} ({venue.capacity_tier.toUpperCase()})
+                              </div>
+                              <div className="text-[11px] text-white/40 mt-1 font-mono">
+                                Sound: {venue.sound_system}
+                              </div>
+                            </div>
+                            <div className="text-right">
+                              <div className="font-mono text-sm font-extrabold text-[#1DB954]">
+                                {venue.acoustic_fit_score}% FIT
+                              </div>
+                              <span className="text-[10px] font-mono text-white/60">
+                                {venue.recommended_slot}
+                              </span>
+                            </div>
+                          </div>
+
+                          <div className="mt-3 pt-3 border-t border-white/5 flex justify-between items-center">
+                            <div className="text-[11px] text-white/50">
+                              Booker Contact:{" "}
+                              <span className="text-white font-mono">
+                                {venue.booking_email}
+                              </span>
+                            </div>
+                            <button
+                              onClick={() => {
+                                dispatch(
+                                  setSelectedVenue({
+                                    id: venue.venue_id,
+                                    name: venue.venue_name,
+                                    city: venue.city,
+                                    cap: venue.capacity,
+                                    tier: venue.capacity_tier,
+                                    sound: venue.sound_system,
+                                    email: venue.booking_email,
+                                  })
+                                );
+                                dispatch(setArtistName(selectedDiscoveredArtist.artist_name));
+                                dispatch(setHomeCity(selectedDiscoveredArtist.home_city));
+                                setShowContractModal(true);
+                              }}
+                              className="px-3.5 py-1.5 bg-[#1DB954] hover:bg-[#1ed760] text-black font-extrabold rounded-full text-xs transition-all shadow-md shadow-[#1DB954]/20"
+                            >
+                              Dispatch Booking Offer
+                            </button>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
             {/* ---------------------------------------------------- */}
             {/* VIEW 1: HOME FEED                                    */}
             {/* ---------------------------------------------------- */}
@@ -367,16 +623,16 @@ Contact: booking@${artistName.toLowerCase().replace(/\s+/g, "")}-official.com`;
                     </p>
                     <div className="flex gap-3 pt-2">
                       <button
-                        onClick={() => setActiveNav("studio")}
+                        onClick={() => setActiveNav("discovery")}
                         className="px-6 py-3 bg-[#1DB954] hover:bg-[#1ed760] text-black font-extrabold rounded-full text-sm transition-transform active:scale-95 shadow-lg shadow-[#1DB954]/20 flex items-center gap-2"
                       >
-                        <Play className="w-4 h-4 fill-black" /> Open Bedroom Studio
+                        <Globe2 className="w-4 h-4" /> Discover Artists from Websites
                       </button>
                       <button
-                        onClick={() => setActiveNav("galaxy")}
+                        onClick={() => setActiveNav("studio")}
                         className="px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-bold rounded-full text-sm transition-all"
                       >
-                        Explore 3D Galaxy
+                        Open Bedroom Studio
                       </button>
                     </div>
                   </div>
@@ -461,58 +717,16 @@ Contact: booking@${artistName.toLowerCase().replace(/\s+/g, "")}-official.com`;
                     ))}
                   </div>
                 </div>
-
-                {/* Debut Venues */}
-                <div>
-                  <div className="flex justify-between items-center mb-4">
-                    <h2 className="text-xl font-bold text-white tracking-tight">
-                      Stepping-Stone Debut Venues
-                    </h2>
-                    <span
-                      className="text-xs text-[#1DB954] font-semibold hover:underline cursor-pointer"
-                      onClick={() => setActiveNav("venues")}
-                    >
-                      Browse Venues
-                    </span>
-                  </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {venuesList.slice(0, 3).map((v: VenueItem, idx: number) => (
-                      <div
-                        key={idx}
-                        onClick={() => {
-                          dispatch(setSelectedVenue(v));
-                          setActiveNav("venues");
-                        }}
-                        className="bg-[#181818] hover:bg-[#242424] p-4 rounded-xl border border-white/[0.04] transition-all cursor-pointer group hover:-translate-y-1 hover:shadow-xl"
-                      >
-                        <div className="flex justify-between items-start mb-2">
-                          <div className="font-bold text-white text-sm group-hover:text-[#1DB954] transition-colors">
-                            {v.name}
-                          </div>
-                          <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-white/10 text-white font-bold">
-                            {v.tier}
-                          </span>
-                        </div>
-                        <div className="text-xs text-[#b3b3b3]">
-                          {v.city} • Capacity: {v.cap}
-                        </div>
-                        <div className="text-[11px] text-white/50 mt-1 font-mono">
-                          {v.sound}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
               </div>
             )}
 
             {/* ---------------------------------------------------- */}
-            {/* VIEW 2: BEDROOM STUDIO & DAW STEM MIXER              */}
+            {/* VIEW 2: BEDROOM STUDIO                               */}
             {/* ---------------------------------------------------- */}
             {activeNav === "studio" && (
               <div className="space-y-6">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                  {/* Left: Input Parameters & Audio Dropzone */}
+                  {/* Left: Input Parameters */}
                   <div className="bg-[#181818] rounded-2xl p-6 border border-white/[0.06] space-y-4 shadow-xl">
                     <div className="flex justify-between items-center pb-3 border-b border-white/10">
                       <div className="font-bold text-white flex items-center gap-2">
@@ -581,13 +795,6 @@ Contact: booking@${artistName.toLowerCase().replace(/\s+/g, "")}-official.com`;
                         </div>
                       </div>
 
-                      {/* Dropzone */}
-                      <div className="border-2 border-dashed border-white/10 hover:border-[#1DB954]/50 rounded-xl p-4 text-center cursor-pointer transition-colors bg-black/30">
-                        <UploadCloud className="w-6 h-6 mx-auto text-[#1DB954] mb-1" />
-                        <div className="font-bold text-white">Drag & drop raw demo .WAV or .MP3</div>
-                        <div className="text-[10px] text-white/40 mt-0.5">32 Log-Mel Bands & Fourier Tempogram Extraction</div>
-                      </div>
-
                       <button
                         onClick={runStudioDiagnostic}
                         disabled={isDiagnosing}
@@ -618,16 +825,23 @@ Contact: booking@${artistName.toLowerCase().replace(/\s+/g, "")}-official.com`;
                       isPlaying={isPlaying}
                     />
 
-                    {/* Stem Mixer Desk */}
+                    {/* Stem Mixer */}
                     <div className="mt-4 pt-3 border-t border-white/10 space-y-2">
                       <div className="font-bold text-xs text-white/60 uppercase tracking-wider">
                         Virtual 4-Stem Acoustic Mixer
                       </div>
                       <div className="grid grid-cols-4 gap-2 text-[10px] font-mono">
                         {Object.entries(stems).map(([stemName, val]) => (
-                          <div key={stemName} className="bg-black/50 p-2 rounded-lg border border-white/5 text-center">
-                            <div className="text-white/50 uppercase font-bold">{stemName}</div>
-                            <div className="text-[#1DB954] font-bold my-1">{val}%</div>
+                          <div
+                            key={stemName}
+                            className="bg-black/50 p-2 rounded-lg border border-white/5 text-center"
+                          >
+                            <div className="text-white/50 uppercase font-bold">
+                              {stemName}
+                            </div>
+                            <div className="text-[#1DB954] font-bold my-1">
+                              {val}%
+                            </div>
                             <input
                               type="range"
                               min="0"
@@ -645,102 +859,6 @@ Contact: booking@${artistName.toLowerCase().replace(/\s+/g, "")}-official.com`;
                         ))}
                       </div>
                     </div>
-                  </div>
-                </div>
-
-                {/* 4-Phase Roadmap & Booking Pitch */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                  {/* Interactive Checklist Roadmap */}
-                  <div className="bg-[#181818] rounded-2xl p-6 border border-white/[0.06] space-y-3 shadow-xl">
-                    <div className="font-bold text-white text-sm pb-2 border-b border-white/10 flex items-center justify-between">
-                      <span className="flex items-center gap-2">
-                        <Compass className="w-4 h-4 text-[#1DB954]" /> 4-Phase Zero-Debt Roadmap
-                      </span>
-                      <span className="text-[10px] font-mono text-[#1DB954] bg-[#1DB954]/10 px-2 py-0.5 rounded">
-                        Interactive Checklist
-                      </span>
-                    </div>
-
-                    <div className="space-y-2.5 text-xs">
-                      {[
-                        {
-                          id: "step_0",
-                          title: "Phase 1: Zero-Debt Calibration & Direct-to-Fan",
-                          desc: "Calibrate tempo to 132 BPM. Master 3-track EP. Distribute lossless files via Bandcamp + DistroKid.",
-                        },
-                        {
-                          id: "step_1",
-                          title: "Phase 2: Gateway Curation & Rights Verification",
-                          desc: "Submit stems to COLORS and HATE. Register with GEMA / SoundExchange prior to public release.",
-                        },
-                        {
-                          id: "step_2",
-                          title: "Phase 3: Showcase Circuits & A&R Scouts",
-                          desc: "Apply for showcase slots at Reeperbahn Festival / ESNS to perform for international bookers.",
-                        },
-                        {
-                          id: "step_3",
-                          title: "Phase 4: Boutique Label Leverage",
-                          desc: "Retain 100% publishing ownership. Negotiate single-EP licensing deal with a maximum 3-year term.",
-                        },
-                      ].map((step) => {
-                        const isDone = completedRoadmapSteps[step.id];
-                        return (
-                          <div
-                            key={step.id}
-                            onClick={() => toggleRoadmapStep(step.id)}
-                            className={`p-3 rounded-xl border cursor-pointer transition-all flex items-start gap-3 ${
-                              isDone
-                                ? "bg-[#1DB954]/10 border-[#1DB954]/40 text-white"
-                                : "bg-black/40 border-white/5 hover:border-white/20 text-[#b3b3b3]"
-                            }`}
-                          >
-                            <div className="mt-0.5">
-                              {isDone ? (
-                                <CheckSquare className="w-4 h-4 text-[#1DB954]" />
-                              ) : (
-                                <Square className="w-4 h-4 text-white/40" />
-                              )}
-                            </div>
-                            <div className="flex-1">
-                              <div
-                                className={`font-bold ${
-                                  isDone ? "text-[#1DB954] line-through" : "text-white"
-                                }`}
-                              >
-                                {step.title}
-                              </div>
-                              <div className="text-white/60 mt-0.5 leading-relaxed">
-                                {step.desc}
-                              </div>
-                            </div>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </div>
-
-                  {/* Promoter Pitch Email */}
-                  <div className="bg-[#181818] rounded-2xl p-6 border border-white/[0.06] space-y-3 shadow-xl">
-                    <div className="flex justify-between items-center pb-2 border-b border-white/10">
-                      <div className="font-bold text-white text-sm flex items-center gap-2">
-                        <Send className="w-4 h-4 text-[#1DB954]" /> Automated Promoter Pitch Email
-                      </div>
-                      <button
-                        onClick={copyPitch}
-                        className="text-xs bg-white/10 hover:bg-white/20 text-white px-3 py-1 rounded-full font-semibold flex items-center gap-1 transition-all"
-                      >
-                        {copiedPitch ? (
-                          <CheckCircle2 className="w-3.5 h-3.5 text-[#1DB954]" />
-                        ) : (
-                          <Copy className="w-3.5 h-3.5" />
-                        )}
-                        {copiedPitch ? "Copied!" : "Copy Pitch"}
-                      </button>
-                    </div>
-                    <pre className="p-3.5 bg-black/60 border border-white/10 rounded-xl text-[11px] font-mono text-[#1DB954] whitespace-pre-wrap max-h-56 overflow-y-auto leading-relaxed">
-                      {pitchText}
-                    </pre>
                   </div>
                 </div>
               </div>
