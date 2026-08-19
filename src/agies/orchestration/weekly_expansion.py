@@ -21,6 +21,7 @@ from agies.audio.growth import ExponentialAudioCorpusEngine
 from agies.graph.builder import MusicIndustryGraph
 from agies.graph.city_connects import CityIndustryConnectsEnricher
 from agies.graph.corpus import GlobalMusicIndustryCorpusExtractor
+from agies.graph.density import GraphDensityInclusionEngine
 from agies.graph.enrichment import AcousticGraphEnricher
 from agies.graph.exporters.neo4j_exporter import Neo4jGraphExporter
 from agies.graph.hierarchy import GeoTaxonomyHierarchyBuilder
@@ -109,6 +110,13 @@ class WeeklyKnowledgeGraphExpander:
         enricher = AcousticGraphEnricher()
         enrichment_results = enricher.enrich_graph(industry_graph)
 
+        # Step 5.5: Multi-Dimensional Graph Density & Structural Inclusion
+        logger.info(
+            "-> Ingesting Multi-Dimensional Inclusion Closures & Hardware Synthesizer Gear..."
+        )
+        density_engine = GraphDensityInclusionEngine()
+        density_results = density_engine.enrich_density(industry_graph)
+
         # Step 6: Graph Machine Learning (Node2Vec & Predictive A&R)
         logger.info(
             "-> 6/6 Computing Graph ML Embeddings & Predictive A&R Forecasts..."
@@ -155,6 +163,7 @@ class WeeklyKnowledgeGraphExpander:
             "total_edges": summary["total_edges"],
             "audio_corpus_expansion": audio_results,
             "acoustic_enrichment": enrichment_results,
+            "density_inclusion": density_results,
             "predictive_breakout_artists": breakout_artists,
             "exported_cypher_file": str(cypher_file),
             "exported_json_file": str(graph_json_path),
