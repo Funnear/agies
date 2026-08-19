@@ -117,6 +117,14 @@ class WeeklyKnowledgeGraphExpander:
         density_engine = GraphDensityInclusionEngine()
         density_results = density_engine.enrich_density(industry_graph)
 
+        # Step 5.6: Authoritative Entity Description & Context Enrichment
+        logger.info(
+            "-> Enriching All Graph Nodes with Authoritative Domain Descriptions..."
+        )
+        from agies.graph.descriptions import EntityDescriptionEnricher
+        desc_enricher = EntityDescriptionEnricher()
+        desc_results = desc_enricher.enrich_descriptions(industry_graph)
+
         # Step 6: Graph Machine Learning (Node2Vec & Predictive A&R)
         logger.info(
             "-> 6/6 Computing Graph ML Embeddings & Predictive A&R Forecasts..."
@@ -164,6 +172,7 @@ class WeeklyKnowledgeGraphExpander:
             "audio_corpus_expansion": audio_results,
             "acoustic_enrichment": enrichment_results,
             "density_inclusion": density_results,
+            "description_enrichment": desc_results,
             "predictive_breakout_artists": breakout_artists,
             "exported_cypher_file": str(cypher_file),
             "exported_json_file": str(graph_json_path),

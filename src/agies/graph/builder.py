@@ -34,6 +34,7 @@ class MusicIndustryGraph:
             ),
             country=entity.country,
             genres=entity.genres,
+            description=entity.description or entity.attributes.get("description", ""),
             attributes=entity.attributes,
         )
 

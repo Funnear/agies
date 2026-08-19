@@ -50,11 +50,13 @@ class Neo4jGraphExporter:
             name = str(data.get("name", nid)).replace('"', '\\"')
             country = str(data.get("country", "")).replace('"', '\\"')
             subgenre = str(data.get("classified_subgenre", "")).replace('"', '\\"')
+            description = str(data.get("description", "")).replace('"', '\\"')
             bpm = data.get("detected_bpm", 0.0)
 
             cypher_lines.append(
                 f'MERGE (n:{etype}:Entity {{id: "{nid}"}}) '
                 f'ON CREATE SET n.name = "{name}", n.country = "{country}", '
+                f'n.description = "{description}", '
                 f'n.classified_subgenre = "{subgenre}", n.detected_bpm = {bpm};'
             )
 

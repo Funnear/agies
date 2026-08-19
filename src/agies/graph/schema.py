@@ -44,6 +44,7 @@ class BaseEntity(BaseModel):
     entity_type: EntityType
     country: Optional[str] = None
     genres: List[str] = Field(default_factory=list)
+    description: Optional[str] = None
     attributes: Dict[str, Any] = Field(default_factory=dict)
 
 
