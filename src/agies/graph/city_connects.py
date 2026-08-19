@@ -287,12 +287,16 @@ class CityIndustryConnectsEnricher:
         ("city_cologne", "city_berlin", "Kompakt-Ostgut German Minimal Techno Line", 0.93),
         ("city_la", "city_nyc", "US Coast-to-Coast Major Label Duopoly", 0.98),
         ("city_kingston", "city_nyc", "Caribbean Sound to East Coast Rap Bridge", 0.90),
-        (
-            "city_tokyo",
-            "city_la",
-            "Japanese Soundtracks to Hollywood Scoring Bridge",
-            0.88,
-        ),
+        ("city_tokyo", "city_la", "Japanese Soundtracks to Hollywood Scoring Bridge", 0.88),
+        ("city_saopaulo", "city_berlin", "São Paulo ↔ Berlin Industrial Techno Axis", 0.95),
+        ("city_medellin", "city_la", "Medellín ↔ LA Global Latin Urban Highway", 0.97),
+        ("city_joburg", "city_london", "Johannesburg ↔ London Amapiano Diaspora Line", 0.98),
+        ("city_barcelona", "city_amsterdam", "Barcelona ↔ Amsterdam Sónar-ADE Festival Super-Corridor", 0.99),
+        ("city_melbourne", "city_berlin", "Melbourne ↔ Berlin Minimal & Underground Club Channel", 0.94),
+        ("city_ibiza", "city_london", "Ibiza ↔ London Seasonal Club Residency Pipeline", 0.98),
+        ("city_mumbai", "city_london", "Mumbai ↔ London South Asian Diaspora & UK Bass Axis", 0.93),
+        ("city_brussels", "city_berlin", "Brussels ↔ Berlin Peak-Time Techno Pipeline", 0.96),
+        ("city_detroit", "city_berlin", "Transatlantic Techno Sister City Bridge", 0.99),
     ]
 
     def enrich_city_connects(

@@ -338,5 +338,39 @@
     "promoter_email": "programming@tresorberlin.com",
     "special_notes": "Headlining the Globus floor with direct support.",
     "status": "DISPATCHED_TO_AGENT"
+  },
+  {
+    "inquiry_id": "inq_0a659d2688",
+    "timestamp": "2026-08-19T23:25:31.912079+00:00",
+    "venue_id": "ven_tresor",
+    "venue_name": "Tresor Berlin",
+    "artist_id": "art_kraftwerk",
+    "artist_name": "Kraftwerk",
+    "event_date": "2026-12-05",
+    "offer_fee": "5,000.00 EUR",
+    "set_type": "Live Set",
+    "expected_attendance": 800,
+    "recipient_email": "info@primarytalent.com",
+    "promoter_name": "Tresor Promoter",
+    "promoter_email": "booking@tresorberlin.com",
+    "special_notes": null,
+    "status": "DISPATCHED_TO_AGENT"
+  },
+  {
+    "inquiry_id": "inq_609479348a",
+    "timestamp": "2026-08-19T23:26:01.127421+00:00",
+    "venue_id": "ven_tresor",
+    "venue_name": "Tresor Berlin",
+    "artist_id": "art_emg_berlin_tech",
+    "artist_name": "Klangformer (Emerging Producer)",
+    "event_date": "2026-11-14",
+    "offer_fee": "1,200.00 EUR",
+    "set_type": "Live Club Set (90 min)",
+    "expected_attendance": 600,
+    "recipient_email": "booking@klangformer(emergingproducer)-official.com",
+    "promoter_name": "Tresor Bookings Team",
+    "promoter_email": "programming@tresorberlin.com",
+    "special_notes": "Headlining the Globus floor with direct support.",
+    "status": "DISPATCHED_TO_AGENT"
   }
 ]
