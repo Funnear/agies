@@ -103,6 +103,14 @@ class WeeklyKnowledgeGraphExpander:
             industry_graph, target_tracks_per_genre=target_audio_per_genre
         )
 
+        # Step 4.5: Web Audio & Synthesizer Gear Scraping from Internet Repositories
+        logger.info(
+            "-> Harvesting Internet Audio Repositories, Synthesizers & Sound Specs..."
+        )
+        from agies.audio.web_audio_scraper import WebAudioScraperEnricher
+        web_scraper = WebAudioScraperEnricher()
+        web_scraper_results = web_scraper.scrape_and_enrich_all(industry_graph)
+
         # Step 5: Deep Mel-Tempogram Graph Enrichment
         logger.info(
             "-> 5/6 Running Deep Mel-Tempogram Acoustic Enrichment (arXiv:2110.08862)..."
@@ -170,6 +178,7 @@ class WeeklyKnowledgeGraphExpander:
             "total_nodes": summary["total_nodes"],
             "total_edges": summary["total_edges"],
             "audio_corpus_expansion": audio_results,
+            "web_audio_scraping": web_scraper_results,
             "acoustic_enrichment": enrichment_results,
             "density_inclusion": density_results,
             "description_enrichment": desc_results,
