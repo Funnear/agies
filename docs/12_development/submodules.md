@@ -14,12 +14,16 @@ The rest of this page is a generic how-to for adding **other** submodules the sa
 
 ## Add a Submodule
 
+[macOS, linux]
+
 ```bash
 git submodule add <repo-url> <path>; \
 git submodule update --init --recursive
 ```
 
 Example:
+
+[macOS, linux]
 
 ```bash
 git submodule add https://github.com/funnear/data_ravers_utils.git libs/data_ravers_utils; \
@@ -50,6 +54,8 @@ from <submodule_package>.module_name import some_function
 
 Pull the latest commits from the submodule's default branch (usually `main`):
 
+[macOS, linux]
+
 ```bash
 git submodule update --remote --merge; \
 git add <path>; \
@@ -58,6 +64,8 @@ git push origin main
 ```
 
 ## Push Changes Back to a Submodule's Own Repo
+
+[macOS, linux]
 
 ```bash
 cd <path>; \
@@ -68,6 +76,8 @@ cd -
 ```
 
 ## Remove a Submodule
+
+[macOS, linux]
 
 ```bash
 git submodule deinit -f <path>; \

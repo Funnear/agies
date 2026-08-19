@@ -96,8 +96,10 @@ rm -rf .pytest_cache .ruff_cache .coverage
 
 If dependencies are broken but venv is still intact:
 
+[macOS, linux]
+
 ```sh
-pip install --upgrade pip \;
+pip install --upgrade pip; \
 pip install --force-reinstall -r requirements.txt
 ```
 
@@ -113,19 +115,21 @@ Useful when:
 
 If everything else fails:
 
+[macOS, linux]
+
 ```sh
-deactivate || true \;
-rm -rf venv \;
-python3 -m venv venv \;
-source venv/bin/activate \;
-pip install --upgrade pip \;
-pip install -r requirements.txt \;
+deactivate || true; \
+rm -rf venv; \
+python3 -m venv venv; \
+source venv/bin/activate; \
+pip install --upgrade pip; \
+pip install -r requirements.txt
 ```
 
 Then restore development setup:
 
 ```sh
-./tools/setup_dev.sh \;
+./tools/setup_dev.sh
 ```
 
 ---

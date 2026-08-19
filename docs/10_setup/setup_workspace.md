@@ -7,7 +7,7 @@
 [macOS]
 
 ```bash
-brew update \;
+brew update; \
 brew install node
 ```
 
@@ -24,12 +24,16 @@ cd data_science_project_template_by_faen
 
 It makes tools executable, creates venv, installs deps, registers Jupyter kernel, installs git hook.
 
+[macOS, linux]
+
 ```bash
 chmod +x tools/shell_scripts/setup_dev.sh; \
 .tools/shell_scripts/setup_dev.sh
 ```
 
 or better:
+
+[macOS, linux]
 
 ```bash
 chmod +x tools/shell_scripts/setup_dev.sh; \

@@ -86,10 +86,12 @@ logging.getLogger().setLevel(logging.DEBUG)
 
 ### to run apps in debug mode
 
+[macOS, linux]
+
 ```bash
-export PYTHONPATH=src
-export LOG_LEVEL=DEBUG
-export TRANSFORMERS_VERBOSITY=info
+export PYTHONPATH=src; \
+export LOG_LEVEL=DEBUG; \
+export TRANSFORMERS_VERBOSITY=info; \
 python -m damn_ape.app.sandbox.demo_cli
 ```
 

@@ -82,7 +82,7 @@ Placeholder for slide decks / demo material. Empty in the template.
 List files added or removed on the current branch vs. `main`:
 
 ```bash
-git diff --name-status main...HEAD | grep -E '^[AD]'
+git diff --name-status --diff-filter=AD main...HEAD
 ```
 
 Prompt for an LLM developer assistant (e.g. Claude Code):

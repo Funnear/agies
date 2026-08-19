@@ -185,23 +185,29 @@ Hi USERNAME! You've successfully authenticated, but GitHub does not provide shel
 Configure SSH as the Git signing format, select the public signing key, and enable automatic
 commit signing:
 
+[macOS, linux]
+
 ```bash
-git config --global gpg.format ssh
-git config --global user.signingkey ~/.ssh/id_ed25519.pub
+git config --global gpg.format ssh; \
+git config --global user.signingkey ~/.ssh/id_ed25519.pub; \
 git config --global commit.gpgsign true
 ```
 
 Check the configured Git identity:
 
+[macOS, linux]
+
 ```bash
-git config --global user.name
+git config --global user.name; \
 git config --global user.email
 ```
 
 Set the values if required:
 
+[macOS, linux]
+
 ```bash
-git config --global user.name "YOUR_NAME"
+git config --global user.name "YOUR_NAME"; \
 git config --global user.email "YOUR_GITHUB_EMAIL"
 ```
 
@@ -255,8 +261,10 @@ git fetch
 
 Create commits normally:
 
+[macOS, linux]
+
 ```bash
-git add .
+git add .; \
 git commit -m "Describe the change"
 ```
 
@@ -270,9 +278,11 @@ git commit -S -m "Describe the change"
 
 Check that SSH signing is enabled:
 
+[macOS, linux]
+
 ```bash
-git config --global gpg.format
-git config --global user.signingkey
+git config --global gpg.format; \
+git config --global user.signingkey; \
 git config --global commit.gpgsign
 ```
 
@@ -315,16 +325,20 @@ workflow.
 
 Generate or identify a GPG key:
 
+[macOS, linux]
+
 ```bash
-gpg --full-generate-key
+gpg --full-generate-key; \
 gpg --list-secret-keys --keyid-format=long
 ```
 
 Configure the selected key:
 
+[macOS, linux]
+
 ```bash
-git config --global --unset gpg.format
-git config --global user.signingkey YOUR_GPG_KEY_ID
+git config --global --unset gpg.format; \
+git config --global user.signingkey YOUR_GPG_KEY_ID; \
 git config --global commit.gpgsign true
 ```
 
@@ -420,8 +434,10 @@ merged.
 
 For the most recent commit:
 
+[macOS, linux]
+
 ```bash
-git commit --amend --signoff --no-edit
+git commit --amend --signoff --no-edit; \
 git push --force-with-lease
 ```
 

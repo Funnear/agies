@@ -4,8 +4,10 @@ Markdown files are checked with `markdownlint-cli`.
 
 ## One-time setup (already done in the repo)
 
+[macOS, linux]
+
 ```bash
-npm init -y
+npm init -y; \
 npm install --save-dev markdownlint-cli
 ```
 
