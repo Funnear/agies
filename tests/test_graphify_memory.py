@@ -3,6 +3,8 @@
 from pathlib import Path
 import tempfile
 
+from agies.graph.builder import MusicIndustryGraph
+from agies.memory.article_graphifier import ArticleGraphifier
 from agies.memory.graphify import GraphifyMemory
 
 
@@ -25,6 +27,7 @@ def test_graphify_text_and_concept_extraction():
         # Test Associative Recall
         recall_res = memory.recall("Where did Bowie record in Berlin?", hops=2)
         assert recall_res["recalled_nodes_count"] >= 1
+        assert "explanation" in recall_res
         labels = [n["label"] for n in recall_res["recalled_nodes"]]
         assert any(
             "Bowie" in lbl or "Hansa" in lbl or "Berlin" in lbl for lbl in labels
@@ -78,3 +81,35 @@ def test_graphify_memory_persistence():
 
         recall_res = mem2.recall("Funkhaus", hops=1)
         assert recall_res["recalled_nodes_count"] >= 1
+
+
+def test_graphify_knowledge_graph_sync_and_article_ingestion():
+    with tempfile.TemporaryDirectory() as tmpdir:
+        mem_file = Path(tmpdir) / "sync_memory.json"
+        memory = GraphifyMemory(memory_file_path=mem_file)
+
+        # Build small graph & sync
+        from agies.graph.extractors.synthetic_extractor import SyntheticIndustryExtractor
+        graph = MusicIndustryGraph()
+        ents, edges = SyntheticIndustryExtractor().extract()
+        for e in ents:
+            graph.add_entity(e)
+        for r in edges:
+            graph.add_relationship(r)
+        sync_res = memory.sync_with_knowledge_graph(graph)
+
+        assert sync_res["status"] == "SYNCED"
+        assert sync_res["nodes_synced"] >= 10
+        assert sync_res["edges_synced"] >= 10
+
+        # Article Graphifier with gear extraction
+        article_parser = ArticleGraphifier(memory=memory)
+        art_res = article_parser.ingest_article(
+            title="Stephan Bodzin on Moog Sub 37 and Live Hardware",
+            content="Stephan Bodzin performs melodic techno utilizing the Moog Sub 37 and custom controllers worldwide.",
+            source="Resident Advisor",
+        )
+
+        assert art_res["title"] == "Stephan Bodzin on Moog Sub 37 and Live Hardware"
+        assert len(art_res["gear_mentions"]) >= 1
+        assert "Moog Sub 37" in art_res["gear_mentions"]

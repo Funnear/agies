@@ -4,10 +4,11 @@ Transforms unstructured events, conversations, audio sessions, and entity discov
 into an interconnected, multi-hop semantic and episodic graph memory network.
 
 Capabilities:
-1. Graphification: Entity and relation extraction from text and structured events
-2. Multi-Hop Associative Recall: Traverse 1-hop and 2-hop neighborhood graphs
-3. Episodic Memory Chains: Temporal sequencing and causal dependency tracking
-4. Persistence: Disk-backed JSON storage and hot-reloading
+1. Graphification: Entity and relation extraction from text, structured events, and articles
+2. Multi-Hop Associative Recall: Traverse 1-hop and 2-hop neighborhood graphs with semantic ranking
+3. Full Knowledge Graph Synchronization: Ingests entire 570+ node corpus into associative memory
+4. Hardware & Acoustic Gear Recognition: Recognizes synthesizers, consoles, and acoustic rooms
+5. Natural Language Causal Explanation Generation for Multi-Hop Graph RAG
 """
 
 from datetime import datetime, timezone
@@ -28,7 +29,7 @@ class MemoryNode:
         self,
         node_id: str,
         label: str,
-        node_type: str = "concept",  # 'concept', 'entity', 'episode', 'preference', 'acoustic_signature'
+        node_type: str = "concept",  # 'concept', 'entity', 'episode', 'preference', 'acoustic_signature', 'gear'
         attributes: Optional[Dict[str, Any]] = None,
         timestamp: Optional[datetime] = None,
         importance: float = 1.0,
@@ -62,7 +63,7 @@ class MemoryEdge:
         self,
         source_id: str,
         target_id: str,
-        rel_type: str,  # 'RELATES_TO', 'MENTIONS', 'PREFERS', 'LEADS_TO', 'CLASSIFIED_AS', 'CO_OCCURS_WITH'
+        rel_type: str,  # 'RELATES_TO', 'MENTIONS', 'PREFERS', 'LEADS_TO', 'CLASSIFIED_AS', 'CO_OCCURS_WITH', 'SYNCS_WITH'
         weight: float = 1.0,
         metadata: Optional[Dict[str, Any]] = None,
     ):
@@ -83,7 +84,7 @@ class MemoryEdge:
 
 
 class GraphifyMemory:
-    """Graph-based Memory & Associative Recall Engine."""
+    """Graph-based Memory & Associative Recall Engine with Full Knowledge Graph Sync."""
 
     def __init__(self, memory_file_path: Optional[Path] = None):
         self.memory_file = Path(
@@ -92,6 +93,63 @@ class GraphifyMemory:
         self.memory_file.parent.mkdir(parents=True, exist_ok=True)
         self.graph: nx.MultiDiGraph = nx.MultiDiGraph()
         self._load_memory()
+
+    def sync_with_knowledge_graph(self, industry_graph: Any) -> Dict[str, Any]:
+        """Ingest the entire Knowledge Graph into Graphify associative memory."""
+        nodes_added = 0
+        edges_added = 0
+
+        # Ingest entities from registry or graph nodes
+        entities = getattr(industry_graph, "entities_registry", {}).values()
+        if entities:
+            for ent in entities:
+                m_node = MemoryNode(
+                    node_id=f"kg_{ent.id}",
+                    label=ent.name,
+                    node_type="entity",
+                    attributes={
+                        "original_id": ent.id,
+                        "entity_type": ent.entity_type.value
+                        if hasattr(ent.entity_type, "value")
+                        else str(ent.entity_type),
+                        "attributes": getattr(ent, "attributes", {}),
+                    },
+                    importance=1.5,
+                )
+                self.add_node(m_node)
+                nodes_added += 1
+        else:
+            for nid, data in industry_graph.graph.nodes(data=True):
+                m_node = MemoryNode(
+                    node_id=f"kg_{nid}",
+                    label=data.get("name", nid),
+                    node_type="entity",
+                    attributes=data,
+                    importance=1.5,
+                )
+                self.add_node(m_node)
+                nodes_added += 1
+
+        # Ingest relationships from graph edges
+        for u, v, d in industry_graph.graph.edges(data=True):
+            m_edge = MemoryEdge(
+                source_id=f"kg_{u}",
+                target_id=f"kg_{v}",
+                rel_type=d.get("rel_type", "RELATES_TO"),
+                weight=d.get("weight", 1.0),
+                metadata=d.get("metadata", {}),
+            )
+            self.add_edge(m_edge)
+            edges_added += 1
+
+        self._save_memory()
+        return {
+            "status": "SYNCED",
+            "nodes_synced": nodes_added,
+            "edges_synced": edges_added,
+            "total_memory_nodes": len(self.graph.nodes),
+            "total_memory_edges": len(self.graph.edges),
+        }
 
     def graphify_text(
         self,
@@ -233,6 +291,7 @@ class GraphifyMemory:
                 "query": query,
                 "recalled_nodes": [],
                 "subgraph": {"nodes": [], "edges": []},
+                "explanation": f"No direct associative seeds matched '{query}'. Try querying artists, genres, venues, or cities.",
             }
 
         # Traverse multi-hop neighborhood
@@ -242,7 +301,6 @@ class GraphifyMemory:
         for _ in range(hops):
             next_frontier: Set[str] = set()
             for nid in current_frontier:
-                # Successors and Predecessors in undirected view
                 neighbors = set(self.graph.successors(nid)) | set(
                     self.graph.predecessors(nid)
                 )
@@ -286,12 +344,20 @@ class GraphifyMemory:
                     }
                 )
 
+        # Generate natural language associative explanation
+        labels_preview = ", ".join([n["label"] for n in top_nodes[:4]])
+        explanation = (
+            f"Multi-hop associative recall discovered {len(top_nodes)} interconnected nodes "
+            f"within {hops} hops of '{query}' (Key nodes: {labels_preview})."
+        )
+
         return {
             "query": query,
             "matched_seeds_count": len(matched_seeds),
             "recalled_nodes_count": len(top_nodes),
             "recalled_nodes": top_nodes,
             "subgraph": {"nodes": top_nodes, "edges": sub_edges},
+            "explanation": explanation,
         }
 
     def add_node(self, node: MemoryNode):
@@ -303,7 +369,7 @@ class GraphifyMemory:
     def get_summary(self) -> Dict[str, Any]:
         """Return high-level memory statistics and top associative hubs."""
         degrees = dict(self.graph.degree())
-        top_hubs = sorted(degrees.items(), key=lambda x: x[1], reverse=True)[:6]
+        top_hubs = sorted(degrees.items(), key=lambda x: x[1], reverse=True)[:8]
 
         types_count: Dict[str, int] = {}
         for _, data in self.graph.nodes(data=True):
@@ -326,30 +392,33 @@ class GraphifyMemory:
         }
 
     def _extract_entities_and_concepts(self, text: str) -> List[Tuple[str, str]]:
-        """Extract recognized music, genre, country, and tech concepts from text."""
+        """Extract recognized music, genre, country, synthesizer, and tech concepts from text."""
         concepts: List[Tuple[str, str]] = []
         t_low = text.lower()
 
-        # Known keywords & entities dictionary
         patterns = [
             (
-                r"\b(techno|house|trance|ambient|dubstep|drum and bass|classical|hip-hop|disco|rock|jazz)\b",
+                r"\b(techno|house|trance|ambient|dubstep|drum and bass|classical|hip-hop|disco|rock|jazz|amapiano|reggaeton|baile funk)\b",
                 "concept",
             ),
             (
-                r"\b(germany|berlin|london|uk|usa|japan|tokyo|france|paris|sweden|stockholm|jamaica|nigeria|lagos)\b",
+                r"\b(germany|berlin|london|uk|usa|japan|tokyo|france|paris|sweden|stockholm|jamaica|nigeria|lagos|brazil|são paulo|colombia|medellín|mexico|spain|barcelona|amsterdam|australia|melbourne|south africa|johannesburg|india|goa)\b",
                 "entity",
             ),
             (
-                r"\b(hansa|funkhaus|kling klang|abbey road|electric lady|motorbass|tuff gong)\b",
+                r"\b(hansa|funkhaus|kling klang|abbey road|electric lady|motorbass|tuff gong|sonoramica|real world|warung|berghain|tresor|fabric|dc10|baum|revolver)\b",
                 "entity",
             ),
             (
-                r"\b(kraftwerk|david bowie|brian eno|daft punk|hans zimmer|nils frahm|taylor swift|drake|kendrick)\b",
+                r"\b(kraftwerk|david bowie|brian eno|daft punk|hans zimmer|nils frahm|stephan bodzin|aphex twin|boris brejcha|tycho|bicep|black coffee|burna boy|bad bunny|j balvin)\b",
                 "entity",
             ),
             (
-                r"\b(mel-spectrogram|tempogram|classifier|neural network|fastapi|knowledge graph|cosine similarity)\b",
+                r"\b(moog sub 37|roland space echo|tb-303|tr-808|tr-909|prophet-6|prophet-08|ob-6|dx7|ssl 4000|neve 8078|neumann u87|studer a800|funktion-one|d&b audiotechnik)\b",
+                "gear",
+            ),
+            (
+                r"\b(mel-spectrogram|tempogram|classifier|neural network|fastapi|knowledge graph|cosine similarity|redux|three\.js|webgl)\b",
                 "concept",
             ),
         ]
@@ -359,7 +428,6 @@ class GraphifyMemory:
             for m in set(matches):
                 concepts.append((m.title(), ctype))
 
-        # Fallback if no specific entity matched: extract capitalized tokens
         if not concepts:
             words = [w for w in re.findall(r"\b[A-Z][a-z]+\b", text) if len(w) > 3]
             for w in set(words[:4]):
@@ -374,7 +442,7 @@ class GraphifyMemory:
         nodes_data = [d for _, d in self.graph.nodes(data=True)]
         edges_data = [d for _, _, d in self.graph.edges(data=True)]
         data = {
-            "version": "1.0.0",
+            "version": "2.0.0",
             "updated_at": datetime.now(timezone.utc).isoformat(),
             "nodes": nodes_data,
             "edges": edges_data,

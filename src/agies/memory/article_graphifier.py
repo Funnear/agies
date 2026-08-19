@@ -72,7 +72,7 @@ class ArticleGraphifier:
     def _extract_audio_gear(self, text: str) -> List[str]:
         """Extract recognized iconic studio equipment and synthesizers."""
         gear_patterns = [
-            r"\b(Roland TR-808|Roland TR-909|Roland TB-303|Minimoog|Prophet-5|Yamaha DX7|SSL 4000|Neve 8078|Fairchild 670|Telefunken U47|Neumann U87)\b",
+            r"\b(Moog Sub 37|Roland Space Echo|Sequential Prophet-6|Prophet-08|Dave Smith OB-6|Roland TR-808|Roland TR-909|Roland TB-303|Minimoog|Prophet-5|Yamaha DX7|SSL 4000|Neve 8078|Fairchild 670|Telefunken U47|Neumann U87|Studer A800|Funktion-One|d&b audiotechnik)\b",
             r"\b(TR-808|TR-909|TB-303|Moog|Juno-106|Korg MS-20|Ableton Live|Pro Tools|Logic Pro)\b",
         ]
         found = set()
@@ -80,4 +80,4 @@ class ArticleGraphifier:
             matches = re.findall(p, text, re.IGNORECASE)
             for m in matches:
                 found.add(m.strip())
-        return list(found)
+        return sorted(list(found))

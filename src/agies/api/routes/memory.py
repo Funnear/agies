@@ -1,14 +1,18 @@
-"""Graphify Memory API Router."""
+"""Graphify Memory API Router with Full Knowledge Graph Sync & Article Ingestion."""
 
 from typing import Any, Dict, List, Optional
 from fastapi import APIRouter, Depends, HTTPException, Query
 from pydantic import BaseModel, Field
 
 from agies.api.auth import APIKeyInfo, get_api_key
+from agies.graph.builder import MusicIndustryGraph
+from agies.graph.extractors.synthetic_extractor import SyntheticIndustryExtractor
+from agies.memory.article_graphifier import ArticleGraphifier
 from agies.memory.graphify import GraphifyMemory
 
 router = APIRouter(prefix="/memory", tags=["Graphify Memory"])
 memory_engine = GraphifyMemory()
+article_graphifier = ArticleGraphifier(memory=memory_engine)
 
 
 class GraphifyTextRequest(BaseModel):
@@ -33,6 +37,13 @@ class GraphifyAudioEventRequest(BaseModel):
     confidence: float
     detected_bpm: Optional[float] = None
     provider: Optional[str] = None
+
+
+class GraphifyArticleRequest(BaseModel):
+    title: str = Field(description="Article headline or title")
+    content: str = Field(description="Body content of the review, interview, or news piece")
+    source: Optional[str] = Field(default="Resident Advisor", description="Publishing outlet or source")
+    publication_date: Optional[str] = Field(default=None, description="ISO publication date")
 
 
 @router.post("/graphify", summary="Graphify unstructured text into memory")
@@ -67,6 +78,37 @@ async def graphify_audio(
         )
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Audio graphification failed: {e}")
+
+
+@router.post("/graphify-article", summary="Graphify a music journalism article or interview")
+async def graphify_article(
+    request: GraphifyArticleRequest, key: APIKeyInfo = Depends(get_api_key)
+) -> Dict[str, Any]:
+    """Parse article content, extract gear, labels, and venues into memory."""
+    try:
+        return article_graphifier.ingest_article(
+            title=request.title,
+            content=request.content,
+            source=request.source or "Resident Advisor",
+            publication_date=request.publication_date,
+        )
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Article graphification failed: {e}")
+
+
+@router.post("/sync-corpus", summary="Synchronize full Knowledge Graph into Graphify memory")
+async def sync_corpus_into_memory(key: APIKeyInfo = Depends(get_api_key)) -> Dict[str, Any]:
+    """Ingest the complete core Knowledge Graph into Graphify associative memory network."""
+    try:
+        graph = MusicIndustryGraph()
+        ents, edges = SyntheticIndustryExtractor().extract()
+        for e in ents:
+            graph.add_entity(e)
+        for r in edges:
+            graph.add_relationship(r)
+        return memory_engine.sync_with_knowledge_graph(graph)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Knowledge Graph memory sync failed: {e}")
 
 
 @router.get("/recall", summary="Associative multi-hop memory recall")
