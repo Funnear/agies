@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AGIES • 3D Knowledge Universe & Acoustic Corridors</title>
+  <title>AGIES • Interactive 3D WebGL Knowledge Universe</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
@@ -22,13 +22,17 @@
       top: 0;
       left: 0;
       z-index: 1;
+      cursor: grab;
+    }
+    #canvas-container:active {
+      cursor: grabbing;
     }
     .hud-panel {
       position: absolute;
       z-index: 10;
-      background: rgba(18, 18, 18, 0.85);
+      background: rgba(18, 18, 18, 0.90);
       backdrop-filter: blur(16px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 1rem;
     }
   </style>
@@ -43,22 +47,38 @@
     <div class="w-3 h-3 rounded-full bg-[#1DB954] animate-pulse"></div>
     <div>
       <div class="text-xs font-black text-white tracking-wider flex items-center gap-2">
-        AGIES 3D KNOWLEDGE UNIVERSE <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-[#1DB954]/20 text-[#1DB954] font-bold border border-[#1DB954]/40">570 NODES • 1,553 EDGES</span>
+        AGIES 3D KNOWLEDGE UNIVERSE <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-[#1DB954]/20 text-[#1DB954] font-bold border border-[#1DB954]/40">584 NODES • 2,029 EDGES</span>
       </div>
-      <div class="text-[11px] text-white/50">
-        Left-Click + Drag: Rotate • Right-Click: Pan • Scroll: Zoom • Click Node: Inspect
+      <div class="text-[11px] text-white/60 mt-0.5">
+        Click on any Node to inspect & fly camera • Drag to rotate • Scroll to zoom
       </div>
     </div>
   </div>
 
+  <!-- Camera Presets HUD -->
+  <div class="hud-panel top-4 right-4 p-1.5 flex items-center gap-1.5 shadow-2xl text-xs font-mono">
+    <button onclick="flyToPreset('overview')" class="px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white font-bold transition-all">Overview</button>
+    <button onclick="flyToPreset('berlin')" class="px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white font-bold transition-all">Berlin Hub</button>
+    <button onclick="flyToPreset('americas')" class="px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white font-bold transition-all">Americas</button>
+    <button onclick="flyToPreset('asia_africa')" class="px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white font-bold transition-all">Asia & Africa</button>
+    <button id="spin-btn" onclick="toggleAutoRotate()" class="px-3 py-1.5 rounded-lg bg-[#1DB954]/20 border border-[#1DB954]/40 text-[#1DB954] font-extrabold transition-all">Spinning</button>
+  </div>
+
   <!-- Legend HUD -->
-  <div class="hud-panel top-4 right-4 p-4 text-xs space-y-2 shadow-2xl hidden sm:block">
+  <div class="hud-panel top-20 right-4 p-4 text-xs space-y-2 shadow-2xl hidden sm:block">
     <div class="font-bold text-white uppercase text-[10px] tracking-wider mb-1">Entity Categories</div>
     <div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#00f0ff]"></span><span class="text-white">Global Megacity Hubs (15+)</span></div>
     <div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#c084fc]"></span><span class="text-white">Acoustic Titans & Artists</span></div>
     <div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#1DB954]"></span><span class="text-white">Grassroots & Iconic Venues</span></div>
     <div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#f59e0b]"></span><span class="text-white">Historic Recording Studios</span></div>
+    <div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#84cc16]"></span><span class="text-white">Hardware Synthesizers & Gear</span></div>
     <div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#f43f5e]"></span><span class="text-white">Record Labels & Showcases</span></div>
+  </div>
+
+  <!-- Floating Hover Pill -->
+  <div id="hover-pill" class="hud-panel top-20 left-1/2 -translate-x-1/2 px-4 py-1.5 text-xs font-mono text-white shadow-2xl flex items-center gap-2 hidden pointer-events-none">
+    <span id="hover-dot" class="w-2.5 h-2.5 rounded-full bg-[#1DB954]"></span>
+    <span id="hover-name" class="font-bold"></span>
   </div>
 
   <!-- Inspector HUD -->
@@ -73,7 +93,7 @@
         <div id="node-country" class="text-xs text-[#b3b3b3] mt-0.5">Germany</div>
       </div>
       <span id="node-bpm" class="text-xs font-mono font-bold text-[#1DB954] bg-[#1DB954]/10 px-2 py-1 rounded border border-[#1DB954]/30">
-        126 BPM
+        128 BPM
       </span>
     </div>
 
@@ -110,15 +130,43 @@
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1.2;
+    renderer.domElement.style.touchAction = "none";
     container.appendChild(renderer.domElement);
 
     const controls = new THREE.OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
-    controls.dampingFactor = 0.05;
+    controls.dampingFactor = 0.08;
     controls.autoRotate = true;
-    controls.autoRotateSpeed = 0.4;
-    controls.maxDistance = 35;
-    controls.minDistance = 2;
+    controls.autoRotateSpeed = 0.5;
+    controls.rotateSpeed = 0.9;
+    controls.zoomSpeed = 1.2;
+    controls.maxDistance = 38;
+    controls.minDistance = 1.5;
+
+    let isAutoRotating = true;
+    function toggleAutoRotate() {
+      isAutoRotating = !isAutoRotating;
+      controls.autoRotate = isAutoRotating;
+      document.getElementById("spin-btn").innerText = isAutoRotating ? "Spinning" : "Paused";
+      document.getElementById("spin-btn").className = isAutoRotating 
+        ? "px-3 py-1.5 rounded-lg bg-[#1DB954]/20 border border-[#1DB954]/40 text-[#1DB954] font-extrabold transition-all"
+        : "px-3 py-1.5 rounded-lg bg-white/10 text-white/60 font-bold transition-all";
+    }
+
+    const targetCamPos = new THREE.Vector3(0, 4, 14);
+    const targetLookAt = new THREE.Vector3(0, 0, 0);
+
+    function flyTo(camPos, lookPos) {
+      targetCamPos.copy(camPos);
+      targetLookAt.copy(lookPos);
+    }
+
+    function flyToPreset(p) {
+      if(p === 'overview') flyTo(new THREE.Vector3(0, 4, 14), new THREE.Vector3(0, 0, 0));
+      else if(p === 'berlin') flyTo(new THREE.Vector3(-4.0, 1.5, 5.0), new THREE.Vector3(-4.0, 0.5, 0.0));
+      else if(p === 'americas') flyTo(new THREE.Vector3(4.0, -2.0, 6.5), new THREE.Vector3(3.0, -2.0, 2.0));
+      else if(p === 'asia_africa') flyTo(new THREE.Vector3(2.5, 2.0, -5.0), new THREE.Vector3(3.0, 0.0, -2.0));
+    }
 
     // Starfield Universe
     const starGeo = new THREE.BufferGeometry();
@@ -127,14 +175,14 @@
     const starCols = new Float32Array(starCount * 3);
 
     for(let i=0; i<starCount; i++) {
-      const r = 15 + Math.random() * 30;
+      const r = 16 + Math.random() * 26;
       const theta = Math.random() * Math.PI * 2;
       const phi = Math.acos(Math.random() * 2 - 1);
       starPos[i*3] = r * Math.sin(phi) * Math.cos(theta);
       starPos[i*3+1] = r * Math.sin(phi) * Math.sin(theta);
       starPos[i*3+2] = r * Math.cos(phi);
 
-      const col = new THREE.Color(i%3===0 ? "#1DB954" : i%3===1 ? "#00f0ff" : "#a855f7");
+      const col = new THREE.Color(i%4===0 ? "#1DB954" : i%4===1 ? "#00f0ff" : i%4===2 ? "#c084fc" : "#f59e0b");
       starCols[i*3] = col.r;
       starCols[i*3+1] = col.g;
       starCols[i*3+2] = col.b;
@@ -142,16 +190,16 @@
     starGeo.setAttribute("position", new THREE.BufferAttribute(starPos, 3));
     starGeo.setAttribute("color", new THREE.BufferAttribute(starCols, 3));
 
-    const starMat = new THREE.PointsMaterial({ size: 0.12, vertexColors: true, transparent: true, opacity: 0.6, blending: THREE.AdditiveBlending });
+    const starMat = new THREE.PointsMaterial({ size: 0.13, vertexColors: true, transparent: true, opacity: 0.65, blending: THREE.AdditiveBlending });
     const starField = new THREE.Points(starGeo, starMat);
     scene.add(starField);
 
     // Lights
     scene.add(new THREE.AmbientLight(0xffffff, 0.7));
-    const p1 = new THREE.PointLight(0x1db954, 2.5, 30); p1.position.set(0, 5, 5); scene.add(p1);
-    const p2 = new THREE.PointLight(0x00f0ff, 2.0, 30); p2.position.set(-5, -5, -5); scene.add(p2);
+    const p1 = new THREE.PointLight(0x1db954, 2.5, 35); p1.position.set(0, 6, 6); scene.add(p1);
+    const p2 = new THREE.PointLight(0x00f0ff, 2.2, 35); p2.position.set(-6, -6, -6); scene.add(p2);
 
-    // Graph Nodes
+    // Nodes Catalog
     const nodes = [
       { id: "berlin", name: "Berlin Hub", category: "city", country: "Germany", pos: [-4.0, 0.5, 0.0], col: "#00f0ff", size: 0.45, desc: "Temple of global techno, modular synthesis, and acoustic recording sanctuaries.", sound: "Funktion-One Custom (Double 21-inch Subs)", bpm: "128", conns: ["london", "saopaulo", "melbourne", "hansa", "funkhaus", "berghain"] },
       { id: "london", name: "London Hub", category: "city", country: "United Kingdom", pos: [-0.5, 2.0, -2.5], col: "#00f0ff", size: 0.45, desc: "International music industry capital, breakbeat lineage, and major label hub.", sound: "Pioneer Pro Audio Bodysonic Bass Floor", bpm: "130", conns: ["berlin", "la", "joburg", "abbey", "fabric", "warp"] },
@@ -166,11 +214,11 @@
       { id: "melbourne", name: "Melbourne Hub", category: "city", country: "Australia", pos: [6.0, -4.0, -2.5], col: "#00f0ff", size: 0.38, desc: "Revolver Upstairs endurance clubbing, Melbourne minimal, and indie psych rock.", sound: "Revolver Funktion-One System", bpm: "127", conns: ["berlin"] },
 
       // Artists
-      { id: "bodzin", name: "Stephan Bodzin", category: "artist", country: "Germany", pos: [-5.2, -0.5, 1.2], col: "#c084fc", size: 0.32, desc: "Hardware live master sculpting hypnotic Moog Sub 37 synthesizer melodies.", sound: "Moog Sub 37 + Custom Controllers", bpm: "126", conns: ["berlin", "funkhaus"] },
-      { id: "nils", name: "Nils Frahm", category: "artist", country: "Germany", pos: [-4.2, -2.2, 0.5], col: "#c084fc", size: 0.32, desc: "Acoustic innovator merging custom upright pianos with Roland Space Echoes in Saal 3.", sound: "Klavins Una Corda + Roland RE-201", bpm: "110", conns: ["berlin", "funkhaus"] },
-      { id: "aphex", name: "Aphex Twin", category: "artist", country: "United Kingdom", pos: [0.5, -0.8, -4.0], col: "#c084fc", size: 0.32, desc: "Pioneer of algorithmic micro-tuning, modular braindance, and Selected Ambient Works.", sound: "Custom Modular + Cirklon Sequencer", bpm: "122", conns: ["london", "warp"] },
-      { id: "tycho", name: "Tycho", category: "artist", country: "United States", pos: [3.8, 0.8, 2.5], col: "#c084fc", size: 0.3, desc: "Audio-visual architect blending warm analog synthesizers with ambient guitar textures.", sound: "Sequential Prophet-6 + Moog Voyager", bpm: "118", conns: ["la"] },
-      { id: "bicep", name: "BICEP", category: "artist", country: "United Kingdom", pos: [-0.2, 3.2, -1.8], col: "#c084fc", size: 0.3, desc: "Ninja Tune electronic duo merging 90s breakbeats with euphoric analog synth hooks.", sound: "Roland TB-303 + SH-101", bpm: "128", conns: ["london", "fabric"] },
+      { id: "bodzin", name: "Stephan Bodzin", category: "artist", country: "Germany", pos: [-5.2, -0.5, 1.2], col: "#c084fc", size: 0.32, desc: "Hardware live master sculpting hypnotic Moog Sub 37 synthesizer melodies.", sound: "Moog Sub 37 + Custom Controllers", bpm: "126", conns: ["berlin", "funkhaus", "gear_moog"] },
+      { id: "nils", name: "Nils Frahm", category: "artist", country: "Germany", pos: [-4.2, -2.2, 0.5], col: "#c084fc", size: 0.32, desc: "Acoustic innovator merging custom upright pianos with Roland Space Echoes in Saal 3.", sound: "Klavins Una Corda + Roland RE-201", bpm: "110", conns: ["berlin", "funkhaus", "gear_echo"] },
+      { id: "aphex", name: "Aphex Twin", category: "artist", country: "United Kingdom", pos: [0.5, -0.8, -4.0], col: "#c084fc", size: 0.32, desc: "Pioneer of algorithmic micro-tuning, modular braindance, and Selected Ambient Works.", sound: "Custom Modular + Cirklon Sequencer", bpm: "122", conns: ["london", "warp", "gear_tb303"] },
+      { id: "tycho", name: "Tycho", category: "artist", country: "United States", pos: [3.8, 0.8, 2.5], col: "#c084fc", size: 0.3, desc: "Audio-visual architect blending warm analog synthesizers with ambient guitar textures.", sound: "Sequential Prophet-6 + Moog Voyager", bpm: "118", conns: ["la", "gear_prophet"] },
+      { id: "bicep", name: "BICEP", category: "artist", country: "United Kingdom", pos: [-0.2, 3.2, -1.8], col: "#c084fc", size: 0.3, desc: "Ninja Tune electronic duo merging 90s breakbeats with euphoric analog synth hooks.", sound: "Roland TB-303 + SH-101", bpm: "128", conns: ["london", "fabric", "gear_tb303"] },
 
       // Venues
       { id: "berghain", name: "Berghain / Panorama Bar", category: "venue", country: "Germany", pos: [-3.2, 1.8, 1.2], col: "#1DB954", size: 0.35, desc: "The world's foremost industrial techno cathedral with uncompromised acoustic fidelity.", sound: "Funktion-One Custom Double 21-inch Subs", bpm: "135", conns: ["berlin"] },
@@ -181,6 +229,12 @@
       { id: "funkhaus", name: "Funkhaus Berlin (Saal 1)", category: "studio", country: "Germany", pos: [-3.8, -1.5, 0.8], col: "#f59e0b", size: 0.32, desc: "The largest historic broadcast studio complex in the world with natural 2.4s reverb.", sound: "Vintage GDR Acoustic Diffusers & d&b Soundscape", bpm: "115", conns: ["berlin", "nils"] },
       { id: "hansa", name: "Hansa Tonstudio", category: "studio", country: "Germany", pos: [-4.8, 1.2, 0.4], col: "#f59e0b", size: 0.32, desc: "Legendary studio where Bowie, Eno, and Depeche Mode crafted the Berlin Sound.", sound: "SSL 4000 E Series & Meistersaal Acoustics", bpm: "124", conns: ["berlin"] },
       { id: "abbey", name: "Abbey Road Studios", category: "studio", country: "United Kingdom", pos: [-0.8, 2.8, -3.5], col: "#f59e0b", size: 0.34, desc: "St. John's Wood landmark shaping modern orchestral recording and mastering standards.", sound: "Neve 88RS & EMI TG12345 Consoles", bpm: "120", conns: ["london"] },
+
+      // Hardware Synthesizers & Gear
+      { id: "gear_moog", name: "Moog Sub 37", category: "gear", country: "Hardware", pos: [-5.8, -1.2, 1.8], col: "#84cc16", size: 0.28, desc: "Iconic analog monosynth producing punchy basslines and melodic techno hooks.", sound: "Ladder Filter Dual-Oscillator Monosynth", bpm: "126", conns: ["bodzin", "nils"] },
+      { id: "gear_echo", name: "Roland Space Echo RE-201", category: "gear", country: "Hardware", pos: [-4.6, -3.0, 0.2], col: "#84cc16", size: 0.28, desc: "The gold standard for vintage organic tape flutter, dub delays, and ambient warmth.", sound: "Analog Multi-Head Tape Delay & Spring Reverb", bpm: "110", conns: ["nils", "funkhaus"] },
+      { id: "gear_tb303", name: "Roland TB-303", category: "gear", country: "Hardware", pos: [0.2, 1.5, -4.5], col: "#84cc16", size: 0.28, desc: "The seminal hardware bass machine that created acid house, rave, and braindance.", sound: "Diode Ladder Resonant Acid Filter", bpm: "128", conns: ["aphex", "bicep"] },
+      { id: "gear_prophet", name: "Sequential Prophet-6", category: "gear", country: "Hardware", pos: [4.5, 0.5, 3.2], col: "#84cc16", size: 0.28, desc: "Modern analog polysynth engine powering rich polyphonic pads and brassy chords.", sound: "Voltage-Controlled 6-Voice Analog Polysynth", bpm: "118", conns: ["tycho"] },
 
       // Labels & Festivals
       { id: "warp", name: "Warp Records", category: "label", country: "United Kingdom", pos: [0.8, 0.2, -3.5], col: "#f43f5e", size: 0.3, desc: "Sheffield/London avant-garde label home to Aphex Twin and Boards of Canada.", sound: "Pure Experimental Bitrate", bpm: "125", conns: ["london", "aphex"] },
@@ -199,9 +253,9 @@
       const mat = new THREE.MeshStandardMaterial({
         color: new THREE.Color(n.col),
         emissive: new THREE.Color(n.col),
-        emissiveIntensity: 0.6,
-        roughness: 0.1,
-        metalness: 0.9
+        emissiveIntensity: 0.5,
+        roughness: 0.15,
+        metalness: 0.85
       });
       const mesh = new THREE.Mesh(geo, mat);
       mesh.position.copy(pos);
@@ -242,6 +296,26 @@
     const raycaster = new THREE.Raycaster();
     const mouse = new THREE.Vector2();
 
+    window.addEventListener("mousemove", (e) => {
+      mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
+      mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
+      raycaster.setFromCamera(mouse, camera);
+      const hits = raycaster.intersectObjects(nodeMeshes);
+
+      if(hits.length > 0) {
+        const d = hits[0].object.userData;
+        document.getElementById("canvas-container").style.cursor = "pointer";
+        document.getElementById("hover-pill").classList.remove("hidden");
+        document.getElementById("hover-dot").style.backgroundColor = d.col;
+        document.getElementById("hover-name").innerText = d.name + " (" + d.category.toUpperCase() + ")";
+        hits[0].object.material.emissiveIntensity = 1.0;
+      } else {
+        document.getElementById("canvas-container").style.cursor = "grab";
+        document.getElementById("hover-pill").classList.add("hidden");
+        nodeMeshes.forEach(m => m.material.emissiveIntensity = 0.5);
+      }
+    });
+
     window.addEventListener("click", (e) => {
       mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
       mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
@@ -257,6 +331,11 @@
         document.getElementById("node-sound").innerText = d.sound || "Standard High-Fidelity Studio Monitor System";
         document.getElementById("node-bpm").innerText = (d.bpm || "124") + " BPM";
         document.getElementById("node-links").innerText = d.conns.length + " Links";
+
+        // Smooth camera fly
+        const targetPos = new THREE.Vector3(...d.pos);
+        const camPos = targetPos.clone().add(new THREE.Vector3(0, 1.5, 3.5));
+        flyTo(camPos, targetPos);
       }
     });
 
@@ -268,6 +347,9 @@
 
     function animate() {
       requestAnimationFrame(animate);
+      camera.position.lerp(targetCamPos, 0.05);
+      controls.target.lerp(targetLookAt, 0.05);
+
       starField.rotation.y += 0.0003;
       controls.update();
       renderer.render(scene, camera);
