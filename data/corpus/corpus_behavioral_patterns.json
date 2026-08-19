@@ -1,0 +1,4253 @@
+{
+  "summary": {
+    "total_nodes": 459,
+    "total_edges": 1296,
+    "nodes_by_type": {
+      "record_label": 91,
+      "agency": 32,
+      "studio": 35,
+      "producer": 45,
+      "artist": 120,
+      "production_house": 98,
+      "track": 38
+    },
+    "edges_by_relationship": {
+      "PARENT_COMPANY_OF": 144,
+      "HEADQUARTERED_IN": 54,
+      "OPERATES_IN_CITY": 26,
+      "ANCHOR_PRODUCER_OF": 26,
+      "SIGNED_TO": 133,
+      "REPRESENTED_BY": 90,
+      "RECORDED_AT": 142,
+      "PRODUCED_BY": 58,
+      "COLLABORATED_WITH": 50,
+      "CLASSIFIED_AS_GENRE": 120,
+      "ACOUSTIC_SIMILARITY": 360,
+      "BASED_IN_CITY": 52,
+      "A_AND_R_PIPELINE": 18,
+      "SHOWCASED_AT": 6,
+      "HOSTED_IN_CITY": 2,
+      "DISTRIBUTED_BY": 5,
+      "FEATURED_ON": 5,
+      "COLLECTS_ROYALTIES_VIA": 5
+    }
+  },
+  "global_macro_patterns": {
+    "total_entities_analyzed": 459,
+    "de_anglicization_index_percentage": 56.4,
+    "country_artist_distribution": {
+      "USA": 18,
+      "UK": 16,
+      "Germany": 16,
+      "France": 6,
+      "Japan": 6,
+      "Nigeria": 6,
+      "Sweden": 5,
+      "South Korea": 5,
+      "Canada": 5,
+      "Jamaica": 4,
+      "Brazil": 4,
+      "Australia": 4,
+      "Netherlands": 3,
+      "India": 3,
+      "GB": 3,
+      "Iceland": 2,
+      "South Africa": 2,
+      "Colombia": 2,
+      "Puerto Rico": 1,
+      "Spain": 1,
+      "Mexico": 1,
+      "DE": 1,
+      "AT": 1
+    },
+    "national_industrial_archetypes": {
+      "South Korea": {
+        "model_name": "Vertical Agency-Label Training Complex",
+        "characteristics": "End-to-end integration: Talent discovery, training, production, choreography, IP, and distribution inside single conglomerates (HYBE, SM, YG)."
+      },
+      "Sweden": {
+        "model_name": "Invisible Global Hitmaker Hub",
+        "characteristics": "Disproportionate global songwriting and sonic production export (Max Martin, Shellback, Ludwig G\u00f6ransson) driving US and UK chart toppers."
+      },
+      "Germany": {
+        "model_name": "Acoustic Engineering & Club Autonomy",
+        "characteristics": "Historic world-class acoustic recording complexes (Hansa, Funkhaus, Teldex) coupled with an autonomous non-commercial techno/electronic club ecosystem."
+      },
+      "United States": {
+        "model_name": "Capital-Dominant Conglomerate & Talent Oligopoly",
+        "characteristics": "Massive capital concentration across UMG/Sony/WMG and talent agencies (WME, CAA) with high-density collaboration networks."
+      },
+      "Jamaica": {
+        "model_name": "Sound System & Dub Innovation Model",
+        "characteristics": "Hardware adaptation, riddim recycling, and dub engineering that laid the foundational genetic code for UK Bass, Grime, Drum & Bass, and US Hip-Hop."
+      },
+      "Nigeria & West Africa": {
+        "model_name": "Digital-Native Cross-Atlantic Fusion",
+        "characteristics": "Explosive decentralized global streaming rise of Afrobeats, bridging West African polyrhythms with UK Drill, US Pop, and Latin syncs."
+      },
+      "France": {
+        "model_name": "French Touch & Electro Synthesis",
+        "characteristics": "Pioneered sample-heavy disco filtration, synth modulation, and masked visual myth-making (Daft Punk, Ed Banger, Justice)."
+      },
+      "Japan": {
+        "model_name": "High-Fidelity Craftsmanship & Transmedia Ecosystem",
+        "characteristics": "City Pop, Shibuya-kei, and transmedia soundtracks (Ghibli, Anime, Gaming) with supreme acoustic fidelity (Ryuichi Sakamoto, Joe Hisaishi)."
+      }
+    },
+    "macro_patterns": [
+      {
+        "pattern_id": "GP-1",
+        "title": "The Swedish Invisible Producer Dynasty",
+        "insight": "Stockholm-based producers (Max Martin, Cheiron/MXM legacy) generate a massive share of Anglo-American Pop/R&B hits, acting as the primary melody architects of global streaming.",
+        "evidence_metric": "Over 75% of Swedish producer client relationships are international (Taylor Swift, The Weeknd, Dua Lipa)."
+      },
+      {
+        "pattern_id": "GP-2",
+        "title": "The Berlin Studio Pilgrimage Phenomenon",
+        "insight": "German recording studios (Hansa Tonstudio, Funkhaus) continue to function as transformative creative pilgrimage destinations for international rock, pop, and electronic luminaries (David Bowie, Depeche Mode, U2, Brian Eno, Nils Frahm).",
+        "evidence_metric": "Hansa Studios exhibits high betweenness centrality bridging UK art-rock with European avant-garde synth traditions."
+      },
+      {
+        "pattern_id": "GP-3",
+        "title": "Rise of Polycentric Global Powerhouses (De-Anglicization)",
+        "insight": "Music discovery is no longer unidirectional from US/UK to the world. K-Pop (Seoul), Afrobeats (Lagos), and Latin/Reggaeton (Puerto Rico/Medell\u00edn) now operate as autonomous global gravitational centers with multi-billion stream cross-border exports.",
+        "evidence_metric": "56.4% of the analyzed global entity corpus is anchored in non-Anglo territories."
+      },
+      {
+        "pattern_id": "GP-4",
+        "title": "The Global Studio Specialization Triad",
+        "insight": "World recording studios have evolved distinct global specializations: Berlin & London dominate orchestral/acoustic scoring; LA & Atlanta dominate vocal tracking and trap production; Stockholm & Paris dominate synthesis and in-the-box post-production.",
+        "evidence_metric": "Studio genre breakdown shows 85% concentration of classical/film score in Abbey Road, AIR, and Funkhaus Berlin."
+      }
+    ]
+  },
+  "cross_border_flows": {
+    "country_representation": {
+      "Unknown": 163,
+      "USA": 73,
+      "Germany": 36,
+      "UK": 36,
+      "Japan": 15,
+      "South Korea": 14,
+      "France": 13,
+      "Sweden": 13,
+      "Nigeria": 13,
+      "Canada": 12,
+      "India": 10,
+      "Jamaica": 10,
+      "Australia": 8,
+      "Netherlands": 7,
+      "Brazil": 7,
+      "South Africa": 6,
+      "GB": 6,
+      "Iceland": 4,
+      "Puerto Rico": 4,
+      "Colombia": 4,
+      "DE": 2,
+      "Spain": 1,
+      "Mexico": 1,
+      "AT": 1
+    },
+    "top_cross_border_corridors": [
+      {
+        "corridor": "Canada <-> USA",
+        "collaboration_count": 4
+      },
+      {
+        "corridor": "Germany <-> Germany",
+        "collaboration_count": 4
+      },
+      {
+        "corridor": "USA <-> USA",
+        "collaboration_count": 3
+      },
+      {
+        "corridor": "Sweden <-> USA",
+        "collaboration_count": 2
+      },
+      {
+        "corridor": "UK <-> UK",
+        "collaboration_count": 2
+      },
+      {
+        "corridor": "Sweden <-> UK",
+        "collaboration_count": 1
+      },
+      {
+        "corridor": "UK <-> USA",
+        "collaboration_count": 1
+      },
+      {
+        "corridor": "France <-> Germany",
+        "collaboration_count": 1
+      },
+      {
+        "corridor": "Germany <-> UK",
+        "collaboration_count": 1
+      },
+      {
+        "corridor": "South Korea <-> UK",
+        "collaboration_count": 1
+      },
+      {
+        "corridor": "South Korea <-> Spain",
+        "collaboration_count": 1
+      },
+      {
+        "corridor": "Germany <-> India",
+        "collaboration_count": 1
+      }
+    ],
+    "flow_matrix": {
+      "USA": {
+        "USA": 91,
+        "UK": 11,
+        "Germany": 4,
+        "Sweden": 5,
+        "Nigeria": 6,
+        "Australia": 3,
+        "Canada": 4,
+        "Japan": 2,
+        "Brazil": 2,
+        "Netherlands": 1,
+        "France": 4,
+        "India": 3,
+        "Colombia": 4,
+        "South Korea": 3,
+        "Puerto Rico": 2,
+        "Spain": 1,
+        "Mexico": 1,
+        "South Africa": 3,
+        "AT": 1
+      },
+      "Germany": {
+        "UK": 24,
+        "Germany": 43,
+        "France": 2,
+        "Sweden": 4,
+        "Japan": 4,
+        "USA": 8,
+        "GB": 2,
+        "Brazil": 2,
+        "Iceland": 3,
+        "Netherlands": 3,
+        "Canada": 2,
+        "Colombia": 1,
+        "Nigeria": 1,
+        "India": 1
+      },
+      "UK": {
+        "UK": 44,
+        "USA": 21,
+        "Japan": 1,
+        "Australia": 4,
+        "Nigeria": 5,
+        "India": 2,
+        "South Africa": 4,
+        "Brazil": 2,
+        "Sweden": 4,
+        "South Korea": 2,
+        "France": 2,
+        "Germany": 9,
+        "Iceland": 1,
+        "Jamaica": 1,
+        "Spain": 2,
+        "Mexico": 1
+      },
+      "Netherlands": {
+        "USA": 4,
+        "Netherlands": 11,
+        "Germany": 1,
+        "Canada": 1,
+        "Sweden": 2
+      },
+      "France": {
+        "USA": 11,
+        "France": 10,
+        "Germany": 4,
+        "Sweden": 2,
+        "UK": 7,
+        "South Africa": 1,
+        "Nigeria": 1,
+        "Jamaica": 1
+      },
+      "Sweden": {
+        "Sweden": 11,
+        "Germany": 4,
+        "France": 2,
+        "USA": 5,
+        "Netherlands": 1,
+        "Canada": 1,
+        "UK": 2,
+        "Japan": 1,
+        "Spain": 1,
+        "DE": 1,
+        "Nigeria": 1
+      },
+      "Iceland": {
+        "UK": 3,
+        "Iceland": 3,
+        "USA": 2,
+        "India": 1,
+        "Jamaica": 1,
+        "Japan": 1,
+        "Germany": 1
+      },
+      "Japan": {
+        "Japan": 14,
+        "Nigeria": 1,
+        "GB": 1,
+        "UK": 5,
+        "Germany": 4,
+        "Iceland": 1,
+        "Spain": 1,
+        "South Korea": 1,
+        "Colombia": 1,
+        "India": 1,
+        "USA": 4,
+        "DE": 1,
+        "Sweden": 1
+      },
+      "South Korea": {
+        "South Korea": 12,
+        "USA": 8,
+        "Canada": 1,
+        "UK": 4,
+        "Spain": 3,
+        "Puerto Rico": 1,
+        "Japan": 1,
+        "France": 1,
+        "South Africa": 1
+      },
+      "India": {
+        "India": 7,
+        "USA": 5,
+        "Germany": 2,
+        "Nigeria": 2,
+        "UK": 1,
+        "Australia": 1,
+        "Puerto Rico": 1,
+        "Japan": 1
+      },
+      "Jamaica": {
+        "UK": 5,
+        "Jamaica": 7,
+        "Canada": 1,
+        "India": 1,
+        "Spain": 1,
+        "Germany": 1,
+        "South Korea": 1,
+        "USA": 2,
+        "France": 1,
+        "Colombia": 1,
+        "Nigeria": 1
+      },
+      "Nigeria": {
+        "UK": 8,
+        "Germany": 1,
+        "India": 4,
+        "Nigeria": 12,
+        "USA": 10,
+        "Sweden": 2,
+        "DE": 1,
+        "Spain": 1,
+        "Canada": 1
+      },
+      "South Africa": {
+        "South Africa": 4,
+        "USA": 4,
+        "Canada": 1,
+        "UK": 2,
+        "France": 1,
+        "Sweden": 1,
+        "GB": 1
+      },
+      "Brazil": {
+        "Brazil": 6,
+        "UK": 3,
+        "Germany": 2,
+        "Colombia": 1,
+        "South Africa": 1,
+        "Nigeria": 1,
+        "USA": 4,
+        "Sweden": 1,
+        "Netherlands": 1,
+        "Australia": 2
+      },
+      "Puerto Rico": {
+        "Puerto Rico": 2,
+        "USA": 4,
+        "Canada": 1,
+        "Colombia": 1,
+        "South Korea": 1
+      },
+      "Spain": {
+        "USA": 5,
+        "Puerto Rico": 1,
+        "Japan": 1,
+        "Jamaica": 1,
+        "South Korea": 1
+      },
+      "Colombia": {
+        "USA": 7,
+        "Colombia": 4,
+        "Germany": 1,
+        "Brazil": 1,
+        "Jamaica": 1,
+        "Netherlands": 1
+      },
+      "Mexico": {
+        "USA": 3,
+        "Brazil": 1,
+        "Germany": 1
+      },
+      "Australia": {
+        "Australia": 8,
+        "USA": 6,
+        "UK": 5,
+        "Nigeria": 1,
+        "Brazil": 2,
+        "France": 1,
+        "Sweden": 1
+      },
+      "Canada": {
+        "USA": 18,
+        "Canada": 6,
+        "Nigeria": 1,
+        "South Korea": 1,
+        "Sweden": 3,
+        "Germany": 3,
+        "UK": 1,
+        "Netherlands": 1,
+        "Jamaica": 1,
+        "India": 1
+      },
+      "GB": {
+        "GB": 12,
+        "Japan": 1,
+        "Germany": 4,
+        "South Africa": 1,
+        "Sweden": 1,
+        "UK": 1
+      },
+      "DE": {
+        "DE": 5,
+        "Spain": 1,
+        "Japan": 1,
+        "Sweden": 1
+      },
+      "AT": {
+        "USA": 2,
+        "Brazil": 1
+      }
+    }
+  },
+  "producer_export_leverage": [
+    {
+      "country": "Sweden",
+      "producers_count": 4,
+      "producer_names": [
+        "Max Martin",
+        "Shellback (Johan Schuster)",
+        "Ludwig G\u00f6ransson",
+        "Bloodshy & Avant"
+      ],
+      "total_artists_produced": 4,
+      "foreign_produced_count": 2,
+      "export_leverage_ratio": 50.0,
+      "archetype": "Balanced Global Producer Hub",
+      "foreign_clients_sample": [
+        "Dua Lipa (UK)",
+        "The Weeknd (Canada)"
+      ]
+    },
+    {
+      "country": "USA",
+      "producers_count": 11,
+      "producer_names": [
+        "Jack Antonoff",
+        "Rick Rubin",
+        "Metro Boomin",
+        "Finneas O'Connell",
+        "Dr. Dre",
+        "Pharrell Williams (The Neptunes)",
+        "Timbaland",
+        "Mike Dean",
+        "Greg Kurstin",
+        "Butch Vig",
+        "Skrillex (Sonny Moore)"
+      ],
+      "total_artists_produced": 19,
+      "foreign_produced_count": 4,
+      "export_leverage_ratio": 21.1,
+      "archetype": "Domestic Market Specialist",
+      "foreign_clients_sample": [
+        "Burna Boy (Nigeria)",
+        "Harry Styles (UK)",
+        "Adele (UK)",
+        "Rosal\u00eda (Spain)"
+      ]
+    },
+    {
+      "country": "UK",
+      "producers_count": 3,
+      "producer_names": [
+        "Brian Eno",
+        "Nigel Godrich",
+        "George Martin"
+      ],
+      "total_artists_produced": 7,
+      "foreign_produced_count": 1,
+      "export_leverage_ratio": 14.3,
+      "archetype": "Domestic Market Specialist",
+      "foreign_clients_sample": [
+        "Max Richter (Germany)"
+      ]
+    },
+    {
+      "country": "Germany",
+      "producers_count": 7,
+      "producer_names": [
+        "Hans Zimmer",
+        "Giorgio Moroder",
+        "Conny Plank",
+        "Nils Frahm",
+        "Paul van Dyk",
+        "Boys Noize (Alex Ridha)",
+        "Stephan Bodzin"
+      ],
+      "total_artists_produced": 6,
+      "foreign_produced_count": 0,
+      "export_leverage_ratio": 0.0,
+      "archetype": "Domestic Market Specialist",
+      "foreign_clients_sample": []
+    },
+    {
+      "country": "France",
+      "producers_count": 2,
+      "producer_names": [
+        "Thomas Bangalter (Daft Punk)",
+        "Pedro Winter (Busy P)"
+      ],
+      "total_artists_produced": 2,
+      "foreign_produced_count": 0,
+      "export_leverage_ratio": 0.0,
+      "archetype": "Domestic Market Specialist",
+      "foreign_clients_sample": []
+    },
+    {
+      "country": "Netherlands",
+      "producers_count": 1,
+      "producer_names": [
+        "Ti\u00ebsto"
+      ],
+      "total_artists_produced": 1,
+      "foreign_produced_count": 0,
+      "export_leverage_ratio": 0.0,
+      "archetype": "Domestic Market Specialist",
+      "foreign_clients_sample": []
+    },
+    {
+      "country": "Japan",
+      "producers_count": 3,
+      "producer_names": [
+        "Ryuichi Sakamoto",
+        "Joe Hisaishi",
+        "Nujabes (Jun Seba)"
+      ],
+      "total_artists_produced": 4,
+      "foreign_produced_count": 0,
+      "export_leverage_ratio": 0.0,
+      "archetype": "Domestic Market Specialist",
+      "foreign_clients_sample": []
+    },
+    {
+      "country": "South Korea",
+      "producers_count": 3,
+      "producer_names": [
+        "Bang Si-hyuk (Hitman Bang)",
+        "Teddy Park",
+        "Pdogg"
+      ],
+      "total_artists_produced": 2,
+      "foreign_produced_count": 0,
+      "export_leverage_ratio": 0.0,
+      "archetype": "Domestic Market Specialist",
+      "foreign_clients_sample": []
+    },
+    {
+      "country": "India",
+      "producers_count": 1,
+      "producer_names": [
+        "A.R. Rahman"
+      ],
+      "total_artists_produced": 1,
+      "foreign_produced_count": 0,
+      "export_leverage_ratio": 0.0,
+      "archetype": "Domestic Market Specialist",
+      "foreign_clients_sample": []
+    },
+    {
+      "country": "Jamaica",
+      "producers_count": 2,
+      "producer_names": [
+        "King Tubby",
+        "Lee 'Scratch' Perry"
+      ],
+      "total_artists_produced": 3,
+      "foreign_produced_count": 0,
+      "export_leverage_ratio": 0.0,
+      "archetype": "Domestic Market Specialist",
+      "foreign_clients_sample": []
+    },
+    {
+      "country": "Nigeria",
+      "producers_count": 2,
+      "producer_names": [
+        "Don Jazzy",
+        "Sarz"
+      ],
+      "total_artists_produced": 2,
+      "foreign_produced_count": 0,
+      "export_leverage_ratio": 0.0,
+      "archetype": "Domestic Market Specialist",
+      "foreign_clients_sample": []
+    },
+    {
+      "country": "South Africa",
+      "producers_count": 1,
+      "producer_names": [
+        "Black Coffee"
+      ],
+      "total_artists_produced": 1,
+      "foreign_produced_count": 0,
+      "export_leverage_ratio": 0.0,
+      "archetype": "Domestic Market Specialist",
+      "foreign_clients_sample": []
+    },
+    {
+      "country": "Puerto Rico",
+      "producers_count": 1,
+      "producer_names": [
+        "Tainy (Marco Mas\u00eds)"
+      ],
+      "total_artists_produced": 1,
+      "foreign_produced_count": 0,
+      "export_leverage_ratio": 0.0,
+      "archetype": "Domestic Market Specialist",
+      "foreign_clients_sample": []
+    },
+    {
+      "country": "Colombia",
+      "producers_count": 1,
+      "producer_names": [
+        "Ovy On The Drums"
+      ],
+      "total_artists_produced": 2,
+      "foreign_produced_count": 0,
+      "export_leverage_ratio": 0.0,
+      "archetype": "Domestic Market Specialist",
+      "foreign_clients_sample": []
+    },
+    {
+      "country": "Canada",
+      "producers_count": 2,
+      "producer_names": [
+        "Noah '40' Shebib",
+        "KAYTRANADA"
+      ],
+      "total_artists_produced": 2,
+      "foreign_produced_count": 0,
+      "export_leverage_ratio": 0.0,
+      "archetype": "Domestic Market Specialist",
+      "foreign_clients_sample": []
+    },
+    {
+      "country": "Australia",
+      "producers_count": 1,
+      "producer_names": [
+        "Kevin Parker (Tame Impala)"
+      ],
+      "total_artists_produced": 1,
+      "foreign_produced_count": 0,
+      "export_leverage_ratio": 0.0,
+      "archetype": "Domestic Market Specialist",
+      "foreign_clients_sample": []
+    }
+  ],
+  "power_brokers": {
+    "by_pagerank": [
+      {
+        "id": "genre_electro_pop",
+        "name": "Electro Pop",
+        "entity_type": "track",
+        "score": 0.0189,
+        "degree": 69
+      },
+      {
+        "id": "city_la",
+        "name": "Los Angeles",
+        "entity_type": "production_house",
+        "score": 0.0131,
+        "degree": 34
+      },
+      {
+        "id": "city_london",
+        "name": "London",
+        "entity_type": "production_house",
+        "score": 0.0128,
+        "degree": 35
+      },
+      {
+        "id": "city_berlin",
+        "name": "Berlin",
+        "entity_type": "production_house",
+        "score": 0.0118,
+        "degree": 28
+      },
+      {
+        "id": "ag_wme",
+        "name": "WME (William Morris Endeavor)",
+        "entity_type": "agency",
+        "score": 0.0104,
+        "degree": 37
+      },
+      {
+        "id": "city_seoul",
+        "name": "Seoul",
+        "entity_type": "production_house",
+        "score": 0.0082,
+        "degree": 18
+      },
+      {
+        "id": "city_nyc",
+        "name": "New York City",
+        "entity_type": "production_house",
+        "score": 0.0077,
+        "degree": 20
+      },
+      {
+        "id": "city_lagos",
+        "name": "Lagos",
+        "entity_type": "production_house",
+        "score": 0.0072,
+        "degree": 18
+      },
+      {
+        "id": "lbl_umg_parent",
+        "name": "Universal Music Group (UMG)",
+        "entity_type": "record_label",
+        "score": 0.007,
+        "degree": 17
+      },
+      {
+        "id": "city_tokyo",
+        "name": "Tokyo",
+        "entity_type": "production_house",
+        "score": 0.007,
+        "degree": 16
+      },
+      {
+        "id": "city_kingston",
+        "name": "Kingston",
+        "entity_type": "production_house",
+        "score": 0.0068,
+        "degree": 15
+      },
+      {
+        "id": "city_paris",
+        "name": "Paris",
+        "entity_type": "production_house",
+        "score": 0.0068,
+        "degree": 17
+      },
+      {
+        "id": "genre_techno",
+        "name": "Techno",
+        "entity_type": "track",
+        "score": 0.0067,
+        "degree": 23
+      },
+      {
+        "id": "mb_art_51d2f351-0c7b-45fd-99fd-330b33b05964",
+        "name": "Elite Electronic",
+        "entity_type": "artist",
+        "score": 0.0064,
+        "degree": 17
+      },
+      {
+        "id": "city_stockholm",
+        "name": "Stockholm",
+        "entity_type": "production_house",
+        "score": 0.0063,
+        "degree": 15
+      }
+    ],
+    "by_betweenness": [
+      {
+        "id": "city_london",
+        "name": "London",
+        "entity_type": "production_house",
+        "score": 0.2343,
+        "degree": 35
+      },
+      {
+        "id": "city_la",
+        "name": "Los Angeles",
+        "entity_type": "production_house",
+        "score": 0.2175,
+        "degree": 34
+      },
+      {
+        "id": "genre_electro_pop",
+        "name": "Electro Pop",
+        "entity_type": "track",
+        "score": 0.1311,
+        "degree": 69
+      },
+      {
+        "id": "city_berlin",
+        "name": "Berlin",
+        "entity_type": "production_house",
+        "score": 0.1185,
+        "degree": 28
+      },
+      {
+        "id": "city_nyc",
+        "name": "New York City",
+        "entity_type": "production_house",
+        "score": 0.0617,
+        "degree": 20
+      },
+      {
+        "id": "city_lagos",
+        "name": "Lagos",
+        "entity_type": "production_house",
+        "score": 0.058,
+        "degree": 18
+      },
+      {
+        "id": "city_kingston",
+        "name": "Kingston",
+        "entity_type": "production_house",
+        "score": 0.0538,
+        "degree": 15
+      },
+      {
+        "id": "ag_wme",
+        "name": "WME (William Morris Endeavor)",
+        "entity_type": "agency",
+        "score": 0.0528,
+        "degree": 37
+      },
+      {
+        "id": "city_tokyo",
+        "name": "Tokyo",
+        "entity_type": "production_house",
+        "score": 0.0489,
+        "degree": 16
+      },
+      {
+        "id": "city_seoul",
+        "name": "Seoul",
+        "entity_type": "production_house",
+        "score": 0.0479,
+        "degree": 18
+      },
+      {
+        "id": "city_paris",
+        "name": "Paris",
+        "entity_type": "production_house",
+        "score": 0.0433,
+        "degree": 17
+      },
+      {
+        "id": "genre_techno",
+        "name": "Techno",
+        "entity_type": "track",
+        "score": 0.0421,
+        "degree": 23
+      },
+      {
+        "id": "city_stockholm",
+        "name": "Stockholm",
+        "entity_type": "production_house",
+        "score": 0.0368,
+        "degree": 15
+      },
+      {
+        "id": "state_uk_england",
+        "name": "England",
+        "entity_type": "production_house",
+        "score": 0.0361,
+        "degree": 4
+      },
+      {
+        "id": "art_kraftwerk",
+        "name": "Kraftwerk",
+        "entity_type": "artist",
+        "score": 0.0315,
+        "degree": 13
+      }
+    ]
+  },
+  "creative_ecosystems": [
+    {
+      "community_id": 15,
+      "size": 81,
+      "top_genres": [
+        "Hip-Hop",
+        "R&B",
+        "Trap"
+      ],
+      "entity_composition": {
+        "record_label": 23,
+        "producer": 13,
+        "production_house": 15,
+        "artist": 16,
+        "studio": 6,
+        "track": 4,
+        "agency": 4
+      },
+      "prominent_members": [
+        "Stones Throw Records",
+        "pgLang",
+        "Def Jam Recordings",
+        "KAYTRANADA",
+        "Yongsan (HYBE HQ Complex)",
+        "New York City"
+      ],
+      "member_ids": [
+        "lbl_stones_throw",
+        "lbl_pglang",
+        "lbl_def_jam",
+        "prd_kaytranada_prd",
+        "distr_yongsan",
+        "city_nyc",
+        "distr_bronx",
+        "prd_hitman",
+        "art_nujabes",
+        "std_sunset",
+        "tax_hiphop",
+        "art_21savage",
+        "tax_toronto_sound",
+        "std_metalworks",
+        "art_bts",
+        "prd_metro",
+        "lbl_topdawg",
+        "lbl_rocnation_lbl",
+        "distr_williamsburg",
+        "distr_greenwich",
+        "lbl_republic",
+        "lbl_umg_parent",
+        "distr_hongdae",
+        "distr_gangnam",
+        "art_flyinglotus",
+        "distr_buckhead_atl",
+        "lbl_ybnl",
+        "lbl_xo",
+        "city_seoul",
+        "lbl_motown",
+        "ag_uta",
+        "ag_tm_talent",
+        "art_karolg",
+        "std_electric",
+        "art_divine",
+        "std_capitol",
+        "prd_40",
+        "art_sza",
+        "rights_ascap",
+        "tax_westcoast_gfunk",
+        "lbl_hybe_corp",
+        "std_conway",
+        "prd_drdre",
+        "lbl_brainfeeder",
+        "prd_nujabes_prd",
+        "lbl_modular",
+        "lbl_rimas",
+        "lbl_polydor",
+        "lbl_sm_ent",
+        "prd_rick",
+        "art_eminem",
+        "art_future",
+        "geo_kr",
+        "state_kr_seoul",
+        "lbl_qc",
+        "distr_compton",
+        "lbl_epic",
+        "art_kaytranada",
+        "prd_tainy",
+        "lbl_warp",
+        "prd_teddypark",
+        "prd_finneas",
+        "ag_rocnation",
+        "city_la",
+        "art_travisscott",
+        "art_kanye",
+        "prd_mikedean",
+        "art_badbunny",
+        "city_atlanta",
+        "prd_pdogg",
+        "distr_silverlake",
+        "art_drake",
+        "lbl_gully_gang",
+        "tax_atlanta_trap",
+        "art_blackpink",
+        "lbl_capitol",
+        "prd_jack",
+        "lbl_yg_ent",
+        "art_kendrick",
+        "std_hybe_std",
+        "lbl_stockholm_rec"
+      ]
+    },
+    {
+      "community_id": 17,
+      "size": 56,
+      "top_genres": [
+        "Pop",
+        "Grunge",
+        "Indie Rock"
+      ],
+      "entity_composition": {
+        "record_label": 6,
+        "artist": 30,
+        "production_house": 3,
+        "agency": 7,
+        "studio": 6,
+        "producer": 3,
+        "track": 1
+      },
+      "prominent_members": [
+        "Sub Pop Records",
+        "Electroni\u010d",
+        "DistroKid",
+        "SXSW Music Showcase (Austin)",
+        "Nas Nuvens Studio",
+        "Anitta"
+      ],
+      "member_ids": [
+        "lbl_sub_pop",
+        "mb_art_b4ed32d5-9d19-4a28-9746-4e8286554d58",
+        "dist_distrokid",
+        "fest_sxsw",
+        "std_nasnuvens",
+        "art_anitta",
+        "lbl_interscope",
+        "ag_redlight",
+        "art_billie",
+        "art_massiveattack",
+        "lbl_jyp_ent",
+        "art_seanpaul",
+        "rights_prs",
+        "art_calvin",
+        "city_seattle",
+        "art_caetano",
+        "art_straykids",
+        "std_soulistic_std",
+        "art_tyla",
+        "art_foo",
+        "art_taylor",
+        "art_jobim",
+        "mb_art_d4aca3ad-25ca-4449-b0b1-db6198d40ae9",
+        "mb_lbl_50767",
+        "ag_kakaom",
+        "art_bonobo",
+        "std_elalto",
+        "art_jbalvin",
+        "distr_caphill_sea",
+        "art_harry",
+        "art_seventeen",
+        "art_pesopluma",
+        "art_scorpions",
+        "ag_qprime",
+        "art_air_band",
+        "mb_art_54eb8ba6-6e0d-4652-91f4-7a4ceeb0c006",
+        "art_babymetal",
+        "prd_butch",
+        "art_beatles",
+        "art_emg_london_soul",
+        "art_nirvana",
+        "mb_art_b1b6fa89-1343-4340-b12f-a7e96ebce3eb",
+        "std_abbey",
+        "std_soundcity",
+        "prd_ovydrums",
+        "lbl_secretly",
+        "art_davidguetta",
+        "genre_electro_pop",
+        "art_zimmer_art",
+        "ag_threesixzero",
+        "std_criteria",
+        "art_redhot",
+        "ag_sbprojects",
+        "mb_lbl_35976",
+        "prd_zimmer",
+        "art_phoebe"
+      ]
+    },
+    {
+      "community_id": 28,
+      "size": 40,
+      "top_genres": [],
+      "entity_composition": {
+        "track": 14,
+        "production_house": 24,
+        "studio": 2
+      },
+      "prominent_members": [
+        "Post-Punk & New Wave",
+        "House Music",
+        "West End (Post-Rock & Indie Hub)",
+        "St. Pauls (Trip-Hop & Dub System Sound)",
+        "Trance Music",
+        "England"
+      ],
+      "member_ids": [
+        "tax_post_punk",
+        "tax_house",
+        "distr_westend_glasgow",
+        "distr_stpauls_bristol",
+        "tax_trance",
+        "state_uk_england",
+        "city_detroit",
+        "geo_us",
+        "tax_electronic",
+        "tax_deep_house",
+        "distr_soho_london",
+        "tax_french_touch",
+        "tax_idm",
+        "state_us_mi",
+        "tax_grunge",
+        "state_us_wa",
+        "distr_nq_mcr",
+        "state_us_ca",
+        "std_oceanway",
+        "geo_uk",
+        "state_us_ga",
+        "city_glasgow",
+        "state_us_il",
+        "state_us_ny",
+        "state_uk_scotland",
+        "distr_detroit_techno",
+        "std_blackbird",
+        "city_manchester",
+        "state_us_tn",
+        "distr_musicrow",
+        "city_nashville",
+        "tax_britpop",
+        "tax_rock_alt",
+        "city_bristol",
+        "tax_dnb",
+        "tax_krautrock_synth",
+        "city_chicago",
+        "tax_amapiano",
+        "tax_trip_hop",
+        "distr_southside_chi"
+      ]
+    },
+    {
+      "community_id": 26,
+      "size": 35,
+      "top_genres": [
+        "Industrial",
+        "Melodic Techno",
+        "Techno"
+      ],
+      "entity_composition": {
+        "artist": 8,
+        "record_label": 5,
+        "production_house": 5,
+        "track": 7,
+        "agency": 3,
+        "producer": 3,
+        "studio": 4
+      },
+      "prominent_members": [
+        "Rammstein",
+        "Electronic Eye Records",
+        "Berlin-Mitte (Historic & Avant-Garde District)",
+        "Hollywood Orchestral Film Scoring",
+        "Innervisions",
+        "Melodic & Peak-Time Techno"
+      ],
+      "member_ids": [
+        "art_rammstein",
+        "mb_lbl_275",
+        "distr_mitte",
+        "tax_cinematic_hollywood",
+        "lbl_innervisions",
+        "tax_melodic_techno",
+        "tax_techno",
+        "gate_colors",
+        "prd_boysnoize",
+        "prd_stephanbodzin",
+        "lbl_ostgut",
+        "tax_industrial_techno",
+        "distr_treptow",
+        "distr_hollywood",
+        "tax_post_minimalism",
+        "distr_fhain_xberg",
+        "lbl_tresor",
+        "art_emg_berlin_tech",
+        "lbl_boysnoize",
+        "std_emilberliner",
+        "genre_techno",
+        "art_modeselektor",
+        "prd_nilsfrahm",
+        "tax_classical_cinema",
+        "std_teldex",
+        "city_berlin",
+        "rights_gema",
+        "std_funkhaus",
+        "art_stephanbodzin_art",
+        "std_hansa",
+        "gate_boilerroom",
+        "mb_art_21875c2b-84fa-474e-bcfa-9611982b19d5",
+        "art_depechemode",
+        "art_gesaffelstein",
+        "art_borisbrejcha"
+      ]
+    },
+    {
+      "community_id": 18,
+      "size": 34,
+      "top_genres": [
+        "Electronic",
+        "Ambient",
+        "Art Rock"
+      ],
+      "entity_composition": {
+        "artist": 11,
+        "record_label": 10,
+        "agency": 2,
+        "studio": 4,
+        "producer": 3,
+        "production_house": 3,
+        "track": 1
+      },
+      "prominent_members": [
+        "Bj\u00f6rk",
+        "Virgin EMI Records",
+        "Beggars Group",
+        "Primary Talent International",
+        "RAK Studios",
+        "Lukas M. (Emerging Ambient Pianist)"
+      ],
+      "member_ids": [
+        "art_bjork",
+        "lbl_virgin_emi",
+        "lbl_beggars",
+        "ag_primary",
+        "std_rak",
+        "art_emg_hh_classical",
+        "prd_nigel",
+        "art_aphex",
+        "lbl_4ad",
+        "city_london",
+        "lbl_rough_trade",
+        "lbl_erasedtapes",
+        "prd_georgemartin",
+        "art_sigurros",
+        "prd_brian",
+        "fest_copop",
+        "genre_ambient_downtempo",
+        "art_sakamoto",
+        "art_maxrichter",
+        "lbl_matador",
+        "std_greenhouse",
+        "art_tangerinedream",
+        "art_fourtet",
+        "art_beethoven_art",
+        "lbl_xl_rec",
+        "lbl_ninja_tune",
+        "distr_hackney",
+        "distr_camden",
+        "lbl_smekkleysa",
+        "std_metropolis",
+        "std_air",
+        "lbl_dg",
+        "art_radiohead",
+        "art_nilsfrahm_art"
+      ]
+    },
+    {
+      "community_id": 30,
+      "size": 34,
+      "top_genres": [
+        "Reggae",
+        "Dub",
+        "Cinematic"
+      ],
+      "entity_composition": {
+        "record_label": 7,
+        "production_house": 6,
+        "artist": 13,
+        "producer": 4,
+        "agency": 1,
+        "studio": 3
+      },
+      "prominent_members": [
+        "Tuff Gong Records",
+        "Kingston Parish",
+        "Waterhouse (King Tubby Dub Studio)",
+        "King Tubby",
+        "Island Records",
+        "A.R. Rahman"
+      ],
+      "member_ids": [
+        "lbl_tuffgong_lbl",
+        "state_jm_kingston",
+        "distr_waterhouse",
+        "art_kingtubby_art",
+        "lbl_island",
+        "prd_arrahman",
+        "art_davidbowie",
+        "art_emg_la_bedpop",
+        "geo_jm",
+        "art_arrahman_art",
+        "art_hisaishi",
+        "city_kingston",
+        "lbl_yrf_music",
+        "mb_art_51d2f351-0c7b-45fd-99fd-330b33b05964",
+        "art_rosalia",
+        "art_bach_art",
+        "distr_trenchtown",
+        "art_arcadefire",
+        "gate_tinydesk",
+        "dist_amuse",
+        "lbl_trojan",
+        "prd_leeperry",
+        "std_tuffgong",
+        "prd_pharrell",
+        "prd_kingtubby",
+        "art_bobmarley",
+        "std_panchathan",
+        "art_felakuti",
+        "lbl_bmg_parent",
+        "mb_lbl_63165",
+        "art_newjeans",
+        "art_leeperry_art",
+        "std_blackark",
+        "lbl_studio_one"
+      ]
+    },
+    {
+      "community_id": 9,
+      "size": 33,
+      "top_genres": [
+        "EDM",
+        "Trance",
+        "Electronic"
+      ],
+      "entity_composition": {
+        "studio": 1,
+        "agency": 4,
+        "record_label": 9,
+        "artist": 11,
+        "producer": 3,
+        "track": 3,
+        "production_house": 2
+      },
+      "prominent_members": [
+        "Wisseloord Studios",
+        "BBC Introducing",
+        "WME (William Morris Endeavor)",
+        "Parlophone Records",
+        "Swedish House Mafia",
+        "Triple J Unearthed"
+      ],
+      "member_ids": [
+        "std_wisseloord",
+        "gate_bbc_intro",
+        "ag_wme",
+        "lbl_parlophone",
+        "art_swedishhouse",
+        "gate_triplej",
+        "fest_greatescape",
+        "art_tiesto",
+        "lbl_futureclassic",
+        "lbl_spinnin",
+        "lbl_atlantic",
+        "art_skrillex_art",
+        "art_emg_melb_beats",
+        "prd_paulvandyk",
+        "lbl_armada",
+        "art_flume",
+        "art_martingarrix",
+        "lbl_wmg_parent",
+        "art_armin",
+        "art_paulvandyk_art",
+        "genre_drum_and_bass",
+        "lbl_mad_decent",
+        "art_bicep",
+        "genre_dubstep",
+        "art_deadmau5",
+        "genre_trance",
+        "prd_skrillex",
+        "lbl_ovo",
+        "lbl_ghostly",
+        "dist_bandcamp",
+        "art_alok",
+        "prd_tiesto_prd",
+        "dist_soundcloud"
+      ]
+    },
+    {
+      "community_id": 16,
+      "size": 29,
+      "top_genres": [
+        "Afropop",
+        "Pop",
+        "Afrobeats"
+      ],
+      "entity_composition": {
+        "record_label": 8,
+        "artist": 9,
+        "producer": 5,
+        "production_house": 4,
+        "studio": 3
+      },
+      "prominent_members": [
+        "Mavin Records",
+        "Diljit Dosanjh",
+        "Burna Boy",
+        "Starboy Entertainment",
+        "Adele",
+        "Greg Kurstin"
+      ],
+      "member_ids": [
+        "lbl_mavin",
+        "art_diljit",
+        "art_burnaboy",
+        "lbl_starboy",
+        "art_adele",
+        "prd_greg",
+        "lbl_columbia",
+        "geo_ng",
+        "prd_timbaland",
+        "lbl_somlivre",
+        "lbl_sme_parent",
+        "prd_kevinparker",
+        "std_yashraj",
+        "std_studios301",
+        "art_queen",
+        "art_tameimpala",
+        "art_davido",
+        "lbl_spaceship",
+        "lbl_sony_japan",
+        "lbl_rca",
+        "std_mavin_std",
+        "art_tems",
+        "city_lagos",
+        "art_wizkid",
+        "art_rema",
+        "prd_sarz",
+        "distr_ikeja",
+        "state_ng_lagos",
+        "prd_donjazzy"
+      ]
+    },
+    {
+      "community_id": 19,
+      "size": 29,
+      "top_genres": [
+        "Deep House",
+        "Pop",
+        "Disco"
+      ],
+      "entity_composition": {
+        "agency": 3,
+        "producer": 3,
+        "artist": 10,
+        "record_label": 4,
+        "production_house": 5,
+        "track": 1,
+        "studio": 3
+      },
+      "prominent_members": [
+        "Cercle",
+        "Thomas Bangalter (Daft Punk)",
+        "Dua Lipa",
+        "Because Music",
+        "\u00cele-de-France",
+        "Beyonc\u00e9"
+      ],
+      "member_ids": [
+        "gate_cercle",
+        "prd_daft_thomas",
+        "art_dua",
+        "lbl_because",
+        "state_fr_idf",
+        "art_beyonce",
+        "genre_house",
+        "lbl_warner_rec",
+        "art_rufus",
+        "art_robinschulz",
+        "art_justice",
+        "std_motorbass",
+        "fest_esns",
+        "distr_pigalle",
+        "art_abba",
+        "ag_caa",
+        "art_avicii",
+        "art_phoenix",
+        "distr_oberkampf",
+        "prd_blackcoffee_prd",
+        "geo_fr",
+        "std_grandearmee",
+        "lbl_soulistic",
+        "art_daftpunk",
+        "prd_pedrowinter",
+        "city_paris",
+        "lbl_edbanger",
+        "art_blackcoffee",
+        "std_maratone"
+      ]
+    },
+    {
+      "community_id": 27,
+      "size": 29,
+      "top_genres": [
+        "Indie Rock",
+        "Electronic",
+        "Krautrock"
+      ],
+      "entity_composition": {
+        "record_label": 2,
+        "agency": 2,
+        "production_house": 18,
+        "artist": 5,
+        "studio": 1,
+        "producer": 1
+      },
+      "prominent_members": [
+        "Kompakt Records",
+        "Wasserman Music",
+        "Glockenbachviertel (Disco & Club Hub)",
+        "Bavaria (Bayern)",
+        "Sachsenhausen / Trance Sound Hub",
+        "D\u00fcsseldorf"
+      ],
+      "member_ids": [
+        "lbl_kompakt",
+        "ag_wasserman",
+        "distr_glockenbach",
+        "state_de_by",
+        "distr_sachsenhausen",
+        "city_dusseldorf",
+        "state_de_be",
+        "art_clairo",
+        "art_robyn",
+        "city_munich",
+        "distr_belgisches",
+        "distr_stpauli",
+        "art_arctic",
+        "geo_de",
+        "state_de_he",
+        "state_de_hh",
+        "distr_schanze",
+        "city_cologne",
+        "distr_duss_altstadt",
+        "std_klingklang",
+        "distr_ehrenfeld",
+        "art_kraftwerk",
+        "prd_connyplank",
+        "state_de_nrw",
+        "lbl_domino",
+        "city_frankfurt",
+        "fest_reeperbahn",
+        "art_tatsuro",
+        "city_hamburg"
+      ]
+    },
+    {
+      "community_id": 29,
+      "size": 24,
+      "top_genres": [
+        "Electronic",
+        "Ambient",
+        "Classical"
+      ],
+      "entity_composition": {
+        "track": 7,
+        "production_house": 7,
+        "producer": 2,
+        "studio": 2,
+        "artist": 3,
+        "record_label": 3
+      },
+      "prominent_members": [
+        "Pop & Urban Music",
+        "Nordic Pop Architecture",
+        "Lekki & Victoria Island (Afrobeats Creative Hub)",
+        "Tokyo",
+        "Latin Trap & Reggaeton",
+        "Ryuichi Sakamoto"
+      ],
+      "member_ids": [
+        "tax_pop_urban",
+        "tax_nordic_pop",
+        "distr_lekki",
+        "city_tokyo",
+        "tax_latin_trap",
+        "prd_sakamoto_prd",
+        "std_sonytokyo",
+        "tax_afrobeats",
+        "art_ymo",
+        "tax_reggae_dub",
+        "state_jp_tokyo",
+        "mb_art_fa43260d-bcfe-46ba-a8a0-69107538e46c",
+        "lbl_avex",
+        "mb_art_3cdb360e-d0a2-459f-92f6-f0f28e62127d",
+        "distr_shinjuku",
+        "tax_kpop",
+        "mb_lbl_13147",
+        "tax_jpop",
+        "std_ghibli",
+        "distr_shibuya",
+        "lbl_victor_jp",
+        "distr_shimokita",
+        "geo_jp",
+        "prd_hisaishi_prd"
+      ]
+    },
+    {
+      "community_id": 31,
+      "size": 16,
+      "top_genres": [
+        "Pop",
+        "Dance-Pop",
+        "R&B"
+      ],
+      "entity_composition": {
+        "production_house": 5,
+        "record_label": 4,
+        "producer": 3,
+        "artist": 4
+      },
+      "prominent_members": [
+        "Sweden",
+        "TEN Music Group",
+        "Electronic Warbear Records",
+        "Ludwig G\u00f6ransson",
+        "Stockholm County",
+        "S\u00f6dermalm (Pop Hitmakers & Indie Studios)"
+      ],
+      "member_ids": [
+        "geo_se",
+        "lbl_ten_music",
+        "mb_lbl_28210",
+        "prd_goransson",
+        "state_se_sthlm",
+        "distr_sodermalm",
+        "mb_art_fdcbf873-4a8d-4c62-9352-327451b6a910",
+        "mb_lbl_89354",
+        "city_stockholm",
+        "prd_max",
+        "art_zaralarsson",
+        "prd_shellback",
+        "art_weeknd",
+        "mb_art_000e193b-3adb-4d56-828b-0ffb3f2f1da1",
+        "lbl_mxm_prod",
+        "distr_ostermalm"
+      ]
+    }
+  ],
+  "label_mobility": {
+    "total_artists_analyzed": 120,
+    "migration_rate_percentage": 0.0,
+    "loyal_count": 112,
+    "migrated_count": 0,
+    "migrated_artists": [],
+    "loyal_artists": [
+      {
+        "artist_id": "art_taylor",
+        "artist_name": "Taylor Swift",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Republic Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_billie",
+        "artist_name": "Billie Eilish",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Interscope Geffen A&M"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_kendrick",
+        "artist_name": "Kendrick Lamar",
+        "total_labels_count": 1,
+        "current_labels": [
+          "pgLang"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_kanye",
+        "artist_name": "Ye (Kanye West)",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Def Jam Recordings"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_eminem",
+        "artist_name": "Eminem",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Interscope Geffen A&M"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_travisscott",
+        "artist_name": "Travis Scott",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Epic Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_future",
+        "artist_name": "Future",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Epic Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_21savage",
+        "artist_name": "21 Savage",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Epic Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_beyonce",
+        "artist_name": "Beyonc\u00e9",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Columbia Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_sza",
+        "artist_name": "SZA",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Top Dawg Entertainment (TDE)"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_nirvana",
+        "artist_name": "Nirvana",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Sub Pop Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_foo",
+        "artist_name": "Foo Fighters",
+        "total_labels_count": 1,
+        "current_labels": [
+          "RCA Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_redhot",
+        "artist_name": "Red Hot Chili Peppers",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Warner Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_phoebe",
+        "artist_name": "Phoebe Bridgers",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Secretly Canadian"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_clairo",
+        "artist_name": "Clairo",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Republic Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_skrillex_art",
+        "artist_name": "Skrillex",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Atlantic Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_flyinglotus",
+        "artist_name": "Flying Lotus",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Warp Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_beatles",
+        "artist_name": "The Beatles",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Parlophone Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_queen",
+        "artist_name": "Queen",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Virgin EMI Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_radiohead",
+        "artist_name": "Radiohead",
+        "total_labels_count": 1,
+        "current_labels": [
+          "XL Recordings"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_adele",
+        "artist_name": "Adele",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Columbia Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_dua",
+        "artist_name": "Dua Lipa",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Warner Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_harry",
+        "artist_name": "Harry Styles",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Columbia Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_arctic",
+        "artist_name": "Arctic Monkeys",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Domino Recording Company"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_aphex",
+        "artist_name": "Aphex Twin",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Warp Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_fourtet",
+        "artist_name": "Four Tet",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Ninja Tune"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_bicep",
+        "artist_name": "BICEP",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Ninja Tune"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_bonobo",
+        "artist_name": "Bonobo",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Ninja Tune"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_calvin",
+        "artist_name": "Calvin Harris",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Columbia Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_davidbowie",
+        "artist_name": "David Bowie",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Parlophone Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_depechemode",
+        "artist_name": "Depeche Mode",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Columbia Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_massiveattack",
+        "artist_name": "Massive Attack",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Virgin EMI Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_kraftwerk",
+        "artist_name": "Kraftwerk",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Parlophone Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_rammstein",
+        "artist_name": "Rammstein",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Polydor Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_scorpions",
+        "artist_name": "Scorpions",
+        "total_labels_count": 1,
+        "current_labels": [
+          "BMG Rights Management (Bertelsmann)"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_nilsfrahm_art",
+        "artist_name": "Nils Frahm",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Erased Tapes"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_modeselektor",
+        "artist_name": "Modeselektor / Moderat",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Ninja Tune"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_paulvandyk_art",
+        "artist_name": "Paul van Dyk",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Spinnin' Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_borisbrejcha",
+        "artist_name": "Boris Brejcha",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Spinnin' Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_robinschulz",
+        "artist_name": "Robin Schulz",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Warner Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_stephanbodzin_art",
+        "artist_name": "Stephan Bodzin",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Kompakt Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_tangerinedream",
+        "artist_name": "Tangerine Dream",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Virgin EMI Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_zimmer_art",
+        "artist_name": "Hans Zimmer",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Deutsche Grammophon"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_maxrichter",
+        "artist_name": "Max Richter",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Deutsche Grammophon"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_beethoven_art",
+        "artist_name": "Ludwig van Beethoven",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Deutsche Grammophon"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_bach_art",
+        "artist_name": "Johann Sebastian Bach",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Deutsche Grammophon"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_tiesto",
+        "artist_name": "Ti\u00ebsto",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Atlantic Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_armin",
+        "artist_name": "Armin van Buuren",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Armada Music"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_martingarrix",
+        "artist_name": "Martin Garrix",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Spinnin' Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_daftpunk",
+        "artist_name": "Daft Punk",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Columbia Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_justice",
+        "artist_name": "Justice",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Ed Banger Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_phoenix",
+        "artist_name": "Phoenix",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Because Music"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_air_band",
+        "artist_name": "Air",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Virgin EMI Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_davidguetta",
+        "artist_name": "David Guetta",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Warner Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_gesaffelstein",
+        "artist_name": "Gesaffelstein (Mike L\u00e9vy)",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Columbia Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_abba",
+        "artist_name": "ABBA",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Stockholm Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_avicii",
+        "artist_name": "Avicii (Tim Bergling)",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Interscope Geffen A&M"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_swedishhouse",
+        "artist_name": "Swedish House Mafia",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Republic Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_robyn",
+        "artist_name": "Robyn",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Island Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_zaralarsson",
+        "artist_name": "Zara Larsson",
+        "total_labels_count": 1,
+        "current_labels": [
+          "TEN Music Group"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_bjork",
+        "artist_name": "Bj\u00f6rk",
+        "total_labels_count": 1,
+        "current_labels": [
+          "4AD"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_sigurros",
+        "artist_name": "Sigur R\u00f3s",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Bad Taste Records (Smekkleysa)"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_ymo",
+        "artist_name": "Yellow Magic Orchestra (YMO)",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Victor Entertainment"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_sakamoto",
+        "artist_name": "Ryuichi Sakamoto",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Virgin EMI Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_hisaishi",
+        "artist_name": "Joe Hisaishi",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Deutsche Grammophon"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_nujabes",
+        "artist_name": "Nujabes",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Victor Entertainment"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_babymetal",
+        "artist_name": "BABYMETAL",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Sony Music Entertainment Japan (SMEJ)"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_tatsuro",
+        "artist_name": "Tatsuro Yamashita",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Warner Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_bts",
+        "artist_name": "BTS",
+        "total_labels_count": 1,
+        "current_labels": [
+          "HYBE Labels (Big Hit / ADOR / Pledis)"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_blackpink",
+        "artist_name": "BLACKPINK",
+        "total_labels_count": 1,
+        "current_labels": [
+          "YG Entertainment"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_newjeans",
+        "artist_name": "NewJeans",
+        "total_labels_count": 1,
+        "current_labels": [
+          "HYBE Labels (Big Hit / ADOR / Pledis)"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_straykids",
+        "artist_name": "Stray Kids",
+        "total_labels_count": 1,
+        "current_labels": [
+          "JYP Entertainment"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_seventeen",
+        "artist_name": "SEVENTEEN",
+        "total_labels_count": 1,
+        "current_labels": [
+          "HYBE Labels (Big Hit / ADOR / Pledis)"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_arrahman_art",
+        "artist_name": "A.R. Rahman",
+        "total_labels_count": 1,
+        "current_labels": [
+          "YRF Music (Yash Raj Films)"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_diljit",
+        "artist_name": "Diljit Dosanjh",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Warner Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_divine",
+        "artist_name": "DIVINE",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Gully Gang Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_bobmarley",
+        "artist_name": "Bob Marley & The Wailers",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Island Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_kingtubby_art",
+        "artist_name": "King Tubby",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Trojan Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_leeperry_art",
+        "artist_name": "Lee 'Scratch' Perry",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Island Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_seanpaul",
+        "artist_name": "Sean Paul",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Atlantic Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_felakuti",
+        "artist_name": "Fela Kuti",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Island Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_burnaboy",
+        "artist_name": "Burna Boy",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Spaceship Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_wizkid",
+        "artist_name": "Wizkid",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Starboy Entertainment"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_davido",
+        "artist_name": "Davido",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Columbia Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_tems",
+        "artist_name": "Tems",
+        "total_labels_count": 1,
+        "current_labels": [
+          "RCA Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_rema",
+        "artist_name": "Rema",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Mavin Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_blackcoffee",
+        "artist_name": "Black Coffee",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Soulistic Music"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_tyla",
+        "artist_name": "Tyla",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Epic Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_jobim",
+        "artist_name": "Ant\u00f4nio Carlos Jobim",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Som Livre"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_caetano",
+        "artist_name": "Caetano Veloso",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Som Livre"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_anitta",
+        "artist_name": "Anitta",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Republic Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_alok",
+        "artist_name": "Alok",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Spinnin' Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_badbunny",
+        "artist_name": "Bad Bunny",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Rimas Entertainment"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_rosalia",
+        "artist_name": "Rosal\u00eda",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Columbia Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_jbalvin",
+        "artist_name": "J Balvin",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Republic Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_karolg",
+        "artist_name": "Karol G",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Interscope Geffen A&M"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_pesopluma",
+        "artist_name": "Peso Pluma",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Interscope Geffen A&M"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_tameimpala",
+        "artist_name": "Tame Impala",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Modular Recordings"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_flume",
+        "artist_name": "Flume",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Future Classic"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_rufus",
+        "artist_name": "R\u00fcf\u00fcs Du Sol",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Warner Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_drake",
+        "artist_name": "Drake",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Republic Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_weeknd",
+        "artist_name": "The Weeknd",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Republic Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_deadmau5",
+        "artist_name": "deadmau5",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Virgin EMI Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_kaytranada",
+        "artist_name": "KAYTRANADA",
+        "total_labels_count": 1,
+        "current_labels": [
+          "RCA Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_arcadefire",
+        "artist_name": "Arcade Fire",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Columbia Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "mb_art_3cdb360e-d0a2-459f-92f6-f0f28e62127d",
+        "artist_name": "Electronic",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Electronic Records",
+          "Electronic Records",
+          "Electronic Records",
+          "Electronic Records",
+          "Electronic Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "mb_art_51d2f351-0c7b-45fd-99fd-330b33b05964",
+        "artist_name": "Elite Electronic",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Elite Electronic Records",
+          "Elite Electronic Records",
+          "Elite Electronic Records",
+          "Elite Electronic Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "mb_art_000e193b-3adb-4d56-828b-0ffb3f2f1da1",
+        "artist_name": "Electronic Warbear",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Electronic Warbear Records",
+          "Electronic Warbear Records",
+          "Electronic Warbear Records",
+          "Electronic Warbear Records",
+          "Electronic Warbear Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "mb_art_fdcbf873-4a8d-4c62-9352-327451b6a910",
+        "artist_name": "Electronic Frequency",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Electronic Frequency Records",
+          "Electronic Frequency Records",
+          "Electronic Frequency Records",
+          "Electronic Frequency Records",
+          "Electronic Frequency Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "mb_art_d4aca3ad-25ca-4449-b0b1-db6198d40ae9",
+        "artist_name": "Electronic Fox",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Electronic Fox Records",
+          "Electronic Fox Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "mb_art_b1b6fa89-1343-4340-b12f-a7e96ebce3eb",
+        "artist_name": "ESA",
+        "total_labels_count": 1,
+        "current_labels": [
+          "ESA Records",
+          "ESA Records",
+          "ESA Records",
+          "ESA Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "mb_art_21875c2b-84fa-474e-bcfa-9611982b19d5",
+        "artist_name": "Electronic Eye",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Electronic Eye Records",
+          "Electronic Eye Records",
+          "Electronic Eye Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      }
+    ]
+  },
+  "studio_reliance": [
+    {
+      "artist_id": "art_taylor",
+      "artist_name": "Taylor Swift",
+      "reliance_index": 1.0,
+      "primary_studio": "Electric Lady Studios",
+      "primary_producer": "Jack Antonoff",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_billie",
+      "artist_name": "Billie Eilish",
+      "reliance_index": 1.0,
+      "primary_studio": "Sunset Sound Recorders",
+      "primary_producer": "Finneas O'Connell",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_kendrick",
+      "artist_name": "Kendrick Lamar",
+      "reliance_index": 1.0,
+      "primary_studio": "Conway Recording Studios",
+      "primary_producer": "Rick Rubin",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_kanye",
+      "artist_name": "Ye (Kanye West)",
+      "reliance_index": 1.0,
+      "primary_studio": "Electric Lady Studios",
+      "primary_producer": "Mike Dean",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_eminem",
+      "artist_name": "Eminem",
+      "reliance_index": 1.0,
+      "primary_studio": "Conway Recording Studios",
+      "primary_producer": "Dr. Dre",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_travisscott",
+      "artist_name": "Travis Scott",
+      "reliance_index": 1.0,
+      "primary_studio": "Conway Recording Studios",
+      "primary_producer": "Mike Dean",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_future",
+      "artist_name": "Future",
+      "reliance_index": 1.0,
+      "primary_studio": "Conway Recording Studios",
+      "primary_producer": "Metro Boomin",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_21savage",
+      "artist_name": "21 Savage",
+      "reliance_index": 1.0,
+      "primary_studio": "Conway Recording Studios",
+      "primary_producer": "Metro Boomin",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_beyonce",
+      "artist_name": "Beyonc\u00e9",
+      "reliance_index": 1.0,
+      "primary_studio": "Conway Recording Studios",
+      "primary_producer": "Pharrell Williams (The Neptunes)",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_nirvana",
+      "artist_name": "Nirvana",
+      "reliance_index": 1.0,
+      "primary_studio": "Sound City Studios",
+      "primary_producer": "Butch Vig",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_foo",
+      "artist_name": "Foo Fighters",
+      "reliance_index": 1.0,
+      "primary_studio": "Sound City Studios",
+      "primary_producer": "Butch Vig",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_redhot",
+      "artist_name": "Red Hot Chili Peppers",
+      "reliance_index": 1.0,
+      "primary_studio": "Ocean Way Recording",
+      "primary_producer": "Rick Rubin",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_phoebe",
+      "artist_name": "Phoebe Bridgers",
+      "reliance_index": 1.0,
+      "primary_studio": "Electric Lady Studios",
+      "primary_producer": "Jack Antonoff",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_clairo",
+      "artist_name": "Clairo",
+      "reliance_index": 1.0,
+      "primary_studio": "Electric Lady Studios",
+      "primary_producer": "Jack Antonoff",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_skrillex_art",
+      "artist_name": "Skrillex",
+      "reliance_index": 1.0,
+      "primary_studio": "Sunset Sound Recorders",
+      "primary_producer": "Skrillex (Sonny Moore)",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_beatles",
+      "artist_name": "The Beatles",
+      "reliance_index": 1.0,
+      "primary_studio": "Abbey Road Studios",
+      "primary_producer": "George Martin",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_radiohead",
+      "artist_name": "Radiohead",
+      "reliance_index": 1.0,
+      "primary_studio": "Abbey Road Studios",
+      "primary_producer": "Nigel Godrich",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_adele",
+      "artist_name": "Adele",
+      "reliance_index": 1.0,
+      "primary_studio": "AIR Studios (Lyndhurst Hall)",
+      "primary_producer": "Greg Kurstin",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_dua",
+      "artist_name": "Dua Lipa",
+      "reliance_index": 1.0,
+      "primary_studio": "RAK Studios",
+      "primary_producer": "Max Martin",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_harry",
+      "artist_name": "Harry Styles",
+      "reliance_index": 1.0,
+      "primary_studio": "Sunset Sound Recorders",
+      "primary_producer": "Jack Antonoff",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_aphex",
+      "artist_name": "Aphex Twin",
+      "reliance_index": 1.0,
+      "primary_studio": "Metropolis Studios",
+      "primary_producer": "Brian Eno",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_fourtet",
+      "artist_name": "Four Tet",
+      "reliance_index": 1.0,
+      "primary_studio": "Abbey Road Studios",
+      "primary_producer": "Brian Eno",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_davidbowie",
+      "artist_name": "David Bowie",
+      "reliance_index": 1.0,
+      "primary_studio": "Hansa Studios (Hansa Tonstudio)",
+      "primary_producer": "Brian Eno",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_depechemode",
+      "artist_name": "Depeche Mode",
+      "reliance_index": 1.0,
+      "primary_studio": "Hansa Studios (Hansa Tonstudio)",
+      "primary_producer": "Brian Eno",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_kraftwerk",
+      "artist_name": "Kraftwerk",
+      "reliance_index": 1.0,
+      "primary_studio": "Kling Klang Studio",
+      "primary_producer": "Conny Plank",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_nilsfrahm_art",
+      "artist_name": "Nils Frahm",
+      "reliance_index": 1.0,
+      "primary_studio": "Funkhaus Berlin (Saal 1)",
+      "primary_producer": "Nils Frahm",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_paulvandyk_art",
+      "artist_name": "Paul van Dyk",
+      "reliance_index": 1.0,
+      "primary_studio": "Hansa Studios (Hansa Tonstudio)",
+      "primary_producer": "Paul van Dyk",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_stephanbodzin_art",
+      "artist_name": "Stephan Bodzin",
+      "reliance_index": 1.0,
+      "primary_studio": "Funkhaus Berlin (Saal 1)",
+      "primary_producer": "Stephan Bodzin",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_tangerinedream",
+      "artist_name": "Tangerine Dream",
+      "reliance_index": 1.0,
+      "primary_studio": "Hansa Studios (Hansa Tonstudio)",
+      "primary_producer": "Conny Plank",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_zimmer_art",
+      "artist_name": "Hans Zimmer",
+      "reliance_index": 1.0,
+      "primary_studio": "AIR Studios (Lyndhurst Hall)",
+      "primary_producer": "Hans Zimmer",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_maxrichter",
+      "artist_name": "Max Richter",
+      "reliance_index": 1.0,
+      "primary_studio": "AIR Studios (Lyndhurst Hall)",
+      "primary_producer": "Brian Eno",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_tiesto",
+      "artist_name": "Ti\u00ebsto",
+      "reliance_index": 1.0,
+      "primary_studio": "Wisseloord Studios",
+      "primary_producer": "Ti\u00ebsto",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_daftpunk",
+      "artist_name": "Daft Punk",
+      "reliance_index": 1.0,
+      "primary_studio": "Motorbass Studio",
+      "primary_producer": "Thomas Bangalter (Daft Punk)",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_justice",
+      "artist_name": "Justice",
+      "reliance_index": 1.0,
+      "primary_studio": "Motorbass Studio",
+      "primary_producer": "Pedro Winter (Busy P)",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_robyn",
+      "artist_name": "Robyn",
+      "reliance_index": 1.0,
+      "primary_studio": "Cheiron & Maratone Studios",
+      "primary_producer": "Max Martin",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_zaralarsson",
+      "artist_name": "Zara Larsson",
+      "reliance_index": 1.0,
+      "primary_studio": "Cheiron & Maratone Studios",
+      "primary_producer": "Max Martin",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_ymo",
+      "artist_name": "Yellow Magic Orchestra (YMO)",
+      "reliance_index": 1.0,
+      "primary_studio": "Sony Music Studios Tokyo",
+      "primary_producer": "Ryuichi Sakamoto",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_sakamoto",
+      "artist_name": "Ryuichi Sakamoto",
+      "reliance_index": 1.0,
+      "primary_studio": "Sony Music Studios Tokyo",
+      "primary_producer": "Ryuichi Sakamoto",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_hisaishi",
+      "artist_name": "Joe Hisaishi",
+      "reliance_index": 1.0,
+      "primary_studio": "Studio Ghibli Scoring Stage",
+      "primary_producer": "Joe Hisaishi",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_nujabes",
+      "artist_name": "Nujabes",
+      "reliance_index": 1.0,
+      "primary_studio": "Sony Music Studios Tokyo",
+      "primary_producer": "Nujabes (Jun Seba)",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_bts",
+      "artist_name": "BTS",
+      "reliance_index": 1.0,
+      "primary_studio": "HYBE Creative Studios",
+      "primary_producer": "Pdogg",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_blackpink",
+      "artist_name": "BLACKPINK",
+      "reliance_index": 1.0,
+      "primary_studio": "Conway Recording Studios",
+      "primary_producer": "Teddy Park",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_arrahman_art",
+      "artist_name": "A.R. Rahman",
+      "reliance_index": 1.0,
+      "primary_studio": "Panchathan Record Inn (AM Studios)",
+      "primary_producer": "A.R. Rahman",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_bobmarley",
+      "artist_name": "Bob Marley & The Wailers",
+      "reliance_index": 1.0,
+      "primary_studio": "Tuff Gong Studio",
+      "primary_producer": "Lee 'Scratch' Perry",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_kingtubby_art",
+      "artist_name": "King Tubby",
+      "reliance_index": 1.0,
+      "primary_studio": "The Black Ark (Lee Perry)",
+      "primary_producer": "King Tubby",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_leeperry_art",
+      "artist_name": "Lee 'Scratch' Perry",
+      "reliance_index": 1.0,
+      "primary_studio": "The Black Ark (Lee Perry)",
+      "primary_producer": "Lee 'Scratch' Perry",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_burnaboy",
+      "artist_name": "Burna Boy",
+      "reliance_index": 1.0,
+      "primary_studio": "Mavin Creative Studios",
+      "primary_producer": "Timbaland",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_wizkid",
+      "artist_name": "Wizkid",
+      "reliance_index": 1.0,
+      "primary_studio": "Mavin Creative Studios",
+      "primary_producer": "Sarz",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_rema",
+      "artist_name": "Rema",
+      "reliance_index": 1.0,
+      "primary_studio": "Mavin Creative Studios",
+      "primary_producer": "Don Jazzy",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_blackcoffee",
+      "artist_name": "Black Coffee",
+      "reliance_index": 1.0,
+      "primary_studio": "Soulistic Sound Lab",
+      "primary_producer": "Black Coffee",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_badbunny",
+      "artist_name": "Bad Bunny",
+      "reliance_index": 1.0,
+      "primary_studio": "Criteria Recording Studios (Hit Factory)",
+      "primary_producer": "Tainy (Marco Mas\u00eds)",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_rosalia",
+      "artist_name": "Rosal\u00eda",
+      "reliance_index": 1.0,
+      "primary_studio": "Electric Lady Studios",
+      "primary_producer": "Pharrell Williams (The Neptunes)",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_jbalvin",
+      "artist_name": "J Balvin",
+      "reliance_index": 1.0,
+      "primary_studio": "El Alto Studio",
+      "primary_producer": "Ovy On The Drums",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_karolg",
+      "artist_name": "Karol G",
+      "reliance_index": 1.0,
+      "primary_studio": "El Alto Studio",
+      "primary_producer": "Ovy On The Drums",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_tameimpala",
+      "artist_name": "Tame Impala",
+      "reliance_index": 1.0,
+      "primary_studio": "Studios 301",
+      "primary_producer": "Kevin Parker (Tame Impala)",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_drake",
+      "artist_name": "Drake",
+      "reliance_index": 1.0,
+      "primary_studio": "Metalworks Studios",
+      "primary_producer": "Noah '40' Shebib",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_weeknd",
+      "artist_name": "The Weeknd",
+      "reliance_index": 1.0,
+      "primary_studio": "Conway Recording Studios",
+      "primary_producer": "Max Martin",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_kaytranada",
+      "artist_name": "KAYTRANADA",
+      "reliance_index": 1.0,
+      "primary_studio": "Metalworks Studios",
+      "primary_producer": "KAYTRANADA",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_sza",
+      "artist_name": "SZA",
+      "reliance_index": 0.5,
+      "primary_studio": "Conway Recording Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_flyinglotus",
+      "artist_name": "Flying Lotus",
+      "reliance_index": 0.5,
+      "primary_studio": "Electric Lady Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_queen",
+      "artist_name": "Queen",
+      "reliance_index": 0.5,
+      "primary_studio": "Abbey Road Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_arctic",
+      "artist_name": "Arctic Monkeys",
+      "reliance_index": 0.5,
+      "primary_studio": "Abbey Road Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_bicep",
+      "artist_name": "BICEP",
+      "reliance_index": 0.5,
+      "primary_studio": "RAK Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_bonobo",
+      "artist_name": "Bonobo",
+      "reliance_index": 0.5,
+      "primary_studio": "Abbey Road Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_calvin",
+      "artist_name": "Calvin Harris",
+      "reliance_index": 0.5,
+      "primary_studio": "Metropolis Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_massiveattack",
+      "artist_name": "Massive Attack",
+      "reliance_index": 0.5,
+      "primary_studio": "Abbey Road Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_rammstein",
+      "artist_name": "Rammstein",
+      "reliance_index": 0.5,
+      "primary_studio": "Teldex Studio Berlin",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_scorpions",
+      "artist_name": "Scorpions",
+      "reliance_index": 0.5,
+      "primary_studio": "Sound City Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_modeselektor",
+      "artist_name": "Modeselektor / Moderat",
+      "reliance_index": 0.5,
+      "primary_studio": "Funkhaus Berlin (Saal 1)",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_borisbrejcha",
+      "artist_name": "Boris Brejcha",
+      "reliance_index": 0.5,
+      "primary_studio": "Hansa Studios (Hansa Tonstudio)",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_robinschulz",
+      "artist_name": "Robin Schulz",
+      "reliance_index": 0.5,
+      "primary_studio": "Hansa Studios (Hansa Tonstudio)",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_beethoven_art",
+      "artist_name": "Ludwig van Beethoven",
+      "reliance_index": 0.5,
+      "primary_studio": "Teldex Studio Berlin",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_bach_art",
+      "artist_name": "Johann Sebastian Bach",
+      "reliance_index": 0.5,
+      "primary_studio": "Emil Berliner Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_armin",
+      "artist_name": "Armin van Buuren",
+      "reliance_index": 0.5,
+      "primary_studio": "Wisseloord Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_martingarrix",
+      "artist_name": "Martin Garrix",
+      "reliance_index": 0.5,
+      "primary_studio": "Wisseloord Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_phoenix",
+      "artist_name": "Phoenix",
+      "reliance_index": 0.5,
+      "primary_studio": "Motorbass Studio",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_air_band",
+      "artist_name": "Air",
+      "reliance_index": 0.5,
+      "primary_studio": "Studio Grande Arm\u00e9e",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_davidguetta",
+      "artist_name": "David Guetta",
+      "reliance_index": 0.5,
+      "primary_studio": "Metropolis Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_gesaffelstein",
+      "artist_name": "Gesaffelstein (Mike L\u00e9vy)",
+      "reliance_index": 0.5,
+      "primary_studio": "Motorbass Studio",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_abba",
+      "artist_name": "ABBA",
+      "reliance_index": 0.5,
+      "primary_studio": "Cheiron & Maratone Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_avicii",
+      "artist_name": "Avicii (Tim Bergling)",
+      "reliance_index": 0.5,
+      "primary_studio": "Cheiron & Maratone Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_swedishhouse",
+      "artist_name": "Swedish House Mafia",
+      "reliance_index": 0.5,
+      "primary_studio": "Cheiron & Maratone Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_bjork",
+      "artist_name": "Bj\u00f6rk",
+      "reliance_index": 0.5,
+      "primary_studio": "Greenhouse Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_sigurros",
+      "artist_name": "Sigur R\u00f3s",
+      "reliance_index": 0.5,
+      "primary_studio": "Greenhouse Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_babymetal",
+      "artist_name": "BABYMETAL",
+      "reliance_index": 0.5,
+      "primary_studio": "Sony Music Studios Tokyo",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_tatsuro",
+      "artist_name": "Tatsuro Yamashita",
+      "reliance_index": 0.5,
+      "primary_studio": "Sony Music Studios Tokyo",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_newjeans",
+      "artist_name": "NewJeans",
+      "reliance_index": 0.5,
+      "primary_studio": "HYBE Creative Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_straykids",
+      "artist_name": "Stray Kids",
+      "reliance_index": 0.5,
+      "primary_studio": "HYBE Creative Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_seventeen",
+      "artist_name": "SEVENTEEN",
+      "reliance_index": 0.5,
+      "primary_studio": "HYBE Creative Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_diljit",
+      "artist_name": "Diljit Dosanjh",
+      "reliance_index": 0.5,
+      "primary_studio": "YRF Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_divine",
+      "artist_name": "DIVINE",
+      "reliance_index": 0.5,
+      "primary_studio": "YRF Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_seanpaul",
+      "artist_name": "Sean Paul",
+      "reliance_index": 0.5,
+      "primary_studio": "Tuff Gong Studio",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_felakuti",
+      "artist_name": "Fela Kuti",
+      "reliance_index": 0.5,
+      "primary_studio": "Abbey Road Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_davido",
+      "artist_name": "Davido",
+      "reliance_index": 0.5,
+      "primary_studio": "Mavin Creative Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_tems",
+      "artist_name": "Tems",
+      "reliance_index": 0.5,
+      "primary_studio": "Mavin Creative Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_tyla",
+      "artist_name": "Tyla",
+      "reliance_index": 0.5,
+      "primary_studio": "Soulistic Sound Lab",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_jobim",
+      "artist_name": "Ant\u00f4nio Carlos Jobim",
+      "reliance_index": 0.5,
+      "primary_studio": "Nas Nuvens Studio",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_caetano",
+      "artist_name": "Caetano Veloso",
+      "reliance_index": 0.5,
+      "primary_studio": "Nas Nuvens Studio",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_anitta",
+      "artist_name": "Anitta",
+      "reliance_index": 0.5,
+      "primary_studio": "Nas Nuvens Studio",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_alok",
+      "artist_name": "Alok",
+      "reliance_index": 0.5,
+      "primary_studio": "Nas Nuvens Studio",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_pesopluma",
+      "artist_name": "Peso Pluma",
+      "reliance_index": 0.5,
+      "primary_studio": "Criteria Recording Studios (Hit Factory)",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_flume",
+      "artist_name": "Flume",
+      "reliance_index": 0.5,
+      "primary_studio": "Studios 301",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_rufus",
+      "artist_name": "R\u00fcf\u00fcs Du Sol",
+      "reliance_index": 0.5,
+      "primary_studio": "Studios 301",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_deadmau5",
+      "artist_name": "deadmau5",
+      "reliance_index": 0.5,
+      "primary_studio": "Metalworks Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_arcadefire",
+      "artist_name": "Arcade Fire",
+      "reliance_index": 0.5,
+      "primary_studio": "Metalworks Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_emg_berlin_tech",
+      "artist_name": "Klangformer (Emerging Producer)",
+      "reliance_index": 0.0,
+      "primary_studio": "None",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_emg_london_soul",
+      "artist_name": "Maya Thorne (Emerging Soul)",
+      "reliance_index": 0.0,
+      "primary_studio": "None",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_emg_hh_classical",
+      "artist_name": "Lukas M. (Emerging Ambient Pianist)",
+      "reliance_index": 0.0,
+      "primary_studio": "None",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_emg_la_bedpop",
+      "artist_name": "Echo Bloom (Emerging Indie)",
+      "reliance_index": 0.0,
+      "primary_studio": "None",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_emg_melb_beats",
+      "artist_name": "Solar Drift (Emerging Electronic)",
+      "reliance_index": 0.0,
+      "primary_studio": "None",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "mb_art_3cdb360e-d0a2-459f-92f6-f0f28e62127d",
+      "artist_name": "Electronic",
+      "reliance_index": 0.0,
+      "primary_studio": "None",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "mb_art_fa43260d-bcfe-46ba-a8a0-69107538e46c",
+      "artist_name": "Electronic Arts",
+      "reliance_index": 0.0,
+      "primary_studio": "None",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "mb_art_51d2f351-0c7b-45fd-99fd-330b33b05964",
+      "artist_name": "Elite Electronic",
+      "reliance_index": 0.0,
+      "primary_studio": "None",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "mb_art_000e193b-3adb-4d56-828b-0ffb3f2f1da1",
+      "artist_name": "Electronic Warbear",
+      "reliance_index": 0.0,
+      "primary_studio": "None",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "mb_art_fdcbf873-4a8d-4c62-9352-327451b6a910",
+      "artist_name": "Electronic Frequency",
+      "reliance_index": 0.0,
+      "primary_studio": "None",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "mb_art_b4ed32d5-9d19-4a28-9746-4e8286554d58",
+      "artist_name": "Electroni\u010d",
+      "reliance_index": 0.0,
+      "primary_studio": "None",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "mb_art_d4aca3ad-25ca-4449-b0b1-db6198d40ae9",
+      "artist_name": "Electronic Fox",
+      "reliance_index": 0.0,
+      "primary_studio": "None",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "mb_art_54eb8ba6-6e0d-4652-91f4-7a4ceeb0c006",
+      "artist_name": "Electronic Beach",
+      "reliance_index": 0.0,
+      "primary_studio": "None",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "mb_art_b1b6fa89-1343-4340-b12f-a7e96ebce3eb",
+      "artist_name": "ESA",
+      "reliance_index": 0.0,
+      "primary_studio": "None",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "mb_art_21875c2b-84fa-474e-bcfa-9611982b19d5",
+      "artist_name": "Electronic Eye",
+      "reliance_index": 0.0,
+      "primary_studio": "None",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    }
+  ],
+  "agency_collaboration_dynamics": {
+    "total_collaborations": 33,
+    "intra_agency_collaborations": 13,
+    "inter_agency_collaborations": 20,
+    "intra_agency_ratio_percentage": 39.4,
+    "behavior_interpretation": "Balanced Cross-Agency Collaboration",
+    "agencies_rosters": {
+      "WME (William Morris Endeavor)": {
+        "roster_size": 35,
+        "artists": [
+          "SZA",
+          "Anitta",
+          "Clairo",
+          "Billie Eilish",
+          "Swedish House Mafia",
+          "Arctic Monkeys",
+          "Ti\u00ebsto",
+          "Phoenix",
+          "Avicii (Tim Bergling)",
+          "Davido",
+          "Tame Impala",
+          "Eminem",
+          "David Bowie",
+          "Wizkid",
+          "Sigur R\u00f3s",
+          "Taylor Swift",
+          "Kendrick Lamar",
+          "KAYTRANADA",
+          "Rosal\u00eda",
+          "Flume",
+          "Diljit Dosanjh",
+          "Arcade Fire",
+          "Martin Garrix",
+          "Adele",
+          "Flying Lotus",
+          "Zara Larsson",
+          "Tems",
+          "Alok",
+          "Drake",
+          "BLACKPINK",
+          "Rema",
+          "Radiohead",
+          "Depeche Mode",
+          "Gesaffelstein (Mike L\u00e9vy)",
+          "Black Coffee"
+        ]
+      },
+      "Roc Nation Management": {
+        "roster_size": 2,
+        "artists": [
+          "Beyonc\u00e9",
+          "Ye (Kanye West)"
+        ]
+      },
+      "CAA (Creative Artists Agency)": {
+        "roster_size": 17,
+        "artists": [
+          "Queen",
+          "Dua Lipa",
+          "Harry Styles",
+          "Tyla",
+          "David Guetta",
+          "Hans Zimmer",
+          "The Weeknd",
+          "Armin van Buuren",
+          "Peso Pluma",
+          "R\u00fcf\u00fcs Du Sol",
+          "Robin Schulz",
+          "NewJeans",
+          "Daft Punk",
+          "Travis Scott",
+          "Burna Boy",
+          "A.R. Rahman",
+          "Sean Paul"
+        ]
+      },
+      "UTA (United Talent Agency)": {
+        "roster_size": 6,
+        "artists": [
+          "21 Savage",
+          "Future",
+          "BABYMETAL",
+          "deadmau5",
+          "Karol G",
+          "Bad Bunny"
+        ]
+      },
+      "Q Prime Management": {
+        "roster_size": 5,
+        "artists": [
+          "Rammstein",
+          "Foo Fighters",
+          "Scorpions",
+          "Red Hot Chili Peppers",
+          "Nirvana"
+        ]
+      },
+      "Red Light Management": {
+        "roster_size": 2,
+        "artists": [
+          "Bonobo",
+          "Phoebe Bridgers"
+        ]
+      },
+      "Wasserman Music": {
+        "roster_size": 3,
+        "artists": [
+          "Skrillex",
+          "Boris Brejcha",
+          "Paul van Dyk"
+        ]
+      },
+      "Primary Talent International": {
+        "roster_size": 15,
+        "artists": [
+          "Ryuichi Sakamoto",
+          "Bj\u00f6rk",
+          "Max Richter",
+          "Tangerine Dream",
+          "Stephan Bodzin",
+          "Four Tet",
+          "Robyn",
+          "Justice",
+          "Modeselektor / Moderat",
+          "Kraftwerk",
+          "BICEP",
+          "Massive Attack",
+          "Air",
+          "Aphex Twin",
+          "Nils Frahm"
+        ]
+      },
+      "Three Six Zero": {
+        "roster_size": 1,
+        "artists": [
+          "Calvin Harris"
+        ]
+      },
+      "SB Projects (HYBE America)": {
+        "roster_size": 2,
+        "artists": [
+          "BTS",
+          "J Balvin"
+        ]
+      },
+      "Kakao Entertainment Management": {
+        "roster_size": 1,
+        "artists": [
+          "SEVENTEEN"
+        ]
+      },
+      "TM Talent Management India": {
+        "roster_size": 1,
+        "artists": [
+          "DIVINE"
+        ]
+      }
+    }
+  },
+  "structural_holes": [
+    {
+      "id": "genre_electro_pop",
+      "name": "Electro Pop",
+      "entity_type": "track",
+      "network_constraint": 0.0359,
+      "brokerage_potential": "Elite Bridge / Cross-Cluster Broker",
+      "degree": 69
+    },
+    {
+      "id": "ag_wme",
+      "name": "WME (William Morris Endeavor)",
+      "entity_type": "agency",
+      "network_constraint": 0.0383,
+      "brokerage_potential": "Elite Bridge / Cross-Cluster Broker",
+      "degree": 37
+    },
+    {
+      "id": "city_la",
+      "name": "Los Angeles",
+      "entity_type": "production_house",
+      "network_constraint": 0.0411,
+      "brokerage_potential": "Elite Bridge / Cross-Cluster Broker",
+      "degree": 34
+    },
+    {
+      "id": "city_london",
+      "name": "London",
+      "entity_type": "production_house",
+      "network_constraint": 0.0439,
+      "brokerage_potential": "Elite Bridge / Cross-Cluster Broker",
+      "degree": 35
+    },
+    {
+      "id": "city_berlin",
+      "name": "Berlin",
+      "entity_type": "production_house",
+      "network_constraint": 0.0502,
+      "brokerage_potential": "Elite Bridge / Cross-Cluster Broker",
+      "degree": 28
+    },
+    {
+      "id": "lbl_umg_parent",
+      "name": "Universal Music Group (UMG)",
+      "entity_type": "record_label",
+      "network_constraint": 0.0588,
+      "brokerage_potential": "Elite Bridge / Cross-Cluster Broker",
+      "degree": 17
+    },
+    {
+      "id": "city_nyc",
+      "name": "New York City",
+      "entity_type": "production_house",
+      "network_constraint": 0.0609,
+      "brokerage_potential": "Elite Bridge / Cross-Cluster Broker",
+      "degree": 20
+    },
+    {
+      "id": "ag_caa",
+      "name": "CAA (Creative Artists Agency)",
+      "entity_type": "agency",
+      "network_constraint": 0.0663,
+      "brokerage_potential": "Elite Bridge / Cross-Cluster Broker",
+      "degree": 19
+    },
+    {
+      "id": "ag_primary",
+      "name": "Primary Talent International",
+      "entity_type": "agency",
+      "network_constraint": 0.0873,
+      "brokerage_potential": "Elite Bridge / Cross-Cluster Broker",
+      "degree": 15
+    },
+    {
+      "id": "art_rosalia",
+      "name": "Rosal\u00eda",
+      "entity_type": "artist",
+      "network_constraint": 0.088,
+      "brokerage_potential": "Elite Bridge / Cross-Cluster Broker",
+      "degree": 18
+    },
+    {
+      "id": "city_lagos",
+      "name": "Lagos",
+      "entity_type": "production_house",
+      "network_constraint": 0.089,
+      "brokerage_potential": "Elite Bridge / Cross-Cluster Broker",
+      "degree": 18
+    },
+    {
+      "id": "lbl_columbia",
+      "name": "Columbia Records",
+      "entity_type": "record_label",
+      "network_constraint": 0.0891,
+      "brokerage_potential": "Elite Bridge / Cross-Cluster Broker",
+      "degree": 13
+    },
+    {
+      "id": "city_seoul",
+      "name": "Seoul",
+      "entity_type": "production_house",
+      "network_constraint": 0.0929,
+      "brokerage_potential": "Elite Bridge / Cross-Cluster Broker",
+      "degree": 18
+    },
+    {
+      "id": "city_stockholm",
+      "name": "Stockholm",
+      "entity_type": "production_house",
+      "network_constraint": 0.0941,
+      "brokerage_potential": "Elite Bridge / Cross-Cluster Broker",
+      "degree": 15
+    },
+    {
+      "id": "city_paris",
+      "name": "Paris",
+      "entity_type": "production_house",
+      "network_constraint": 0.0972,
+      "brokerage_potential": "Elite Bridge / Cross-Cluster Broker",
+      "degree": 17
+    }
+  ],
+  "k_core_decomposition": {
+    "max_core_level": 6,
+    "core_breakdown": {
+      "Core_Level_6": {
+        "count": 57,
+        "prominent_members": [
+          "Republic Records",
+          "Columbia Records",
+          "WME (William Morris Endeavor)",
+          "CAA (Creative Artists Agency)",
+          "Primary Talent International",
+          "Abbey Road Studios"
+        ]
+      },
+      "Core_Level_5": {
+        "count": 82,
+        "prominent_members": [
+          "Universal Music Group (UMG)",
+          "Interscope Geffen A&M",
+          "Warner Records",
+          "Island Records",
+          "Virgin EMI Records",
+          "Deutsche Grammophon"
+        ]
+      },
+      "Core_Level_4": {
+        "count": 39,
+        "prominent_members": [
+          "Warner Music Group (WMG)",
+          "RCA Records",
+          "Epic Records",
+          "Atlantic Records",
+          "Parlophone Records",
+          "Warp Records"
+        ]
+      },
+      "Core_Level_3": {
+        "count": 36,
+        "prominent_members": [
+          "Sony Music Entertainment (SME)",
+          "Beggars Group",
+          "Def Jam Recordings",
+          "Top Dawg Entertainment (TDE)",
+          "4AD",
+          "XL Recordings"
+        ]
+      },
+      "Core_Level_2": {
+        "count": 132,
+        "prominent_members": [
+          "BMG Rights Management (Bertelsmann)",
+          "Capitol Records",
+          "Sub Pop Records",
+          "Roc Nation Records",
+          "pgLang",
+          "Quality Control Music"
+        ]
+      },
+      "Core_Level_1": {
+        "count": 94,
+        "prominent_members": [
+          "Motown Records",
+          "Stones Throw Records",
+          "Brainfeeder",
+          "Secretly Canadian",
+          "Ghostly International",
+          "Mad Decent"
+        ]
+      },
+      "Core_Level_0": {
+        "count": 19,
+        "prominent_members": [
+          "Kitsun\u00e9 Musique",
+          "King Records",
+          "T-Series",
+          "VP Records",
+          "Piano Hub",
+          "KondZilla Records"
+        ]
+      }
+    }
+  },
+  "predicted_collaborations": [
+    {
+      "artist_1": "Future",
+      "artist_2": "21 Savage",
+      "affinity_score": 7.3057,
+      "shared_genres": [
+        "Hip-Hop",
+        "Trap"
+      ],
+      "likelihood": "Very High"
+    },
+    {
+      "artist_1": "Stephan Bodzin",
+      "artist_2": "Modeselektor / Moderat",
+      "affinity_score": 6.2455,
+      "shared_genres": [
+        "Electronic"
+      ],
+      "likelihood": "Very High"
+    },
+    {
+      "artist_1": "Nirvana",
+      "artist_2": "Foo Fighters",
+      "affinity_score": 5.34,
+      "shared_genres": [],
+      "likelihood": "Very High"
+    },
+    {
+      "artist_1": "Boris Brejcha",
+      "artist_2": "Depeche Mode",
+      "affinity_score": 5.2056,
+      "shared_genres": [],
+      "likelihood": "Very High"
+    },
+    {
+      "artist_1": "Flying Lotus",
+      "artist_2": "Ye (Kanye West)",
+      "affinity_score": 5.1948,
+      "shared_genres": [],
+      "likelihood": "Very High"
+    },
+    {
+      "artist_1": "Ti\u00ebsto",
+      "artist_2": "Swedish House Mafia",
+      "affinity_score": 5.1709,
+      "shared_genres": [
+        "EDM"
+      ],
+      "likelihood": "Very High"
+    },
+    {
+      "artist_1": "Max Richter",
+      "artist_2": "Ludwig van Beethoven",
+      "affinity_score": 4.9693,
+      "shared_genres": [
+        "Classical"
+      ],
+      "likelihood": "Very High"
+    },
+    {
+      "artist_1": "Aphex Twin",
+      "artist_2": "Nils Frahm",
+      "affinity_score": 4.7322,
+      "shared_genres": [
+        "Ambient"
+      ],
+      "likelihood": "Very High"
+    },
+    {
+      "artist_1": "Bob Marley & The Wailers",
+      "artist_2": "Lee 'Scratch' Perry",
+      "affinity_score": 4.5683,
+      "shared_genres": [],
+      "likelihood": "Very High"
+    },
+    {
+      "artist_1": "Karol G",
+      "artist_2": "J Balvin",
+      "affinity_score": 4.5503,
+      "shared_genres": [
+        "Reggaeton"
+      ],
+      "likelihood": "Very High"
+    },
+    {
+      "artist_1": "Boris Brejcha",
+      "artist_2": "Modeselektor / Moderat",
+      "affinity_score": 4.4595,
+      "shared_genres": [
+        "Techno"
+      ],
+      "likelihood": "Very High"
+    },
+    {
+      "artist_1": "Alok",
+      "artist_2": "Flume",
+      "affinity_score": 4.4233,
+      "shared_genres": [],
+      "likelihood": "Very High"
+    },
+    {
+      "artist_1": "Martin Garrix",
+      "artist_2": "Armin van Buuren",
+      "affinity_score": 4.3366,
+      "shared_genres": [],
+      "likelihood": "Very High"
+    },
+    {
+      "artist_1": "A.R. Rahman",
+      "artist_2": "Elite Electronic",
+      "affinity_score": 4.3097,
+      "shared_genres": [],
+      "likelihood": "Very High"
+    },
+    {
+      "artist_1": "Stephan Bodzin",
+      "artist_2": "Depeche Mode",
+      "affinity_score": 4.2284,
+      "shared_genres": [],
+      "likelihood": "Very High"
+    }
+  ]
+}

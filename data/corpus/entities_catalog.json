@@ -1,0 +1,5721 @@
+{
+  "record_label": [
+    {
+      "id": "lbl_umg_parent",
+      "name": "Universal Music Group (UMG)",
+      "entity_type": "record_label",
+      "country": "Netherlands / USA",
+      "genres": [
+        "Parent Conglomerate"
+      ],
+      "attributes": {
+        "market_tier": "Major Conglomerate"
+      }
+    },
+    {
+      "id": "lbl_sme_parent",
+      "name": "Sony Music Entertainment (SME)",
+      "entity_type": "record_label",
+      "country": "Japan / USA",
+      "genres": [
+        "Parent Conglomerate"
+      ],
+      "attributes": {
+        "market_tier": "Major Conglomerate"
+      }
+    },
+    {
+      "id": "lbl_wmg_parent",
+      "name": "Warner Music Group (WMG)",
+      "entity_type": "record_label",
+      "country": "USA",
+      "genres": [
+        "Parent Conglomerate"
+      ],
+      "attributes": {
+        "market_tier": "Major Conglomerate"
+      }
+    },
+    {
+      "id": "lbl_bmg_parent",
+      "name": "BMG Rights Management (Bertelsmann)",
+      "entity_type": "record_label",
+      "country": "Germany",
+      "genres": [
+        "Parent Conglomerate"
+      ],
+      "attributes": {
+        "market_tier": "Major Conglomerate"
+      }
+    },
+    {
+      "id": "lbl_beggars",
+      "name": "Beggars Group",
+      "entity_type": "record_label",
+      "country": "UK",
+      "genres": [
+        "Indie Parent Group"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_interscope",
+      "name": "Interscope Geffen A&M",
+      "entity_type": "record_label",
+      "country": "USA",
+      "genres": [
+        "Pop",
+        "Hip-Hop",
+        "Rock"
+      ],
+      "attributes": {
+        "market_tier": "Major Conglomerate"
+      }
+    },
+    {
+      "id": "lbl_republic",
+      "name": "Republic Records",
+      "entity_type": "record_label",
+      "country": "USA",
+      "genres": [
+        "Pop",
+        "R&B",
+        "Hip-Hop"
+      ],
+      "attributes": {
+        "market_tier": "Major Conglomerate"
+      }
+    },
+    {
+      "id": "lbl_def_jam",
+      "name": "Def Jam Recordings",
+      "entity_type": "record_label",
+      "country": "USA",
+      "genres": [
+        "Hip-Hop",
+        "Trap"
+      ],
+      "attributes": {
+        "market_tier": "Major Conglomerate"
+      }
+    },
+    {
+      "id": "lbl_capitol",
+      "name": "Capitol Records",
+      "entity_type": "record_label",
+      "country": "USA",
+      "genres": [
+        "Pop",
+        "Alternative"
+      ],
+      "attributes": {
+        "market_tier": "Major Conglomerate"
+      }
+    },
+    {
+      "id": "lbl_motown",
+      "name": "Motown Records",
+      "entity_type": "record_label",
+      "country": "USA",
+      "genres": [
+        "Soul",
+        "R&B",
+        "Hip-Hop"
+      ],
+      "attributes": {
+        "market_tier": "Major Conglomerate"
+      }
+    },
+    {
+      "id": "lbl_columbia",
+      "name": "Columbia Records",
+      "entity_type": "record_label",
+      "country": "USA",
+      "genres": [
+        "Pop",
+        "Rock",
+        "Alternative"
+      ],
+      "attributes": {
+        "market_tier": "Major Conglomerate"
+      }
+    },
+    {
+      "id": "lbl_rca",
+      "name": "RCA Records",
+      "entity_type": "record_label",
+      "country": "USA",
+      "genres": [
+        "R&B",
+        "Pop",
+        "Electronic"
+      ],
+      "attributes": {
+        "market_tier": "Major Conglomerate"
+      }
+    },
+    {
+      "id": "lbl_epic",
+      "name": "Epic Records",
+      "entity_type": "record_label",
+      "country": "USA",
+      "genres": [
+        "Hip-Hop",
+        "R&B",
+        "Pop"
+      ],
+      "attributes": {
+        "market_tier": "Major Conglomerate"
+      }
+    },
+    {
+      "id": "lbl_atlantic",
+      "name": "Atlantic Records",
+      "entity_type": "record_label",
+      "country": "USA",
+      "genres": [
+        "Hip-Hop",
+        "Pop",
+        "Rock"
+      ],
+      "attributes": {
+        "market_tier": "Major Conglomerate"
+      }
+    },
+    {
+      "id": "lbl_warner_rec",
+      "name": "Warner Records",
+      "entity_type": "record_label",
+      "country": "USA",
+      "genres": [
+        "Pop",
+        "Rock",
+        "Electronic"
+      ],
+      "attributes": {
+        "market_tier": "Major Conglomerate"
+      }
+    },
+    {
+      "id": "lbl_sub_pop",
+      "name": "Sub Pop Records",
+      "entity_type": "record_label",
+      "country": "USA",
+      "genres": [
+        "Grunge",
+        "Indie Rock"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_stones_throw",
+      "name": "Stones Throw Records",
+      "entity_type": "record_label",
+      "country": "USA",
+      "genres": [
+        "Underground Hip-Hop",
+        "Neo-Soul"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_brainfeeder",
+      "name": "Brainfeeder",
+      "entity_type": "record_label",
+      "country": "USA",
+      "genres": [
+        "Experimental",
+        "Jazz Fusion"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_secretly",
+      "name": "Secretly Canadian",
+      "entity_type": "record_label",
+      "country": "USA",
+      "genres": [
+        "Indie Rock",
+        "Folk"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_ghostly",
+      "name": "Ghostly International",
+      "entity_type": "record_label",
+      "country": "USA",
+      "genres": [
+        "Electronic",
+        "Ambient"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_mad_decent",
+      "name": "Mad Decent",
+      "entity_type": "record_label",
+      "country": "USA",
+      "genres": [
+        "EDM",
+        "Trap"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_rocnation_lbl",
+      "name": "Roc Nation Records",
+      "entity_type": "record_label",
+      "country": "USA",
+      "genres": [
+        "Hip-Hop",
+        "R&B"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_topdawg",
+      "name": "Top Dawg Entertainment (TDE)",
+      "entity_type": "record_label",
+      "country": "USA",
+      "genres": [
+        "Hip-Hop",
+        "R&B"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_pglang",
+      "name": "pgLang",
+      "entity_type": "record_label",
+      "country": "USA",
+      "genres": [
+        "Hip-Hop",
+        "Creative Agency"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_qc",
+      "name": "Quality Control Music",
+      "entity_type": "record_label",
+      "country": "USA",
+      "genres": [
+        "Trap",
+        "Hip-Hop"
+      ],
+      "attributes": {
+        "market_tier": "Major Conglomerate"
+      }
+    },
+    {
+      "id": "lbl_island",
+      "name": "Island Records",
+      "entity_type": "record_label",
+      "country": "UK / Jamaica",
+      "genres": [
+        "Reggae",
+        "Pop",
+        "Indie"
+      ],
+      "attributes": {
+        "market_tier": "Major Conglomerate"
+      }
+    },
+    {
+      "id": "lbl_polydor",
+      "name": "Polydor Records",
+      "entity_type": "record_label",
+      "country": "UK",
+      "genres": [
+        "Pop",
+        "Electronic"
+      ],
+      "attributes": {
+        "market_tier": "Major Conglomerate"
+      }
+    },
+    {
+      "id": "lbl_virgin_emi",
+      "name": "Virgin EMI Records",
+      "entity_type": "record_label",
+      "country": "UK",
+      "genres": [
+        "Pop",
+        "Urban"
+      ],
+      "attributes": {
+        "market_tier": "Major Conglomerate"
+      }
+    },
+    {
+      "id": "lbl_parlophone",
+      "name": "Parlophone Records",
+      "entity_type": "record_label",
+      "country": "UK",
+      "genres": [
+        "Alternative",
+        "Britpop"
+      ],
+      "attributes": {
+        "market_tier": "Major Conglomerate"
+      }
+    },
+    {
+      "id": "lbl_4ad",
+      "name": "4AD",
+      "entity_type": "record_label",
+      "country": "UK",
+      "genres": [
+        "Dream Pop",
+        "Post-Punk"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_xl_rec",
+      "name": "XL Recordings",
+      "entity_type": "record_label",
+      "country": "UK",
+      "genres": [
+        "Electronic",
+        "Indie Rock"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_matador",
+      "name": "Matador Records",
+      "entity_type": "record_label",
+      "country": "UK / USA",
+      "genres": [
+        "Indie Rock",
+        "Lo-Fi"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_rough_trade",
+      "name": "Rough Trade Records",
+      "entity_type": "record_label",
+      "country": "UK",
+      "genres": [
+        "Post-Punk",
+        "Indie"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_warp",
+      "name": "Warp Records",
+      "entity_type": "record_label",
+      "country": "UK",
+      "genres": [
+        "Electronic",
+        "IDM",
+        "Experimental"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_ninja_tune",
+      "name": "Ninja Tune",
+      "entity_type": "record_label",
+      "country": "UK",
+      "genres": [
+        "Electronic",
+        "Trip-Hop"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_domino",
+      "name": "Domino Recording Company",
+      "entity_type": "record_label",
+      "country": "UK",
+      "genres": [
+        "Indie Rock",
+        "Folktronica"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_dg",
+      "name": "Deutsche Grammophon",
+      "entity_type": "record_label",
+      "country": "Germany",
+      "genres": [
+        "Classical",
+        "Post-Classical"
+      ],
+      "attributes": {
+        "market_tier": "Major Conglomerate"
+      }
+    },
+    {
+      "id": "lbl_kompakt",
+      "name": "Kompakt Records",
+      "entity_type": "record_label",
+      "country": "Germany",
+      "genres": [
+        "Techno",
+        "Minimal",
+        "Ambient"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_ostgut",
+      "name": "Ostgut Ton",
+      "entity_type": "record_label",
+      "country": "Germany",
+      "genres": [
+        "Berghain Techno",
+        "Industrial"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_innervisions",
+      "name": "Innervisions",
+      "entity_type": "record_label",
+      "country": "Germany",
+      "genres": [
+        "Deep House",
+        "Melodic Techno"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_tresor",
+      "name": "Tresor Records",
+      "entity_type": "record_label",
+      "country": "Germany",
+      "genres": [
+        "Detroit-Berlin Techno"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_boysnoize",
+      "name": "Boysnoize Records",
+      "entity_type": "record_label",
+      "country": "Germany",
+      "genres": [
+        "Electro",
+        "Industrial"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_erasedtapes",
+      "name": "Erased Tapes",
+      "entity_type": "record_label",
+      "country": "Germany / UK",
+      "genres": [
+        "Post-Classical",
+        "Ambient"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_spinnin",
+      "name": "Spinnin' Records",
+      "entity_type": "record_label",
+      "country": "Netherlands",
+      "genres": [
+        "EDM",
+        "House",
+        "Dance"
+      ],
+      "attributes": {
+        "market_tier": "Major Conglomerate"
+      }
+    },
+    {
+      "id": "lbl_armada",
+      "name": "Armada Music",
+      "entity_type": "record_label",
+      "country": "Netherlands",
+      "genres": [
+        "Trance",
+        "Progressive",
+        "EDM"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_edbanger",
+      "name": "Ed Banger Records",
+      "entity_type": "record_label",
+      "country": "France",
+      "genres": [
+        "French Touch",
+        "Electro House"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_because",
+      "name": "Because Music",
+      "entity_type": "record_label",
+      "country": "France",
+      "genres": [
+        "French Pop",
+        "Electronic"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_kitsune",
+      "name": "Kitsun\u00e9 Musique",
+      "entity_type": "record_label",
+      "country": "France",
+      "genres": [
+        "Indie Dance",
+        "Nu-Disco"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_mxm_prod",
+      "name": "MXM Music Productions",
+      "entity_type": "record_label",
+      "country": "Sweden",
+      "genres": [
+        "Global Pop",
+        "Dance-Pop"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_ten_music",
+      "name": "TEN Music Group",
+      "entity_type": "record_label",
+      "country": "Sweden",
+      "genres": [
+        "Pop",
+        "Electronic"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_stockholm_rec",
+      "name": "Stockholm Records",
+      "entity_type": "record_label",
+      "country": "Sweden",
+      "genres": [
+        "Pop",
+        "Eurodance"
+      ],
+      "attributes": {
+        "market_tier": "Major Conglomerate"
+      }
+    },
+    {
+      "id": "lbl_smekkleysa",
+      "name": "Bad Taste Records (Smekkleysa)",
+      "entity_type": "record_label",
+      "country": "Iceland",
+      "genres": [
+        "Art Rock",
+        "Avant-Garde"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_avex",
+      "name": "Avex Group",
+      "entity_type": "record_label",
+      "country": "Japan",
+      "genres": [
+        "J-Pop",
+        "Anime",
+        "Dance"
+      ],
+      "attributes": {
+        "market_tier": "Major Conglomerate"
+      }
+    },
+    {
+      "id": "lbl_sony_japan",
+      "name": "Sony Music Entertainment Japan (SMEJ)",
+      "entity_type": "record_label",
+      "country": "Japan",
+      "genres": [
+        "J-Pop",
+        "Anisong"
+      ],
+      "attributes": {
+        "market_tier": "Major Conglomerate"
+      }
+    },
+    {
+      "id": "lbl_victor_jp",
+      "name": "Victor Entertainment",
+      "entity_type": "record_label",
+      "country": "Japan",
+      "genres": [
+        "City Pop",
+        "Rock"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_king_rec",
+      "name": "King Records",
+      "entity_type": "record_label",
+      "country": "Japan",
+      "genres": [
+        "Anisong",
+        "Soundtracks"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_hybe_corp",
+      "name": "HYBE Labels (Big Hit / ADOR / Pledis)",
+      "entity_type": "record_label",
+      "country": "South Korea",
+      "genres": [
+        "K-Pop",
+        "Dance-Pop"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_sm_ent",
+      "name": "SM Entertainment",
+      "entity_type": "record_label",
+      "country": "South Korea",
+      "genres": [
+        "K-Pop",
+        "SMP",
+        "R&B"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_yg_ent",
+      "name": "YG Entertainment",
+      "entity_type": "record_label",
+      "country": "South Korea",
+      "genres": [
+        "K-Pop",
+        "Hip-Hop"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_jyp_ent",
+      "name": "JYP Entertainment",
+      "entity_type": "record_label",
+      "country": "South Korea",
+      "genres": [
+        "K-Pop",
+        "Dance-Pop"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_tseries",
+      "name": "T-Series",
+      "entity_type": "record_label",
+      "country": "India",
+      "genres": [
+        "Bollywood",
+        "Pop",
+        "Soundtracks"
+      ],
+      "attributes": {
+        "market_tier": "Major Conglomerate"
+      }
+    },
+    {
+      "id": "lbl_yrf_music",
+      "name": "YRF Music (Yash Raj Films)",
+      "entity_type": "record_label",
+      "country": "India",
+      "genres": [
+        "Cinematic",
+        "Bollywood"
+      ],
+      "attributes": {
+        "market_tier": "Major Conglomerate"
+      }
+    },
+    {
+      "id": "lbl_gully_gang",
+      "name": "Gully Gang Records",
+      "entity_type": "record_label",
+      "country": "India",
+      "genres": [
+        "Desi Hip-Hop",
+        "Street Rap"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_tuffgong_lbl",
+      "name": "Tuff Gong Records",
+      "entity_type": "record_label",
+      "country": "Jamaica",
+      "genres": [
+        "Reggae",
+        "Roots",
+        "Dub"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_studio_one",
+      "name": "Studio One",
+      "entity_type": "record_label",
+      "country": "Jamaica",
+      "genres": [
+        "Ska",
+        "Rocksteady"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_vp_rec",
+      "name": "VP Records",
+      "entity_type": "record_label",
+      "country": "Jamaica / USA",
+      "genres": [
+        "Dancehall",
+        "Reggae"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_trojan",
+      "name": "Trojan Records",
+      "entity_type": "record_label",
+      "country": "Jamaica / UK",
+      "genres": [
+        "Reggae",
+        "Dub"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_mavin",
+      "name": "Mavin Records",
+      "entity_type": "record_label",
+      "country": "Nigeria",
+      "genres": [
+        "Afrobeats",
+        "Afropop"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_starboy",
+      "name": "Starboy Entertainment",
+      "entity_type": "record_label",
+      "country": "Nigeria",
+      "genres": [
+        "Afrobeats"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_spaceship",
+      "name": "Spaceship Records",
+      "entity_type": "record_label",
+      "country": "Nigeria",
+      "genres": [
+        "Afro-Fusion"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_ybnl",
+      "name": "YBNL Nation",
+      "entity_type": "record_label",
+      "country": "Nigeria",
+      "genres": [
+        "Afrobeats",
+        "Street"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_soulistic",
+      "name": "Soulistic Music",
+      "entity_type": "record_label",
+      "country": "South Africa",
+      "genres": [
+        "Afro-House",
+        "Deep House"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_pianohub",
+      "name": "Piano Hub",
+      "entity_type": "record_label",
+      "country": "South Africa",
+      "genres": [
+        "Amapiano"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_somlivre",
+      "name": "Som Livre",
+      "entity_type": "record_label",
+      "country": "Brazil",
+      "genres": [
+        "Bossa Nova",
+        "Sertanejo",
+        "MPB"
+      ],
+      "attributes": {
+        "market_tier": "Major Conglomerate"
+      }
+    },
+    {
+      "id": "lbl_kondzilla",
+      "name": "KondZilla Records",
+      "entity_type": "record_label",
+      "country": "Brazil",
+      "genres": [
+        "Baile Funk",
+        "Funk Mandel\u00e3o"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_rimas",
+      "name": "Rimas Entertainment",
+      "entity_type": "record_label",
+      "country": "Puerto Rico",
+      "genres": [
+        "Reggaeton",
+        "Latin Trap"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_hearthismusic",
+      "name": "Hear This Music",
+      "entity_type": "record_label",
+      "country": "Puerto Rico",
+      "genres": [
+        "Latin Trap",
+        "Urban"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_richmusic",
+      "name": "Rich Music",
+      "entity_type": "record_label",
+      "country": "Colombia / USA",
+      "genres": [
+        "Reggaeton",
+        "Latin Pop"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_futureclassic",
+      "name": "Future Classic",
+      "entity_type": "record_label",
+      "country": "Australia",
+      "genres": [
+        "Electronic",
+        "Indie Dance"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_modular",
+      "name": "Modular Recordings",
+      "entity_type": "record_label",
+      "country": "Australia",
+      "genres": [
+        "Indie Dance",
+        "Psychedelic"
+      ],
+      "attributes": {
+        "market_tier": "Major Conglomerate"
+      }
+    },
+    {
+      "id": "lbl_ovo",
+      "name": "OVO Sound",
+      "entity_type": "record_label",
+      "country": "Canada",
+      "genres": [
+        "Hip-Hop",
+        "R&B",
+        "Toronto Sound"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_xo",
+      "name": "XO Records",
+      "entity_type": "record_label",
+      "country": "Canada",
+      "genres": [
+        "R&B",
+        "Synthwave"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_monstercat",
+      "name": "Monstercat",
+      "entity_type": "record_label",
+      "country": "Canada",
+      "genres": [
+        "Electronic",
+        "Bass Music"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "lbl_arts_crafts",
+      "name": "Arts & Crafts",
+      "entity_type": "record_label",
+      "country": "Canada",
+      "genres": [
+        "Indie Rock",
+        "Post-Rock"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      }
+    },
+    {
+      "id": "mb_lbl_13147",
+      "name": "Electronic Records",
+      "entity_type": "record_label",
+      "country": "GB",
+      "genres": [],
+      "attributes": {}
+    },
+    {
+      "id": "mb_lbl_63165",
+      "name": "Elite Electronic Records",
+      "entity_type": "record_label",
+      "country": null,
+      "genres": [],
+      "attributes": {}
+    },
+    {
+      "id": "mb_lbl_28210",
+      "name": "Electronic Warbear Records",
+      "entity_type": "record_label",
+      "country": null,
+      "genres": [],
+      "attributes": {}
+    },
+    {
+      "id": "mb_lbl_89354",
+      "name": "Electronic Frequency Records",
+      "entity_type": "record_label",
+      "country": "DE",
+      "genres": [],
+      "attributes": {}
+    },
+    {
+      "id": "mb_lbl_50767",
+      "name": "Electronic Fox Records",
+      "entity_type": "record_label",
+      "country": null,
+      "genres": [],
+      "attributes": {}
+    },
+    {
+      "id": "mb_lbl_35976",
+      "name": "ESA Records",
+      "entity_type": "record_label",
+      "country": "GB",
+      "genres": [],
+      "attributes": {}
+    },
+    {
+      "id": "mb_lbl_275",
+      "name": "Electronic Eye Records",
+      "entity_type": "record_label",
+      "country": "GB",
+      "genres": [],
+      "attributes": {}
+    }
+  ],
+  "agency": [
+    {
+      "id": "ag_wme",
+      "name": "WME (William Morris Endeavor)",
+      "entity_type": "agency",
+      "country": "USA / Global",
+      "genres": [],
+      "attributes": {
+        "region": "USA / Global"
+      }
+    },
+    {
+      "id": "ag_caa",
+      "name": "CAA (Creative Artists Agency)",
+      "entity_type": "agency",
+      "country": "USA / Global",
+      "genres": [],
+      "attributes": {
+        "region": "USA / Global"
+      }
+    },
+    {
+      "id": "ag_uta",
+      "name": "UTA (United Talent Agency)",
+      "entity_type": "agency",
+      "country": "USA / Global",
+      "genres": [],
+      "attributes": {
+        "region": "USA / Global"
+      }
+    },
+    {
+      "id": "ag_wasserman",
+      "name": "Wasserman Music",
+      "entity_type": "agency",
+      "country": "UK / USA",
+      "genres": [],
+      "attributes": {
+        "region": "UK / USA"
+      }
+    },
+    {
+      "id": "ag_rocnation",
+      "name": "Roc Nation Management",
+      "entity_type": "agency",
+      "country": "USA / Global",
+      "genres": [],
+      "attributes": {
+        "region": "USA / Global"
+      }
+    },
+    {
+      "id": "ag_redlight",
+      "name": "Red Light Management",
+      "entity_type": "agency",
+      "country": "USA",
+      "genres": [],
+      "attributes": {
+        "region": "USA"
+      }
+    },
+    {
+      "id": "ag_fullstop",
+      "name": "Full Stop Management",
+      "entity_type": "agency",
+      "country": "USA",
+      "genres": [],
+      "attributes": {
+        "region": "USA"
+      }
+    },
+    {
+      "id": "ag_sbprojects",
+      "name": "SB Projects (HYBE America)",
+      "entity_type": "agency",
+      "country": "USA / South Korea",
+      "genres": [],
+      "attributes": {
+        "region": "USA / South Korea"
+      }
+    },
+    {
+      "id": "ag_qprime",
+      "name": "Q Prime Management",
+      "entity_type": "agency",
+      "country": "USA / UK",
+      "genres": [],
+      "attributes": {
+        "region": "USA / UK"
+      }
+    },
+    {
+      "id": "ag_threesixzero",
+      "name": "Three Six Zero",
+      "entity_type": "agency",
+      "country": "UK / USA",
+      "genres": [],
+      "attributes": {
+        "region": "UK / USA"
+      }
+    },
+    {
+      "id": "ag_primary",
+      "name": "Primary Talent International",
+      "entity_type": "agency",
+      "country": "UK / Europe",
+      "genres": [],
+      "attributes": {
+        "region": "UK / Europe"
+      }
+    },
+    {
+      "id": "ag_kakaom",
+      "name": "Kakao Entertainment Management",
+      "entity_type": "agency",
+      "country": "South Korea",
+      "genres": [],
+      "attributes": {
+        "region": "South Korea"
+      }
+    },
+    {
+      "id": "ag_tm_talent",
+      "name": "TM Talent Management India",
+      "entity_type": "agency",
+      "country": "India",
+      "genres": [],
+      "attributes": {
+        "region": "India"
+      }
+    },
+    {
+      "id": "gate_colors",
+      "name": "COLORSxSTUDIOS",
+      "entity_type": "agency",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Discovery & Curation Gateway",
+        "description": "Berlin-based Global Live Acoustic / Aesthetic Showcase",
+        "region": "Germany / Global",
+        "target_genres": [
+          "R&B",
+          "Soul",
+          "Hip-Hop",
+          "Indie"
+        ]
+      }
+    },
+    {
+      "id": "gate_bbc_intro",
+      "name": "BBC Introducing",
+      "entity_type": "agency",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Discovery & Curation Gateway",
+        "description": "UK Grassroots Radio & Festival Stage Launchpad",
+        "region": "UK",
+        "target_genres": [
+          "Indie",
+          "Electronic",
+          "Rock",
+          "Pop"
+        ]
+      }
+    },
+    {
+      "id": "gate_boilerroom",
+      "name": "Boiler Room",
+      "entity_type": "agency",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Discovery & Curation Gateway",
+        "description": "Underground Club Culture & Electronic Live Stream Pioneer",
+        "region": "UK / Global",
+        "target_genres": [
+          "Techno",
+          "House",
+          "Bass",
+          "Industrial"
+        ]
+      }
+    },
+    {
+      "id": "gate_cercle",
+      "name": "Cercle",
+      "entity_type": "agency",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Discovery & Curation Gateway",
+        "description": "Cinematic Scenic Live Electronic Performance Platform",
+        "region": "France / Global",
+        "target_genres": [
+          "Melodic Techno",
+          "Deep House",
+          "Ambient"
+        ]
+      }
+    },
+    {
+      "id": "gate_tinydesk",
+      "name": "NPR Tiny Desk Concerts",
+      "entity_type": "agency",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Discovery & Curation Gateway",
+        "description": "Intimate Unplugged Acoustic Breakthrough Stage",
+        "region": "USA / Global",
+        "target_genres": [
+          "Folk",
+          "Neo-Soul",
+          "Jazz",
+          "Indie"
+        ]
+      }
+    },
+    {
+      "id": "gate_triplej",
+      "name": "Triple J Unearthed",
+      "entity_type": "agency",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Discovery & Curation Gateway",
+        "description": "Australian National Youth Radio Talent Discovery",
+        "region": "Australia",
+        "target_genres": [
+          "Indie Rock",
+          "Electronic",
+          "Hip-Hop"
+        ]
+      }
+    },
+    {
+      "id": "gate_submithub",
+      "name": "SubmitHub / Groover",
+      "entity_type": "agency",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Discovery & Curation Gateway",
+        "description": "Direct-to-Curator / Playlist Pitching Platform",
+        "region": "Global",
+        "target_genres": [
+          "All Genres"
+        ]
+      }
+    },
+    {
+      "id": "fest_reeperbahn",
+      "name": "Reeperbahn Festival (Hamburg)",
+      "entity_type": "agency",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "A&R Showcase Festival",
+        "description": "Europe's Largest Club Festival & B2B Music Industry Conference",
+        "region": "Germany",
+        "ar_scout_density_score": 0.95
+      }
+    },
+    {
+      "id": "fest_greatescape",
+      "name": "The Great Escape (Brighton)",
+      "entity_type": "agency",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "A&R Showcase Festival",
+        "description": "Premier UK Showcase for Emerging Talent / 500+ New Artists",
+        "region": "UK",
+        "ar_scout_density_score": 0.96
+      }
+    },
+    {
+      "id": "fest_esns",
+      "name": "Eurosonic Noorderslag (ESNS)",
+      "entity_type": "agency",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "A&R Showcase Festival",
+        "description": "European Talent Exchange Programme & European Booking Gateway",
+        "region": "Netherlands",
+        "ar_scout_density_score": 0.94
+      }
+    },
+    {
+      "id": "fest_sxsw",
+      "name": "SXSW Music Showcase (Austin)",
+      "entity_type": "agency",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "A&R Showcase Festival",
+        "description": "Global Convergence for Tech, Media, and Unsigned Artists",
+        "region": "USA",
+        "ar_scout_density_score": 0.92
+      }
+    },
+    {
+      "id": "fest_copop",
+      "name": "c/o pop Festival (Cologne)",
+      "entity_type": "agency",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "A&R Showcase Festival",
+        "description": "German Pop & Electronic Stepping-Stone Conference",
+        "region": "Germany",
+        "ar_scout_density_score": 0.88
+      }
+    },
+    {
+      "id": "fest_waves",
+      "name": "Waves Vienna",
+      "entity_type": "agency",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "A&R Showcase Festival",
+        "description": "Central / Eastern European Music Exchange Conference",
+        "region": "Austria",
+        "ar_scout_density_score": 0.85
+      }
+    },
+    {
+      "id": "fest_sonar_plus",
+      "name": "S\u00f3nar+D (Barcelona)",
+      "entity_type": "agency",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "A&R Showcase Festival",
+        "description": "Electronic Music Innovation, Tech & Sound Showcase",
+        "region": "Spain",
+        "ar_scout_density_score": 0.91
+      }
+    },
+    {
+      "id": "rights_gema",
+      "name": "GEMA",
+      "entity_type": "agency",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Rights & Royalty Organization",
+        "description": "German Performing & Mechanical Rights Society",
+        "region": "Germany"
+      }
+    },
+    {
+      "id": "rights_prs",
+      "name": "PRS for Music / PPL",
+      "entity_type": "agency",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Rights & Royalty Organization",
+        "description": "UK Performing Rights & Phonographic Performance Licensor",
+        "region": "UK"
+      }
+    },
+    {
+      "id": "rights_ascap",
+      "name": "ASCAP / BMI",
+      "entity_type": "agency",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Rights & Royalty Organization",
+        "description": "US Performance Rights Organizations",
+        "region": "USA"
+      }
+    },
+    {
+      "id": "rights_songtrust",
+      "name": "Songtrust",
+      "entity_type": "agency",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Rights & Royalty Organization",
+        "description": "Global Digital Publishing Royalty Administrator",
+        "region": "Global"
+      }
+    },
+    {
+      "id": "rights_soundexchange",
+      "name": "SoundExchange",
+      "entity_type": "agency",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Rights & Royalty Organization",
+        "description": "Digital Non-Interactive Streaming Master Royalties",
+        "region": "USA"
+      }
+    }
+  ],
+  "studio": [
+    {
+      "id": "std_abbey",
+      "name": "Abbey Road Studios",
+      "entity_type": "studio",
+      "country": "UK",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "electro_pop"
+    },
+    {
+      "id": "std_air",
+      "name": "AIR Studios (Lyndhurst Hall)",
+      "entity_type": "studio",
+      "country": "UK",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "electro_pop"
+    },
+    {
+      "id": "std_metropolis",
+      "name": "Metropolis Studios",
+      "entity_type": "studio",
+      "country": "UK",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "electro_pop"
+    },
+    {
+      "id": "std_rak",
+      "name": "RAK Studios",
+      "entity_type": "studio",
+      "country": "UK",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "house"
+    },
+    {
+      "id": "std_hansa",
+      "name": "Hansa Studios (Hansa Tonstudio)",
+      "entity_type": "studio",
+      "country": "Germany",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "techno"
+    },
+    {
+      "id": "std_funkhaus",
+      "name": "Funkhaus Berlin (Saal 1)",
+      "entity_type": "studio",
+      "country": "Germany",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "techno"
+    },
+    {
+      "id": "std_klingklang",
+      "name": "Kling Klang Studio",
+      "entity_type": "studio",
+      "country": "Germany",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "electro_pop"
+    },
+    {
+      "id": "std_teldex",
+      "name": "Teldex Studio Berlin",
+      "entity_type": "studio",
+      "country": "Germany",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "techno"
+    },
+    {
+      "id": "std_emilberliner",
+      "name": "Emil Berliner Studios",
+      "entity_type": "studio",
+      "country": "Germany",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "electro_pop"
+    },
+    {
+      "id": "std_electric",
+      "name": "Electric Lady Studios",
+      "entity_type": "studio",
+      "country": "USA",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "electro_pop"
+    },
+    {
+      "id": "std_sunset",
+      "name": "Sunset Sound Recorders",
+      "entity_type": "studio",
+      "country": "USA",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "electro_pop"
+    },
+    {
+      "id": "std_conway",
+      "name": "Conway Recording Studios",
+      "entity_type": "studio",
+      "country": "USA",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "techno"
+    },
+    {
+      "id": "std_capitol",
+      "name": "Capitol Studios",
+      "entity_type": "studio",
+      "country": "USA",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "Acoustic / Hybrid"
+    },
+    {
+      "id": "std_oceanway",
+      "name": "Ocean Way Recording",
+      "entity_type": "studio",
+      "country": "USA",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "electro_pop"
+    },
+    {
+      "id": "std_blackbird",
+      "name": "Blackbird Studio",
+      "entity_type": "studio",
+      "country": "USA",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "Acoustic / Hybrid"
+    },
+    {
+      "id": "std_criteria",
+      "name": "Criteria Recording Studios (Hit Factory)",
+      "entity_type": "studio",
+      "country": "USA",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "techno"
+    },
+    {
+      "id": "std_soundcity",
+      "name": "Sound City Studios",
+      "entity_type": "studio",
+      "country": "USA",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "electro_pop"
+    },
+    {
+      "id": "std_motorbass",
+      "name": "Motorbass Studio",
+      "entity_type": "studio",
+      "country": "France",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "house"
+    },
+    {
+      "id": "std_grandearmee",
+      "name": "Studio Grande Arm\u00e9e",
+      "entity_type": "studio",
+      "country": "France",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "electro_pop"
+    },
+    {
+      "id": "std_maratone",
+      "name": "Cheiron & Maratone Studios",
+      "entity_type": "studio",
+      "country": "Sweden",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "house"
+    },
+    {
+      "id": "std_greenhouse",
+      "name": "Greenhouse Studios",
+      "entity_type": "studio",
+      "country": "Iceland",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "electro_pop"
+    },
+    {
+      "id": "std_wisseloord",
+      "name": "Wisseloord Studios",
+      "entity_type": "studio",
+      "country": "Netherlands",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "trance"
+    },
+    {
+      "id": "std_sonytokyo",
+      "name": "Sony Music Studios Tokyo",
+      "entity_type": "studio",
+      "country": "Japan",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "electro_pop"
+    },
+    {
+      "id": "std_ghibli",
+      "name": "Studio Ghibli Scoring Stage",
+      "entity_type": "studio",
+      "country": "Japan",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "electro_pop"
+    },
+    {
+      "id": "std_hybe_std",
+      "name": "HYBE Creative Studios",
+      "entity_type": "studio",
+      "country": "South Korea",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "electro_pop"
+    },
+    {
+      "id": "std_panchathan",
+      "name": "Panchathan Record Inn (AM Studios)",
+      "entity_type": "studio",
+      "country": "India",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "electro_pop"
+    },
+    {
+      "id": "std_yashraj",
+      "name": "YRF Studios",
+      "entity_type": "studio",
+      "country": "India",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "electro_pop"
+    },
+    {
+      "id": "std_tuffgong",
+      "name": "Tuff Gong Studio",
+      "entity_type": "studio",
+      "country": "Jamaica",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "electro_pop"
+    },
+    {
+      "id": "std_blackark",
+      "name": "The Black Ark (Lee Perry)",
+      "entity_type": "studio",
+      "country": "Jamaica",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "electro_pop"
+    },
+    {
+      "id": "std_mavin_std",
+      "name": "Mavin Creative Studios",
+      "entity_type": "studio",
+      "country": "Nigeria",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "electro_pop"
+    },
+    {
+      "id": "std_soulistic_std",
+      "name": "Soulistic Sound Lab",
+      "entity_type": "studio",
+      "country": "South Africa",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "house"
+    },
+    {
+      "id": "std_nasnuvens",
+      "name": "Nas Nuvens Studio",
+      "entity_type": "studio",
+      "country": "Brazil",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "electro_pop"
+    },
+    {
+      "id": "std_elalto",
+      "name": "El Alto Studio",
+      "entity_type": "studio",
+      "country": "Colombia",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "electro_pop"
+    },
+    {
+      "id": "std_metalworks",
+      "name": "Metalworks Studios",
+      "entity_type": "studio",
+      "country": "Canada",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "techno"
+    },
+    {
+      "id": "std_studios301",
+      "name": "Studios 301",
+      "entity_type": "studio",
+      "country": "Australia",
+      "genres": [],
+      "attributes": {},
+      "dominant_acoustic_specialization": "electro_pop"
+    }
+  ],
+  "producer": [
+    {
+      "id": "prd_max",
+      "name": "Max Martin",
+      "entity_type": "producer",
+      "country": "Sweden",
+      "genres": [
+        "Pop",
+        "Dance",
+        "Synthpop"
+      ],
+      "attributes": {},
+      "sonic_signature": "electro_pop"
+    },
+    {
+      "id": "prd_shellback",
+      "name": "Shellback (Johan Schuster)",
+      "entity_type": "producer",
+      "country": "Sweden",
+      "genres": [
+        "Pop",
+        "Rock"
+      ],
+      "attributes": {},
+      "sonic_signature": "Multi-Genre Architect"
+    },
+    {
+      "id": "prd_goransson",
+      "name": "Ludwig G\u00f6ransson",
+      "entity_type": "producer",
+      "country": "Sweden",
+      "genres": [
+        "Cinematic",
+        "Hip-Hop"
+      ],
+      "attributes": {},
+      "sonic_signature": "Multi-Genre Architect"
+    },
+    {
+      "id": "prd_bloodshy",
+      "name": "Bloodshy & Avant",
+      "entity_type": "producer",
+      "country": "Sweden",
+      "genres": [
+        "Pop",
+        "Electro"
+      ],
+      "attributes": {},
+      "sonic_signature": "Multi-Genre Architect"
+    },
+    {
+      "id": "prd_jack",
+      "name": "Jack Antonoff",
+      "entity_type": "producer",
+      "country": "USA",
+      "genres": [
+        "Indie Pop",
+        "Alternative",
+        "Folk"
+      ],
+      "attributes": {},
+      "sonic_signature": "electro_pop"
+    },
+    {
+      "id": "prd_rick",
+      "name": "Rick Rubin",
+      "entity_type": "producer",
+      "country": "USA",
+      "genres": [
+        "Rock",
+        "Hip-Hop",
+        "Metal"
+      ],
+      "attributes": {},
+      "sonic_signature": "techno"
+    },
+    {
+      "id": "prd_metro",
+      "name": "Metro Boomin",
+      "entity_type": "producer",
+      "country": "USA",
+      "genres": [
+        "Hip-Hop",
+        "Trap"
+      ],
+      "attributes": {},
+      "sonic_signature": "techno"
+    },
+    {
+      "id": "prd_finneas",
+      "name": "Finneas O'Connell",
+      "entity_type": "producer",
+      "country": "USA",
+      "genres": [
+        "Pop",
+        "Minimalist"
+      ],
+      "attributes": {},
+      "sonic_signature": "electro_pop"
+    },
+    {
+      "id": "prd_drdre",
+      "name": "Dr. Dre",
+      "entity_type": "producer",
+      "country": "USA",
+      "genres": [
+        "Hip-Hop",
+        "G-Funk"
+      ],
+      "attributes": {},
+      "sonic_signature": "techno"
+    },
+    {
+      "id": "prd_pharrell",
+      "name": "Pharrell Williams (The Neptunes)",
+      "entity_type": "producer",
+      "country": "USA",
+      "genres": [
+        "Hip-Hop",
+        "Funk",
+        "Pop"
+      ],
+      "attributes": {},
+      "sonic_signature": "house"
+    },
+    {
+      "id": "prd_timbaland",
+      "name": "Timbaland",
+      "entity_type": "producer",
+      "country": "USA",
+      "genres": [
+        "R&B",
+        "Hip-Hop",
+        "Pop"
+      ],
+      "attributes": {},
+      "sonic_signature": "electro_pop"
+    },
+    {
+      "id": "prd_mikedean",
+      "name": "Mike Dean",
+      "entity_type": "producer",
+      "country": "USA",
+      "genres": [
+        "Hip-Hop",
+        "Synth",
+        "Psychedelic"
+      ],
+      "attributes": {},
+      "sonic_signature": "techno"
+    },
+    {
+      "id": "prd_greg",
+      "name": "Greg Kurstin",
+      "entity_type": "producer",
+      "country": "USA",
+      "genres": [
+        "Pop",
+        "Indie Rock"
+      ],
+      "attributes": {},
+      "sonic_signature": "electro_pop"
+    },
+    {
+      "id": "prd_butch",
+      "name": "Butch Vig",
+      "entity_type": "producer",
+      "country": "USA",
+      "genres": [
+        "Grunge",
+        "Rock"
+      ],
+      "attributes": {},
+      "sonic_signature": "electro_pop"
+    },
+    {
+      "id": "prd_skrillex",
+      "name": "Skrillex (Sonny Moore)",
+      "entity_type": "producer",
+      "country": "USA",
+      "genres": [
+        "Dubstep",
+        "EDM",
+        "Pop"
+      ],
+      "attributes": {},
+      "sonic_signature": "dubstep"
+    },
+    {
+      "id": "prd_zimmer",
+      "name": "Hans Zimmer",
+      "entity_type": "producer",
+      "country": "Germany",
+      "genres": [
+        "Cinematic",
+        "Orchestral"
+      ],
+      "attributes": {},
+      "sonic_signature": "electro_pop"
+    },
+    {
+      "id": "prd_giorgio",
+      "name": "Giorgio Moroder",
+      "entity_type": "producer",
+      "country": "Germany / Italy",
+      "genres": [
+        "Disco",
+        "Synthwave"
+      ],
+      "attributes": {},
+      "sonic_signature": "Multi-Genre Architect"
+    },
+    {
+      "id": "prd_connyplank",
+      "name": "Conny Plank",
+      "entity_type": "producer",
+      "country": "Germany",
+      "genres": [
+        "Krautrock",
+        "Electronic"
+      ],
+      "attributes": {},
+      "sonic_signature": "electro_pop"
+    },
+    {
+      "id": "prd_nilsfrahm",
+      "name": "Nils Frahm",
+      "entity_type": "producer",
+      "country": "Germany",
+      "genres": [
+        "Neo-Classical",
+        "Ambient"
+      ],
+      "attributes": {},
+      "sonic_signature": "ambient_downtempo"
+    },
+    {
+      "id": "prd_paulvandyk",
+      "name": "Paul van Dyk",
+      "entity_type": "producer",
+      "country": "Germany",
+      "genres": [
+        "Trance",
+        "Electronic"
+      ],
+      "attributes": {},
+      "sonic_signature": "trance"
+    },
+    {
+      "id": "prd_boysnoize",
+      "name": "Boys Noize (Alex Ridha)",
+      "entity_type": "producer",
+      "country": "Germany",
+      "genres": [
+        "Electro",
+        "Industrial"
+      ],
+      "attributes": {},
+      "sonic_signature": "Multi-Genre Architect"
+    },
+    {
+      "id": "prd_stephanbodzin",
+      "name": "Stephan Bodzin",
+      "entity_type": "producer",
+      "country": "Germany",
+      "genres": [
+        "Melodic Techno",
+        "Synth"
+      ],
+      "attributes": {},
+      "sonic_signature": "techno"
+    },
+    {
+      "id": "prd_brian",
+      "name": "Brian Eno",
+      "entity_type": "producer",
+      "country": "UK",
+      "genres": [
+        "Ambient",
+        "Electronic",
+        "Art Rock"
+      ],
+      "attributes": {},
+      "sonic_signature": "ambient_downtempo"
+    },
+    {
+      "id": "prd_nigel",
+      "name": "Nigel Godrich",
+      "entity_type": "producer",
+      "country": "UK",
+      "genres": [
+        "Art Rock",
+        "Alternative"
+      ],
+      "attributes": {},
+      "sonic_signature": "electro_pop"
+    },
+    {
+      "id": "prd_georgemartin",
+      "name": "George Martin",
+      "entity_type": "producer",
+      "country": "UK",
+      "genres": [
+        "Classic Rock",
+        "Orchestral"
+      ],
+      "attributes": {},
+      "sonic_signature": "electro_pop"
+    },
+    {
+      "id": "prd_daft_thomas",
+      "name": "Thomas Bangalter (Daft Punk)",
+      "entity_type": "producer",
+      "country": "France",
+      "genres": [
+        "French Touch",
+        "House"
+      ],
+      "attributes": {},
+      "sonic_signature": "house"
+    },
+    {
+      "id": "prd_pedrowinter",
+      "name": "Pedro Winter (Busy P)",
+      "entity_type": "producer",
+      "country": "France",
+      "genres": [
+        "Electro House",
+        "Indie Dance"
+      ],
+      "attributes": {},
+      "sonic_signature": "house"
+    },
+    {
+      "id": "prd_tiesto_prd",
+      "name": "Ti\u00ebsto",
+      "entity_type": "producer",
+      "country": "Netherlands",
+      "genres": [
+        "Trance",
+        "EDM",
+        "House"
+      ],
+      "attributes": {},
+      "sonic_signature": "trance"
+    },
+    {
+      "id": "prd_sakamoto_prd",
+      "name": "Ryuichi Sakamoto",
+      "entity_type": "producer",
+      "country": "Japan",
+      "genres": [
+        "Ambient",
+        "Electronic",
+        "Classical"
+      ],
+      "attributes": {},
+      "sonic_signature": "electro_pop"
+    },
+    {
+      "id": "prd_hisaishi_prd",
+      "name": "Joe Hisaishi",
+      "entity_type": "producer",
+      "country": "Japan",
+      "genres": [
+        "Orchestral",
+        "Cinematic"
+      ],
+      "attributes": {},
+      "sonic_signature": "electro_pop"
+    },
+    {
+      "id": "prd_nujabes_prd",
+      "name": "Nujabes (Jun Seba)",
+      "entity_type": "producer",
+      "country": "Japan",
+      "genres": [
+        "Lo-Fi",
+        "Jazz Rap"
+      ],
+      "attributes": {},
+      "sonic_signature": "techno"
+    },
+    {
+      "id": "prd_hitman",
+      "name": "Bang Si-hyuk (Hitman Bang)",
+      "entity_type": "producer",
+      "country": "South Korea",
+      "genres": [
+        "K-Pop",
+        "Hip-Hop"
+      ],
+      "attributes": {},
+      "sonic_signature": "Multi-Genre Architect"
+    },
+    {
+      "id": "prd_teddypark",
+      "name": "Teddy Park",
+      "entity_type": "producer",
+      "country": "South Korea",
+      "genres": [
+        "K-Pop",
+        "EDM"
+      ],
+      "attributes": {},
+      "sonic_signature": "techno"
+    },
+    {
+      "id": "prd_pdogg",
+      "name": "Pdogg",
+      "entity_type": "producer",
+      "country": "South Korea",
+      "genres": [
+        "Hip-Hop",
+        "Pop"
+      ],
+      "attributes": {},
+      "sonic_signature": "techno"
+    },
+    {
+      "id": "prd_arrahman",
+      "name": "A.R. Rahman",
+      "entity_type": "producer",
+      "country": "India",
+      "genres": [
+        "Cinematic",
+        "World",
+        "Classical"
+      ],
+      "attributes": {},
+      "sonic_signature": "electro_pop"
+    },
+    {
+      "id": "prd_kingtubby",
+      "name": "King Tubby",
+      "entity_type": "producer",
+      "country": "Jamaica",
+      "genres": [
+        "Dub",
+        "Reggae"
+      ],
+      "attributes": {},
+      "sonic_signature": "electro_pop"
+    },
+    {
+      "id": "prd_leeperry",
+      "name": "Lee 'Scratch' Perry",
+      "entity_type": "producer",
+      "country": "Jamaica",
+      "genres": [
+        "Dub",
+        "Reggae"
+      ],
+      "attributes": {},
+      "sonic_signature": "electro_pop"
+    },
+    {
+      "id": "prd_donjazzy",
+      "name": "Don Jazzy",
+      "entity_type": "producer",
+      "country": "Nigeria",
+      "genres": [
+        "Afrobeats",
+        "Afropop"
+      ],
+      "attributes": {},
+      "sonic_signature": "electro_pop"
+    },
+    {
+      "id": "prd_sarz",
+      "name": "Sarz",
+      "entity_type": "producer",
+      "country": "Nigeria",
+      "genres": [
+        "Afro-Fusion",
+        "Afropop"
+      ],
+      "attributes": {},
+      "sonic_signature": "electro_pop"
+    },
+    {
+      "id": "prd_blackcoffee_prd",
+      "name": "Black Coffee",
+      "entity_type": "producer",
+      "country": "South Africa",
+      "genres": [
+        "Afro-House",
+        "Deep House"
+      ],
+      "attributes": {},
+      "sonic_signature": "house"
+    },
+    {
+      "id": "prd_tainy",
+      "name": "Tainy (Marco Mas\u00eds)",
+      "entity_type": "producer",
+      "country": "Puerto Rico",
+      "genres": [
+        "Reggaeton",
+        "Latin Trap"
+      ],
+      "attributes": {},
+      "sonic_signature": "techno"
+    },
+    {
+      "id": "prd_ovydrums",
+      "name": "Ovy On The Drums",
+      "entity_type": "producer",
+      "country": "Colombia",
+      "genres": [
+        "Reggaeton",
+        "Pop"
+      ],
+      "attributes": {},
+      "sonic_signature": "electro_pop"
+    },
+    {
+      "id": "prd_40",
+      "name": "Noah '40' Shebib",
+      "entity_type": "producer",
+      "country": "Canada",
+      "genres": [
+        "Hip-Hop",
+        "R&B"
+      ],
+      "attributes": {},
+      "sonic_signature": "techno"
+    },
+    {
+      "id": "prd_kaytranada_prd",
+      "name": "KAYTRANADA",
+      "entity_type": "producer",
+      "country": "Canada",
+      "genres": [
+        "Neo-Soul",
+        "House"
+      ],
+      "attributes": {},
+      "sonic_signature": "techno"
+    },
+    {
+      "id": "prd_kevinparker",
+      "name": "Kevin Parker (Tame Impala)",
+      "entity_type": "producer",
+      "country": "Australia",
+      "genres": [
+        "Psychedelic",
+        "Synthpop"
+      ],
+      "attributes": {},
+      "sonic_signature": "electro_pop"
+    }
+  ],
+  "artist": [
+    {
+      "id": "art_taylor",
+      "name": "Taylor Swift",
+      "entity_type": "artist",
+      "country": "USA",
+      "genres": [
+        "Pop",
+        "Country",
+        "Indie Folk"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9996,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_billie",
+      "name": "Billie Eilish",
+      "entity_type": "artist",
+      "country": "USA",
+      "genres": [
+        "Pop",
+        "Alternative"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9997,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_kendrick",
+      "name": "Kendrick Lamar",
+      "entity_type": "artist",
+      "country": "USA",
+      "genres": [
+        "Hip-Hop",
+        "Jazz Rap"
+      ],
+      "attributes": {},
+      "classified_subgenre": "techno",
+      "classification_confidence": 0.9975,
+      "detected_bpm": 140.0
+    },
+    {
+      "id": "art_kanye",
+      "name": "Ye (Kanye West)",
+      "entity_type": "artist",
+      "country": "USA",
+      "genres": [
+        "Hip-Hop",
+        "Art Pop"
+      ],
+      "attributes": {},
+      "classified_subgenre": "techno",
+      "classification_confidence": 0.9977,
+      "detected_bpm": 140.0
+    },
+    {
+      "id": "art_eminem",
+      "name": "Eminem",
+      "entity_type": "artist",
+      "country": "USA",
+      "genres": [
+        "Hip-Hop",
+        "Hardcore Rap"
+      ],
+      "attributes": {},
+      "classified_subgenre": "techno",
+      "classification_confidence": 0.9979,
+      "detected_bpm": 140.0
+    },
+    {
+      "id": "art_travisscott",
+      "name": "Travis Scott",
+      "entity_type": "artist",
+      "country": "USA",
+      "genres": [
+        "Trap",
+        "Psychedelic Rap"
+      ],
+      "attributes": {},
+      "classified_subgenre": "techno",
+      "classification_confidence": 0.9988,
+      "detected_bpm": 140.0
+    },
+    {
+      "id": "art_future",
+      "name": "Future",
+      "entity_type": "artist",
+      "country": "USA",
+      "genres": [
+        "Hip-Hop",
+        "Trap"
+      ],
+      "attributes": {},
+      "classified_subgenre": "techno",
+      "classification_confidence": 0.998,
+      "detected_bpm": 140.0
+    },
+    {
+      "id": "art_21savage",
+      "name": "21 Savage",
+      "entity_type": "artist",
+      "country": "USA",
+      "genres": [
+        "Hip-Hop",
+        "Trap"
+      ],
+      "attributes": {},
+      "classified_subgenre": "techno",
+      "classification_confidence": 0.9971,
+      "detected_bpm": 140.0
+    },
+    {
+      "id": "art_beyonce",
+      "name": "Beyonc\u00e9",
+      "entity_type": "artist",
+      "country": "USA",
+      "genres": [
+        "R&B",
+        "Pop",
+        "House"
+      ],
+      "attributes": {},
+      "classified_subgenre": "house",
+      "classification_confidence": 0.9947,
+      "detected_bpm": 124.0
+    },
+    {
+      "id": "art_sza",
+      "name": "SZA",
+      "entity_type": "artist",
+      "country": "USA",
+      "genres": [
+        "Neo-Soul",
+        "R&B"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9996,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_nirvana",
+      "name": "Nirvana",
+      "entity_type": "artist",
+      "country": "USA",
+      "genres": [
+        "Grunge",
+        "Alternative Rock"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9995,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_foo",
+      "name": "Foo Fighters",
+      "entity_type": "artist",
+      "country": "USA",
+      "genres": [
+        "Post-Grunge",
+        "Hard Rock"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9995,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_redhot",
+      "name": "Red Hot Chili Peppers",
+      "entity_type": "artist",
+      "country": "USA",
+      "genres": [
+        "Funk Rock",
+        "Alternative"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9994,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_phoebe",
+      "name": "Phoebe Bridgers",
+      "entity_type": "artist",
+      "country": "USA",
+      "genres": [
+        "Indie Rock",
+        "Folk"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9992,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_clairo",
+      "name": "Clairo",
+      "entity_type": "artist",
+      "country": "USA",
+      "genres": [
+        "Bedroom Pop",
+        "Indie Pop"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9996,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_skrillex_art",
+      "name": "Skrillex",
+      "entity_type": "artist",
+      "country": "USA",
+      "genres": [
+        "Dubstep",
+        "EDM",
+        "Pop"
+      ],
+      "attributes": {},
+      "classified_subgenre": "dubstep",
+      "classification_confidence": 0.8681,
+      "detected_bpm": 145.0
+    },
+    {
+      "id": "art_flyinglotus",
+      "name": "Flying Lotus",
+      "entity_type": "artist",
+      "country": "USA",
+      "genres": [
+        "Experimental Hip-Hop",
+        "Jazz Fusion"
+      ],
+      "attributes": {},
+      "classified_subgenre": "techno",
+      "classification_confidence": 0.9983,
+      "detected_bpm": 140.0
+    },
+    {
+      "id": "art_beatles",
+      "name": "The Beatles",
+      "entity_type": "artist",
+      "country": "UK",
+      "genres": [
+        "Classic Rock",
+        "Psychedelic Pop"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9995,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_queen",
+      "name": "Queen",
+      "entity_type": "artist",
+      "country": "UK",
+      "genres": [
+        "Glam Rock",
+        "Arena Rock"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9996,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_radiohead",
+      "name": "Radiohead",
+      "entity_type": "artist",
+      "country": "UK",
+      "genres": [
+        "Art Rock",
+        "Alternative Rock",
+        "Electronic"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9994,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_adele",
+      "name": "Adele",
+      "entity_type": "artist",
+      "country": "UK",
+      "genres": [
+        "Pop",
+        "Soul"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9994,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_dua",
+      "name": "Dua Lipa",
+      "entity_type": "artist",
+      "country": "UK",
+      "genres": [
+        "Pop",
+        "Disco"
+      ],
+      "attributes": {},
+      "classified_subgenre": "house",
+      "classification_confidence": 0.9951,
+      "detected_bpm": 124.0
+    },
+    {
+      "id": "art_harry",
+      "name": "Harry Styles",
+      "entity_type": "artist",
+      "country": "UK",
+      "genres": [
+        "Pop",
+        "Soft Rock"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9996,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_arctic",
+      "name": "Arctic Monkeys",
+      "entity_type": "artist",
+      "country": "UK",
+      "genres": [
+        "Indie Rock",
+        "Garage Rock"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9996,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_aphex",
+      "name": "Aphex Twin",
+      "entity_type": "artist",
+      "country": "UK",
+      "genres": [
+        "Electronic",
+        "IDM",
+        "Ambient"
+      ],
+      "attributes": {},
+      "classified_subgenre": "ambient_downtempo",
+      "classification_confidence": 0.9999,
+      "detected_bpm": 80.0
+    },
+    {
+      "id": "art_fourtet",
+      "name": "Four Tet",
+      "entity_type": "artist",
+      "country": "UK",
+      "genres": [
+        "Electronic",
+        "Folktronica"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9995,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_bicep",
+      "name": "BICEP",
+      "entity_type": "artist",
+      "country": "UK",
+      "genres": [
+        "Electronic",
+        "Breakbeat"
+      ],
+      "attributes": {},
+      "classified_subgenre": "drum_and_bass",
+      "classification_confidence": 0.7621,
+      "detected_bpm": 174.0
+    },
+    {
+      "id": "art_bonobo",
+      "name": "Bonobo",
+      "entity_type": "artist",
+      "country": "UK",
+      "genres": [
+        "Electronic",
+        "Downtempo"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9995,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_calvin",
+      "name": "Calvin Harris",
+      "entity_type": "artist",
+      "country": "UK",
+      "genres": [
+        "EDM",
+        "Dance-Pop"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9995,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_davidbowie",
+      "name": "David Bowie",
+      "entity_type": "artist",
+      "country": "UK",
+      "genres": [
+        "Art Rock",
+        "Glam Rock",
+        "Berlin Era"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9995,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_depechemode",
+      "name": "Depeche Mode",
+      "entity_type": "artist",
+      "country": "UK",
+      "genres": [
+        "Synthpop",
+        "Industrial Rock"
+      ],
+      "attributes": {},
+      "classified_subgenre": "techno",
+      "classification_confidence": 0.9997,
+      "detected_bpm": 132.0
+    },
+    {
+      "id": "art_massiveattack",
+      "name": "Massive Attack",
+      "entity_type": "artist",
+      "country": "UK",
+      "genres": [
+        "Trip-Hop",
+        "Dub",
+        "Electronica"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9995,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_kraftwerk",
+      "name": "Kraftwerk",
+      "entity_type": "artist",
+      "country": "Germany",
+      "genres": [
+        "Electronic",
+        "Synthpop",
+        "Krautrock"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9992,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_rammstein",
+      "name": "Rammstein",
+      "entity_type": "artist",
+      "country": "Germany",
+      "genres": [
+        "Neue Deutsche H\u00e4rte",
+        "Industrial Metal"
+      ],
+      "attributes": {},
+      "classified_subgenre": "techno",
+      "classification_confidence": 0.9997,
+      "detected_bpm": 132.0
+    },
+    {
+      "id": "art_scorpions",
+      "name": "Scorpions",
+      "entity_type": "artist",
+      "country": "Germany",
+      "genres": [
+        "Hard Rock",
+        "Heavy Metal"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9997,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_nilsfrahm_art",
+      "name": "Nils Frahm",
+      "entity_type": "artist",
+      "country": "Germany",
+      "genres": [
+        "Neo-Classical",
+        "Ambient",
+        "Minimalism"
+      ],
+      "attributes": {},
+      "classified_subgenre": "ambient_downtempo",
+      "classification_confidence": 0.9995,
+      "detected_bpm": 80.0
+    },
+    {
+      "id": "art_modeselektor",
+      "name": "Modeselektor / Moderat",
+      "entity_type": "artist",
+      "country": "Germany",
+      "genres": [
+        "IDM",
+        "Electronic",
+        "Techno"
+      ],
+      "attributes": {},
+      "classified_subgenre": "techno",
+      "classification_confidence": 0.9998,
+      "detected_bpm": 132.0
+    },
+    {
+      "id": "art_paulvandyk_art",
+      "name": "Paul van Dyk",
+      "entity_type": "artist",
+      "country": "Germany",
+      "genres": [
+        "Trance",
+        "Electronic"
+      ],
+      "attributes": {},
+      "classified_subgenre": "trance",
+      "classification_confidence": 0.997,
+      "detected_bpm": 138.0
+    },
+    {
+      "id": "art_borisbrejcha",
+      "name": "Boris Brejcha",
+      "entity_type": "artist",
+      "country": "Germany",
+      "genres": [
+        "High-Tech Minimal",
+        "Techno"
+      ],
+      "attributes": {},
+      "classified_subgenre": "techno",
+      "classification_confidence": 0.9996,
+      "detected_bpm": 132.0
+    },
+    {
+      "id": "art_robinschulz",
+      "name": "Robin Schulz",
+      "entity_type": "artist",
+      "country": "Germany",
+      "genres": [
+        "Deep House",
+        "Dance-Pop"
+      ],
+      "attributes": {},
+      "classified_subgenre": "house",
+      "classification_confidence": 0.9829,
+      "detected_bpm": 124.0
+    },
+    {
+      "id": "art_stephanbodzin_art",
+      "name": "Stephan Bodzin",
+      "entity_type": "artist",
+      "country": "Germany",
+      "genres": [
+        "Melodic Techno",
+        "Electronic"
+      ],
+      "attributes": {},
+      "classified_subgenre": "techno",
+      "classification_confidence": 0.9996,
+      "detected_bpm": 132.0
+    },
+    {
+      "id": "art_tangerinedream",
+      "name": "Tangerine Dream",
+      "entity_type": "artist",
+      "country": "Germany",
+      "genres": [
+        "Berlin School",
+        "Ambient"
+      ],
+      "attributes": {},
+      "classified_subgenre": "ambient_downtempo",
+      "classification_confidence": 0.9999,
+      "detected_bpm": 80.0
+    },
+    {
+      "id": "art_zimmer_art",
+      "name": "Hans Zimmer",
+      "entity_type": "artist",
+      "country": "Germany",
+      "genres": [
+        "Cinematic",
+        "Orchestral"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9995,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_maxrichter",
+      "name": "Max Richter",
+      "entity_type": "artist",
+      "country": "UK / Germany",
+      "genres": [
+        "Post-Minimalism",
+        "Classical"
+      ],
+      "attributes": {},
+      "classified_subgenre": "ambient_downtempo",
+      "classification_confidence": 0.9996,
+      "detected_bpm": 80.0
+    },
+    {
+      "id": "art_beethoven_art",
+      "name": "Ludwig van Beethoven",
+      "entity_type": "artist",
+      "country": "Germany",
+      "genres": [
+        "Classical",
+        "Symphonic"
+      ],
+      "attributes": {},
+      "classified_subgenre": "ambient_downtempo",
+      "classification_confidence": 0.9997,
+      "detected_bpm": 80.0
+    },
+    {
+      "id": "art_bach_art",
+      "name": "Johann Sebastian Bach",
+      "entity_type": "artist",
+      "country": "Germany",
+      "genres": [
+        "Baroque",
+        "Polyphony"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9996,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_tiesto",
+      "name": "Ti\u00ebsto",
+      "entity_type": "artist",
+      "country": "Netherlands",
+      "genres": [
+        "EDM",
+        "Trance",
+        "Electro House"
+      ],
+      "attributes": {},
+      "classified_subgenre": "trance",
+      "classification_confidence": 0.997,
+      "detected_bpm": 138.0
+    },
+    {
+      "id": "art_armin",
+      "name": "Armin van Buuren",
+      "entity_type": "artist",
+      "country": "Netherlands",
+      "genres": [
+        "Trance",
+        "Progressive House"
+      ],
+      "attributes": {},
+      "classified_subgenre": "trance",
+      "classification_confidence": 0.9983,
+      "detected_bpm": 138.0
+    },
+    {
+      "id": "art_martingarrix",
+      "name": "Martin Garrix",
+      "entity_type": "artist",
+      "country": "Netherlands",
+      "genres": [
+        "EDM",
+        "Dance-Pop",
+        "Progressive"
+      ],
+      "attributes": {},
+      "classified_subgenre": "trance",
+      "classification_confidence": 0.9973,
+      "detected_bpm": 138.0
+    },
+    {
+      "id": "art_daftpunk",
+      "name": "Daft Punk",
+      "entity_type": "artist",
+      "country": "France",
+      "genres": [
+        "French House",
+        "Electronic",
+        "Disco"
+      ],
+      "attributes": {},
+      "classified_subgenre": "house",
+      "classification_confidence": 0.9916,
+      "detected_bpm": 124.0
+    },
+    {
+      "id": "art_justice",
+      "name": "Justice",
+      "entity_type": "artist",
+      "country": "France",
+      "genres": [
+        "Electro House",
+        "Synthwave"
+      ],
+      "attributes": {},
+      "classified_subgenre": "house",
+      "classification_confidence": 0.994,
+      "detected_bpm": 124.0
+    },
+    {
+      "id": "art_phoenix",
+      "name": "Phoenix",
+      "entity_type": "artist",
+      "country": "France",
+      "genres": [
+        "Indie Pop",
+        "Synthpop"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9993,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_air_band",
+      "name": "Air",
+      "entity_type": "artist",
+      "country": "France",
+      "genres": [
+        "Space Pop",
+        "Downtempo"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9992,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_davidguetta",
+      "name": "David Guetta",
+      "entity_type": "artist",
+      "country": "France",
+      "genres": [
+        "EDM",
+        "Dance-Pop"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9995,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_gesaffelstein",
+      "name": "Gesaffelstein (Mike L\u00e9vy)",
+      "entity_type": "artist",
+      "country": "France",
+      "genres": [
+        "Industrial Techno",
+        "Dark Wave"
+      ],
+      "attributes": {},
+      "classified_subgenre": "techno",
+      "classification_confidence": 0.9997,
+      "detected_bpm": 132.0
+    },
+    {
+      "id": "art_abba",
+      "name": "ABBA",
+      "entity_type": "artist",
+      "country": "Sweden",
+      "genres": [
+        "Europop",
+        "Disco"
+      ],
+      "attributes": {},
+      "classified_subgenre": "house",
+      "classification_confidence": 0.9907,
+      "detected_bpm": 124.0
+    },
+    {
+      "id": "art_avicii",
+      "name": "Avicii (Tim Bergling)",
+      "entity_type": "artist",
+      "country": "Sweden",
+      "genres": [
+        "EDM",
+        "Melodic House"
+      ],
+      "attributes": {},
+      "classified_subgenre": "house",
+      "classification_confidence": 0.9888,
+      "detected_bpm": 124.0
+    },
+    {
+      "id": "art_swedishhouse",
+      "name": "Swedish House Mafia",
+      "entity_type": "artist",
+      "country": "Sweden",
+      "genres": [
+        "Progressive House",
+        "EDM"
+      ],
+      "attributes": {},
+      "classified_subgenre": "trance",
+      "classification_confidence": 0.9977,
+      "detected_bpm": 138.0
+    },
+    {
+      "id": "art_robyn",
+      "name": "Robyn",
+      "entity_type": "artist",
+      "country": "Sweden",
+      "genres": [
+        "Electropop",
+        "Dance-Pop"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9996,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_zaralarsson",
+      "name": "Zara Larsson",
+      "entity_type": "artist",
+      "country": "Sweden",
+      "genres": [
+        "Dance-Pop",
+        "R&B"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9995,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_bjork",
+      "name": "Bj\u00f6rk",
+      "entity_type": "artist",
+      "country": "Iceland",
+      "genres": [
+        "Art Pop",
+        "Electronic",
+        "Avant-Garde"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9994,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_sigurros",
+      "name": "Sigur R\u00f3s",
+      "entity_type": "artist",
+      "country": "Iceland",
+      "genres": [
+        "Post-Rock",
+        "Ambient"
+      ],
+      "attributes": {},
+      "classified_subgenre": "ambient_downtempo",
+      "classification_confidence": 0.9998,
+      "detected_bpm": 80.0
+    },
+    {
+      "id": "art_ymo",
+      "name": "Yellow Magic Orchestra (YMO)",
+      "entity_type": "artist",
+      "country": "Japan",
+      "genres": [
+        "Synthpop",
+        "Electronic"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9996,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_sakamoto",
+      "name": "Ryuichi Sakamoto",
+      "entity_type": "artist",
+      "country": "Japan",
+      "genres": [
+        "Ambient",
+        "Classical",
+        "Electronic"
+      ],
+      "attributes": {},
+      "classified_subgenre": "ambient_downtempo",
+      "classification_confidence": 0.9999,
+      "detected_bpm": 80.0
+    },
+    {
+      "id": "art_hisaishi",
+      "name": "Joe Hisaishi",
+      "entity_type": "artist",
+      "country": "Japan",
+      "genres": [
+        "Cinematic",
+        "Orchestral"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9991,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_nujabes",
+      "name": "Nujabes",
+      "entity_type": "artist",
+      "country": "Japan",
+      "genres": [
+        "Lo-Fi Hip-Hop",
+        "Jazz Rap"
+      ],
+      "attributes": {},
+      "classified_subgenre": "techno",
+      "classification_confidence": 0.9979,
+      "detected_bpm": 140.0
+    },
+    {
+      "id": "art_babymetal",
+      "name": "BABYMETAL",
+      "entity_type": "artist",
+      "country": "Japan",
+      "genres": [
+        "Kawaii Metal",
+        "J-Rock"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9994,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_tatsuro",
+      "name": "Tatsuro Yamashita",
+      "entity_type": "artist",
+      "country": "Japan",
+      "genres": [
+        "City Pop",
+        "Funk"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9997,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_bts",
+      "name": "BTS",
+      "entity_type": "artist",
+      "country": "South Korea",
+      "genres": [
+        "K-Pop",
+        "Dance-Pop",
+        "Hip-Hop"
+      ],
+      "attributes": {},
+      "classified_subgenre": "techno",
+      "classification_confidence": 0.9981,
+      "detected_bpm": 140.0
+    },
+    {
+      "id": "art_blackpink",
+      "name": "BLACKPINK",
+      "entity_type": "artist",
+      "country": "South Korea",
+      "genres": [
+        "K-Pop",
+        "EDM",
+        "Trap"
+      ],
+      "attributes": {},
+      "classified_subgenre": "techno",
+      "classification_confidence": 0.9975,
+      "detected_bpm": 140.0
+    },
+    {
+      "id": "art_newjeans",
+      "name": "NewJeans",
+      "entity_type": "artist",
+      "country": "South Korea",
+      "genres": [
+        "K-Pop",
+        "UK Garage",
+        "R&B"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9994,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_straykids",
+      "name": "Stray Kids",
+      "entity_type": "artist",
+      "country": "South Korea",
+      "genres": [
+        "K-Pop",
+        "Electronic Rock"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9995,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_seventeen",
+      "name": "SEVENTEEN",
+      "entity_type": "artist",
+      "country": "South Korea",
+      "genres": [
+        "K-Pop",
+        "Synthpop",
+        "Dance"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9992,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_arrahman_art",
+      "name": "A.R. Rahman",
+      "entity_type": "artist",
+      "country": "India",
+      "genres": [
+        "Cinematic",
+        "Fusion",
+        "Qawwali"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9994,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_diljit",
+      "name": "Diljit Dosanjh",
+      "entity_type": "artist",
+      "country": "India",
+      "genres": [
+        "Punjabi Pop",
+        "Bhangra",
+        "Urban"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9995,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_divine",
+      "name": "DIVINE",
+      "entity_type": "artist",
+      "country": "India",
+      "genres": [
+        "Gully Rap",
+        "Desi Hip-Hop"
+      ],
+      "attributes": {},
+      "classified_subgenre": "techno",
+      "classification_confidence": 0.9976,
+      "detected_bpm": 140.0
+    },
+    {
+      "id": "art_bobmarley",
+      "name": "Bob Marley & The Wailers",
+      "entity_type": "artist",
+      "country": "Jamaica",
+      "genres": [
+        "Reggae",
+        "Roots",
+        "Ska"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9995,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_kingtubby_art",
+      "name": "King Tubby",
+      "entity_type": "artist",
+      "country": "Jamaica",
+      "genres": [
+        "Dub",
+        "Roots"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9994,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_leeperry_art",
+      "name": "Lee 'Scratch' Perry",
+      "entity_type": "artist",
+      "country": "Jamaica",
+      "genres": [
+        "Dub",
+        "Experimental"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9996,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_seanpaul",
+      "name": "Sean Paul",
+      "entity_type": "artist",
+      "country": "Jamaica",
+      "genres": [
+        "Dancehall",
+        "Reggaeton"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9997,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_felakuti",
+      "name": "Fela Kuti",
+      "entity_type": "artist",
+      "country": "Nigeria",
+      "genres": [
+        "Afrobeat",
+        "Jazz",
+        "Funk"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9996,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_burnaboy",
+      "name": "Burna Boy",
+      "entity_type": "artist",
+      "country": "Nigeria",
+      "genres": [
+        "Afrobeat",
+        "Afropop"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9994,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_wizkid",
+      "name": "Wizkid",
+      "entity_type": "artist",
+      "country": "Nigeria",
+      "genres": [
+        "Afrobeats",
+        "R&B"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9997,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_davido",
+      "name": "Davido",
+      "entity_type": "artist",
+      "country": "Nigeria",
+      "genres": [
+        "Afropop",
+        "Amapiano"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9996,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_tems",
+      "name": "Tems",
+      "entity_type": "artist",
+      "country": "Nigeria",
+      "genres": [
+        "Afro-Soul",
+        "R&B"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9993,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_rema",
+      "name": "Rema",
+      "entity_type": "artist",
+      "country": "Nigeria",
+      "genres": [
+        "Afro-Rave",
+        "Afropop"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9993,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_blackcoffee",
+      "name": "Black Coffee",
+      "entity_type": "artist",
+      "country": "South Africa",
+      "genres": [
+        "Afro-House",
+        "Deep House"
+      ],
+      "attributes": {},
+      "classified_subgenre": "house",
+      "classification_confidence": 0.997,
+      "detected_bpm": 124.0
+    },
+    {
+      "id": "art_tyla",
+      "name": "Tyla",
+      "entity_type": "artist",
+      "country": "South Africa",
+      "genres": [
+        "Popiano",
+        "Amapiano",
+        "R&B"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9996,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_jobim",
+      "name": "Ant\u00f4nio Carlos Jobim",
+      "entity_type": "artist",
+      "country": "Brazil",
+      "genres": [
+        "Bossa Nova",
+        "MPB",
+        "Jazz"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9995,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_caetano",
+      "name": "Caetano Veloso",
+      "entity_type": "artist",
+      "country": "Brazil",
+      "genres": [
+        "Tropic\u00e1lia",
+        "MPB"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9997,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_anitta",
+      "name": "Anitta",
+      "entity_type": "artist",
+      "country": "Brazil",
+      "genres": [
+        "Funk Carioca",
+        "Latin Pop"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9997,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_alok",
+      "name": "Alok",
+      "entity_type": "artist",
+      "country": "Brazil",
+      "genres": [
+        "Brazilian Bass",
+        "Slap House"
+      ],
+      "attributes": {},
+      "classified_subgenre": "drum_and_bass",
+      "classification_confidence": 0.8076,
+      "detected_bpm": 174.0
+    },
+    {
+      "id": "art_badbunny",
+      "name": "Bad Bunny",
+      "entity_type": "artist",
+      "country": "Puerto Rico",
+      "genres": [
+        "Reggaeton",
+        "Latin Trap"
+      ],
+      "attributes": {},
+      "classified_subgenre": "techno",
+      "classification_confidence": 0.9982,
+      "detected_bpm": 140.0
+    },
+    {
+      "id": "art_rosalia",
+      "name": "Rosal\u00eda",
+      "entity_type": "artist",
+      "country": "Spain",
+      "genres": [
+        "Flamenco Pop",
+        "Art Pop"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9995,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_jbalvin",
+      "name": "J Balvin",
+      "entity_type": "artist",
+      "country": "Colombia",
+      "genres": [
+        "Reggaeton",
+        "Latin Pop"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9993,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_karolg",
+      "name": "Karol G",
+      "entity_type": "artist",
+      "country": "Colombia",
+      "genres": [
+        "Reggaeton",
+        "Latin Trap"
+      ],
+      "attributes": {},
+      "classified_subgenre": "techno",
+      "classification_confidence": 0.9975,
+      "detected_bpm": 140.0
+    },
+    {
+      "id": "art_pesopluma",
+      "name": "Peso Pluma",
+      "entity_type": "artist",
+      "country": "Mexico",
+      "genres": [
+        "Corridos Tumbados",
+        "Regional Mexican"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9995,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_tameimpala",
+      "name": "Tame Impala",
+      "entity_type": "artist",
+      "country": "Australia",
+      "genres": [
+        "Psychedelic Pop",
+        "Synthpop"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9996,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_flume",
+      "name": "Flume",
+      "entity_type": "artist",
+      "country": "Australia",
+      "genres": [
+        "Future Bass",
+        "Wonky Electronic"
+      ],
+      "attributes": {},
+      "classified_subgenre": "drum_and_bass",
+      "classification_confidence": 0.7253,
+      "detected_bpm": 174.0
+    },
+    {
+      "id": "art_rufus",
+      "name": "R\u00fcf\u00fcs Du Sol",
+      "entity_type": "artist",
+      "country": "Australia",
+      "genres": [
+        "Live Electronic",
+        "Deep House"
+      ],
+      "attributes": {},
+      "classified_subgenre": "house",
+      "classification_confidence": 0.9852,
+      "detected_bpm": 124.0
+    },
+    {
+      "id": "art_drake",
+      "name": "Drake",
+      "entity_type": "artist",
+      "country": "Canada",
+      "genres": [
+        "Hip-Hop",
+        "R&B",
+        "Toronto Sound"
+      ],
+      "attributes": {},
+      "classified_subgenre": "techno",
+      "classification_confidence": 0.9968,
+      "detected_bpm": 140.0
+    },
+    {
+      "id": "art_weeknd",
+      "name": "The Weeknd",
+      "entity_type": "artist",
+      "country": "Canada",
+      "genres": [
+        "R&B",
+        "Pop",
+        "Synthwave"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9992,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_deadmau5",
+      "name": "deadmau5",
+      "entity_type": "artist",
+      "country": "Canada",
+      "genres": [
+        "Progressive House",
+        "Electro"
+      ],
+      "attributes": {},
+      "classified_subgenre": "trance",
+      "classification_confidence": 0.9978,
+      "detected_bpm": 138.0
+    },
+    {
+      "id": "art_kaytranada",
+      "name": "KAYTRANADA",
+      "entity_type": "artist",
+      "country": "Canada",
+      "genres": [
+        "Neo-Soul",
+        "House",
+        "Hip-Hop"
+      ],
+      "attributes": {},
+      "classified_subgenre": "techno",
+      "classification_confidence": 0.997,
+      "detected_bpm": 140.0
+    },
+    {
+      "id": "art_arcadefire",
+      "name": "Arcade Fire",
+      "entity_type": "artist",
+      "country": "Canada",
+      "genres": [
+        "Indie Rock",
+        "Art Rock"
+      ],
+      "attributes": {},
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9997,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_emg_berlin_tech",
+      "name": "Klangformer (Emerging Producer)",
+      "entity_type": "artist",
+      "country": "Germany",
+      "genres": [
+        "Techno",
+        "Industrial"
+      ],
+      "attributes": {
+        "development_tier": "Emerging Grassroots Artist"
+      },
+      "classified_subgenre": "techno",
+      "classification_confidence": 0.9997,
+      "detected_bpm": 132.0
+    },
+    {
+      "id": "art_emg_london_soul",
+      "name": "Maya Thorne (Emerging Soul)",
+      "entity_type": "artist",
+      "country": "UK",
+      "genres": [
+        "Neo-Soul",
+        "R&B"
+      ],
+      "attributes": {
+        "development_tier": "Emerging Grassroots Artist"
+      },
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9994,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_emg_hh_classical",
+      "name": "Lukas M. (Emerging Ambient Pianist)",
+      "entity_type": "artist",
+      "country": "Germany",
+      "genres": [
+        "Neo-Classical",
+        "Ambient"
+      ],
+      "attributes": {
+        "development_tier": "Emerging Grassroots Artist"
+      },
+      "classified_subgenre": "ambient_downtempo",
+      "classification_confidence": 0.9998,
+      "detected_bpm": 80.0
+    },
+    {
+      "id": "art_emg_la_bedpop",
+      "name": "Echo Bloom (Emerging Indie)",
+      "entity_type": "artist",
+      "country": "USA",
+      "genres": [
+        "Bedroom Pop",
+        "Indie Rock"
+      ],
+      "attributes": {
+        "development_tier": "Emerging Grassroots Artist"
+      },
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9996,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "art_emg_melb_beats",
+      "name": "Solar Drift (Emerging Electronic)",
+      "entity_type": "artist",
+      "country": "Australia",
+      "genres": [
+        "Future Bass",
+        "Lo-Fi"
+      ],
+      "attributes": {
+        "development_tier": "Emerging Grassroots Artist"
+      },
+      "classified_subgenre": "drum_and_bass",
+      "classification_confidence": 0.6714,
+      "detected_bpm": 174.0
+    },
+    {
+      "id": "mb_art_3cdb360e-d0a2-459f-92f6-f0f28e62127d",
+      "name": "Electronic",
+      "entity_type": "artist",
+      "country": "GB",
+      "genres": [
+        "british",
+        "new wave",
+        "uk",
+        "alternative dance",
+        "english",
+        "england",
+        "synth pop",
+        "rock and indie"
+      ],
+      "attributes": {
+        "disambiguation": null
+      },
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9997,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "mb_art_fa43260d-bcfe-46ba-a8a0-69107538e46c",
+      "name": "Electronic Arts",
+      "entity_type": "artist",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "disambiguation": "Electronic Arts (for Unofficial and Bootleg Soundtracks)"
+      },
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9997,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "mb_art_51d2f351-0c7b-45fd-99fd-330b33b05964",
+      "name": "Elite Electronic",
+      "entity_type": "artist",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "disambiguation": "trance"
+      },
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9996,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "mb_art_000e193b-3adb-4d56-828b-0ffb3f2f1da1",
+      "name": "Electronic Warbear",
+      "entity_type": "artist",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "disambiguation": null
+      },
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9994,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "mb_art_fdcbf873-4a8d-4c62-9352-327451b6a910",
+      "name": "Electronic Frequency",
+      "entity_type": "artist",
+      "country": "DE",
+      "genres": [
+        "electronic"
+      ],
+      "attributes": {
+        "disambiguation": null
+      },
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9993,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "mb_art_b4ed32d5-9d19-4a28-9746-4e8286554d58",
+      "name": "Electroni\u010d",
+      "entity_type": "artist",
+      "country": "AT",
+      "genres": [],
+      "attributes": {
+        "disambiguation": "Short-Lived Autrian Subgroup of Monochrom"
+      },
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9994,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "mb_art_d4aca3ad-25ca-4449-b0b1-db6198d40ae9",
+      "name": "Electronic Fox",
+      "entity_type": "artist",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "disambiguation": null
+      },
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9996,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "mb_art_54eb8ba6-6e0d-4652-91f4-7a4ceeb0c006",
+      "name": "Electronic Beach",
+      "entity_type": "artist",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "disambiguation": null
+      },
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9997,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "mb_art_b1b6fa89-1343-4340-b12f-a7e96ebce3eb",
+      "name": "ESA",
+      "entity_type": "artist",
+      "country": "GB",
+      "genres": [
+        "power noise",
+        "electronic"
+      ],
+      "attributes": {
+        "disambiguation": "Electronic Substance Abuse; Jamie Blacker"
+      },
+      "classified_subgenre": "electro_pop",
+      "classification_confidence": 0.9993,
+      "detected_bpm": 120.0
+    },
+    {
+      "id": "mb_art_21875c2b-84fa-474e-bcfa-9611982b19d5",
+      "name": "Electronic Eye",
+      "entity_type": "artist",
+      "country": "GB",
+      "genres": [
+        "ambient techno"
+      ],
+      "attributes": {
+        "disambiguation": "Richard H. Kirk"
+      },
+      "classified_subgenre": "techno",
+      "classification_confidence": 0.9997,
+      "detected_bpm": 132.0
+    }
+  ],
+  "production_house": [
+    {
+      "id": "dist_bandcamp",
+      "name": "Bandcamp",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "DIY Distribution Platform",
+        "description": "Direct-to-Fan / Highest Artist Revenue Share (80-85%)",
+        "region": "Global"
+      }
+    },
+    {
+      "id": "dist_distrokid",
+      "name": "DistroKid",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "DIY Distribution Platform",
+        "description": "Flat-Fee Unlimited DSP Distribution / Fast Streaming Delivery",
+        "region": "USA / Global"
+      }
+    },
+    {
+      "id": "dist_tunecore",
+      "name": "TuneCore",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "DIY Distribution Platform",
+        "description": "Global DSP Aggregator / Publishing Administration Add-on",
+        "region": "USA / Global"
+      }
+    },
+    {
+      "id": "dist_soundcloud",
+      "name": "SoundCloud (Next Pro)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "DIY Distribution Platform",
+        "description": "Community Discovery / Monetized Streaming",
+        "region": "Germany / USA"
+      }
+    },
+    {
+      "id": "dist_amuse",
+      "name": "Amuse",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "DIY Distribution Platform",
+        "description": "Mobile-First Free & Pro Distribution / Direct A&R Scouting",
+        "region": "Sweden / Global"
+      }
+    },
+    {
+      "id": "geo_de",
+      "name": "Germany",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Country",
+        "continent": "Europe"
+      }
+    },
+    {
+      "id": "state_de_be",
+      "name": "Berlin (Federal State)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "Germany"
+      }
+    },
+    {
+      "id": "city_berlin",
+      "name": "Berlin",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "Berlin (Federal State)",
+        "country": "Germany"
+      }
+    },
+    {
+      "id": "distr_fhain_xberg",
+      "name": "Friedrichshain-Kreuzberg (Club/Techno District)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Berlin"
+      }
+    },
+    {
+      "id": "distr_mitte",
+      "name": "Berlin-Mitte (Historic & Avant-Garde District)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Berlin"
+      }
+    },
+    {
+      "id": "distr_treptow",
+      "name": "Treptow-K\u00f6penick (Funkhaus Complex)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Berlin"
+      }
+    },
+    {
+      "id": "state_de_nrw",
+      "name": "North Rhine-Westphalia (NRW)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "Germany"
+      }
+    },
+    {
+      "id": "city_cologne",
+      "name": "Cologne (K\u00f6ln)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "North Rhine-Westphalia (NRW)",
+        "country": "Germany"
+      }
+    },
+    {
+      "id": "distr_belgisches",
+      "name": "Belgisches Viertel (Indie/Pop Scene)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Cologne (K\u00f6ln)"
+      }
+    },
+    {
+      "id": "distr_ehrenfeld",
+      "name": "Ehrenfeld (Electronic & Club Scene)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Cologne (K\u00f6ln)"
+      }
+    },
+    {
+      "id": "city_dusseldorf",
+      "name": "D\u00fcsseldorf",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "North Rhine-Westphalia (NRW)",
+        "country": "Germany"
+      }
+    },
+    {
+      "id": "distr_duss_altstadt",
+      "name": "Altstadt / Kling Klang Zone",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "D\u00fcsseldorf"
+      }
+    },
+    {
+      "id": "state_de_hh",
+      "name": "Hamburg (City-State)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "Germany"
+      }
+    },
+    {
+      "id": "city_hamburg",
+      "name": "Hamburg",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "Hamburg (City-State)",
+        "country": "Germany"
+      }
+    },
+    {
+      "id": "distr_stpauli",
+      "name": "St. Pauli / Reeperbahn (Showcase & Club Quarter)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Hamburg"
+      }
+    },
+    {
+      "id": "distr_schanze",
+      "name": "Sternschanze (Indie/Vinyl Hub)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Hamburg"
+      }
+    },
+    {
+      "id": "state_de_by",
+      "name": "Bavaria (Bayern)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "Germany"
+      }
+    },
+    {
+      "id": "city_munich",
+      "name": "Munich (M\u00fcnchen)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "Bavaria (Bayern)",
+        "country": "Germany"
+      }
+    },
+    {
+      "id": "distr_glockenbach",
+      "name": "Glockenbachviertel (Disco & Club Hub)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Munich (M\u00fcnchen)"
+      }
+    },
+    {
+      "id": "state_de_he",
+      "name": "Hesse (Hessen)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "Germany"
+      }
+    },
+    {
+      "id": "city_frankfurt",
+      "name": "Frankfurt am Main",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "Hesse (Hessen)",
+        "country": "Germany"
+      }
+    },
+    {
+      "id": "distr_sachsenhausen",
+      "name": "Sachsenhausen / Trance Sound Hub",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Frankfurt am Main"
+      }
+    },
+    {
+      "id": "geo_uk",
+      "name": "United Kingdom",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Country",
+        "continent": "Europe"
+      }
+    },
+    {
+      "id": "state_uk_england",
+      "name": "England",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "United Kingdom"
+      }
+    },
+    {
+      "id": "city_london",
+      "name": "London",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "England",
+        "country": "United Kingdom"
+      }
+    },
+    {
+      "id": "distr_soho_london",
+      "name": "Soho & West End (Studio Row)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "London"
+      }
+    },
+    {
+      "id": "distr_hackney",
+      "name": "Hackney & East London (Bass & Electronic Scene)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "London"
+      }
+    },
+    {
+      "id": "distr_camden",
+      "name": "Camden Town (Rock & Post-Punk Scene)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "London"
+      }
+    },
+    {
+      "id": "city_manchester",
+      "name": "Manchester",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "England",
+        "country": "United Kingdom"
+      }
+    },
+    {
+      "id": "distr_nq_mcr",
+      "name": "Northern Quarter (Indie & Factory Records)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Manchester"
+      }
+    },
+    {
+      "id": "city_bristol",
+      "name": "Bristol",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "England",
+        "country": "United Kingdom"
+      }
+    },
+    {
+      "id": "distr_stpauls_bristol",
+      "name": "St. Pauls (Trip-Hop & Dub System Sound)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Bristol"
+      }
+    },
+    {
+      "id": "state_uk_scotland",
+      "name": "Scotland",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "United Kingdom"
+      }
+    },
+    {
+      "id": "city_glasgow",
+      "name": "Glasgow",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "Scotland",
+        "country": "United Kingdom"
+      }
+    },
+    {
+      "id": "distr_westend_glasgow",
+      "name": "West End (Post-Rock & Indie Hub)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Glasgow"
+      }
+    },
+    {
+      "id": "geo_us",
+      "name": "United States",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Country",
+        "continent": "North America"
+      }
+    },
+    {
+      "id": "state_us_ca",
+      "name": "California",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "United States"
+      }
+    },
+    {
+      "id": "city_la",
+      "name": "Los Angeles",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "California",
+        "country": "United States"
+      }
+    },
+    {
+      "id": "distr_hollywood",
+      "name": "Hollywood & Sunset Blvd (Historic Recording Enclave)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Los Angeles"
+      }
+    },
+    {
+      "id": "distr_silverlake",
+      "name": "Silver Lake & Echo Park (Indie Pop/Rock Scene)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Los Angeles"
+      }
+    },
+    {
+      "id": "distr_compton",
+      "name": "Compton (West Coast Hip-Hop Ground Zero)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Los Angeles"
+      }
+    },
+    {
+      "id": "state_us_ny",
+      "name": "New York State",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "United States"
+      }
+    },
+    {
+      "id": "city_nyc",
+      "name": "New York City",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "New York State",
+        "country": "United States"
+      }
+    },
+    {
+      "id": "distr_greenwich",
+      "name": "Greenwich Village (Folk/Rock & Electric Lady)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "New York City"
+      }
+    },
+    {
+      "id": "distr_williamsburg",
+      "name": "Williamsburg & Bushwick (Indie/Techno Scene)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "New York City"
+      }
+    },
+    {
+      "id": "distr_bronx",
+      "name": "The Bronx (Birthplace of Hip-Hop)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "New York City"
+      }
+    },
+    {
+      "id": "state_us_tn",
+      "name": "Tennessee",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "United States"
+      }
+    },
+    {
+      "id": "city_nashville",
+      "name": "Nashville",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "Tennessee",
+        "country": "United States"
+      }
+    },
+    {
+      "id": "distr_musicrow",
+      "name": "Music Row (Country & Acoustic Publishing)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Nashville"
+      }
+    },
+    {
+      "id": "state_us_ga",
+      "name": "Georgia",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "United States"
+      }
+    },
+    {
+      "id": "city_atlanta",
+      "name": "Atlanta",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "Georgia",
+        "country": "United States"
+      }
+    },
+    {
+      "id": "distr_buckhead_atl",
+      "name": "Buckhead & Zone 6 (Trap Capital)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Atlanta"
+      }
+    },
+    {
+      "id": "state_us_il",
+      "name": "Illinois",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "United States"
+      }
+    },
+    {
+      "id": "city_chicago",
+      "name": "Chicago",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "Illinois",
+        "country": "United States"
+      }
+    },
+    {
+      "id": "distr_southside_chi",
+      "name": "South Side (House Music & Chicago Blues)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Chicago"
+      }
+    },
+    {
+      "id": "state_us_wa",
+      "name": "Washington State",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "United States"
+      }
+    },
+    {
+      "id": "city_seattle",
+      "name": "Seattle",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "Washington State",
+        "country": "United States"
+      }
+    },
+    {
+      "id": "distr_caphill_sea",
+      "name": "Capitol Hill (Grunge & Sub Pop Records)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Seattle"
+      }
+    },
+    {
+      "id": "state_us_mi",
+      "name": "Michigan",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "United States"
+      }
+    },
+    {
+      "id": "city_detroit",
+      "name": "Detroit",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "Michigan",
+        "country": "United States"
+      }
+    },
+    {
+      "id": "distr_detroit_techno",
+      "name": "Detroit Techno & Motown Corridor",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Detroit"
+      }
+    },
+    {
+      "id": "geo_fr",
+      "name": "France",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Country",
+        "continent": "Europe"
+      }
+    },
+    {
+      "id": "state_fr_idf",
+      "name": "\u00cele-de-France",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "France"
+      }
+    },
+    {
+      "id": "city_paris",
+      "name": "Paris",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "\u00cele-de-France",
+        "country": "France"
+      }
+    },
+    {
+      "id": "distr_pigalle",
+      "name": "Pigalle & Montmartre (French Touch / Motorbass)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Paris"
+      }
+    },
+    {
+      "id": "distr_oberkampf",
+      "name": "Oberkampf & Bastille (Indie Dance & Nu-Disco)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Paris"
+      }
+    },
+    {
+      "id": "geo_se",
+      "name": "Sweden",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Country",
+        "continent": "Europe"
+      }
+    },
+    {
+      "id": "state_se_sthlm",
+      "name": "Stockholm County",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "Sweden"
+      }
+    },
+    {
+      "id": "city_stockholm",
+      "name": "Stockholm",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "Stockholm County",
+        "country": "Sweden"
+      }
+    },
+    {
+      "id": "distr_sodermalm",
+      "name": "S\u00f6dermalm (Pop Hitmakers & Indie Studios)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Stockholm"
+      }
+    },
+    {
+      "id": "distr_ostermalm",
+      "name": "\u00d6stermalm (Cheiron / MXM Studio District)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Stockholm"
+      }
+    },
+    {
+      "id": "geo_jp",
+      "name": "Japan",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Country",
+        "continent": "Asia"
+      }
+    },
+    {
+      "id": "state_jp_tokyo",
+      "name": "Tokyo Prefecture",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "Japan"
+      }
+    },
+    {
+      "id": "city_tokyo",
+      "name": "Tokyo",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "Tokyo Prefecture",
+        "country": "Japan"
+      }
+    },
+    {
+      "id": "distr_shibuya",
+      "name": "Shibuya (Shibuya-kei & J-Pop Scene)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Tokyo"
+      }
+    },
+    {
+      "id": "distr_shinjuku",
+      "name": "Shinjuku (Electronic Scoring & Sony Studios)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Tokyo"
+      }
+    },
+    {
+      "id": "distr_shimokita",
+      "name": "Shimokitazawa (Indie Rock & Vinyl Quarter)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Tokyo"
+      }
+    },
+    {
+      "id": "geo_kr",
+      "name": "South Korea",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Country",
+        "continent": "Asia"
+      }
+    },
+    {
+      "id": "state_kr_seoul",
+      "name": "Seoul Capital Area",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "South Korea"
+      }
+    },
+    {
+      "id": "city_seoul",
+      "name": "Seoul",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "Seoul Capital Area",
+        "country": "South Korea"
+      }
+    },
+    {
+      "id": "distr_gangnam",
+      "name": "Gangnam (K-Pop Entertainment Agency Strip)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Seoul"
+      }
+    },
+    {
+      "id": "distr_hongdae",
+      "name": "Hongdae (Indie Music, Busking & Underground)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Seoul"
+      }
+    },
+    {
+      "id": "distr_yongsan",
+      "name": "Yongsan (HYBE HQ Complex)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Seoul"
+      }
+    },
+    {
+      "id": "geo_ng",
+      "name": "Nigeria",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Country",
+        "continent": "Africa"
+      }
+    },
+    {
+      "id": "state_ng_lagos",
+      "name": "Lagos State",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "Nigeria"
+      }
+    },
+    {
+      "id": "city_lagos",
+      "name": "Lagos",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "Lagos State",
+        "country": "Nigeria"
+      }
+    },
+    {
+      "id": "distr_lekki",
+      "name": "Lekki & Victoria Island (Afrobeats Creative Hub)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Lagos"
+      }
+    },
+    {
+      "id": "distr_ikeja",
+      "name": "Ikeja (Kalakuta Shrine & Fela Legacy)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Lagos"
+      }
+    },
+    {
+      "id": "geo_jm",
+      "name": "Jamaica",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Country",
+        "continent": "Caribbean"
+      }
+    },
+    {
+      "id": "state_jm_kingston",
+      "name": "Kingston Parish",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "Jamaica"
+      }
+    },
+    {
+      "id": "city_kingston",
+      "name": "Kingston",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "Kingston Parish",
+        "country": "Jamaica"
+      }
+    },
+    {
+      "id": "distr_trenchtown",
+      "name": "Trenchtown (Roots Reggae Birthplace)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Kingston"
+      }
+    },
+    {
+      "id": "distr_waterhouse",
+      "name": "Waterhouse (King Tubby Dub Studio)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Kingston"
+      }
+    }
+  ],
+  "track": [
+    {
+      "id": "tax_electronic",
+      "name": "Electronic Music",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Root Genre",
+        "origin_scene": null
+      }
+    },
+    {
+      "id": "tax_techno",
+      "name": "Techno",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Subgenre",
+        "origin_scene": "city_detroit"
+      }
+    },
+    {
+      "id": "tax_industrial_techno",
+      "name": "Industrial Techno / Berghain Sound",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Micro-Genre",
+        "origin_scene": "distr_fhain_xberg"
+      }
+    },
+    {
+      "id": "tax_melodic_techno",
+      "name": "Melodic & Peak-Time Techno",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Micro-Genre",
+        "origin_scene": "city_berlin"
+      }
+    },
+    {
+      "id": "tax_krautrock_synth",
+      "name": "Krautrock & Berlin School Synthesizer",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Micro-Genre",
+        "origin_scene": "distr_duss_altstadt"
+      }
+    },
+    {
+      "id": "tax_house",
+      "name": "House Music",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Subgenre",
+        "origin_scene": "distr_southside_chi"
+      }
+    },
+    {
+      "id": "tax_french_touch",
+      "name": "French Touch / Nu-Disco Filter",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Micro-Genre",
+        "origin_scene": "distr_pigalle"
+      }
+    },
+    {
+      "id": "tax_deep_house",
+      "name": "Deep House",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Micro-Genre",
+        "origin_scene": "city_chicago"
+      }
+    },
+    {
+      "id": "tax_amapiano",
+      "name": "Amapiano",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Micro-Genre",
+        "origin_scene": "city_lagos"
+      }
+    },
+    {
+      "id": "tax_trance",
+      "name": "Trance Music",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Subgenre",
+        "origin_scene": "distr_sachsenhausen"
+      }
+    },
+    {
+      "id": "tax_idm",
+      "name": "Intelligent Dance Music (IDM) & Braindance",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Micro-Genre",
+        "origin_scene": "distr_soho_london"
+      }
+    },
+    {
+      "id": "tax_dnb",
+      "name": "Drum & Bass / Jungle",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Subgenre",
+        "origin_scene": "distr_hackney"
+      }
+    },
+    {
+      "id": "tax_pop_urban",
+      "name": "Pop & Urban Music",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Root Genre",
+        "origin_scene": null
+      }
+    },
+    {
+      "id": "tax_nordic_pop",
+      "name": "Nordic Pop Architecture",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Subgenre",
+        "origin_scene": "distr_ostermalm"
+      }
+    },
+    {
+      "id": "tax_kpop",
+      "name": "K-Pop Industry Standard",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Subgenre",
+        "origin_scene": "distr_gangnam"
+      }
+    },
+    {
+      "id": "tax_jpop",
+      "name": "J-Pop & Shibuya-kei",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Subgenre",
+        "origin_scene": "distr_shibuya"
+      }
+    },
+    {
+      "id": "tax_afrobeats",
+      "name": "Afrobeats & Afro-Fusion",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Subgenre",
+        "origin_scene": "distr_lekki"
+      }
+    },
+    {
+      "id": "tax_reggae_dub",
+      "name": "Reggae & Roots Dub",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Subgenre",
+        "origin_scene": "distr_trenchtown"
+      }
+    },
+    {
+      "id": "tax_latin_trap",
+      "name": "Latin Trap & Reggaeton",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Subgenre",
+        "origin_scene": "city_la"
+      }
+    },
+    {
+      "id": "tax_hiphop",
+      "name": "Hip-Hop",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Root Genre",
+        "origin_scene": "distr_bronx"
+      }
+    },
+    {
+      "id": "tax_westcoast_gfunk",
+      "name": "West Coast G-Funk",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Subgenre",
+        "origin_scene": "distr_compton"
+      }
+    },
+    {
+      "id": "tax_atlanta_trap",
+      "name": "Atlanta Trap",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Subgenre",
+        "origin_scene": "distr_buckhead_atl"
+      }
+    },
+    {
+      "id": "tax_toronto_sound",
+      "name": "Toronto Sound / Dark R&B",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Subgenre",
+        "origin_scene": "city_nyc"
+      }
+    },
+    {
+      "id": "tax_rock_alt",
+      "name": "Rock & Alternative",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Root Genre",
+        "origin_scene": null
+      }
+    },
+    {
+      "id": "tax_grunge",
+      "name": "Seattle Grunge",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Subgenre",
+        "origin_scene": "distr_caphill_sea"
+      }
+    },
+    {
+      "id": "tax_britpop",
+      "name": "Britpop & Madchester",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Subgenre",
+        "origin_scene": "distr_nq_mcr"
+      }
+    },
+    {
+      "id": "tax_post_punk",
+      "name": "Post-Punk & New Wave",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Subgenre",
+        "origin_scene": "distr_soho_london"
+      }
+    },
+    {
+      "id": "tax_trip_hop",
+      "name": "Bristol Trip-Hop Sound",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Subgenre",
+        "origin_scene": "distr_stpauls_bristol"
+      }
+    },
+    {
+      "id": "tax_classical_cinema",
+      "name": "Classical & Cinematic Scoring",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Root Genre",
+        "origin_scene": null
+      }
+    },
+    {
+      "id": "tax_post_minimalism",
+      "name": "Post-Minimalism & Neo-Classical",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Subgenre",
+        "origin_scene": "distr_treptow"
+      }
+    },
+    {
+      "id": "tax_cinematic_hollywood",
+      "name": "Hollywood Orchestral Film Scoring",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Genre Taxonomy (arXiv:2110.08862)",
+        "taxonomy_level": "Subgenre",
+        "origin_scene": "distr_hollywood"
+      }
+    },
+    {
+      "id": "genre_electro_pop",
+      "name": "Electro Pop",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Musical Subgenre (arXiv:2110.08862)",
+        "taxonomy_level": "Acoustic Subgenre"
+      }
+    },
+    {
+      "id": "genre_techno",
+      "name": "Techno",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Musical Subgenre (arXiv:2110.08862)",
+        "taxonomy_level": "Acoustic Subgenre"
+      }
+    },
+    {
+      "id": "genre_house",
+      "name": "House",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Musical Subgenre (arXiv:2110.08862)",
+        "taxonomy_level": "Acoustic Subgenre"
+      }
+    },
+    {
+      "id": "genre_dubstep",
+      "name": "Dubstep",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Musical Subgenre (arXiv:2110.08862)",
+        "taxonomy_level": "Acoustic Subgenre"
+      }
+    },
+    {
+      "id": "genre_ambient_downtempo",
+      "name": "Ambient Downtempo",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Musical Subgenre (arXiv:2110.08862)",
+        "taxonomy_level": "Acoustic Subgenre"
+      }
+    },
+    {
+      "id": "genre_drum_and_bass",
+      "name": "Drum And Bass",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Musical Subgenre (arXiv:2110.08862)",
+        "taxonomy_level": "Acoustic Subgenre"
+      }
+    },
+    {
+      "id": "genre_trance",
+      "name": "Trance",
+      "entity_type": "track",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Musical Subgenre (arXiv:2110.08862)",
+        "taxonomy_level": "Acoustic Subgenre"
+      }
+    }
+  ]
+}

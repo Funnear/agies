@@ -1,0 +1,1217 @@
+{
+  "summary": {
+    "total_nodes": 64,
+    "total_edges": 111,
+    "nodes_by_type": {
+      "record_label": 16,
+      "production_house": 4,
+      "agency": 6,
+      "studio": 6,
+      "producer": 6,
+      "artist": 26
+    },
+    "edges_by_relationship": {
+      "REPRESENTED_BY": 21,
+      "SIGNED_TO": 46,
+      "RECORDED_AT": 18,
+      "PRODUCED_BY": 13,
+      "COLLABORATED_WITH": 13
+    }
+  },
+  "power_brokers": {
+    "by_pagerank": [
+      {
+        "id": "ag_wme",
+        "name": "WME (William Morris Endeavor)",
+        "entity_type": "agency",
+        "score": 0.0351,
+        "degree": 8
+      },
+      {
+        "id": "art_drake",
+        "name": "Drake",
+        "entity_type": "artist",
+        "score": 0.0304,
+        "degree": 8
+      },
+      {
+        "id": "art_kendrick",
+        "name": "Kendrick Lamar",
+        "entity_type": "artist",
+        "score": 0.0279,
+        "degree": 7
+      },
+      {
+        "id": "art_future",
+        "name": "Future",
+        "entity_type": "artist",
+        "score": 0.0274,
+        "degree": 7
+      },
+      {
+        "id": "art_taylor",
+        "name": "Taylor Swift",
+        "entity_type": "artist",
+        "score": 0.026,
+        "degree": 7
+      },
+      {
+        "id": "art_weeknd",
+        "name": "The Weeknd",
+        "entity_type": "artist",
+        "score": 0.0249,
+        "degree": 6
+      },
+      {
+        "id": "art_fourtet",
+        "name": "Four Tet",
+        "entity_type": "artist",
+        "score": 0.0249,
+        "degree": 6
+      },
+      {
+        "id": "art_dua",
+        "name": "Dua Lipa",
+        "entity_type": "artist",
+        "score": 0.0248,
+        "degree": 5
+      },
+      {
+        "id": "art_aphex",
+        "name": "Aphex Twin",
+        "entity_type": "artist",
+        "score": 0.0245,
+        "degree": 5
+      },
+      {
+        "id": "art_phoebe",
+        "name": "Phoebe Bridgers",
+        "entity_type": "artist",
+        "score": 0.0241,
+        "degree": 6
+      }
+    ],
+    "by_betweenness": [
+      {
+        "id": "ag_wme",
+        "name": "WME (William Morris Endeavor)",
+        "entity_type": "agency",
+        "score": 0.1045,
+        "degree": 8
+      },
+      {
+        "id": "art_taylor",
+        "name": "Taylor Swift",
+        "entity_type": "artist",
+        "score": 0.0987,
+        "degree": 7
+      },
+      {
+        "id": "art_weeknd",
+        "name": "The Weeknd",
+        "entity_type": "artist",
+        "score": 0.0936,
+        "degree": 6
+      },
+      {
+        "id": "art_drake",
+        "name": "Drake",
+        "entity_type": "artist",
+        "score": 0.087,
+        "degree": 8
+      },
+      {
+        "id": "art_kendrick",
+        "name": "Kendrick Lamar",
+        "entity_type": "artist",
+        "score": 0.0833,
+        "degree": 7
+      },
+      {
+        "id": "art_fourtet",
+        "name": "Four Tet",
+        "entity_type": "artist",
+        "score": 0.0691,
+        "degree": 6
+      },
+      {
+        "id": "art_radiohead",
+        "name": "Radiohead",
+        "entity_type": "artist",
+        "score": 0.0591,
+        "degree": 5
+      },
+      {
+        "id": "art_dua",
+        "name": "Dua Lipa",
+        "entity_type": "artist",
+        "score": 0.0586,
+        "degree": 5
+      },
+      {
+        "id": "art_bonobo",
+        "name": "Bonobo",
+        "entity_type": "artist",
+        "score": 0.0522,
+        "degree": 4
+      },
+      {
+        "id": "lbl_republic",
+        "name": "Republic Records",
+        "entity_type": "record_label",
+        "score": 0.0512,
+        "degree": 4
+      }
+    ]
+  },
+  "creative_ecosystems": [
+    {
+      "community_id": 3,
+      "size": 12,
+      "top_genres": [
+        "Electronic",
+        "IDM",
+        "Ambient"
+      ],
+      "entity_composition": {
+        "studio": 3,
+        "artist": 5,
+        "agency": 1,
+        "record_label": 2,
+        "producer": 1
+      },
+      "prominent_members": [
+        "Metropolis Studios",
+        "Abbey Road Studios",
+        "Arctic Monkeys",
+        "Primary Talent International",
+        "Aphex Twin",
+        "Warp Records"
+      ],
+      "member_ids": [
+        "std_metropolis",
+        "std_abbey",
+        "art_arctic",
+        "ag_primary",
+        "art_aphex",
+        "lbl_warp",
+        "std_rak",
+        "art_radiohead",
+        "prd_brian",
+        "art_bicep",
+        "art_fourtet",
+        "lbl_ninja_tune"
+      ]
+    },
+    {
+      "community_id": 8,
+      "size": 11,
+      "top_genres": [
+        "Indie Rock",
+        "Pop",
+        "Indie Pop"
+      ],
+      "entity_composition": {
+        "record_label": 3,
+        "production_house": 1,
+        "producer": 1,
+        "studio": 1,
+        "artist": 4,
+        "agency": 1
+      },
+      "prominent_members": [
+        "Republic Records",
+        "Sub Pop Records",
+        "Bleachers Sound Labs",
+        "Jack Antonoff",
+        "Electric Lady Studios",
+        "Clairo"
+      ],
+      "member_ids": [
+        "lbl_republic",
+        "lbl_sub_pop",
+        "ph_jack",
+        "prd_jack",
+        "std_electric",
+        "art_clairo",
+        "art_phoebe",
+        "art_taylor",
+        "ag_redlight",
+        "lbl_4ad",
+        "art_bonobo"
+      ]
+    },
+    {
+      "community_id": 1,
+      "size": 9,
+      "top_genres": [
+        "Hip-Hop",
+        "Pop",
+        "R&B"
+      ],
+      "entity_composition": {
+        "artist": 4,
+        "record_label": 2,
+        "studio": 1,
+        "producer": 1,
+        "agency": 1
+      },
+      "prominent_members": [
+        "Drake",
+        "Interscope Geffen A&M",
+        "Sunset Sound Recorders",
+        "Finneas O'Connell",
+        "Billie Eilish",
+        "Kendrick Lamar"
+      ],
+      "member_ids": [
+        "art_drake",
+        "lbl_interscope",
+        "std_sunset",
+        "prd_finneas",
+        "art_billie",
+        "art_kendrick",
+        "lbl_def_jam",
+        "art_flyinglotus",
+        "ag_wme"
+      ]
+    },
+    {
+      "community_id": 4,
+      "size": 9,
+      "top_genres": [
+        "Pop",
+        "Rock",
+        "Hip-Hop"
+      ],
+      "entity_composition": {
+        "producer": 2,
+        "agency": 1,
+        "production_house": 2,
+        "record_label": 1,
+        "artist": 3
+      },
+      "prominent_members": [
+        "Rick Rubin",
+        "CAA (Creative Artists Agency)",
+        "MXM Music Productions",
+        "Atlantic Records",
+        "The Strokes",
+        "The Weeknd"
+      ],
+      "member_ids": [
+        "prd_rick",
+        "ag_caa",
+        "ph_mxm",
+        "lbl_atlantic",
+        "art_strokes",
+        "art_weeknd",
+        "ph_shangrila",
+        "art_dua",
+        "prd_max"
+      ]
+    },
+    {
+      "community_id": 7,
+      "size": 6,
+      "top_genres": [
+        "Hip-Hop",
+        "Trap",
+        "R&B"
+      ],
+      "entity_composition": {
+        "record_label": 1,
+        "artist": 2,
+        "studio": 1,
+        "agency": 1,
+        "producer": 1
+      },
+      "prominent_members": [
+        "RCA Records",
+        "21 Savage",
+        "Future",
+        "Conway Recording Studios",
+        "UTA (United Talent Agency)",
+        "Metro Boomin"
+      ],
+      "member_ids": [
+        "lbl_rca",
+        "art_21savage",
+        "art_future",
+        "std_conway",
+        "ag_uta",
+        "prd_metro"
+      ]
+    },
+    {
+      "community_id": 9,
+      "size": 2,
+      "top_genres": [
+        "british",
+        "new wave",
+        "uk"
+      ],
+      "entity_composition": {
+        "record_label": 1,
+        "artist": 1
+      },
+      "prominent_members": [
+        "Electronic Records",
+        "Electronic"
+      ],
+      "member_ids": [
+        "mb_lbl_37994",
+        "mb_art_3cdb360e-d0a2-459f-92f6-f0f28e62127d"
+      ]
+    },
+    {
+      "community_id": 10,
+      "size": 2,
+      "top_genres": [],
+      "entity_composition": {
+        "record_label": 1,
+        "artist": 1
+      },
+      "prominent_members": [
+        "Electronic Arts Records",
+        "Electronic Arts"
+      ],
+      "member_ids": [
+        "mb_lbl_92990",
+        "mb_art_fa43260d-bcfe-46ba-a8a0-69107538e46c"
+      ]
+    },
+    {
+      "community_id": 11,
+      "size": 2,
+      "top_genres": [],
+      "entity_composition": {
+        "artist": 1,
+        "record_label": 1
+      },
+      "prominent_members": [
+        "Elite Electronic",
+        "Elite Electronic Records"
+      ],
+      "member_ids": [
+        "mb_art_51d2f351-0c7b-45fd-99fd-330b33b05964",
+        "mb_lbl_8648"
+      ]
+    },
+    {
+      "community_id": 12,
+      "size": 2,
+      "top_genres": [],
+      "entity_composition": {
+        "record_label": 1,
+        "artist": 1
+      },
+      "prominent_members": [
+        "Electronic Warbear Records",
+        "Electronic Warbear"
+      ],
+      "member_ids": [
+        "mb_lbl_40747",
+        "mb_art_000e193b-3adb-4d56-828b-0ffb3f2f1da1"
+      ]
+    },
+    {
+      "community_id": 13,
+      "size": 2,
+      "top_genres": [
+        "electronic"
+      ],
+      "entity_composition": {
+        "artist": 1,
+        "record_label": 1
+      },
+      "prominent_members": [
+        "Electronic Frequency",
+        "Electronic Frequency Records"
+      ],
+      "member_ids": [
+        "mb_art_fdcbf873-4a8d-4c62-9352-327451b6a910",
+        "mb_lbl_64496"
+      ]
+    },
+    {
+      "community_id": 15,
+      "size": 2,
+      "top_genres": [],
+      "entity_composition": {
+        "record_label": 1,
+        "artist": 1
+      },
+      "prominent_members": [
+        "Electronic Fox Records",
+        "Electronic Fox"
+      ],
+      "member_ids": [
+        "mb_lbl_93671",
+        "mb_art_d4aca3ad-25ca-4449-b0b1-db6198d40ae9"
+      ]
+    }
+  ],
+  "label_mobility": {
+    "total_artists_analyzed": 26,
+    "migration_rate_percentage": 15.4,
+    "loyal_count": 20,
+    "migrated_count": 4,
+    "migrated_artists": [
+      {
+        "artist_id": "art_taylor",
+        "artist_name": "Taylor Swift",
+        "total_labels_count": 2,
+        "current_labels": [
+          "Republic Records"
+        ],
+        "past_labels": [
+          "Sub Pop Records"
+        ],
+        "mobility_status": "Label Hopper / Migrated"
+      },
+      {
+        "artist_id": "art_drake",
+        "artist_name": "Drake",
+        "total_labels_count": 2,
+        "current_labels": [
+          "Republic Records"
+        ],
+        "past_labels": [
+          "Def Jam Recordings"
+        ],
+        "mobility_status": "Label Hopper / Migrated"
+      },
+      {
+        "artist_id": "art_kendrick",
+        "artist_name": "Kendrick Lamar",
+        "total_labels_count": 2,
+        "current_labels": [
+          "Interscope Geffen A&M"
+        ],
+        "past_labels": [
+          "Def Jam Recordings"
+        ],
+        "mobility_status": "Label Hopper / Migrated"
+      },
+      {
+        "artist_id": "art_clairo",
+        "artist_name": "Clairo",
+        "total_labels_count": 2,
+        "current_labels": [
+          "Republic Records"
+        ],
+        "past_labels": [
+          "4AD"
+        ],
+        "mobility_status": "Label Hopper / Migrated"
+      }
+    ],
+    "loyal_artists": [
+      {
+        "artist_id": "art_billie",
+        "artist_name": "Billie Eilish",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Interscope Geffen A&M"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_dua",
+        "artist_name": "Dua Lipa",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Atlantic Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_weeknd",
+        "artist_name": "The Weeknd",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Republic Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_future",
+        "artist_name": "Future",
+        "total_labels_count": 1,
+        "current_labels": [
+          "RCA Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_21savage",
+        "artist_name": "21 Savage",
+        "total_labels_count": 1,
+        "current_labels": [
+          "RCA Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_aphex",
+        "artist_name": "Aphex Twin",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Warp Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_bicep",
+        "artist_name": "BICEP",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Ninja Tune"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_bonobo",
+        "artist_name": "Bonobo",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Ninja Tune"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_fourtet",
+        "artist_name": "Four Tet",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Ninja Tune"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_flyinglotus",
+        "artist_name": "Flying Lotus",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Warp Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_radiohead",
+        "artist_name": "Radiohead",
+        "total_labels_count": 1,
+        "current_labels": [
+          "4AD"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_strokes",
+        "artist_name": "The Strokes",
+        "total_labels_count": 1,
+        "current_labels": [
+          "RCA Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_arctic",
+        "artist_name": "Arctic Monkeys",
+        "total_labels_count": 1,
+        "current_labels": [
+          "4AD"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "art_phoebe",
+        "artist_name": "Phoebe Bridgers",
+        "total_labels_count": 1,
+        "current_labels": [
+          "4AD"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "mb_art_3cdb360e-d0a2-459f-92f6-f0f28e62127d",
+        "artist_name": "Electronic",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Electronic Records",
+          "Electronic Records",
+          "Electronic Records",
+          "Electronic Records",
+          "Electronic Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "mb_art_fa43260d-bcfe-46ba-a8a0-69107538e46c",
+        "artist_name": "Electronic Arts",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Electronic Arts Records",
+          "Electronic Arts Records",
+          "Electronic Arts Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "mb_art_51d2f351-0c7b-45fd-99fd-330b33b05964",
+        "artist_name": "Elite Electronic",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Elite Electronic Records",
+          "Elite Electronic Records",
+          "Elite Electronic Records",
+          "Elite Electronic Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "mb_art_000e193b-3adb-4d56-828b-0ffb3f2f1da1",
+        "artist_name": "Electronic Warbear",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Electronic Warbear Records",
+          "Electronic Warbear Records",
+          "Electronic Warbear Records",
+          "Electronic Warbear Records",
+          "Electronic Warbear Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "mb_art_fdcbf873-4a8d-4c62-9352-327451b6a910",
+        "artist_name": "Electronic Frequency",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Electronic Frequency Records",
+          "Electronic Frequency Records",
+          "Electronic Frequency Records",
+          "Electronic Frequency Records",
+          "Electronic Frequency Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      },
+      {
+        "artist_id": "mb_art_d4aca3ad-25ca-4449-b0b1-db6198d40ae9",
+        "artist_name": "Electronic Fox",
+        "total_labels_count": 1,
+        "current_labels": [
+          "Electronic Fox Records",
+          "Electronic Fox Records"
+        ],
+        "past_labels": [],
+        "mobility_status": "Single-Label Loyal"
+      }
+    ]
+  },
+  "studio_reliance": [
+    {
+      "artist_id": "art_taylor",
+      "artist_name": "Taylor Swift",
+      "reliance_index": 1.0,
+      "primary_studio": "Electric Lady Studios",
+      "primary_producer": "Jack Antonoff",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_billie",
+      "artist_name": "Billie Eilish",
+      "reliance_index": 1.0,
+      "primary_studio": "Sunset Sound Recorders",
+      "primary_producer": "Finneas O'Connell",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_dua",
+      "artist_name": "Dua Lipa",
+      "reliance_index": 1.0,
+      "primary_studio": "RAK Studios",
+      "primary_producer": "Max Martin",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_weeknd",
+      "artist_name": "The Weeknd",
+      "reliance_index": 1.0,
+      "primary_studio": "Conway Recording Studios",
+      "primary_producer": "Max Martin",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_drake",
+      "artist_name": "Drake",
+      "reliance_index": 1.0,
+      "primary_studio": "Sunset Sound Recorders",
+      "primary_producer": "Metro Boomin",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_kendrick",
+      "artist_name": "Kendrick Lamar",
+      "reliance_index": 1.0,
+      "primary_studio": "Conway Recording Studios",
+      "primary_producer": "Rick Rubin",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_future",
+      "artist_name": "Future",
+      "reliance_index": 1.0,
+      "primary_studio": "Conway Recording Studios",
+      "primary_producer": "Metro Boomin",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_21savage",
+      "artist_name": "21 Savage",
+      "reliance_index": 1.0,
+      "primary_studio": "Conway Recording Studios",
+      "primary_producer": "Metro Boomin",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_aphex",
+      "artist_name": "Aphex Twin",
+      "reliance_index": 1.0,
+      "primary_studio": "Metropolis Studios",
+      "primary_producer": "Brian Eno",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_radiohead",
+      "artist_name": "Radiohead",
+      "reliance_index": 1.0,
+      "primary_studio": "Abbey Road Studios",
+      "primary_producer": "Brian Eno",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_strokes",
+      "artist_name": "The Strokes",
+      "reliance_index": 1.0,
+      "primary_studio": "Electric Lady Studios",
+      "primary_producer": "Rick Rubin",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_phoebe",
+      "artist_name": "Phoebe Bridgers",
+      "reliance_index": 1.0,
+      "primary_studio": "Electric Lady Studios",
+      "primary_producer": "Jack Antonoff",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_clairo",
+      "artist_name": "Clairo",
+      "reliance_index": 1.0,
+      "primary_studio": "Electric Lady Studios",
+      "primary_producer": "Jack Antonoff",
+      "reliance_category": "High Reliance (Signature Sound Circle)"
+    },
+    {
+      "artist_id": "art_bicep",
+      "artist_name": "BICEP",
+      "reliance_index": 0.5,
+      "primary_studio": "RAK Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_bonobo",
+      "artist_name": "Bonobo",
+      "reliance_index": 0.5,
+      "primary_studio": "Abbey Road Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_fourtet",
+      "artist_name": "Four Tet",
+      "reliance_index": 0.5,
+      "primary_studio": "Abbey Road Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_flyinglotus",
+      "artist_name": "Flying Lotus",
+      "reliance_index": 0.5,
+      "primary_studio": "Electric Lady Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "art_arctic",
+      "artist_name": "Arctic Monkeys",
+      "reliance_index": 0.5,
+      "primary_studio": "Abbey Road Studios",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "mb_art_3cdb360e-d0a2-459f-92f6-f0f28e62127d",
+      "artist_name": "Electronic",
+      "reliance_index": 0.0,
+      "primary_studio": "None",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "mb_art_fa43260d-bcfe-46ba-a8a0-69107538e46c",
+      "artist_name": "Electronic Arts",
+      "reliance_index": 0.0,
+      "primary_studio": "None",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "mb_art_51d2f351-0c7b-45fd-99fd-330b33b05964",
+      "artist_name": "Elite Electronic",
+      "reliance_index": 0.0,
+      "primary_studio": "None",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "mb_art_000e193b-3adb-4d56-828b-0ffb3f2f1da1",
+      "artist_name": "Electronic Warbear",
+      "reliance_index": 0.0,
+      "primary_studio": "None",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "mb_art_fdcbf873-4a8d-4c62-9352-327451b6a910",
+      "artist_name": "Electronic Frequency",
+      "reliance_index": 0.0,
+      "primary_studio": "None",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "mb_art_b4ed32d5-9d19-4a28-9746-4e8286554d58",
+      "artist_name": "Electroni\u010d",
+      "reliance_index": 0.0,
+      "primary_studio": "None",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "mb_art_d4aca3ad-25ca-4449-b0b1-db6198d40ae9",
+      "artist_name": "Electronic Fox",
+      "reliance_index": 0.0,
+      "primary_studio": "None",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    },
+    {
+      "artist_id": "mb_art_54eb8ba6-6e0d-4652-91f4-7a4ceeb0c006",
+      "artist_name": "Electronic Beach",
+      "reliance_index": 0.0,
+      "primary_studio": "None",
+      "primary_producer": "Self/Independent",
+      "reliance_category": "Flexible / Diverse"
+    }
+  ],
+  "agency_collaboration_dynamics": {
+    "total_collaborations": 13,
+    "intra_agency_collaborations": 6,
+    "inter_agency_collaborations": 7,
+    "intra_agency_ratio_percentage": 46.2,
+    "behavior_interpretation": "Balanced Cross-Agency Collaboration",
+    "agencies_rosters": {
+      "MXM Music Productions": {
+        "roster_size": 1,
+        "artists": [
+          "Max Martin"
+        ]
+      },
+      "Bleachers Sound Labs": {
+        "roster_size": 1,
+        "artists": [
+          "Jack Antonoff"
+        ]
+      },
+      "Shangri-La Creative": {
+        "roster_size": 1,
+        "artists": [
+          "Rick Rubin"
+        ]
+      },
+      "WME (William Morris Endeavor)": {
+        "roster_size": 8,
+        "artists": [
+          "Drake",
+          "Clairo",
+          "Billie Eilish",
+          "Arctic Monkeys",
+          "Taylor Swift",
+          "Kendrick Lamar",
+          "Radiohead",
+          "Flying Lotus"
+        ]
+      },
+      "CAA (Creative Artists Agency)": {
+        "roster_size": 3,
+        "artists": [
+          "The Weeknd",
+          "Dua Lipa",
+          "The Strokes"
+        ]
+      },
+      "UTA (United Talent Agency)": {
+        "roster_size": 2,
+        "artists": [
+          "21 Savage",
+          "Future"
+        ]
+      },
+      "Primary Talent International": {
+        "roster_size": 3,
+        "artists": [
+          "BICEP",
+          "Four Tet",
+          "Aphex Twin"
+        ]
+      },
+      "Red Light Management": {
+        "roster_size": 2,
+        "artists": [
+          "Phoebe Bridgers",
+          "Bonobo"
+        ]
+      }
+    }
+  },
+  "structural_holes": [
+    {
+      "id": "ag_wme",
+      "name": "WME (William Morris Endeavor)",
+      "entity_type": "agency",
+      "network_constraint": 0.1455,
+      "brokerage_potential": "Elite Bridge / Cross-Cluster Broker",
+      "degree": 8
+    },
+    {
+      "id": "art_taylor",
+      "name": "Taylor Swift",
+      "entity_type": "artist",
+      "network_constraint": 0.191,
+      "brokerage_potential": "Elite Bridge / Cross-Cluster Broker",
+      "degree": 7
+    },
+    {
+      "id": "art_kendrick",
+      "name": "Kendrick Lamar",
+      "entity_type": "artist",
+      "network_constraint": 0.1993,
+      "brokerage_potential": "Elite Bridge / Cross-Cluster Broker",
+      "degree": 7
+    },
+    {
+      "id": "art_drake",
+      "name": "Drake",
+      "entity_type": "artist",
+      "network_constraint": 0.205,
+      "brokerage_potential": "Elite Bridge / Cross-Cluster Broker",
+      "degree": 8
+    },
+    {
+      "id": "art_radiohead",
+      "name": "Radiohead",
+      "entity_type": "artist",
+      "network_constraint": 0.2313,
+      "brokerage_potential": "Elite Bridge / Cross-Cluster Broker",
+      "degree": 5
+    },
+    {
+      "id": "art_clairo",
+      "name": "Clairo",
+      "entity_type": "artist",
+      "network_constraint": 0.2428,
+      "brokerage_potential": "Elite Bridge / Cross-Cluster Broker",
+      "degree": 6
+    },
+    {
+      "id": "art_aphex",
+      "name": "Aphex Twin",
+      "entity_type": "artist",
+      "network_constraint": 0.247,
+      "brokerage_potential": "Elite Bridge / Cross-Cluster Broker",
+      "degree": 5
+    },
+    {
+      "id": "lbl_republic",
+      "name": "Republic Records",
+      "entity_type": "record_label",
+      "network_constraint": 0.25,
+      "brokerage_potential": "Elite Bridge / Cross-Cluster Broker",
+      "degree": 4
+    }
+  ],
+  "k_core_decomposition": {
+    "max_core_level": 3,
+    "core_breakdown": {
+      "Core_Level_3": {
+        "count": 15,
+        "prominent_members": [
+          "Republic Records",
+          "WME (William Morris Endeavor)",
+          "Electric Lady Studios",
+          "Conway Recording Studios",
+          "Jack Antonoff",
+          "Metro Boomin"
+        ]
+      },
+      "Core_Level_2": {
+        "count": 25,
+        "prominent_members": [
+          "Interscope Geffen A&M",
+          "RCA Records",
+          "Warp Records",
+          "Ninja Tune",
+          "4AD",
+          "Def Jam Recordings"
+        ]
+      },
+      "Core_Level_1": {
+        "count": 19,
+        "prominent_members": [
+          "Atlantic Records",
+          "Sub Pop Records",
+          "MXM Music Productions",
+          "Bleachers Sound Labs",
+          "Shangri-La Creative",
+          "Metropolis Studios"
+        ]
+      },
+      "Core_Level_0": {
+        "count": 5,
+        "prominent_members": [
+          "Columbia Records",
+          "HYBE Creative Studios",
+          "Roc Nation Management",
+          "Electroni\u010d",
+          "Electronic Beach"
+        ]
+      }
+    }
+  },
+  "predicted_collaborations": [
+    {
+      "artist_1": "Taylor Swift",
+      "artist_2": "Clairo",
+      "affinity_score": 5.9046,
+      "shared_genres": [],
+      "likelihood": "Very High"
+    },
+    {
+      "artist_1": "Radiohead",
+      "artist_2": "Arctic Monkeys",
+      "affinity_score": 4.0854,
+      "shared_genres": [],
+      "likelihood": "Very High"
+    },
+    {
+      "artist_1": "Radiohead",
+      "artist_2": "Aphex Twin",
+      "affinity_score": 3.5012,
+      "shared_genres": [],
+      "likelihood": "Very High"
+    },
+    {
+      "artist_1": "Phoebe Bridgers",
+      "artist_2": "Bonobo",
+      "affinity_score": 3.4349,
+      "shared_genres": [],
+      "likelihood": "Very High"
+    },
+    {
+      "artist_1": "Kendrick Lamar",
+      "artist_2": "Billie Eilish",
+      "affinity_score": 3.3298,
+      "shared_genres": [],
+      "likelihood": "Very High"
+    },
+    {
+      "artist_1": "Drake",
+      "artist_2": "Billie Eilish",
+      "affinity_score": 3.2854,
+      "shared_genres": [],
+      "likelihood": "Very High"
+    },
+    {
+      "artist_1": "Four Tet",
+      "artist_2": "Bonobo",
+      "affinity_score": 2.9474,
+      "shared_genres": [
+        "Electronic"
+      ],
+      "likelihood": "Very High"
+    },
+    {
+      "artist_1": "BICEP",
+      "artist_2": "Aphex Twin",
+      "affinity_score": 2.774,
+      "shared_genres": [
+        "Electronic"
+      ],
+      "likelihood": "Very High"
+    },
+    {
+      "artist_1": "BICEP",
+      "artist_2": "Dua Lipa",
+      "affinity_score": 2.414,
+      "shared_genres": [],
+      "likelihood": "Very High"
+    },
+    {
+      "artist_1": "Aphex Twin",
+      "artist_2": "Flying Lotus",
+      "affinity_score": 2.414,
+      "shared_genres": [
+        "Electronic"
+      ],
+      "likelihood": "Very High"
+    }
+  ],
+  "era_evolution": {
+    "Early_Eras (<=2009)": {
+      "edges_count": 23,
+      "active_collaborations": 1
+    },
+    "Streaming_Rise (2010-2019)": {
+      "edges_count": 24,
+      "active_collaborations": 6
+    },
+    "Modern_Ecosystem (2020+)": {
+      "edges_count": 12,
+      "active_collaborations": 6
+    }
+  }
+}

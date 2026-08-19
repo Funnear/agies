@@ -1,0 +1,2008 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {},
+  "nodes": [
+    {
+      "name": "Interscope Geffen A&M",
+      "entity_type": "record_label",
+      "country": null,
+      "genres": [
+        "Pop",
+        "Hip-Hop",
+        "Rock"
+      ],
+      "attributes": {
+        "market_tier": "Tier 1"
+      },
+      "id": "lbl_interscope"
+    },
+    {
+      "name": "Republic Records",
+      "entity_type": "record_label",
+      "country": null,
+      "genres": [
+        "Pop",
+        "R&B",
+        "Hip-Hop"
+      ],
+      "attributes": {
+        "market_tier": "Tier 1"
+      },
+      "id": "lbl_republic"
+    },
+    {
+      "name": "Columbia Records",
+      "entity_type": "record_label",
+      "country": null,
+      "genres": [
+        "Pop",
+        "Rock",
+        "Alternative"
+      ],
+      "attributes": {
+        "market_tier": "Tier 1"
+      },
+      "id": "lbl_columbia"
+    },
+    {
+      "name": "RCA Records",
+      "entity_type": "record_label",
+      "country": null,
+      "genres": [
+        "R&B",
+        "Pop",
+        "Electronic"
+      ],
+      "attributes": {
+        "market_tier": "Tier 1"
+      },
+      "id": "lbl_rca"
+    },
+    {
+      "name": "Atlantic Records",
+      "entity_type": "record_label",
+      "country": null,
+      "genres": [
+        "Hip-Hop",
+        "Pop",
+        "Rock"
+      ],
+      "attributes": {
+        "market_tier": "Tier 1"
+      },
+      "id": "lbl_atlantic"
+    },
+    {
+      "name": "Warp Records",
+      "entity_type": "record_label",
+      "country": null,
+      "genres": [
+        "Electronic",
+        "IDM",
+        "Experimental"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      },
+      "id": "lbl_warp"
+    },
+    {
+      "name": "Ninja Tune",
+      "entity_type": "record_label",
+      "country": null,
+      "genres": [
+        "Electronic",
+        "Trip-Hop",
+        "Downtempo"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      },
+      "id": "lbl_ninja_tune"
+    },
+    {
+      "name": "4AD",
+      "entity_type": "record_label",
+      "country": null,
+      "genres": [
+        "Indie Rock",
+        "Dream Pop",
+        "Post-Punk"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      },
+      "id": "lbl_4ad"
+    },
+    {
+      "name": "Sub Pop Records",
+      "entity_type": "record_label",
+      "country": null,
+      "genres": [
+        "Grunge",
+        "Indie Rock"
+      ],
+      "attributes": {
+        "market_tier": "Independent"
+      },
+      "id": "lbl_sub_pop"
+    },
+    {
+      "name": "Def Jam Recordings",
+      "entity_type": "record_label",
+      "country": null,
+      "genres": [
+        "Hip-Hop",
+        "Trap"
+      ],
+      "attributes": {
+        "market_tier": "Tier 1"
+      },
+      "id": "lbl_def_jam"
+    },
+    {
+      "name": "MXM Music Productions",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "city": "Stockholm, Sweden"
+      },
+      "id": "ph_mxm"
+    },
+    {
+      "name": "Bleachers Sound Labs",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "city": "New York, USA"
+      },
+      "id": "ph_jack"
+    },
+    {
+      "name": "Shangri-La Creative",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "city": "Malibu, USA"
+      },
+      "id": "ph_shangrila"
+    },
+    {
+      "name": "HYBE Creative Studios",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "city": "Seoul, South Korea"
+      },
+      "id": "ph_hybe"
+    },
+    {
+      "name": "WME (William Morris Endeavor)",
+      "entity_type": "agency",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "region": "Global"
+      },
+      "id": "ag_wme"
+    },
+    {
+      "name": "CAA (Creative Artists Agency)",
+      "entity_type": "agency",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "region": "Global"
+      },
+      "id": "ag_caa"
+    },
+    {
+      "name": "UTA (United Talent Agency)",
+      "entity_type": "agency",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "region": "Global"
+      },
+      "id": "ag_uta"
+    },
+    {
+      "name": "Roc Nation Management",
+      "entity_type": "agency",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "region": "USA / UK"
+      },
+      "id": "ag_rocnation"
+    },
+    {
+      "name": "Red Light Management",
+      "entity_type": "agency",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "region": "USA"
+      },
+      "id": "ag_redlight"
+    },
+    {
+      "name": "Primary Talent International",
+      "entity_type": "agency",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "region": "Europe"
+      },
+      "id": "ag_primary"
+    },
+    {
+      "name": "Abbey Road Studios",
+      "entity_type": "studio",
+      "country": "UK",
+      "genres": [],
+      "attributes": {},
+      "id": "std_abbey"
+    },
+    {
+      "name": "Electric Lady Studios",
+      "entity_type": "studio",
+      "country": "USA",
+      "genres": [],
+      "attributes": {},
+      "id": "std_electric"
+    },
+    {
+      "name": "Sunset Sound Recorders",
+      "entity_type": "studio",
+      "country": "USA",
+      "genres": [],
+      "attributes": {},
+      "id": "std_sunset"
+    },
+    {
+      "name": "Conway Recording Studios",
+      "entity_type": "studio",
+      "country": "USA",
+      "genres": [],
+      "attributes": {},
+      "id": "std_conway"
+    },
+    {
+      "name": "Metropolis Studios",
+      "entity_type": "studio",
+      "country": "UK",
+      "genres": [],
+      "attributes": {},
+      "id": "std_metropolis"
+    },
+    {
+      "name": "RAK Studios",
+      "entity_type": "studio",
+      "country": "UK",
+      "genres": [],
+      "attributes": {},
+      "id": "std_rak"
+    },
+    {
+      "name": "Max Martin",
+      "entity_type": "producer",
+      "country": null,
+      "genres": [
+        "Pop",
+        "Dance"
+      ],
+      "attributes": {},
+      "id": "prd_max"
+    },
+    {
+      "name": "Jack Antonoff",
+      "entity_type": "producer",
+      "country": null,
+      "genres": [
+        "Indie Pop",
+        "Alternative"
+      ],
+      "attributes": {},
+      "id": "prd_jack"
+    },
+    {
+      "name": "Rick Rubin",
+      "entity_type": "producer",
+      "country": null,
+      "genres": [
+        "Rock",
+        "Hip-Hop"
+      ],
+      "attributes": {},
+      "id": "prd_rick"
+    },
+    {
+      "name": "Finneas O'Connell",
+      "entity_type": "producer",
+      "country": null,
+      "genres": [
+        "Pop",
+        "Minimalist"
+      ],
+      "attributes": {},
+      "id": "prd_finneas"
+    },
+    {
+      "name": "Brian Eno",
+      "entity_type": "producer",
+      "country": null,
+      "genres": [
+        "Ambient",
+        "Electronic"
+      ],
+      "attributes": {},
+      "id": "prd_brian"
+    },
+    {
+      "name": "Metro Boomin",
+      "entity_type": "producer",
+      "country": null,
+      "genres": [
+        "Hip-Hop",
+        "Trap"
+      ],
+      "attributes": {},
+      "id": "prd_metro"
+    },
+    {
+      "name": "Taylor Swift",
+      "entity_type": "artist",
+      "country": "USA",
+      "genres": [
+        "Pop",
+        "Country",
+        "Indie Folk"
+      ],
+      "attributes": {},
+      "id": "art_taylor"
+    },
+    {
+      "name": "Billie Eilish",
+      "entity_type": "artist",
+      "country": "USA",
+      "genres": [
+        "Pop",
+        "Alternative"
+      ],
+      "attributes": {},
+      "id": "art_billie"
+    },
+    {
+      "name": "Dua Lipa",
+      "entity_type": "artist",
+      "country": "UK",
+      "genres": [
+        "Pop",
+        "Disco"
+      ],
+      "attributes": {},
+      "id": "art_dua"
+    },
+    {
+      "name": "The Weeknd",
+      "entity_type": "artist",
+      "country": "Canada",
+      "genres": [
+        "R&B",
+        "Pop",
+        "Synthwave"
+      ],
+      "attributes": {},
+      "id": "art_weeknd"
+    },
+    {
+      "name": "Drake",
+      "entity_type": "artist",
+      "country": "Canada",
+      "genres": [
+        "Hip-Hop",
+        "R&B"
+      ],
+      "attributes": {},
+      "id": "art_drake"
+    },
+    {
+      "name": "Kendrick Lamar",
+      "entity_type": "artist",
+      "country": "USA",
+      "genres": [
+        "Hip-Hop",
+        "Jazz Rap"
+      ],
+      "attributes": {},
+      "id": "art_kendrick"
+    },
+    {
+      "name": "Future",
+      "entity_type": "artist",
+      "country": "USA",
+      "genres": [
+        "Hip-Hop",
+        "Trap"
+      ],
+      "attributes": {},
+      "id": "art_future"
+    },
+    {
+      "name": "21 Savage",
+      "entity_type": "artist",
+      "country": "USA",
+      "genres": [
+        "Hip-Hop",
+        "Trap"
+      ],
+      "attributes": {},
+      "id": "art_21savage"
+    },
+    {
+      "name": "Aphex Twin",
+      "entity_type": "artist",
+      "country": "UK",
+      "genres": [
+        "Electronic",
+        "IDM",
+        "Ambient"
+      ],
+      "attributes": {},
+      "id": "art_aphex"
+    },
+    {
+      "name": "BICEP",
+      "entity_type": "artist",
+      "country": "UK",
+      "genres": [
+        "Electronic",
+        "Breakbeat"
+      ],
+      "attributes": {},
+      "id": "art_bicep"
+    },
+    {
+      "name": "Bonobo",
+      "entity_type": "artist",
+      "country": "UK",
+      "genres": [
+        "Electronic",
+        "Downtempo"
+      ],
+      "attributes": {},
+      "id": "art_bonobo"
+    },
+    {
+      "name": "Four Tet",
+      "entity_type": "artist",
+      "country": "UK",
+      "genres": [
+        "Electronic",
+        "Folktronica"
+      ],
+      "attributes": {},
+      "id": "art_fourtet"
+    },
+    {
+      "name": "Flying Lotus",
+      "entity_type": "artist",
+      "country": "USA",
+      "genres": [
+        "Electronic",
+        "Experimental Hip Hop"
+      ],
+      "attributes": {},
+      "id": "art_flyinglotus"
+    },
+    {
+      "name": "Radiohead",
+      "entity_type": "artist",
+      "country": "UK",
+      "genres": [
+        "Art Rock",
+        "Alternative Rock"
+      ],
+      "attributes": {},
+      "id": "art_radiohead"
+    },
+    {
+      "name": "The Strokes",
+      "entity_type": "artist",
+      "country": "USA",
+      "genres": [
+        "Indie Rock",
+        "Post-Punk"
+      ],
+      "attributes": {},
+      "id": "art_strokes"
+    },
+    {
+      "name": "Arctic Monkeys",
+      "entity_type": "artist",
+      "country": "UK",
+      "genres": [
+        "Indie Rock",
+        "Garage Rock"
+      ],
+      "attributes": {},
+      "id": "art_arctic"
+    },
+    {
+      "name": "Phoebe Bridgers",
+      "entity_type": "artist",
+      "country": "USA",
+      "genres": [
+        "Indie Rock",
+        "Folk"
+      ],
+      "attributes": {},
+      "id": "art_phoebe"
+    },
+    {
+      "name": "Clairo",
+      "entity_type": "artist",
+      "country": "USA",
+      "genres": [
+        "Bedroom Pop",
+        "Indie Pop"
+      ],
+      "attributes": {},
+      "id": "art_clairo"
+    },
+    {
+      "name": "Electronic",
+      "entity_type": "artist",
+      "country": "GB",
+      "genres": [
+        "british",
+        "new wave",
+        "uk",
+        "alternative dance",
+        "english",
+        "england",
+        "synth pop",
+        "rock and indie"
+      ],
+      "attributes": {
+        "disambiguation": null
+      },
+      "id": "mb_art_3cdb360e-d0a2-459f-92f6-f0f28e62127d"
+    },
+    {
+      "name": "Electronic Records",
+      "entity_type": "record_label",
+      "country": "GB",
+      "genres": [],
+      "attributes": {},
+      "id": "mb_lbl_37994"
+    },
+    {
+      "name": "Electronic Arts",
+      "entity_type": "artist",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "disambiguation": "Electronic Arts (for Unofficial and Bootleg Soundtracks)"
+      },
+      "id": "mb_art_fa43260d-bcfe-46ba-a8a0-69107538e46c"
+    },
+    {
+      "name": "Electronic Arts Records",
+      "entity_type": "record_label",
+      "country": null,
+      "genres": [],
+      "attributes": {},
+      "id": "mb_lbl_92990"
+    },
+    {
+      "name": "Elite Electronic",
+      "entity_type": "artist",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "disambiguation": "trance"
+      },
+      "id": "mb_art_51d2f351-0c7b-45fd-99fd-330b33b05964"
+    },
+    {
+      "name": "Elite Electronic Records",
+      "entity_type": "record_label",
+      "country": null,
+      "genres": [],
+      "attributes": {},
+      "id": "mb_lbl_8648"
+    },
+    {
+      "name": "Electronic Warbear",
+      "entity_type": "artist",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "disambiguation": null
+      },
+      "id": "mb_art_000e193b-3adb-4d56-828b-0ffb3f2f1da1"
+    },
+    {
+      "name": "Electronic Warbear Records",
+      "entity_type": "record_label",
+      "country": null,
+      "genres": [],
+      "attributes": {},
+      "id": "mb_lbl_40747"
+    },
+    {
+      "name": "Electronic Frequency",
+      "entity_type": "artist",
+      "country": "DE",
+      "genres": [
+        "electronic"
+      ],
+      "attributes": {
+        "disambiguation": null
+      },
+      "id": "mb_art_fdcbf873-4a8d-4c62-9352-327451b6a910"
+    },
+    {
+      "name": "Electronic Frequency Records",
+      "entity_type": "record_label",
+      "country": "DE",
+      "genres": [],
+      "attributes": {},
+      "id": "mb_lbl_64496"
+    },
+    {
+      "name": "Electroni\u010d",
+      "entity_type": "artist",
+      "country": "AT",
+      "genres": [],
+      "attributes": {
+        "disambiguation": "Short-Lived Autrian Subgroup of Monochrom"
+      },
+      "id": "mb_art_b4ed32d5-9d19-4a28-9746-4e8286554d58"
+    },
+    {
+      "name": "Electronic Fox",
+      "entity_type": "artist",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "disambiguation": null
+      },
+      "id": "mb_art_d4aca3ad-25ca-4449-b0b1-db6198d40ae9"
+    },
+    {
+      "name": "Electronic Fox Records",
+      "entity_type": "record_label",
+      "country": null,
+      "genres": [],
+      "attributes": {},
+      "id": "mb_lbl_93671"
+    },
+    {
+      "name": "Electronic Beach",
+      "entity_type": "artist",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "disambiguation": null
+      },
+      "id": "mb_art_54eb8ba6-6e0d-4652-91f4-7a4ceeb0c006"
+    }
+  ],
+  "edges": [
+    {
+      "rel_type": "REPRESENTED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "prd_max",
+      "target": "ph_mxm",
+      "key": "REPRESENTED_BY_na"
+    },
+    {
+      "rel_type": "REPRESENTED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "prd_jack",
+      "target": "ph_jack",
+      "key": "REPRESENTED_BY_na"
+    },
+    {
+      "rel_type": "REPRESENTED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "prd_rick",
+      "target": "ph_shangrila",
+      "key": "REPRESENTED_BY_na"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2004,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_taylor",
+      "target": "lbl_republic",
+      "key": "SIGNED_TO_2004"
+    },
+    {
+      "rel_type": "REPRESENTED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_taylor",
+      "target": "ag_wme",
+      "key": "REPRESENTED_BY_na"
+    },
+    {
+      "rel_type": "RECORDED_AT",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.85,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_taylor",
+      "target": "std_electric",
+      "key": "RECORDED_AT_na"
+    },
+    {
+      "rel_type": "PRODUCED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.9,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_taylor",
+      "target": "prd_jack",
+      "key": "PRODUCED_BY_na"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2006,
+      "end_year": 2018,
+      "weight": 0.6,
+      "is_current": false,
+      "metadata": {
+        "status": "expired",
+        "note": "Historical First Deal"
+      },
+      "source": "art_taylor",
+      "target": "lbl_sub_pop",
+      "key": "SIGNED_TO_2006"
+    },
+    {
+      "rel_type": "COLLABORATED_WITH",
+      "start_year": 2021,
+      "end_year": null,
+      "weight": 0.7,
+      "is_current": true,
+      "metadata": {
+        "collab_type": "track_feature_or_album"
+      },
+      "source": "art_taylor",
+      "target": "art_phoebe",
+      "key": "COLLABORATED_WITH_2021"
+    },
+    {
+      "rel_type": "COLLABORATED_WITH",
+      "start_year": 2022,
+      "end_year": null,
+      "weight": 0.4,
+      "is_current": true,
+      "metadata": {
+        "collab_type": "track_feature_or_album"
+      },
+      "source": "art_taylor",
+      "target": "art_bonobo",
+      "key": "COLLABORATED_WITH_2022"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2015,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_billie",
+      "target": "lbl_interscope",
+      "key": "SIGNED_TO_2015"
+    },
+    {
+      "rel_type": "REPRESENTED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_billie",
+      "target": "ag_wme",
+      "key": "REPRESENTED_BY_na"
+    },
+    {
+      "rel_type": "RECORDED_AT",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.85,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_billie",
+      "target": "std_sunset",
+      "key": "RECORDED_AT_na"
+    },
+    {
+      "rel_type": "PRODUCED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.9,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_billie",
+      "target": "prd_finneas",
+      "key": "PRODUCED_BY_na"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2015,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_dua",
+      "target": "lbl_atlantic",
+      "key": "SIGNED_TO_2015"
+    },
+    {
+      "rel_type": "REPRESENTED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_dua",
+      "target": "ag_caa",
+      "key": "REPRESENTED_BY_na"
+    },
+    {
+      "rel_type": "RECORDED_AT",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.85,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_dua",
+      "target": "std_rak",
+      "key": "RECORDED_AT_na"
+    },
+    {
+      "rel_type": "PRODUCED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.9,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_dua",
+      "target": "prd_max",
+      "key": "PRODUCED_BY_na"
+    },
+    {
+      "rel_type": "COLLABORATED_WITH",
+      "start_year": 2020,
+      "end_year": null,
+      "weight": 0.65,
+      "is_current": true,
+      "metadata": {
+        "collab_type": "track_feature_or_album"
+      },
+      "source": "art_dua",
+      "target": "art_weeknd",
+      "key": "COLLABORATED_WITH_2020"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2010,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_weeknd",
+      "target": "lbl_republic",
+      "key": "SIGNED_TO_2010"
+    },
+    {
+      "rel_type": "REPRESENTED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_weeknd",
+      "target": "ag_caa",
+      "key": "REPRESENTED_BY_na"
+    },
+    {
+      "rel_type": "RECORDED_AT",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.85,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_weeknd",
+      "target": "std_conway",
+      "key": "RECORDED_AT_na"
+    },
+    {
+      "rel_type": "PRODUCED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.9,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_weeknd",
+      "target": "prd_max",
+      "key": "PRODUCED_BY_na"
+    },
+    {
+      "rel_type": "COLLABORATED_WITH",
+      "start_year": 2016,
+      "end_year": null,
+      "weight": 0.8,
+      "is_current": true,
+      "metadata": {
+        "collab_type": "track_feature_or_album"
+      },
+      "source": "art_weeknd",
+      "target": "art_future",
+      "key": "COLLABORATED_WITH_2016"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2006,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_drake",
+      "target": "lbl_republic",
+      "key": "SIGNED_TO_2006"
+    },
+    {
+      "rel_type": "REPRESENTED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_drake",
+      "target": "ag_wme",
+      "key": "REPRESENTED_BY_na"
+    },
+    {
+      "rel_type": "RECORDED_AT",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.85,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_drake",
+      "target": "std_sunset",
+      "key": "RECORDED_AT_na"
+    },
+    {
+      "rel_type": "PRODUCED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.9,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_drake",
+      "target": "prd_metro",
+      "key": "PRODUCED_BY_na"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2009,
+      "end_year": 2018,
+      "weight": 0.6,
+      "is_current": false,
+      "metadata": {
+        "status": "expired",
+        "note": "Past Contract"
+      },
+      "source": "art_drake",
+      "target": "lbl_def_jam",
+      "key": "SIGNED_TO_2009"
+    },
+    {
+      "rel_type": "COLLABORATED_WITH",
+      "start_year": 2015,
+      "end_year": null,
+      "weight": 0.95,
+      "is_current": true,
+      "metadata": {
+        "collab_type": "track_feature_or_album"
+      },
+      "source": "art_drake",
+      "target": "art_future",
+      "key": "COLLABORATED_WITH_2015"
+    },
+    {
+      "rel_type": "COLLABORATED_WITH",
+      "start_year": 2022,
+      "end_year": null,
+      "weight": 0.95,
+      "is_current": true,
+      "metadata": {
+        "collab_type": "track_feature_or_album"
+      },
+      "source": "art_drake",
+      "target": "art_21savage",
+      "key": "COLLABORATED_WITH_2022"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2004,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_kendrick",
+      "target": "lbl_interscope",
+      "key": "SIGNED_TO_2004"
+    },
+    {
+      "rel_type": "REPRESENTED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_kendrick",
+      "target": "ag_wme",
+      "key": "REPRESENTED_BY_na"
+    },
+    {
+      "rel_type": "RECORDED_AT",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.85,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_kendrick",
+      "target": "std_conway",
+      "key": "RECORDED_AT_na"
+    },
+    {
+      "rel_type": "PRODUCED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.9,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_kendrick",
+      "target": "prd_rick",
+      "key": "PRODUCED_BY_na"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2004,
+      "end_year": 2011,
+      "weight": 0.6,
+      "is_current": false,
+      "metadata": {
+        "status": "expired",
+        "note": "Early Mixtapes"
+      },
+      "source": "art_kendrick",
+      "target": "lbl_def_jam",
+      "key": "SIGNED_TO_2004"
+    },
+    {
+      "rel_type": "COLLABORATED_WITH",
+      "start_year": 2012,
+      "end_year": null,
+      "weight": 0.6,
+      "is_current": true,
+      "metadata": {
+        "collab_type": "track_feature_or_album"
+      },
+      "source": "art_kendrick",
+      "target": "art_drake",
+      "key": "COLLABORATED_WITH_2012"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2010,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_future",
+      "target": "lbl_rca",
+      "key": "SIGNED_TO_2010"
+    },
+    {
+      "rel_type": "REPRESENTED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_future",
+      "target": "ag_uta",
+      "key": "REPRESENTED_BY_na"
+    },
+    {
+      "rel_type": "RECORDED_AT",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.85,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_future",
+      "target": "std_conway",
+      "key": "RECORDED_AT_na"
+    },
+    {
+      "rel_type": "PRODUCED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.9,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_future",
+      "target": "prd_metro",
+      "key": "PRODUCED_BY_na"
+    },
+    {
+      "rel_type": "COLLABORATED_WITH",
+      "start_year": 2018,
+      "end_year": null,
+      "weight": 0.75,
+      "is_current": true,
+      "metadata": {
+        "collab_type": "track_feature_or_album"
+      },
+      "source": "art_future",
+      "target": "art_21savage",
+      "key": "COLLABORATED_WITH_2018"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2014,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_21savage",
+      "target": "lbl_rca",
+      "key": "SIGNED_TO_2014"
+    },
+    {
+      "rel_type": "REPRESENTED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_21savage",
+      "target": "ag_uta",
+      "key": "REPRESENTED_BY_na"
+    },
+    {
+      "rel_type": "RECORDED_AT",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.85,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_21savage",
+      "target": "std_conway",
+      "key": "RECORDED_AT_na"
+    },
+    {
+      "rel_type": "PRODUCED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.9,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_21savage",
+      "target": "prd_metro",
+      "key": "PRODUCED_BY_na"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 1985,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_aphex",
+      "target": "lbl_warp",
+      "key": "SIGNED_TO_1985"
+    },
+    {
+      "rel_type": "REPRESENTED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_aphex",
+      "target": "ag_primary",
+      "key": "REPRESENTED_BY_na"
+    },
+    {
+      "rel_type": "RECORDED_AT",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.85,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_aphex",
+      "target": "std_metropolis",
+      "key": "RECORDED_AT_na"
+    },
+    {
+      "rel_type": "PRODUCED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.9,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_aphex",
+      "target": "prd_brian",
+      "key": "PRODUCED_BY_na"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2009,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_bicep",
+      "target": "lbl_ninja_tune",
+      "key": "SIGNED_TO_2009"
+    },
+    {
+      "rel_type": "REPRESENTED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_bicep",
+      "target": "ag_primary",
+      "key": "REPRESENTED_BY_na"
+    },
+    {
+      "rel_type": "RECORDED_AT",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.85,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_bicep",
+      "target": "std_rak",
+      "key": "RECORDED_AT_na"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 1999,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_bonobo",
+      "target": "lbl_ninja_tune",
+      "key": "SIGNED_TO_1999"
+    },
+    {
+      "rel_type": "REPRESENTED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_bonobo",
+      "target": "ag_redlight",
+      "key": "REPRESENTED_BY_na"
+    },
+    {
+      "rel_type": "RECORDED_AT",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.85,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_bonobo",
+      "target": "std_abbey",
+      "key": "RECORDED_AT_na"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 1997,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_fourtet",
+      "target": "lbl_ninja_tune",
+      "key": "SIGNED_TO_1997"
+    },
+    {
+      "rel_type": "REPRESENTED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_fourtet",
+      "target": "ag_primary",
+      "key": "REPRESENTED_BY_na"
+    },
+    {
+      "rel_type": "RECORDED_AT",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.85,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_fourtet",
+      "target": "std_abbey",
+      "key": "RECORDED_AT_na"
+    },
+    {
+      "rel_type": "COLLABORATED_WITH",
+      "start_year": 2021,
+      "end_year": null,
+      "weight": 0.85,
+      "is_current": true,
+      "metadata": {
+        "collab_type": "track_feature_or_album"
+      },
+      "source": "art_fourtet",
+      "target": "art_bicep",
+      "key": "COLLABORATED_WITH_2021"
+    },
+    {
+      "rel_type": "COLLABORATED_WITH",
+      "start_year": 2019,
+      "end_year": null,
+      "weight": 0.7,
+      "is_current": true,
+      "metadata": {
+        "collab_type": "track_feature_or_album"
+      },
+      "source": "art_fourtet",
+      "target": "art_aphex",
+      "key": "COLLABORATED_WITH_2019"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2005,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_flyinglotus",
+      "target": "lbl_warp",
+      "key": "SIGNED_TO_2005"
+    },
+    {
+      "rel_type": "REPRESENTED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_flyinglotus",
+      "target": "ag_wme",
+      "key": "REPRESENTED_BY_na"
+    },
+    {
+      "rel_type": "RECORDED_AT",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.85,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_flyinglotus",
+      "target": "std_electric",
+      "key": "RECORDED_AT_na"
+    },
+    {
+      "rel_type": "COLLABORATED_WITH",
+      "start_year": 2014,
+      "end_year": null,
+      "weight": 0.9,
+      "is_current": true,
+      "metadata": {
+        "collab_type": "track_feature_or_album"
+      },
+      "source": "art_flyinglotus",
+      "target": "art_kendrick",
+      "key": "COLLABORATED_WITH_2014"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 1985,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_radiohead",
+      "target": "lbl_4ad",
+      "key": "SIGNED_TO_1985"
+    },
+    {
+      "rel_type": "REPRESENTED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_radiohead",
+      "target": "ag_wme",
+      "key": "REPRESENTED_BY_na"
+    },
+    {
+      "rel_type": "RECORDED_AT",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.85,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_radiohead",
+      "target": "std_abbey",
+      "key": "RECORDED_AT_na"
+    },
+    {
+      "rel_type": "PRODUCED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.9,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_radiohead",
+      "target": "prd_brian",
+      "key": "PRODUCED_BY_na"
+    },
+    {
+      "rel_type": "COLLABORATED_WITH",
+      "start_year": 2003,
+      "end_year": null,
+      "weight": 0.75,
+      "is_current": true,
+      "metadata": {
+        "collab_type": "track_feature_or_album"
+      },
+      "source": "art_radiohead",
+      "target": "art_fourtet",
+      "key": "COLLABORATED_WITH_2003"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 1998,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_strokes",
+      "target": "lbl_rca",
+      "key": "SIGNED_TO_1998"
+    },
+    {
+      "rel_type": "REPRESENTED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_strokes",
+      "target": "ag_caa",
+      "key": "REPRESENTED_BY_na"
+    },
+    {
+      "rel_type": "RECORDED_AT",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.85,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_strokes",
+      "target": "std_electric",
+      "key": "RECORDED_AT_na"
+    },
+    {
+      "rel_type": "PRODUCED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.9,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_strokes",
+      "target": "prd_rick",
+      "key": "PRODUCED_BY_na"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2002,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_arctic",
+      "target": "lbl_4ad",
+      "key": "SIGNED_TO_2002"
+    },
+    {
+      "rel_type": "REPRESENTED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_arctic",
+      "target": "ag_wme",
+      "key": "REPRESENTED_BY_na"
+    },
+    {
+      "rel_type": "RECORDED_AT",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.85,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_arctic",
+      "target": "std_abbey",
+      "key": "RECORDED_AT_na"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2014,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_phoebe",
+      "target": "lbl_4ad",
+      "key": "SIGNED_TO_2014"
+    },
+    {
+      "rel_type": "REPRESENTED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_phoebe",
+      "target": "ag_redlight",
+      "key": "REPRESENTED_BY_na"
+    },
+    {
+      "rel_type": "RECORDED_AT",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.85,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_phoebe",
+      "target": "std_electric",
+      "key": "RECORDED_AT_na"
+    },
+    {
+      "rel_type": "PRODUCED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.9,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_phoebe",
+      "target": "prd_jack",
+      "key": "PRODUCED_BY_na"
+    },
+    {
+      "rel_type": "COLLABORATED_WITH",
+      "start_year": 2020,
+      "end_year": null,
+      "weight": 0.8,
+      "is_current": true,
+      "metadata": {
+        "collab_type": "track_feature_or_album"
+      },
+      "source": "art_phoebe",
+      "target": "art_clairo",
+      "key": "COLLABORATED_WITH_2020"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2017,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_clairo",
+      "target": "lbl_republic",
+      "key": "SIGNED_TO_2017"
+    },
+    {
+      "rel_type": "REPRESENTED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_clairo",
+      "target": "ag_wme",
+      "key": "REPRESENTED_BY_na"
+    },
+    {
+      "rel_type": "RECORDED_AT",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.85,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_clairo",
+      "target": "std_electric",
+      "key": "RECORDED_AT_na"
+    },
+    {
+      "rel_type": "PRODUCED_BY",
+      "start_year": null,
+      "end_year": null,
+      "weight": 0.9,
+      "is_current": true,
+      "metadata": {},
+      "source": "art_clairo",
+      "target": "prd_jack",
+      "key": "PRODUCED_BY_na"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2018,
+      "end_year": 2021,
+      "weight": 0.6,
+      "is_current": false,
+      "metadata": {
+        "status": "expired",
+        "note": "Early Releases"
+      },
+      "source": "art_clairo",
+      "target": "lbl_4ad",
+      "key": "SIGNED_TO_2018"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 1996,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "release_group": "Raise the Pressure"
+      },
+      "source": "mb_art_3cdb360e-d0a2-459f-92f6-f0f28e62127d",
+      "target": "mb_lbl_37994",
+      "key": "SIGNED_TO_1996"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 1999,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "release_group": "Twisted Tenderness"
+      },
+      "source": "mb_art_3cdb360e-d0a2-459f-92f6-f0f28e62127d",
+      "target": "mb_lbl_37994",
+      "key": "SIGNED_TO_1999"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 1991,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "release_group": "Electronic"
+      },
+      "source": "mb_art_3cdb360e-d0a2-459f-92f6-f0f28e62127d",
+      "target": "mb_lbl_37994",
+      "key": "SIGNED_TO_1991"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2006,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "release_group": "Get the Message: The Best of Electronic"
+      },
+      "source": "mb_art_3cdb360e-d0a2-459f-92f6-f0f28e62127d",
+      "target": "mb_lbl_37994",
+      "key": "SIGNED_TO_2006"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2026,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "release_group": "1996 Remixes 1999"
+      },
+      "source": "mb_art_3cdb360e-d0a2-459f-92f6-f0f28e62127d",
+      "target": "mb_lbl_37994",
+      "key": "SIGNED_TO_2026"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 1995,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "release_group": "Road Rash"
+      },
+      "source": "mb_art_fa43260d-bcfe-46ba-a8a0-69107538e46c",
+      "target": "mb_lbl_92990",
+      "key": "SIGNED_TO_1995"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2006,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "release_group": "The Sims 2: Pets"
+      },
+      "source": "mb_art_fa43260d-bcfe-46ba-a8a0-69107538e46c",
+      "target": "mb_lbl_92990",
+      "key": "SIGNED_TO_2006"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2005,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "release_group": "The Sims 2: University"
+      },
+      "source": "mb_art_fa43260d-bcfe-46ba-a8a0-69107538e46c",
+      "target": "mb_lbl_92990",
+      "key": "SIGNED_TO_2005"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2013,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "release_group": "Galactic / Quasar"
+      },
+      "source": "mb_art_51d2f351-0c7b-45fd-99fd-330b33b05964",
+      "target": "mb_lbl_8648",
+      "key": "SIGNED_TO_2013"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2009,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "release_group": "Northern Sea"
+      },
+      "source": "mb_art_51d2f351-0c7b-45fd-99fd-330b33b05964",
+      "target": "mb_lbl_8648",
+      "key": "SIGNED_TO_2009"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2011,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "release_group": "Miracle"
+      },
+      "source": "mb_art_51d2f351-0c7b-45fd-99fd-330b33b05964",
+      "target": "mb_lbl_8648",
+      "key": "SIGNED_TO_2011"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2010,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "release_group": "Rise Again"
+      },
+      "source": "mb_art_51d2f351-0c7b-45fd-99fd-330b33b05964",
+      "target": "mb_lbl_8648",
+      "key": "SIGNED_TO_2010"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2018,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "release_group": "Disassociation"
+      },
+      "source": "mb_art_000e193b-3adb-4d56-828b-0ffb3f2f1da1",
+      "target": "mb_lbl_40747",
+      "key": "SIGNED_TO_2018"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2021,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "release_group": "Afterlife"
+      },
+      "source": "mb_art_000e193b-3adb-4d56-828b-0ffb3f2f1da1",
+      "target": "mb_lbl_40747",
+      "key": "SIGNED_TO_2021"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2020,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "release_group": "Digital Warfare (Remastered)"
+      },
+      "source": "mb_art_000e193b-3adb-4d56-828b-0ffb3f2f1da1",
+      "target": "mb_lbl_40747",
+      "key": "SIGNED_TO_2020"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2019,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "release_group": "Dead Giveaway"
+      },
+      "source": "mb_art_000e193b-3adb-4d56-828b-0ffb3f2f1da1",
+      "target": "mb_lbl_40747",
+      "key": "SIGNED_TO_2019"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2017,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "release_group": "Digital Warfare"
+      },
+      "source": "mb_art_000e193b-3adb-4d56-828b-0ffb3f2f1da1",
+      "target": "mb_lbl_40747",
+      "key": "SIGNED_TO_2017"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2016,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "release_group": "Human Abyss"
+      },
+      "source": "mb_art_fdcbf873-4a8d-4c62-9352-327451b6a910",
+      "target": "mb_lbl_64496",
+      "key": "SIGNED_TO_2016"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2023,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "release_group": "Destrudo"
+      },
+      "source": "mb_art_fdcbf873-4a8d-4c62-9352-327451b6a910",
+      "target": "mb_lbl_64496",
+      "key": "SIGNED_TO_2023"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2025,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "release_group": "Second Life"
+      },
+      "source": "mb_art_fdcbf873-4a8d-4c62-9352-327451b6a910",
+      "target": "mb_lbl_64496",
+      "key": "SIGNED_TO_2025"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2022,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "release_group": "Con:Trast"
+      },
+      "source": "mb_art_fdcbf873-4a8d-4c62-9352-327451b6a910",
+      "target": "mb_lbl_64496",
+      "key": "SIGNED_TO_2022"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2010,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "release_group": "Kampfraum Guben"
+      },
+      "source": "mb_art_fdcbf873-4a8d-4c62-9352-327451b6a910",
+      "target": "mb_lbl_64496",
+      "key": "SIGNED_TO_2010"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2016,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "release_group": "PEACE\u262eAND\u262eLOVE\u2665"
+      },
+      "source": "mb_art_d4aca3ad-25ca-4449-b0b1-db6198d40ae9",
+      "target": "mb_lbl_93671",
+      "key": "SIGNED_TO_2016"
+    },
+    {
+      "rel_type": "SIGNED_TO",
+      "start_year": 2015,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "release_group": "Cosmic Rainbow"
+      },
+      "source": "mb_art_d4aca3ad-25ca-4449-b0b1-db6198d40ae9",
+      "target": "mb_lbl_93671",
+      "key": "SIGNED_TO_2015"
+    }
+  ]
+}

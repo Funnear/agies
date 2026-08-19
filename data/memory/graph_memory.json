@@ -1,0 +1,1176 @@
+{
+  "version": "1.0.0",
+  "updated_at": "2026-08-19T22:18:08.458532+00:00",
+  "nodes": [
+    {
+      "id": "ep_1787169205878",
+      "label": "Brian Eno worked extensively at Hansa Studios Berlin produci...",
+      "node_type": "episode",
+      "attributes": {
+        "full_text": "Brian Eno worked extensively at Hansa Studios Berlin producing ambient and electronic music.",
+        "session_id": "test_sess",
+        "tags": []
+      },
+      "timestamp": "2026-08-19T19:53:25.878951+00:00",
+      "importance": 1.0
+    },
+    {
+      "id": "concept_ambient",
+      "label": "Ambient",
+      "node_type": "concept",
+      "attributes": {
+        "first_observed": "2026-08-19T19:53:25.879457+00:00"
+      },
+      "timestamp": "2026-08-19T19:53:25.879457+00:00",
+      "importance": 1.0
+    },
+    {
+      "id": "concept_berlin",
+      "label": "Berlin",
+      "node_type": "entity",
+      "attributes": {
+        "first_observed": "2026-08-19T19:53:25.880163+00:00"
+      },
+      "timestamp": "2026-08-19T19:53:25.880163+00:00",
+      "importance": 1.0
+    },
+    {
+      "id": "concept_hansa",
+      "label": "Hansa",
+      "node_type": "entity",
+      "attributes": {
+        "first_observed": "2026-08-19T19:53:25.880163+00:00"
+      },
+      "timestamp": "2026-08-19T19:53:25.880163+00:00",
+      "importance": 1.0
+    },
+    {
+      "id": "concept_brian_eno",
+      "label": "Brian Eno",
+      "node_type": "entity",
+      "attributes": {
+        "first_observed": "2026-08-19T19:53:25.880163+00:00"
+      },
+      "timestamp": "2026-08-19T19:53:25.880163+00:00",
+      "importance": 1.0
+    },
+    {
+      "id": "ep_1787169232654",
+      "label": "Brian Eno worked extensively at Hansa Studios Berlin produci...",
+      "node_type": "episode",
+      "attributes": {
+        "full_text": "Brian Eno worked extensively at Hansa Studios Berlin producing ambient and electronic music.",
+        "session_id": "test_sess",
+        "tags": []
+      },
+      "timestamp": "2026-08-19T19:53:52.654291+00:00",
+      "importance": 1.0
+    },
+    {
+      "id": "ep_1787169320901",
+      "label": "Brian Eno worked extensively at Hansa Studios Berlin produci...",
+      "node_type": "episode",
+      "attributes": {
+        "full_text": "Brian Eno worked extensively at Hansa Studios Berlin producing ambient and electronic music.",
+        "session_id": "test_sess",
+        "tags": []
+      },
+      "timestamp": "2026-08-19T19:55:20.901740+00:00",
+      "importance": 1.0
+    },
+    {
+      "id": "ep_1787169653236",
+      "label": "Brian Eno worked extensively at Hansa Studios Berlin produci...",
+      "node_type": "episode",
+      "attributes": {
+        "full_text": "Brian Eno worked extensively at Hansa Studios Berlin producing ambient and electronic music.",
+        "session_id": "test_sess",
+        "tags": []
+      },
+      "timestamp": "2026-08-19T20:00:53.237095+00:00",
+      "importance": 1.0
+    },
+    {
+      "id": "ep_1787169824575",
+      "label": "Brian Eno worked extensively at Hansa Studios Berlin produci...",
+      "node_type": "episode",
+      "attributes": {
+        "full_text": "Brian Eno worked extensively at Hansa Studios Berlin producing ambient and electronic music.",
+        "session_id": "test_sess",
+        "tags": []
+      },
+      "timestamp": "2026-08-19T20:03:44.575988+00:00",
+      "importance": 1.0
+    },
+    {
+      "id": "ep_1787169852595",
+      "label": "Brian Eno worked extensively at Hansa Studios Berlin produci...",
+      "node_type": "episode",
+      "attributes": {
+        "full_text": "Brian Eno worked extensively at Hansa Studios Berlin producing ambient and electronic music.",
+        "session_id": "test_sess",
+        "tags": []
+      },
+      "timestamp": "2026-08-19T20:04:12.595037+00:00",
+      "importance": 1.0
+    },
+    {
+      "id": "ep_1787170023773",
+      "label": "Brian Eno worked extensively at Hansa Studios Berlin produci...",
+      "node_type": "episode",
+      "attributes": {
+        "full_text": "Brian Eno worked extensively at Hansa Studios Berlin producing ambient and electronic music.",
+        "session_id": "test_sess",
+        "tags": []
+      },
+      "timestamp": "2026-08-19T20:07:03.773521+00:00",
+      "importance": 1.0
+    },
+    {
+      "id": "ep_1787170050568",
+      "label": "Brian Eno worked extensively at Hansa Studios Berlin produci...",
+      "node_type": "episode",
+      "attributes": {
+        "full_text": "Brian Eno worked extensively at Hansa Studios Berlin producing ambient and electronic music.",
+        "session_id": "test_sess",
+        "tags": []
+      },
+      "timestamp": "2026-08-19T20:07:30.568790+00:00",
+      "importance": 1.0
+    },
+    {
+      "id": "ep_1787170336401",
+      "label": "Brian Eno worked extensively at Hansa Studios Berlin produci...",
+      "node_type": "episode",
+      "attributes": {
+        "full_text": "Brian Eno worked extensively at Hansa Studios Berlin producing ambient and electronic music.",
+        "session_id": "test_sess",
+        "tags": []
+      },
+      "timestamp": "2026-08-19T20:12:16.401059+00:00",
+      "importance": 1.0
+    },
+    {
+      "id": "ep_1787170366428",
+      "label": "Brian Eno worked extensively at Hansa Studios Berlin produci...",
+      "node_type": "episode",
+      "attributes": {
+        "full_text": "Brian Eno worked extensively at Hansa Studios Berlin producing ambient and electronic music.",
+        "session_id": "test_sess",
+        "tags": []
+      },
+      "timestamp": "2026-08-19T20:12:46.428552+00:00",
+      "importance": 1.0
+    },
+    {
+      "id": "ep_1787177856946",
+      "label": "Brian Eno worked extensively at Hansa Studios Berlin produci...",
+      "node_type": "episode",
+      "attributes": {
+        "full_text": "Brian Eno worked extensively at Hansa Studios Berlin producing ambient and electronic music.",
+        "session_id": "test_sess",
+        "tags": []
+      },
+      "timestamp": "2026-08-19T22:17:36.946200+00:00",
+      "importance": 1.0
+    },
+    {
+      "id": "ep_1787177888456",
+      "label": "Brian Eno worked extensively at Hansa Studios Berlin produci...",
+      "node_type": "episode",
+      "attributes": {
+        "full_text": "Brian Eno worked extensively at Hansa Studios Berlin producing ambient and electronic music.",
+        "session_id": "test_sess",
+        "tags": []
+      },
+      "timestamp": "2026-08-19T22:18:08.456662+00:00",
+      "importance": 1.0
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "ep_1787169205878",
+      "target_id": "concept_ambient",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787169205878",
+      "target_id": "concept_berlin",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787169205878",
+      "target_id": "concept_hansa",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787169205878",
+      "target_id": "concept_brian_eno",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_berlin",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169205878"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_berlin",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169232654"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_berlin",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169320901"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_berlin",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169653236"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_berlin",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169824575"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_berlin",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169852595"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_berlin",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787170023773"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_berlin",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787170050568"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_berlin",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787170336401"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_berlin",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787170366428"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_berlin",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787177856946"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_berlin",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787177888456"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_hansa",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169205878"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_hansa",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169232654"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_hansa",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169320901"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_hansa",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169653236"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_hansa",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169824575"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_hansa",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169852595"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_hansa",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787170023773"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_hansa",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787170050568"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_hansa",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787170336401"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_hansa",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787170366428"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_hansa",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787177856946"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_hansa",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787177888456"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169205878"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169232654"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169320901"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169653236"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169824575"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169852595"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787170023773"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787170050568"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787170336401"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787170366428"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787177856946"
+      }
+    },
+    {
+      "source_id": "concept_ambient",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787177888456"
+      }
+    },
+    {
+      "source_id": "concept_berlin",
+      "target_id": "concept_hansa",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169205878"
+      }
+    },
+    {
+      "source_id": "concept_berlin",
+      "target_id": "concept_hansa",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169232654"
+      }
+    },
+    {
+      "source_id": "concept_berlin",
+      "target_id": "concept_hansa",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169320901"
+      }
+    },
+    {
+      "source_id": "concept_berlin",
+      "target_id": "concept_hansa",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169653236"
+      }
+    },
+    {
+      "source_id": "concept_berlin",
+      "target_id": "concept_hansa",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169824575"
+      }
+    },
+    {
+      "source_id": "concept_berlin",
+      "target_id": "concept_hansa",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169852595"
+      }
+    },
+    {
+      "source_id": "concept_berlin",
+      "target_id": "concept_hansa",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787170023773"
+      }
+    },
+    {
+      "source_id": "concept_berlin",
+      "target_id": "concept_hansa",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787170050568"
+      }
+    },
+    {
+      "source_id": "concept_berlin",
+      "target_id": "concept_hansa",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787170336401"
+      }
+    },
+    {
+      "source_id": "concept_berlin",
+      "target_id": "concept_hansa",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787170366428"
+      }
+    },
+    {
+      "source_id": "concept_berlin",
+      "target_id": "concept_hansa",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787177856946"
+      }
+    },
+    {
+      "source_id": "concept_berlin",
+      "target_id": "concept_hansa",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787177888456"
+      }
+    },
+    {
+      "source_id": "concept_berlin",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169205878"
+      }
+    },
+    {
+      "source_id": "concept_berlin",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169232654"
+      }
+    },
+    {
+      "source_id": "concept_berlin",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169320901"
+      }
+    },
+    {
+      "source_id": "concept_berlin",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169653236"
+      }
+    },
+    {
+      "source_id": "concept_berlin",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169824575"
+      }
+    },
+    {
+      "source_id": "concept_berlin",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169852595"
+      }
+    },
+    {
+      "source_id": "concept_berlin",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787170023773"
+      }
+    },
+    {
+      "source_id": "concept_berlin",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787170050568"
+      }
+    },
+    {
+      "source_id": "concept_berlin",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787170336401"
+      }
+    },
+    {
+      "source_id": "concept_berlin",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787170366428"
+      }
+    },
+    {
+      "source_id": "concept_berlin",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787177856946"
+      }
+    },
+    {
+      "source_id": "concept_berlin",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787177888456"
+      }
+    },
+    {
+      "source_id": "concept_hansa",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169205878"
+      }
+    },
+    {
+      "source_id": "concept_hansa",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169232654"
+      }
+    },
+    {
+      "source_id": "concept_hansa",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169320901"
+      }
+    },
+    {
+      "source_id": "concept_hansa",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169653236"
+      }
+    },
+    {
+      "source_id": "concept_hansa",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169824575"
+      }
+    },
+    {
+      "source_id": "concept_hansa",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787169852595"
+      }
+    },
+    {
+      "source_id": "concept_hansa",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787170023773"
+      }
+    },
+    {
+      "source_id": "concept_hansa",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787170050568"
+      }
+    },
+    {
+      "source_id": "concept_hansa",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787170336401"
+      }
+    },
+    {
+      "source_id": "concept_hansa",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787170366428"
+      }
+    },
+    {
+      "source_id": "concept_hansa",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787177856946"
+      }
+    },
+    {
+      "source_id": "concept_hansa",
+      "target_id": "concept_brian_eno",
+      "rel_type": "CO_OCCURS_WITH",
+      "weight": 0.8,
+      "metadata": {
+        "episode_id": "ep_1787177888456"
+      }
+    },
+    {
+      "source_id": "ep_1787169232654",
+      "target_id": "concept_ambient",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787169232654",
+      "target_id": "concept_berlin",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787169232654",
+      "target_id": "concept_hansa",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787169232654",
+      "target_id": "concept_brian_eno",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787169320901",
+      "target_id": "concept_ambient",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787169320901",
+      "target_id": "concept_berlin",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787169320901",
+      "target_id": "concept_hansa",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787169320901",
+      "target_id": "concept_brian_eno",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787169653236",
+      "target_id": "concept_ambient",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787169653236",
+      "target_id": "concept_berlin",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787169653236",
+      "target_id": "concept_hansa",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787169653236",
+      "target_id": "concept_brian_eno",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787169824575",
+      "target_id": "concept_ambient",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787169824575",
+      "target_id": "concept_berlin",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787169824575",
+      "target_id": "concept_hansa",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787169824575",
+      "target_id": "concept_brian_eno",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787169852595",
+      "target_id": "concept_ambient",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787169852595",
+      "target_id": "concept_berlin",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787169852595",
+      "target_id": "concept_hansa",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787169852595",
+      "target_id": "concept_brian_eno",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787170023773",
+      "target_id": "concept_ambient",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787170023773",
+      "target_id": "concept_berlin",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787170023773",
+      "target_id": "concept_hansa",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787170023773",
+      "target_id": "concept_brian_eno",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787170050568",
+      "target_id": "concept_ambient",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787170050568",
+      "target_id": "concept_berlin",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787170050568",
+      "target_id": "concept_hansa",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787170050568",
+      "target_id": "concept_brian_eno",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787170336401",
+      "target_id": "concept_ambient",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787170336401",
+      "target_id": "concept_berlin",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787170336401",
+      "target_id": "concept_hansa",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787170336401",
+      "target_id": "concept_brian_eno",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787170366428",
+      "target_id": "concept_ambient",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787170366428",
+      "target_id": "concept_berlin",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787170366428",
+      "target_id": "concept_hansa",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787170366428",
+      "target_id": "concept_brian_eno",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787177856946",
+      "target_id": "concept_ambient",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787177856946",
+      "target_id": "concept_berlin",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787177856946",
+      "target_id": "concept_hansa",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787177856946",
+      "target_id": "concept_brian_eno",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787177888456",
+      "target_id": "concept_ambient",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787177888456",
+      "target_id": "concept_berlin",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787177888456",
+      "target_id": "concept_hansa",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    },
+    {
+      "source_id": "ep_1787177888456",
+      "target_id": "concept_brian_eno",
+      "rel_type": "MENTIONS",
+      "weight": 1.0,
+      "metadata": {}
+    }
+  ]
+}

@@ -24,8 +24,14 @@ seaborn
 # === ML ===
 scikit-learn
 
-# === Front End / UI ===
+# === Networking, Web Services & APIs ===
+requests
+fastapi
+uvicorn[standard]
 
+# === Network Graphs & Analysis ===
+networkx
+pyvis
 
-# === Optional Utilities / Images ===
-
+# === Validation & Schemas ===
+pydantic

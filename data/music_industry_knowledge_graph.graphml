@@ -1,0 +1,1351 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d12" for="edge" attr.name="end_year" attr.type="long"/>
+<key id="d11" for="edge" attr.name="start_year" attr.type="long"/>
+<key id="d10" for="edge" attr.name="metadata" attr.type="string"/>
+<key id="d9" for="edge" attr.name="is_current" attr.type="boolean"/>
+<key id="d8" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d7" for="edge" attr.name="end_year" attr.type="string"/>
+<key id="d6" for="edge" attr.name="start_year" attr.type="string"/>
+<key id="d5" for="edge" attr.name="rel_type" attr.type="string"/>
+<key id="d4" for="node" attr.name="attributes" attr.type="string"/>
+<key id="d3" for="node" attr.name="genres" attr.type="string"/>
+<key id="d2" for="node" attr.name="country" attr.type="string"/>
+<key id="d1" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="name" attr.type="string"/>
+<graph edgedefault="directed"><node id="lbl_interscope">
+  <data key="d0">Interscope Geffen A&amp;M</data>
+  <data key="d1">record_label</data>
+  <data key="d2"></data>
+  <data key="d3">['Pop', 'Hip-Hop', 'Rock']</data>
+  <data key="d4">{'market_tier': 'Tier 1'}</data>
+</node>
+<node id="lbl_republic">
+  <data key="d0">Republic Records</data>
+  <data key="d1">record_label</data>
+  <data key="d2"></data>
+  <data key="d3">['Pop', 'R&amp;B', 'Hip-Hop']</data>
+  <data key="d4">{'market_tier': 'Tier 1'}</data>
+</node>
+<node id="lbl_columbia">
+  <data key="d0">Columbia Records</data>
+  <data key="d1">record_label</data>
+  <data key="d2"></data>
+  <data key="d3">['Pop', 'Rock', 'Alternative']</data>
+  <data key="d4">{'market_tier': 'Tier 1'}</data>
+</node>
+<node id="lbl_rca">
+  <data key="d0">RCA Records</data>
+  <data key="d1">record_label</data>
+  <data key="d2"></data>
+  <data key="d3">['R&amp;B', 'Pop', 'Electronic']</data>
+  <data key="d4">{'market_tier': 'Tier 1'}</data>
+</node>
+<node id="lbl_atlantic">
+  <data key="d0">Atlantic Records</data>
+  <data key="d1">record_label</data>
+  <data key="d2"></data>
+  <data key="d3">['Hip-Hop', 'Pop', 'Rock']</data>
+  <data key="d4">{'market_tier': 'Tier 1'}</data>
+</node>
+<node id="lbl_warp">
+  <data key="d0">Warp Records</data>
+  <data key="d1">record_label</data>
+  <data key="d2"></data>
+  <data key="d3">['Electronic', 'IDM', 'Experimental']</data>
+  <data key="d4">{'market_tier': 'Independent'}</data>
+</node>
+<node id="lbl_ninja_tune">
+  <data key="d0">Ninja Tune</data>
+  <data key="d1">record_label</data>
+  <data key="d2"></data>
+  <data key="d3">['Electronic', 'Trip-Hop', 'Downtempo']</data>
+  <data key="d4">{'market_tier': 'Independent'}</data>
+</node>
+<node id="lbl_4ad">
+  <data key="d0">4AD</data>
+  <data key="d1">record_label</data>
+  <data key="d2"></data>
+  <data key="d3">['Indie Rock', 'Dream Pop', 'Post-Punk']</data>
+  <data key="d4">{'market_tier': 'Independent'}</data>
+</node>
+<node id="lbl_sub_pop">
+  <data key="d0">Sub Pop Records</data>
+  <data key="d1">record_label</data>
+  <data key="d2"></data>
+  <data key="d3">['Grunge', 'Indie Rock']</data>
+  <data key="d4">{'market_tier': 'Independent'}</data>
+</node>
+<node id="lbl_def_jam">
+  <data key="d0">Def Jam Recordings</data>
+  <data key="d1">record_label</data>
+  <data key="d2"></data>
+  <data key="d3">['Hip-Hop', 'Trap']</data>
+  <data key="d4">{'market_tier': 'Tier 1'}</data>
+</node>
+<node id="ph_mxm">
+  <data key="d0">MXM Music Productions</data>
+  <data key="d1">production_house</data>
+  <data key="d2"></data>
+  <data key="d3">[]</data>
+  <data key="d4">{'city': 'Stockholm, Sweden'}</data>
+</node>
+<node id="ph_jack">
+  <data key="d0">Bleachers Sound Labs</data>
+  <data key="d1">production_house</data>
+  <data key="d2"></data>
+  <data key="d3">[]</data>
+  <data key="d4">{'city': 'New York, USA'}</data>
+</node>
+<node id="ph_shangrila">
+  <data key="d0">Shangri-La Creative</data>
+  <data key="d1">production_house</data>
+  <data key="d2"></data>
+  <data key="d3">[]</data>
+  <data key="d4">{'city': 'Malibu, USA'}</data>
+</node>
+<node id="ph_hybe">
+  <data key="d0">HYBE Creative Studios</data>
+  <data key="d1">production_house</data>
+  <data key="d2"></data>
+  <data key="d3">[]</data>
+  <data key="d4">{'city': 'Seoul, South Korea'}</data>
+</node>
+<node id="ag_wme">
+  <data key="d0">WME (William Morris Endeavor)</data>
+  <data key="d1">agency</data>
+  <data key="d2"></data>
+  <data key="d3">[]</data>
+  <data key="d4">{'region': 'Global'}</data>
+</node>
+<node id="ag_caa">
+  <data key="d0">CAA (Creative Artists Agency)</data>
+  <data key="d1">agency</data>
+  <data key="d2"></data>
+  <data key="d3">[]</data>
+  <data key="d4">{'region': 'Global'}</data>
+</node>
+<node id="ag_uta">
+  <data key="d0">UTA (United Talent Agency)</data>
+  <data key="d1">agency</data>
+  <data key="d2"></data>
+  <data key="d3">[]</data>
+  <data key="d4">{'region': 'Global'}</data>
+</node>
+<node id="ag_rocnation">
+  <data key="d0">Roc Nation Management</data>
+  <data key="d1">agency</data>
+  <data key="d2"></data>
+  <data key="d3">[]</data>
+  <data key="d4">{'region': 'USA / UK'}</data>
+</node>
+<node id="ag_redlight">
+  <data key="d0">Red Light Management</data>
+  <data key="d1">agency</data>
+  <data key="d2"></data>
+  <data key="d3">[]</data>
+  <data key="d4">{'region': 'USA'}</data>
+</node>
+<node id="ag_primary">
+  <data key="d0">Primary Talent International</data>
+  <data key="d1">agency</data>
+  <data key="d2"></data>
+  <data key="d3">[]</data>
+  <data key="d4">{'region': 'Europe'}</data>
+</node>
+<node id="std_abbey">
+  <data key="d0">Abbey Road Studios</data>
+  <data key="d1">studio</data>
+  <data key="d2">UK</data>
+  <data key="d3">[]</data>
+  <data key="d4">{}</data>
+</node>
+<node id="std_electric">
+  <data key="d0">Electric Lady Studios</data>
+  <data key="d1">studio</data>
+  <data key="d2">USA</data>
+  <data key="d3">[]</data>
+  <data key="d4">{}</data>
+</node>
+<node id="std_sunset">
+  <data key="d0">Sunset Sound Recorders</data>
+  <data key="d1">studio</data>
+  <data key="d2">USA</data>
+  <data key="d3">[]</data>
+  <data key="d4">{}</data>
+</node>
+<node id="std_conway">
+  <data key="d0">Conway Recording Studios</data>
+  <data key="d1">studio</data>
+  <data key="d2">USA</data>
+  <data key="d3">[]</data>
+  <data key="d4">{}</data>
+</node>
+<node id="std_metropolis">
+  <data key="d0">Metropolis Studios</data>
+  <data key="d1">studio</data>
+  <data key="d2">UK</data>
+  <data key="d3">[]</data>
+  <data key="d4">{}</data>
+</node>
+<node id="std_rak">
+  <data key="d0">RAK Studios</data>
+  <data key="d1">studio</data>
+  <data key="d2">UK</data>
+  <data key="d3">[]</data>
+  <data key="d4">{}</data>
+</node>
+<node id="prd_max">
+  <data key="d0">Max Martin</data>
+  <data key="d1">producer</data>
+  <data key="d2"></data>
+  <data key="d3">['Pop', 'Dance']</data>
+  <data key="d4">{}</data>
+</node>
+<node id="prd_jack">
+  <data key="d0">Jack Antonoff</data>
+  <data key="d1">producer</data>
+  <data key="d2"></data>
+  <data key="d3">['Indie Pop', 'Alternative']</data>
+  <data key="d4">{}</data>
+</node>
+<node id="prd_rick">
+  <data key="d0">Rick Rubin</data>
+  <data key="d1">producer</data>
+  <data key="d2"></data>
+  <data key="d3">['Rock', 'Hip-Hop']</data>
+  <data key="d4">{}</data>
+</node>
+<node id="prd_finneas">
+  <data key="d0">Finneas O'Connell</data>
+  <data key="d1">producer</data>
+  <data key="d2"></data>
+  <data key="d3">['Pop', 'Minimalist']</data>
+  <data key="d4">{}</data>
+</node>
+<node id="prd_brian">
+  <data key="d0">Brian Eno</data>
+  <data key="d1">producer</data>
+  <data key="d2"></data>
+  <data key="d3">['Ambient', 'Electronic']</data>
+  <data key="d4">{}</data>
+</node>
+<node id="prd_metro">
+  <data key="d0">Metro Boomin</data>
+  <data key="d1">producer</data>
+  <data key="d2"></data>
+  <data key="d3">['Hip-Hop', 'Trap']</data>
+  <data key="d4">{}</data>
+</node>
+<node id="art_taylor">
+  <data key="d0">Taylor Swift</data>
+  <data key="d1">artist</data>
+  <data key="d2">USA</data>
+  <data key="d3">['Pop', 'Country', 'Indie Folk']</data>
+  <data key="d4">{}</data>
+</node>
+<node id="art_billie">
+  <data key="d0">Billie Eilish</data>
+  <data key="d1">artist</data>
+  <data key="d2">USA</data>
+  <data key="d3">['Pop', 'Alternative']</data>
+  <data key="d4">{}</data>
+</node>
+<node id="art_dua">
+  <data key="d0">Dua Lipa</data>
+  <data key="d1">artist</data>
+  <data key="d2">UK</data>
+  <data key="d3">['Pop', 'Disco']</data>
+  <data key="d4">{}</data>
+</node>
+<node id="art_weeknd">
+  <data key="d0">The Weeknd</data>
+  <data key="d1">artist</data>
+  <data key="d2">Canada</data>
+  <data key="d3">['R&amp;B', 'Pop', 'Synthwave']</data>
+  <data key="d4">{}</data>
+</node>
+<node id="art_drake">
+  <data key="d0">Drake</data>
+  <data key="d1">artist</data>
+  <data key="d2">Canada</data>
+  <data key="d3">['Hip-Hop', 'R&amp;B']</data>
+  <data key="d4">{}</data>
+</node>
+<node id="art_kendrick">
+  <data key="d0">Kendrick Lamar</data>
+  <data key="d1">artist</data>
+  <data key="d2">USA</data>
+  <data key="d3">['Hip-Hop', 'Jazz Rap']</data>
+  <data key="d4">{}</data>
+</node>
+<node id="art_future">
+  <data key="d0">Future</data>
+  <data key="d1">artist</data>
+  <data key="d2">USA</data>
+  <data key="d3">['Hip-Hop', 'Trap']</data>
+  <data key="d4">{}</data>
+</node>
+<node id="art_21savage">
+  <data key="d0">21 Savage</data>
+  <data key="d1">artist</data>
+  <data key="d2">USA</data>
+  <data key="d3">['Hip-Hop', 'Trap']</data>
+  <data key="d4">{}</data>
+</node>
+<node id="art_aphex">
+  <data key="d0">Aphex Twin</data>
+  <data key="d1">artist</data>
+  <data key="d2">UK</data>
+  <data key="d3">['Electronic', 'IDM', 'Ambient']</data>
+  <data key="d4">{}</data>
+</node>
+<node id="art_bicep">
+  <data key="d0">BICEP</data>
+  <data key="d1">artist</data>
+  <data key="d2">UK</data>
+  <data key="d3">['Electronic', 'Breakbeat']</data>
+  <data key="d4">{}</data>
+</node>
+<node id="art_bonobo">
+  <data key="d0">Bonobo</data>
+  <data key="d1">artist</data>
+  <data key="d2">UK</data>
+  <data key="d3">['Electronic', 'Downtempo']</data>
+  <data key="d4">{}</data>
+</node>
+<node id="art_fourtet">
+  <data key="d0">Four Tet</data>
+  <data key="d1">artist</data>
+  <data key="d2">UK</data>
+  <data key="d3">['Electronic', 'Folktronica']</data>
+  <data key="d4">{}</data>
+</node>
+<node id="art_flyinglotus">
+  <data key="d0">Flying Lotus</data>
+  <data key="d1">artist</data>
+  <data key="d2">USA</data>
+  <data key="d3">['Electronic', 'Experimental Hip Hop']</data>
+  <data key="d4">{}</data>
+</node>
+<node id="art_radiohead">
+  <data key="d0">Radiohead</data>
+  <data key="d1">artist</data>
+  <data key="d2">UK</data>
+  <data key="d3">['Art Rock', 'Alternative Rock']</data>
+  <data key="d4">{}</data>
+</node>
+<node id="art_strokes">
+  <data key="d0">The Strokes</data>
+  <data key="d1">artist</data>
+  <data key="d2">USA</data>
+  <data key="d3">['Indie Rock', 'Post-Punk']</data>
+  <data key="d4">{}</data>
+</node>
+<node id="art_arctic">
+  <data key="d0">Arctic Monkeys</data>
+  <data key="d1">artist</data>
+  <data key="d2">UK</data>
+  <data key="d3">['Indie Rock', 'Garage Rock']</data>
+  <data key="d4">{}</data>
+</node>
+<node id="art_phoebe">
+  <data key="d0">Phoebe Bridgers</data>
+  <data key="d1">artist</data>
+  <data key="d2">USA</data>
+  <data key="d3">['Indie Rock', 'Folk']</data>
+  <data key="d4">{}</data>
+</node>
+<node id="art_clairo">
+  <data key="d0">Clairo</data>
+  <data key="d1">artist</data>
+  <data key="d2">USA</data>
+  <data key="d3">['Bedroom Pop', 'Indie Pop']</data>
+  <data key="d4">{}</data>
+</node>
+<node id="mb_art_3cdb360e-d0a2-459f-92f6-f0f28e62127d">
+  <data key="d0">Electronic</data>
+  <data key="d1">artist</data>
+  <data key="d2">GB</data>
+  <data key="d3">['british', 'new wave', 'uk', 'alternative dance', 'english', 'england', 'synth pop', 'rock and indie']</data>
+  <data key="d4">{'disambiguation': None}</data>
+</node>
+<node id="mb_lbl_37994">
+  <data key="d0">Electronic Records</data>
+  <data key="d1">record_label</data>
+  <data key="d2">GB</data>
+  <data key="d3">[]</data>
+  <data key="d4">{}</data>
+</node>
+<node id="mb_art_fa43260d-bcfe-46ba-a8a0-69107538e46c">
+  <data key="d0">Electronic Arts</data>
+  <data key="d1">artist</data>
+  <data key="d2"></data>
+  <data key="d3">[]</data>
+  <data key="d4">{'disambiguation': 'Electronic Arts (for Unofficial and Bootleg Soundtracks)'}</data>
+</node>
+<node id="mb_lbl_92990">
+  <data key="d0">Electronic Arts Records</data>
+  <data key="d1">record_label</data>
+  <data key="d2"></data>
+  <data key="d3">[]</data>
+  <data key="d4">{}</data>
+</node>
+<node id="mb_art_51d2f351-0c7b-45fd-99fd-330b33b05964">
+  <data key="d0">Elite Electronic</data>
+  <data key="d1">artist</data>
+  <data key="d2"></data>
+  <data key="d3">[]</data>
+  <data key="d4">{'disambiguation': 'trance'}</data>
+</node>
+<node id="mb_lbl_8648">
+  <data key="d0">Elite Electronic Records</data>
+  <data key="d1">record_label</data>
+  <data key="d2"></data>
+  <data key="d3">[]</data>
+  <data key="d4">{}</data>
+</node>
+<node id="mb_art_000e193b-3adb-4d56-828b-0ffb3f2f1da1">
+  <data key="d0">Electronic Warbear</data>
+  <data key="d1">artist</data>
+  <data key="d2"></data>
+  <data key="d3">[]</data>
+  <data key="d4">{'disambiguation': None}</data>
+</node>
+<node id="mb_lbl_40747">
+  <data key="d0">Electronic Warbear Records</data>
+  <data key="d1">record_label</data>
+  <data key="d2"></data>
+  <data key="d3">[]</data>
+  <data key="d4">{}</data>
+</node>
+<node id="mb_art_fdcbf873-4a8d-4c62-9352-327451b6a910">
+  <data key="d0">Electronic Frequency</data>
+  <data key="d1">artist</data>
+  <data key="d2">DE</data>
+  <data key="d3">['electronic']</data>
+  <data key="d4">{'disambiguation': None}</data>
+</node>
+<node id="mb_lbl_64496">
+  <data key="d0">Electronic Frequency Records</data>
+  <data key="d1">record_label</data>
+  <data key="d2">DE</data>
+  <data key="d3">[]</data>
+  <data key="d4">{}</data>
+</node>
+<node id="mb_art_b4ed32d5-9d19-4a28-9746-4e8286554d58">
+  <data key="d0">Electronič</data>
+  <data key="d1">artist</data>
+  <data key="d2">AT</data>
+  <data key="d3">[]</data>
+  <data key="d4">{'disambiguation': 'Short-Lived Autrian Subgroup of Monochrom'}</data>
+</node>
+<node id="mb_art_d4aca3ad-25ca-4449-b0b1-db6198d40ae9">
+  <data key="d0">Electronic Fox</data>
+  <data key="d1">artist</data>
+  <data key="d2"></data>
+  <data key="d3">[]</data>
+  <data key="d4">{'disambiguation': None}</data>
+</node>
+<node id="mb_lbl_93671">
+  <data key="d0">Electronic Fox Records</data>
+  <data key="d1">record_label</data>
+  <data key="d2"></data>
+  <data key="d3">[]</data>
+  <data key="d4">{}</data>
+</node>
+<node id="mb_art_54eb8ba6-6e0d-4652-91f4-7a4ceeb0c006">
+  <data key="d0">Electronic Beach</data>
+  <data key="d1">artist</data>
+  <data key="d2"></data>
+  <data key="d3">[]</data>
+  <data key="d4">{'disambiguation': None}</data>
+</node>
+<edge source="prd_max" target="ph_mxm" id="REPRESENTED_BY_na">
+  <data key="d5">REPRESENTED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="prd_jack" target="ph_jack" id="REPRESENTED_BY_na">
+  <data key="d5">REPRESENTED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="prd_rick" target="ph_shangrila" id="REPRESENTED_BY_na">
+  <data key="d5">REPRESENTED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_taylor" target="lbl_republic" id="SIGNED_TO_2004">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2004</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_taylor" target="ag_wme" id="REPRESENTED_BY_na">
+  <data key="d5">REPRESENTED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_taylor" target="std_electric" id="RECORDED_AT_na">
+  <data key="d5">RECORDED_AT</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.85</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_taylor" target="prd_jack" id="PRODUCED_BY_na">
+  <data key="d5">PRODUCED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.9</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_taylor" target="lbl_sub_pop" id="SIGNED_TO_2006">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2006</data>
+  <data key="d12">2018</data>
+  <data key="d8">0.6</data>
+  <data key="d9">False</data>
+  <data key="d10">{'status': 'expired', 'note': 'Historical First Deal'}</data>
+</edge>
+<edge source="art_taylor" target="art_phoebe" id="COLLABORATED_WITH_2021">
+  <data key="d5">COLLABORATED_WITH</data>
+  <data key="d11">2021</data>
+  <data key="d7"></data>
+  <data key="d8">0.7</data>
+  <data key="d9">True</data>
+  <data key="d10">{'collab_type': 'track_feature_or_album'}</data>
+</edge>
+<edge source="art_taylor" target="art_bonobo" id="COLLABORATED_WITH_2022">
+  <data key="d5">COLLABORATED_WITH</data>
+  <data key="d11">2022</data>
+  <data key="d7"></data>
+  <data key="d8">0.4</data>
+  <data key="d9">True</data>
+  <data key="d10">{'collab_type': 'track_feature_or_album'}</data>
+</edge>
+<edge source="art_billie" target="lbl_interscope" id="SIGNED_TO_2015">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2015</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_billie" target="ag_wme" id="REPRESENTED_BY_na">
+  <data key="d5">REPRESENTED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_billie" target="std_sunset" id="RECORDED_AT_na">
+  <data key="d5">RECORDED_AT</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.85</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_billie" target="prd_finneas" id="PRODUCED_BY_na">
+  <data key="d5">PRODUCED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.9</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_dua" target="lbl_atlantic" id="SIGNED_TO_2015">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2015</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_dua" target="ag_caa" id="REPRESENTED_BY_na">
+  <data key="d5">REPRESENTED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_dua" target="std_rak" id="RECORDED_AT_na">
+  <data key="d5">RECORDED_AT</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.85</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_dua" target="prd_max" id="PRODUCED_BY_na">
+  <data key="d5">PRODUCED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.9</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_dua" target="art_weeknd" id="COLLABORATED_WITH_2020">
+  <data key="d5">COLLABORATED_WITH</data>
+  <data key="d11">2020</data>
+  <data key="d7"></data>
+  <data key="d8">0.65</data>
+  <data key="d9">True</data>
+  <data key="d10">{'collab_type': 'track_feature_or_album'}</data>
+</edge>
+<edge source="art_weeknd" target="lbl_republic" id="SIGNED_TO_2010">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2010</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_weeknd" target="ag_caa" id="REPRESENTED_BY_na">
+  <data key="d5">REPRESENTED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_weeknd" target="std_conway" id="RECORDED_AT_na">
+  <data key="d5">RECORDED_AT</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.85</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_weeknd" target="prd_max" id="PRODUCED_BY_na">
+  <data key="d5">PRODUCED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.9</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_weeknd" target="art_future" id="COLLABORATED_WITH_2016">
+  <data key="d5">COLLABORATED_WITH</data>
+  <data key="d11">2016</data>
+  <data key="d7"></data>
+  <data key="d8">0.8</data>
+  <data key="d9">True</data>
+  <data key="d10">{'collab_type': 'track_feature_or_album'}</data>
+</edge>
+<edge source="art_drake" target="lbl_republic" id="SIGNED_TO_2006">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2006</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_drake" target="ag_wme" id="REPRESENTED_BY_na">
+  <data key="d5">REPRESENTED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_drake" target="std_sunset" id="RECORDED_AT_na">
+  <data key="d5">RECORDED_AT</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.85</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_drake" target="prd_metro" id="PRODUCED_BY_na">
+  <data key="d5">PRODUCED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.9</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_drake" target="lbl_def_jam" id="SIGNED_TO_2009">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2009</data>
+  <data key="d12">2018</data>
+  <data key="d8">0.6</data>
+  <data key="d9">False</data>
+  <data key="d10">{'status': 'expired', 'note': 'Past Contract'}</data>
+</edge>
+<edge source="art_drake" target="art_future" id="COLLABORATED_WITH_2015">
+  <data key="d5">COLLABORATED_WITH</data>
+  <data key="d11">2015</data>
+  <data key="d7"></data>
+  <data key="d8">0.95</data>
+  <data key="d9">True</data>
+  <data key="d10">{'collab_type': 'track_feature_or_album'}</data>
+</edge>
+<edge source="art_drake" target="art_21savage" id="COLLABORATED_WITH_2022">
+  <data key="d5">COLLABORATED_WITH</data>
+  <data key="d11">2022</data>
+  <data key="d7"></data>
+  <data key="d8">0.95</data>
+  <data key="d9">True</data>
+  <data key="d10">{'collab_type': 'track_feature_or_album'}</data>
+</edge>
+<edge source="art_kendrick" target="lbl_interscope" id="SIGNED_TO_2004">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2004</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_kendrick" target="ag_wme" id="REPRESENTED_BY_na">
+  <data key="d5">REPRESENTED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_kendrick" target="std_conway" id="RECORDED_AT_na">
+  <data key="d5">RECORDED_AT</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.85</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_kendrick" target="prd_rick" id="PRODUCED_BY_na">
+  <data key="d5">PRODUCED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.9</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_kendrick" target="lbl_def_jam" id="SIGNED_TO_2004">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2004</data>
+  <data key="d12">2011</data>
+  <data key="d8">0.6</data>
+  <data key="d9">False</data>
+  <data key="d10">{'status': 'expired', 'note': 'Early Mixtapes'}</data>
+</edge>
+<edge source="art_kendrick" target="art_drake" id="COLLABORATED_WITH_2012">
+  <data key="d5">COLLABORATED_WITH</data>
+  <data key="d11">2012</data>
+  <data key="d7"></data>
+  <data key="d8">0.6</data>
+  <data key="d9">True</data>
+  <data key="d10">{'collab_type': 'track_feature_or_album'}</data>
+</edge>
+<edge source="art_future" target="lbl_rca" id="SIGNED_TO_2010">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2010</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_future" target="ag_uta" id="REPRESENTED_BY_na">
+  <data key="d5">REPRESENTED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_future" target="std_conway" id="RECORDED_AT_na">
+  <data key="d5">RECORDED_AT</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.85</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_future" target="prd_metro" id="PRODUCED_BY_na">
+  <data key="d5">PRODUCED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.9</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_future" target="art_21savage" id="COLLABORATED_WITH_2018">
+  <data key="d5">COLLABORATED_WITH</data>
+  <data key="d11">2018</data>
+  <data key="d7"></data>
+  <data key="d8">0.75</data>
+  <data key="d9">True</data>
+  <data key="d10">{'collab_type': 'track_feature_or_album'}</data>
+</edge>
+<edge source="art_21savage" target="lbl_rca" id="SIGNED_TO_2014">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2014</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_21savage" target="ag_uta" id="REPRESENTED_BY_na">
+  <data key="d5">REPRESENTED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_21savage" target="std_conway" id="RECORDED_AT_na">
+  <data key="d5">RECORDED_AT</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.85</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_21savage" target="prd_metro" id="PRODUCED_BY_na">
+  <data key="d5">PRODUCED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.9</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_aphex" target="lbl_warp" id="SIGNED_TO_1985">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">1985</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_aphex" target="ag_primary" id="REPRESENTED_BY_na">
+  <data key="d5">REPRESENTED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_aphex" target="std_metropolis" id="RECORDED_AT_na">
+  <data key="d5">RECORDED_AT</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.85</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_aphex" target="prd_brian" id="PRODUCED_BY_na">
+  <data key="d5">PRODUCED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.9</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_bicep" target="lbl_ninja_tune" id="SIGNED_TO_2009">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2009</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_bicep" target="ag_primary" id="REPRESENTED_BY_na">
+  <data key="d5">REPRESENTED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_bicep" target="std_rak" id="RECORDED_AT_na">
+  <data key="d5">RECORDED_AT</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.85</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_bonobo" target="lbl_ninja_tune" id="SIGNED_TO_1999">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">1999</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_bonobo" target="ag_redlight" id="REPRESENTED_BY_na">
+  <data key="d5">REPRESENTED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_bonobo" target="std_abbey" id="RECORDED_AT_na">
+  <data key="d5">RECORDED_AT</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.85</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_fourtet" target="lbl_ninja_tune" id="SIGNED_TO_1997">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">1997</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_fourtet" target="ag_primary" id="REPRESENTED_BY_na">
+  <data key="d5">REPRESENTED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_fourtet" target="std_abbey" id="RECORDED_AT_na">
+  <data key="d5">RECORDED_AT</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.85</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_fourtet" target="art_bicep" id="COLLABORATED_WITH_2021">
+  <data key="d5">COLLABORATED_WITH</data>
+  <data key="d11">2021</data>
+  <data key="d7"></data>
+  <data key="d8">0.85</data>
+  <data key="d9">True</data>
+  <data key="d10">{'collab_type': 'track_feature_or_album'}</data>
+</edge>
+<edge source="art_fourtet" target="art_aphex" id="COLLABORATED_WITH_2019">
+  <data key="d5">COLLABORATED_WITH</data>
+  <data key="d11">2019</data>
+  <data key="d7"></data>
+  <data key="d8">0.7</data>
+  <data key="d9">True</data>
+  <data key="d10">{'collab_type': 'track_feature_or_album'}</data>
+</edge>
+<edge source="art_flyinglotus" target="lbl_warp" id="SIGNED_TO_2005">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2005</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_flyinglotus" target="ag_wme" id="REPRESENTED_BY_na">
+  <data key="d5">REPRESENTED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_flyinglotus" target="std_electric" id="RECORDED_AT_na">
+  <data key="d5">RECORDED_AT</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.85</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_flyinglotus" target="art_kendrick" id="COLLABORATED_WITH_2014">
+  <data key="d5">COLLABORATED_WITH</data>
+  <data key="d11">2014</data>
+  <data key="d7"></data>
+  <data key="d8">0.9</data>
+  <data key="d9">True</data>
+  <data key="d10">{'collab_type': 'track_feature_or_album'}</data>
+</edge>
+<edge source="art_radiohead" target="lbl_4ad" id="SIGNED_TO_1985">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">1985</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_radiohead" target="ag_wme" id="REPRESENTED_BY_na">
+  <data key="d5">REPRESENTED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_radiohead" target="std_abbey" id="RECORDED_AT_na">
+  <data key="d5">RECORDED_AT</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.85</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_radiohead" target="prd_brian" id="PRODUCED_BY_na">
+  <data key="d5">PRODUCED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.9</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_radiohead" target="art_fourtet" id="COLLABORATED_WITH_2003">
+  <data key="d5">COLLABORATED_WITH</data>
+  <data key="d11">2003</data>
+  <data key="d7"></data>
+  <data key="d8">0.75</data>
+  <data key="d9">True</data>
+  <data key="d10">{'collab_type': 'track_feature_or_album'}</data>
+</edge>
+<edge source="art_strokes" target="lbl_rca" id="SIGNED_TO_1998">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">1998</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_strokes" target="ag_caa" id="REPRESENTED_BY_na">
+  <data key="d5">REPRESENTED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_strokes" target="std_electric" id="RECORDED_AT_na">
+  <data key="d5">RECORDED_AT</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.85</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_strokes" target="prd_rick" id="PRODUCED_BY_na">
+  <data key="d5">PRODUCED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.9</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_arctic" target="lbl_4ad" id="SIGNED_TO_2002">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2002</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_arctic" target="ag_wme" id="REPRESENTED_BY_na">
+  <data key="d5">REPRESENTED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_arctic" target="std_abbey" id="RECORDED_AT_na">
+  <data key="d5">RECORDED_AT</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.85</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_phoebe" target="lbl_4ad" id="SIGNED_TO_2014">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2014</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_phoebe" target="ag_redlight" id="REPRESENTED_BY_na">
+  <data key="d5">REPRESENTED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_phoebe" target="std_electric" id="RECORDED_AT_na">
+  <data key="d5">RECORDED_AT</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.85</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_phoebe" target="prd_jack" id="PRODUCED_BY_na">
+  <data key="d5">PRODUCED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.9</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_phoebe" target="art_clairo" id="COLLABORATED_WITH_2020">
+  <data key="d5">COLLABORATED_WITH</data>
+  <data key="d11">2020</data>
+  <data key="d7"></data>
+  <data key="d8">0.8</data>
+  <data key="d9">True</data>
+  <data key="d10">{'collab_type': 'track_feature_or_album'}</data>
+</edge>
+<edge source="art_clairo" target="lbl_republic" id="SIGNED_TO_2017">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2017</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_clairo" target="ag_wme" id="REPRESENTED_BY_na">
+  <data key="d5">REPRESENTED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_clairo" target="std_electric" id="RECORDED_AT_na">
+  <data key="d5">RECORDED_AT</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.85</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_clairo" target="prd_jack" id="PRODUCED_BY_na">
+  <data key="d5">PRODUCED_BY</data>
+  <data key="d6"></data>
+  <data key="d7"></data>
+  <data key="d8">0.9</data>
+  <data key="d9">True</data>
+  <data key="d10">{}</data>
+</edge>
+<edge source="art_clairo" target="lbl_4ad" id="SIGNED_TO_2018">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2018</data>
+  <data key="d12">2021</data>
+  <data key="d8">0.6</data>
+  <data key="d9">False</data>
+  <data key="d10">{'status': 'expired', 'note': 'Early Releases'}</data>
+</edge>
+<edge source="mb_art_3cdb360e-d0a2-459f-92f6-f0f28e62127d" target="mb_lbl_37994" id="SIGNED_TO_1996">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">1996</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{'release_group': 'Raise the Pressure'}</data>
+</edge>
+<edge source="mb_art_3cdb360e-d0a2-459f-92f6-f0f28e62127d" target="mb_lbl_37994" id="SIGNED_TO_1999">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">1999</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{'release_group': 'Twisted Tenderness'}</data>
+</edge>
+<edge source="mb_art_3cdb360e-d0a2-459f-92f6-f0f28e62127d" target="mb_lbl_37994" id="SIGNED_TO_1991">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">1991</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{'release_group': 'Electronic'}</data>
+</edge>
+<edge source="mb_art_3cdb360e-d0a2-459f-92f6-f0f28e62127d" target="mb_lbl_37994" id="SIGNED_TO_2006">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2006</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{'release_group': 'Get the Message: The Best of Electronic'}</data>
+</edge>
+<edge source="mb_art_3cdb360e-d0a2-459f-92f6-f0f28e62127d" target="mb_lbl_37994" id="SIGNED_TO_2026">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2026</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{'release_group': '1996 Remixes 1999'}</data>
+</edge>
+<edge source="mb_art_fa43260d-bcfe-46ba-a8a0-69107538e46c" target="mb_lbl_92990" id="SIGNED_TO_1995">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">1995</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{'release_group': 'Road Rash'}</data>
+</edge>
+<edge source="mb_art_fa43260d-bcfe-46ba-a8a0-69107538e46c" target="mb_lbl_92990" id="SIGNED_TO_2006">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2006</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{'release_group': 'The Sims 2: Pets'}</data>
+</edge>
+<edge source="mb_art_fa43260d-bcfe-46ba-a8a0-69107538e46c" target="mb_lbl_92990" id="SIGNED_TO_2005">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2005</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{'release_group': 'The Sims 2: University'}</data>
+</edge>
+<edge source="mb_art_51d2f351-0c7b-45fd-99fd-330b33b05964" target="mb_lbl_8648" id="SIGNED_TO_2013">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2013</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{'release_group': 'Galactic / Quasar'}</data>
+</edge>
+<edge source="mb_art_51d2f351-0c7b-45fd-99fd-330b33b05964" target="mb_lbl_8648" id="SIGNED_TO_2009">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2009</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{'release_group': 'Northern Sea'}</data>
+</edge>
+<edge source="mb_art_51d2f351-0c7b-45fd-99fd-330b33b05964" target="mb_lbl_8648" id="SIGNED_TO_2011">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2011</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{'release_group': 'Miracle'}</data>
+</edge>
+<edge source="mb_art_51d2f351-0c7b-45fd-99fd-330b33b05964" target="mb_lbl_8648" id="SIGNED_TO_2010">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2010</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{'release_group': 'Rise Again'}</data>
+</edge>
+<edge source="mb_art_000e193b-3adb-4d56-828b-0ffb3f2f1da1" target="mb_lbl_40747" id="SIGNED_TO_2018">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2018</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{'release_group': 'Disassociation'}</data>
+</edge>
+<edge source="mb_art_000e193b-3adb-4d56-828b-0ffb3f2f1da1" target="mb_lbl_40747" id="SIGNED_TO_2021">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2021</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{'release_group': 'Afterlife'}</data>
+</edge>
+<edge source="mb_art_000e193b-3adb-4d56-828b-0ffb3f2f1da1" target="mb_lbl_40747" id="SIGNED_TO_2020">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2020</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{'release_group': 'Digital Warfare (Remastered)'}</data>
+</edge>
+<edge source="mb_art_000e193b-3adb-4d56-828b-0ffb3f2f1da1" target="mb_lbl_40747" id="SIGNED_TO_2019">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2019</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{'release_group': 'Dead Giveaway'}</data>
+</edge>
+<edge source="mb_art_000e193b-3adb-4d56-828b-0ffb3f2f1da1" target="mb_lbl_40747" id="SIGNED_TO_2017">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2017</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{'release_group': 'Digital Warfare'}</data>
+</edge>
+<edge source="mb_art_fdcbf873-4a8d-4c62-9352-327451b6a910" target="mb_lbl_64496" id="SIGNED_TO_2016">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2016</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{'release_group': 'Human Abyss'}</data>
+</edge>
+<edge source="mb_art_fdcbf873-4a8d-4c62-9352-327451b6a910" target="mb_lbl_64496" id="SIGNED_TO_2023">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2023</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{'release_group': 'Destrudo'}</data>
+</edge>
+<edge source="mb_art_fdcbf873-4a8d-4c62-9352-327451b6a910" target="mb_lbl_64496" id="SIGNED_TO_2025">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2025</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{'release_group': 'Second Life'}</data>
+</edge>
+<edge source="mb_art_fdcbf873-4a8d-4c62-9352-327451b6a910" target="mb_lbl_64496" id="SIGNED_TO_2022">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2022</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{'release_group': 'Con:Trast'}</data>
+</edge>
+<edge source="mb_art_fdcbf873-4a8d-4c62-9352-327451b6a910" target="mb_lbl_64496" id="SIGNED_TO_2010">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2010</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{'release_group': 'Kampfraum Guben'}</data>
+</edge>
+<edge source="mb_art_d4aca3ad-25ca-4449-b0b1-db6198d40ae9" target="mb_lbl_93671" id="SIGNED_TO_2016">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2016</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{'release_group': 'PEACE☮AND☮LOVE♥'}</data>
+</edge>
+<edge source="mb_art_d4aca3ad-25ca-4449-b0b1-db6198d40ae9" target="mb_lbl_93671" id="SIGNED_TO_2015">
+  <data key="d5">SIGNED_TO</data>
+  <data key="d11">2015</data>
+  <data key="d7"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">True</data>
+  <data key="d10">{'release_group': 'Cosmic Rainbow'}</data>
+</edge>
+</graph></graphml>

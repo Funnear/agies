@@ -1,0 +1,321 @@
+{
+  "country_representation": {
+    "Unknown": 163,
+    "USA": 73,
+    "Germany": 36,
+    "UK": 36,
+    "Japan": 15,
+    "South Korea": 14,
+    "France": 13,
+    "Sweden": 13,
+    "Nigeria": 13,
+    "Canada": 12,
+    "India": 10,
+    "Jamaica": 10,
+    "Australia": 8,
+    "Netherlands": 7,
+    "Brazil": 7,
+    "South Africa": 6,
+    "GB": 6,
+    "Iceland": 4,
+    "Puerto Rico": 4,
+    "Colombia": 4,
+    "DE": 2,
+    "Spain": 1,
+    "Mexico": 1,
+    "AT": 1
+  },
+  "top_cross_border_corridors": [
+    {
+      "corridor": "Canada <-> USA",
+      "collaboration_count": 4
+    },
+    {
+      "corridor": "Germany <-> Germany",
+      "collaboration_count": 4
+    },
+    {
+      "corridor": "USA <-> USA",
+      "collaboration_count": 3
+    },
+    {
+      "corridor": "Sweden <-> USA",
+      "collaboration_count": 2
+    },
+    {
+      "corridor": "UK <-> UK",
+      "collaboration_count": 2
+    },
+    {
+      "corridor": "Sweden <-> UK",
+      "collaboration_count": 1
+    },
+    {
+      "corridor": "UK <-> USA",
+      "collaboration_count": 1
+    },
+    {
+      "corridor": "France <-> Germany",
+      "collaboration_count": 1
+    },
+    {
+      "corridor": "Germany <-> UK",
+      "collaboration_count": 1
+    },
+    {
+      "corridor": "South Korea <-> UK",
+      "collaboration_count": 1
+    },
+    {
+      "corridor": "South Korea <-> Spain",
+      "collaboration_count": 1
+    },
+    {
+      "corridor": "Germany <-> India",
+      "collaboration_count": 1
+    }
+  ],
+  "flow_matrix": {
+    "USA": {
+      "USA": 91,
+      "UK": 11,
+      "Germany": 4,
+      "Sweden": 5,
+      "Nigeria": 6,
+      "Australia": 3,
+      "Canada": 4,
+      "Japan": 2,
+      "Brazil": 2,
+      "Netherlands": 1,
+      "France": 4,
+      "India": 3,
+      "Colombia": 4,
+      "South Korea": 3,
+      "Puerto Rico": 2,
+      "Spain": 1,
+      "Mexico": 1,
+      "South Africa": 3,
+      "AT": 1
+    },
+    "Germany": {
+      "UK": 24,
+      "Germany": 43,
+      "France": 2,
+      "Sweden": 4,
+      "Japan": 4,
+      "USA": 8,
+      "GB": 2,
+      "Brazil": 2,
+      "Iceland": 3,
+      "Netherlands": 3,
+      "Canada": 2,
+      "Colombia": 1,
+      "Nigeria": 1,
+      "India": 1
+    },
+    "UK": {
+      "UK": 44,
+      "USA": 21,
+      "Japan": 1,
+      "Australia": 4,
+      "Nigeria": 5,
+      "India": 2,
+      "South Africa": 4,
+      "Brazil": 2,
+      "Sweden": 4,
+      "South Korea": 2,
+      "France": 2,
+      "Germany": 9,
+      "Iceland": 1,
+      "Jamaica": 1,
+      "Spain": 2,
+      "Mexico": 1
+    },
+    "Netherlands": {
+      "USA": 4,
+      "Netherlands": 11,
+      "Germany": 1,
+      "Canada": 1,
+      "Sweden": 2
+    },
+    "France": {
+      "USA": 11,
+      "France": 10,
+      "Germany": 4,
+      "Sweden": 2,
+      "UK": 7,
+      "South Africa": 1,
+      "Nigeria": 1,
+      "Jamaica": 1
+    },
+    "Sweden": {
+      "Sweden": 11,
+      "Germany": 4,
+      "France": 2,
+      "USA": 5,
+      "Netherlands": 1,
+      "Canada": 1,
+      "UK": 2,
+      "Japan": 1,
+      "Spain": 1,
+      "DE": 1,
+      "Nigeria": 1
+    },
+    "Iceland": {
+      "UK": 3,
+      "Iceland": 3,
+      "USA": 2,
+      "India": 1,
+      "Jamaica": 1,
+      "Japan": 1,
+      "Germany": 1
+    },
+    "Japan": {
+      "Japan": 14,
+      "Nigeria": 1,
+      "GB": 1,
+      "UK": 5,
+      "Germany": 4,
+      "Iceland": 1,
+      "Spain": 1,
+      "South Korea": 1,
+      "Colombia": 1,
+      "India": 1,
+      "USA": 4,
+      "DE": 1,
+      "Sweden": 1
+    },
+    "South Korea": {
+      "South Korea": 12,
+      "USA": 8,
+      "Canada": 1,
+      "UK": 4,
+      "Spain": 3,
+      "Puerto Rico": 1,
+      "Japan": 1,
+      "France": 1,
+      "South Africa": 1
+    },
+    "India": {
+      "India": 7,
+      "USA": 5,
+      "Germany": 2,
+      "Nigeria": 2,
+      "UK": 1,
+      "Australia": 1,
+      "Puerto Rico": 1,
+      "Japan": 1
+    },
+    "Jamaica": {
+      "UK": 5,
+      "Jamaica": 7,
+      "Canada": 1,
+      "India": 1,
+      "Spain": 1,
+      "Germany": 1,
+      "South Korea": 1,
+      "USA": 2,
+      "France": 1,
+      "Colombia": 1,
+      "Nigeria": 1
+    },
+    "Nigeria": {
+      "UK": 8,
+      "Germany": 1,
+      "India": 4,
+      "Nigeria": 12,
+      "USA": 10,
+      "Sweden": 2,
+      "DE": 1,
+      "Spain": 1,
+      "Canada": 1
+    },
+    "South Africa": {
+      "South Africa": 4,
+      "USA": 4,
+      "Canada": 1,
+      "UK": 2,
+      "France": 1,
+      "Sweden": 1,
+      "GB": 1
+    },
+    "Brazil": {
+      "Brazil": 6,
+      "UK": 3,
+      "Germany": 2,
+      "Colombia": 1,
+      "South Africa": 1,
+      "Nigeria": 1,
+      "USA": 4,
+      "Sweden": 1,
+      "Netherlands": 1,
+      "Australia": 2
+    },
+    "Puerto Rico": {
+      "Puerto Rico": 2,
+      "USA": 4,
+      "Canada": 1,
+      "Colombia": 1,
+      "South Korea": 1
+    },
+    "Spain": {
+      "USA": 5,
+      "Puerto Rico": 1,
+      "Japan": 1,
+      "Jamaica": 1,
+      "South Korea": 1
+    },
+    "Colombia": {
+      "USA": 7,
+      "Colombia": 4,
+      "Germany": 1,
+      "Brazil": 1,
+      "Jamaica": 1,
+      "Netherlands": 1
+    },
+    "Mexico": {
+      "USA": 3,
+      "Brazil": 1,
+      "Germany": 1
+    },
+    "Australia": {
+      "Australia": 8,
+      "USA": 6,
+      "UK": 5,
+      "Nigeria": 1,
+      "Brazil": 2,
+      "France": 1,
+      "Sweden": 1
+    },
+    "Canada": {
+      "USA": 18,
+      "Canada": 6,
+      "Nigeria": 1,
+      "South Korea": 1,
+      "Sweden": 3,
+      "Germany": 3,
+      "UK": 1,
+      "Netherlands": 1,
+      "Jamaica": 1,
+      "India": 1
+    },
+    "GB": {
+      "GB": 12,
+      "Japan": 1,
+      "Germany": 4,
+      "South Africa": 1,
+      "Sweden": 1,
+      "UK": 1
+    },
+    "DE": {
+      "DE": 5,
+      "Spain": 1,
+      "Japan": 1,
+      "Sweden": 1
+    },
+    "AT": {
+      "USA": 2,
+      "Brazil": 1
+    }
+  }
+}
