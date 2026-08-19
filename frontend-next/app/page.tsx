@@ -1,8 +1,10 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { AudioVisualizer3D } from "@/components/AudioVisualizer3D";
 import { NetworkGraph3D } from "@/components/NetworkGraph3D";
+import { Icon } from "@/components/Icon";
 import { useAppDispatch, useAppSelector } from "@/store";
 import {
   togglePlay,
@@ -351,13 +353,27 @@ Contact: booking@${artistName.toLowerCase().replace(/\s+/g, "")}-official.com`;
         {/* 2. MAIN SCROLLABLE CONTAINER                               */}
         {/* ========================================================= */}
         <main className="flex-1 bg-[#121212] rounded-xl overflow-y-auto relative border border-white/[0.06] shadow-2xl flex flex-col">
-          {/* Top Sticky Bar */}
-          <div className="sticky top-0 bg-[#121212]/80 backdrop-blur-xl z-30 px-6 py-3 flex items-center justify-between border-b border-white/[0.06]">
+          {/* Top Sticky Bar with LobeHub AI Providers & Telemetry */}
+          <div className="sticky top-0 bg-[#07070a]/90 backdrop-blur-xl z-30 px-6 py-3 flex items-center justify-between border-b border-white/[0.08]">
             <div className="flex items-center gap-3">
-              <span className="text-xs font-mono text-white/60 bg-black/40 px-3 py-1 rounded-full border border-white/10 flex items-center gap-2">
+              <span className="text-xs font-mono text-white/70 bg-black/60 px-3 py-1 rounded-full border border-white/10 flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-[#1DB954] animate-pulse"></span>
-                API ONLINE :8000 • HARVESTER ACTIVE • 507 NODES
+                API ONLINE :8000 • 593 NODES • 2,117 EDGES
               </span>
+
+              {/* LobeHub Provider Brand Logos Strip */}
+              <div className="hidden lg:flex items-center gap-2.5 px-3 py-1 rounded-full bg-[#12121a] border border-white/10 text-white/50">
+                <span className="text-[10px] font-mono uppercase font-bold text-white/40 tracking-wider">AI Engines:</span>
+                <span title="OpenAI" className="hover:text-white transition-colors"><Icon name="openai" className="w-3.5 h-3.5" /></span>
+                <span title="Anthropic" className="hover:text-white transition-colors"><Icon name="anthropic" className="w-3.5 h-3.5" /></span>
+                <span title="Google Gemini" className="hover:text-white transition-colors"><Icon name="gemini" className="w-3.5 h-3.5 text-[#00f0ff]" /></span>
+                <span title="DeepSeek" className="hover:text-white transition-colors"><Icon name="deepseek" className="w-3.5 h-3.5 text-[#3b82f6]" /></span>
+                <span title="Qwen" className="hover:text-white transition-colors"><Icon name="qwen" className="w-3.5 h-3.5 text-[#a855f7]" /></span>
+                <span title="Kimi" className="hover:text-white transition-colors"><Icon name="kimi" className="w-3.5 h-3.5 text-[#ec4899]" /></span>
+                <span title="Mistral" className="hover:text-white transition-colors"><Icon name="mistral" className="w-3.5 h-3.5 text-[#f97316]" /></span>
+                <span title="xAI Grok" className="hover:text-white transition-colors"><Icon name="xai" className="w-3.5 h-3.5 text-white" /></span>
+                <span title="Groq" className="hover:text-white transition-colors"><Icon name="groq" className="w-3.5 h-3.5 text-[#eab308]" /></span>
+              </div>
             </div>
             <div className="flex items-center gap-3">
               <button

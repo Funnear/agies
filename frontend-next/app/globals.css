@@ -1,22 +1,54 @@
 @import "tailwindcss";
 
-:root {
-  --background: #000000;
-  --foreground: #f8fafc;
-  --spotify-green: #1db954;
-  --spotify-green-hover: #1ed760;
-  --card-bg: #121212;
-  --card-hover: #181818;
-  --card-border: rgba(255, 255, 255, 0.07);
-}
+@layer base {
+  :root {
+    /* Surface Elevations & Tokens */
+    --bg: #07070a;
+    --bg-subtle: #0d0d14;
+    --panel: #12121a;
+    --panel-elevated: #1a1a26;
+    --panel-glass: rgba(18, 18, 26, 0.85);
+    
+    /* Semantic Colors */
+    --signal: #1DB954;
+    --signal-hover: #1ed760;
+    --signal-glow: rgba(29, 185, 84, 0.35);
+    --caution: #f59e0b;
+    --danger: #f43f5e;
+    --cyan-glow: #00f0ff;
+    --purple-glow: #c084fc;
+    
+    /* Typography Inks */
+    --ink: #ffffff;
+    --ink-secondary: #e2e8f0;
+    --ink-muted: #94a3b8;
+    --ink-dim: #64748b;
+    
+    /* Semantic Borders */
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --border-focus: rgba(29, 185, 84, 0.45);
+  }
 
-body {
-  background: #000000;
-  color: #b3b3b3;
-  overflow: hidden;
-  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  body {
+    background-color: var(--bg);
+    color: var(--ink-muted);
+    font-family: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overflow-x: hidden;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Data tables, order books, audio metrics, and financial figures */
+  .font-mono,
+  .metric-figure,
+  .order-book,
+  .data-table,
+  code,
+  pre {
+    font-family: var(--font-jetbrains-mono), monospace !important;
+    font-feature-settings: "zero", "tnum", "ss01";
+  }
 }
 
 /* Custom Sleek Scrollbars */
@@ -30,51 +62,47 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.15);
+  background: var(--border-subtle);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(29, 185, 84, 0.5);
+  background: var(--signal-glow);
 }
 
-/* Glassmorphism & Glow Effects */
+/* Glassmorphism Surface Classes */
 .glass-panel {
-  background: rgba(18, 18, 18, 0.75);
+  background: var(--panel-glass);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border-subtle);
 }
 
 .glass-card {
-  background: #181818;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: var(--panel);
+  border: 1px solid var(--border-subtle);
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .glass-card:hover {
-  background: #242424;
-  border-color: rgba(255, 255, 255, 0.12);
+  background: var(--panel-elevated);
+  border-color: rgba(255, 255, 255, 0.16);
   transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
 }
 
-.neon-glow-green {
-  box-shadow: 0 0 25px rgba(29, 185, 84, 0.25);
+/* Custom Audio & Frequency Pulse Animations */
+@keyframes signal-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(0.96);
+  }
 }
 
-.neon-glow-cyan {
-  box-shadow: 0 0 25px rgba(0, 240, 255, 0.2);
-}
-
-.text-gradient {
-  background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.text-gradient-green {
-  background: linear-gradient(135deg, #1ed760 0%, #10b981 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.animate-signal {
+  animation: signal-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }

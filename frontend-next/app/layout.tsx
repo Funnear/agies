@@ -1,16 +1,20 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { StoreProvider } from "@/store/StoreProvider";
+import { SvgSprite } from "@/components/SvgSprite";
+import { SmoothScroll } from "@/components/SmoothScroll";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -26,10 +30,13 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-black text-[#b3b3b3]">
-        <StoreProvider>{children}</StoreProvider>
+      <body className="min-h-full flex flex-col bg-[#07070a] text-[#94a3b8] selection:bg-[#1DB954] selection:text-black">
+        <SvgSprite />
+        <StoreProvider>
+          <SmoothScroll>{children}</SmoothScroll>
+        </StoreProvider>
       </body>
     </html>
   );
