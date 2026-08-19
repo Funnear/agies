@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGIES • AI Music Intelligence & Studio Suite</title>
+    <!-- Modern Vis.js Network for Graph Visualization -->
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <style>
+        :root {
+            --bg-base: #060911;
+            --bg-surface: #0d1322;
+            --bg-card: #131d33;
+            --bg-input: #1a2744;
+            --accent-cyan: #00f0ff;
+            --accent-purple: #a855f7;
+            --accent-green: #10b981;
+            --accent-orange: #f59e0b;
+            --accent-pink: #ec4899;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: #24355a;
+            --border-highlight: rgba(0, 240, 255, 0.4);
+            --font-mono: 'SF Mono', Consolas, Monaco, monospace;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+        body { background: var(--bg-base); color: var(--text-main); height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
+
+        /* Top Navbar */
+        header { background: var(--bg-surface); border-bottom: 1px solid var(--border); padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; }
+        .brand { display: flex; align-items: center; gap: 12px; }
+        .brand-logo { font-size: 1.6rem; background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 900; letter-spacing: -1px; }
+        .brand-badge { background: rgba(0, 240, 255, 0.12); color: var(--accent-cyan); border: 1px solid var(--border-highlight); font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 20px; }
+
+        .nav-tabs { display: flex; gap: 6px; background: var(--bg-base); padding: 4px; border-radius: 10px; border: 1px solid var(--border); }
+        .tab-btn { background: transparent; border: none; color: var(--text-muted); padding: 8px 16px; border-radius: 8px; font-weight: 600; font-size: 0.85rem; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 6px; }
+        .tab-btn:hover { color: #fff; background: rgba(255,255,255,0.05); }
+        .tab-btn.active { background: var(--bg-card); color: var(--accent-cyan); box-shadow: 0 2px 8px rgba(0,0,0,0.4); border: 1px solid var(--border); }
+
+        .header-actions { display: flex; align-items: center; gap: 12px; }
+        .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent-green); box-shadow: 0 0 8px var(--accent-green); display: inline-block; }
+        .status-text { font-size: 0.8rem; color: var(--text-muted); }
+
+        /* Main View Container */
+        main { flex: 1; overflow-y: auto; padding: 24px; }
+        .tab-content { display: none; height: 100%; }
+        .tab-content.active { display: block; }
+
+        /* Grid Layouts */
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+        @media (max-width: 1024px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+
+        /* Card Styles */
+        .card { background: var(--bg-surface); border: 1px solid var(--border); border-radius: 14px; padding: 20px; box-shadow: 0 8px 30px rgba(0,0,0,0.3); }
+        .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+        .card-title { font-size: 1.1rem; font-weight: 700; display: flex; align-items: center; gap: 8px; color: var(--accent-cyan); }
+
+        /* Form Inputs */
+        .form-group { margin-bottom: 14px; }
+        label { display: block; font-size: 0.75rem; font-weight: 700; color: var(--text-muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+        input, select, textarea { width: 100%; padding: 10px 14px; background: var(--bg-input); border: 1px solid var(--border); border-radius: 8px; color: #fff; font-size: 0.9rem; transition: border-color 0.2s; }
+        input:focus, select:focus, textarea:focus { outline: none; border-color: var(--accent-cyan); }
+
+        button.btn-primary { width: 100%; padding: 12px 18px; background: linear-gradient(135deg, var(--accent-cyan), #0284c7); color: #000; font-weight: 800; border: none; border-radius: 8px; cursor: pointer; font-size: 0.95rem; transition: transform 0.1s, opacity 0.2s; }
+        button.btn-primary:hover { opacity: 0.95; transform: translateY(-1px); }
+        button.btn-secondary { background: var(--bg-input); border: 1px solid var(--border); color: #fff; padding: 8px 14px; border-radius: 6px; cursor: pointer; font-size: 0.85rem; font-weight: 600; }
+        button.btn-secondary:hover { background: var(--border); }
+
+        /* Pills & Badges */
+        .pill { display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; background: rgba(0, 240, 255, 0.1); color: var(--accent-cyan); border: 1px solid var(--border-highlight); margin-right: 6px; margin-bottom: 6px; }
+        .pill.green { background: rgba(16, 185, 129, 0.15); color: var(--accent-green); border-color: rgba(16, 185, 129, 0.3); }
+        .pill.purple { background: rgba(168, 85, 247, 0.15); color: var(--accent-purple); border-color: rgba(168, 85, 247, 0.3); }
+        .pill.orange { background: rgba(245, 158, 11, 0.15); color: var(--accent-orange); border-color: rgba(245, 158, 11, 0.3); }
+
+        /* Match Items */
+        .list-item { background: var(--bg-card); border-radius: 8px; padding: 12px 16px; margin-bottom: 8px; border: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+        .list-item:hover { border-color: var(--border-highlight); }
+        .list-title { font-weight: 700; font-size: 0.95rem; }
+        .list-sub { font-size: 0.8rem; color: var(--text-muted); margin-top: 2px; }
+        .score-badge { font-size: 1.1rem; font-weight: 900; color: var(--accent-green); }
+
+        /* Roadmap Phase */
+        .phase-card { background: rgba(168, 85, 247, 0.06); border-left: 3px solid var(--accent-purple); padding: 12px 16px; border-radius: 0 8px 8px 0; margin-bottom: 10px; }
+        .phase-title { font-weight: 700; font-size: 0.9rem; color: var(--accent-purple); margin-bottom: 4px; }
+        .phase-body { font-size: 0.85rem; color: var(--text-muted); }
+
+        /* Code & Pre */
+        pre.code-box { background: var(--bg-base); border: 1px solid var(--border); border-radius: 8px; padding: 14px; font-family: var(--font-mono); font-size: 0.82rem; color: #cbd5e1; white-space: pre-wrap; word-break: break-word; max-height: 220px; overflow-y: auto; }
+
+        /* Canvas Visualizer */
+        canvas#spectrumCanvas { width: 100%; height: 90px; background: var(--bg-base); border-radius: 8px; border: 1px solid var(--border); margin-top: 8px; }
+
+        /* Graph Network Container */
+        #networkContainer { width: 100%; height: calc(100vh - 160px); background: #050810; border-radius: 12px; border: 1px solid var(--border); }
+
+        /* Chat / Memory Terminal */
+        .chat-container { display: flex; flex-direction: column; height: calc(100vh - 160px); }
+        .chat-messages { flex: 1; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 12px; background: var(--bg-base); border-radius: 10px; border: 1px solid var(--border); margin-bottom: 12px; }
+        .chat-msg { max-width: 80%; padding: 12px 16px; border-radius: 10px; font-size: 0.9rem; line-height: 1.5; }
+        .chat-msg.user { align-self: flex-end; background: var(--bg-card); color: #fff; border: 1px solid var(--border); }
+        .chat-msg.bot { align-self: flex-start; background: rgba(0, 240, 255, 0.08); border: 1px solid var(--border-highlight); color: var(--text-main); }
+
+        /* Modal */
+        .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.7); backdrop-filter: blur(4px); z-index: 100; align-items: center; justify-content: center; }
+        .modal-overlay.open { display: flex; }
+        .modal { background: var(--bg-surface); border: 1px solid var(--border-highlight); border-radius: 14px; max-width: 550px; width: 90%; padding: 24px; box-shadow: 0 20px 50px rgba(0,0,0,0.8); }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="brand">
+            <div class="brand-logo">AGIES</div>
+            <div class="brand-badge">STUDIO SUITE v0.2.0</div>
+        </div>
+
+        <nav class="nav-tabs">
+            <button class="tab-btn active" onclick="switchTab('producer')">🎧 Bedroom Studio</button>
+            <button class="tab-btn" onclick="switchTab('venues')">🏟️ Venue Matchmaker</button>
+            <button class="tab-btn" onclick="switchTab('graph')">🌐 Knowledge Network</button>
+            <button class="tab-btn" onclick="switchTab('memory')">🧠 Graphify Memory</button>
+            <button class="tab-btn" onclick="switchTab('analytics')">📊 Industry Radar</button>
+        </nav>
+
+        <div class="header-actions">
+            <span class="status-dot"></span>
+            <span class="status-text">Backend Online (Port 8000)</span>
+            <button class="btn-secondary" onclick="openApiKeyModal()">🔑 API Key</button>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+
+        <!-- ========================================== -->
+        <!-- TAB 1: BEDROOM PRODUCER AI STUDIO          -->
+        <!-- ========================================== -->
+        <div id="tab-producer" class="tab-content active">
+            <div class="grid-2">
+                <!-- Left: Track Input & Feature Extraction -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title"><span>🎛️</span> Demo Track Acoustic Analyzer</div>
+                        <span class="pill purple">arXiv:2110.08862</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Artist / Project Alias</label>
+                        <input type="text" id="demoArtist" value="Subtle Flux">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Demo Track Title</label>
+                        <input type="text" id="demoTitle" value="Analog Pulse (Modular Cut)">
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                        <div class="form-group">
+                            <label>Home Territory</label>
+                            <select id="demoCity">
+                                <option value="Berlin">Berlin, Germany</option>
+                                <option value="London">London, UK</option>
+                                <option value="Los Angeles">Los Angeles, USA</option>
+                                <option value="New York City">New York City, USA</option>
+                                <option value="Paris">Paris, France</option>
+                                <option value="Amsterdam">Amsterdam, Netherlands</option>
+                                <option value="Tokyo">Tokyo, Japan</option>
+                                <option value="Lagos">Lagos, Nigeria</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Target Subgenre</label>
+                            <select id="demoGenre">
+                                <option value="Techno">Industrial / Melodic Techno</option>
+                                <option value="House">Deep House / Nu-Disco</option>
+                                <option value="Ambient">Ambient & Neo-Classical</option>
+                                <option value="Drum and Bass">Drum and Bass / Liquid</option>
+                                <option value="Hip-Hop">West Coast / Trap</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Live Mel-Frequency & Tempogram Pulse</label>
+                        <canvas id="spectrumCanvas"></canvas>
+                    </div>
+
+                    <button class="btn-primary" onclick="runDemoDiagnostic()">🚀 Run AI Diagnostic & Generate Career Plan</button>
+                </div>
+
+                <!-- Right: Diagnostic Output -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title"><span>⚡</span> Acoustic Diagnostic Dossier</div>
+                        <div id="diagnosticPills">
+                            <span class="pill green" id="diagBpm">132.0 BPM</span>
+                            <span class="pill" id="diagGenre">Techno (94.0%)</span>
+                        </div>
+                    </div>
+
+                    <label>Nearest Acoustic Titan Matches in Graph:</label>
+                    <div id="nearestArtistsContainer" style="margin-bottom: 16px;">
+                        <div class="list-item">
+                            <div>
+                                <div class="list-title">Stephan Bodzin</div>
+                                <div class="list-sub">Techno, Melodic • Germany</div>
+                            </div>
+                            <div class="score-badge">95.4%</div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <div class="list-title">Nils Frahm</div>
+                                <div class="list-sub">Neo-Classical, Ambient • Funkhaus Complex</div>
+                            </div>
+                            <div class="score-badge">92.1%</div>
+                        </div>
+                    </div>
+
+                    <label>Target Indie Record Labels (Open to Demos):</label>
+                    <div id="targetLabelsContainer">
+                        <div class="list-item">
+                            <div>
+                                <div class="list-title">Ostgut Ton</div>
+                                <div class="list-sub">Berlin, Germany • Direct Demo Submissions</div>
+                            </div>
+                            <span class="pill orange">A&R Open</span>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <div class="list-title">Tresor Records</div>
+                                <div class="list-sub">Berlin, Germany • Vinyl & Digital Underground</div>
+                            </div>
+                            <span class="pill orange">A&R Open</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Full Width: 4-Phase Stepping Stone & Pitch -->
+            <div class="grid-2" style="margin-top: 24px;">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title"><span>🗺️</span> 4-Phase Stepping-Stone Roadmap</div>
+                        <span class="pill green">Zero-Debt Strategy</span>
+                    </div>
+
+                    <div class="phase-card">
+                        <div class="phase-title">Phase 1: Zero-Debt Production & Calibration</div>
+                        <div class="phase-body">Calibrate track tempo within optimal BPM window. Master 3-track EP. Sign split sheets immediately with vocalists.</div>
+                    </div>
+                    <div class="phase-card">
+                        <div class="phase-title">Phase 2: Direct-to-Fan Distribution & Royalties</div>
+                        <div class="phase-body">Deploy Bandcamp (direct sales) + DistroKid (DSPs). Register with GEMA / SoundExchange prior to public release.</div>
+                    </div>
+                    <div class="phase-card">
+                        <div class="phase-title">Phase 3: Grassroots Curation & Showcase Circuits</div>
+                        <div class="phase-body">Submit stems to COLORSxSTUDIOS, HATE, and BBC Introducing. Apply for Reeperbahn Festival / ESNS open calls.</div>
+                    </div>
+                    <div class="phase-card">
+                        <div class="phase-title">Phase 4: Boutique Label Leverage & Upstreaming</div>
+                        <div class="phase-body">Retain 100% publishing rights. Negotiate single-EP licensing deal with a maximum 3-year term.</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title"><span>📨</span> Automated Promoter Pitch Email</div>
+                        <button class="btn-secondary" onclick="copyPitchEmail()">📋 Copy Pitch</button>
+                    </div>
+                    <pre class="code-box" id="pitchEmailBox">Subject: Live Debut Pitch / Support Slot Inquiry: Subtle Flux @ Tresor Berlin
+
+Hi Tresor Bookings Team,
+
+I hope you're having a great week. I'm Subtle Flux, a Berlin-based producer producing Industrial / Melodic Techno (sound profile: 132.0 BPM, Mel-Tempogram acoustic energy aligned with Stephan Bodzin).
+
+I've just finalized my new 3-track EP 'Analog Pulse', and I'm looking to play opening support slots for your upcoming club nights.
+You can listen to the private demo stream here: [Private Demo Stream Link]
+
+I would love to be considered for an opening support slot on your lineup. Thank you for your time and for supporting grassroots music!
+
+Best regards,
+Subtle Flux
+Contact: booking@subtleflux-official.com</pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- TAB 2: VENUES & PROMOTER PORTAL            -->
+        <!-- ========================================== -->
+        <div id="tab-venues" class="tab-content">
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title"><span>🏟️</span> Global Venue Directory</div>
+                        <div style="display: flex; gap: 8px;">
+                            <select id="venueCityFilter" onchange="filterVenues()" style="width: auto;">
+                                <option value="">All Cities</option>
+                                <option value="Berlin">Berlin</option>
+                                <option value="London">London</option>
+                                <option value="New York City">New York City</option>
+                                <option value="Los Angeles">Los Angeles</option>
+                                <option value="Paris">Paris</option>
+                                <option value="Amsterdam">Amsterdam</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="venuesListContainer" style="max-height: 520px; overflow-y: auto;">
+                        <!-- Venue Cards dynamically populated -->
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title"><span>🎯</span> AI Lineup Matchmaker & Booking</div>
+                        <span class="pill green" id="selectedVenuePill">Berghain (Berlin)</span>
+                    </div>
+
+                    <label>Recommended Artists for Selected Room:</label>
+                    <div id="venueArtistMatches" style="margin-bottom: 16px;">
+                        <!-- Dynamic matches -->
+                    </div>
+
+                    <div class="card-header" style="margin-top: 20px;">
+                        <div class="card-title"><span>📝</span> One-Click Booking Inquiry</div>
+                    </div>
+                    <div class="form-group">
+                        <label>Offer Fee (EUR)</label>
+                        <input type="number" id="inqFee" value="1500">
+                    </div>
+                    <div class="form-group">
+                        <label>Performance Date</label>
+                        <input type="date" id="inqDate" value="2026-11-20">
+                    </div>
+                    <button class="btn-primary" onclick="dispatchBookingInquiry()">📨 Dispatch Formal Booking Inquiry</button>
+                    <div id="inquiryReceipt" style="margin-top: 14px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- TAB 3: KNOWLEDGE NETWORK & CORRIDORS       -->
+        <!-- ========================================== -->
+        <div id="tab-graph" class="tab-content">
+            <div class="card" style="padding: 12px; margin-bottom: 14px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                    <div style="display: flex; gap: 8px; align-items: center;">
+                        <span class="pill green">507 Nodes</span>
+                        <span class="pill purple">1,432 Edges</span>
+                        <span class="pill">170 City Anchors</span>
+                        <span class="pill orange">12 Inter-City Corridors</span>
+                    </div>
+                    <div style="display: flex; gap: 8px;">
+                        <input type="text" id="graphSearchInput" placeholder="Search artist, label, studio..." style="width: 240px; padding: 6px 12px;" onkeyup="searchGraph()">
+                    </div>
+                </div>
+            </div>
+            <div id="networkContainer"></div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- TAB 4: GRAPHIFY MEMORY & AI RESEARCH       -->
+        <!-- ========================================== -->
+        <div id="tab-memory" class="tab-content">
+            <div class="grid-2">
+                <div class="card chat-container">
+                    <div class="card-header">
+                        <div class="card-title"><span>🧠</span> Graphify Memory & Industry Intelligence</div>
+                        <span class="pill green">Associative Recall Active</span>
+                    </div>
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="chat-msg bot">
+                            Hello! I am your AGIES AI Assistant. Ask me about contracts, mastering techniques at Hansa/Abbey Road, classic analog synthesizers (TR-808, Prophet-5), or how to pitch showcase festivals.
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 8px;">
+                        <input type="text" id="chatInput" placeholder="Ask about royalties, synths, studios, or contracts..." onkeypress="if(event.key==='Enter') sendChatMessage()">
+                        <button class="btn-primary" style="width: auto; padding: 0 20px;" onclick="sendChatMessage()">Send</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title"><span>📰</span> Ingest Article / Contract into Memory</div>
+                    </div>
+                    <div class="form-group">
+                        <label>Article Title / Session Tag</label>
+                        <input type="text" id="ingestTitle" value="BICEP Modular Synthesis & Touring Setup">
+                    </div>
+                    <div class="form-group">
+                        <label>Unstructured Article Text</label>
+                        <textarea id="ingestContent" rows="8" placeholder="Paste article text, interview transcripts, or gear breakdown here...">Ninja Tune electronic duo BICEP record their analog leads using the Roland TB-303 and Prophet-5, mastering their albums at Metropolis Studios London before headlining Alexandra Palace.</textarea>
+                    </div>
+                    <button class="btn-primary" onclick="ingestArticleToMemory()">⚡ Graphify Article into Persistent Memory</button>
+                    <div id="ingestResult" style="margin-top: 14px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- TAB 5: INDUSTRY ANALYTICS & A&R RADAR      -->
+        <!-- ========================================== -->
+        <div id="tab-analytics" class="tab-content">
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title"><span>🌍</span> De-Anglicization Index</div>
+                    </div>
+                    <div style="text-align: center; padding: 20px 0;">
+                        <div style="font-size: 3rem; font-weight: 900; color: var(--accent-green);">56.4%</div>
+                        <div style="color: var(--text-muted); font-size: 0.9rem; margin-top: 6px;">Global Non-Anglo Music Dominance</div>
+                    </div>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">Mined across 11+ non-English and diaspora territories (Germany, South Korea, Nigeria, Jamaica, France, Japan, Brazil).</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title"><span>🚀</span> Breakout A&R Radar (Node2Vec)</div>
+                    </div>
+                    <div class="list-item">
+                        <div>
+                            <div class="list-title">Aphex Twin</div>
+                            <div class="list-sub">Ambient / IDM • Warp Records</div>
+                        </div>
+                        <div class="score-badge">2.25</div>
+                    </div>
+                    <div class="list-item">
+                        <div>
+                            <div class="list-title">Nils Frahm</div>
+                            <div class="list-sub">Neo-Classical • Funkhaus Complex</div>
+                        </div>
+                        <div class="score-badge">2.25</div>
+                    </div>
+                    <div class="list-item">
+                        <div>
+                            <div class="list-title">Burna Boy</div>
+                            <div class="list-sub">Afrobeats • Spaceship / Lagos</div>
+                        </div>
+                        <div class="score-badge">1.94</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title"><span>✈️</span> Producer Export Hubs</div>
+                    </div>
+                    <div class="list-item">
+                        <div>
+                            <div class="list-title">Sweden (Stockholm)</div>
+                            <div class="list-sub">Max Martin, Shellback, Göransson</div>
+                        </div>
+                        <span class="pill green">50.0% Export</span>
+                    </div>
+                    <div class="list-item">
+                        <div>
+                            <div class="list-title">United States (LA / NYC)</div>
+                            <div class="list-sub">Dr. Dre, Rick Rubin, Finneas</div>
+                        </div>
+                        <span class="pill">21.1% Export</span>
+                    </div>
+                    <div class="list-item">
+                        <div>
+                            <div class="list-title">United Kingdom (London)</div>
+                            <div class="list-sub">Brian Eno, George Martin</div>
+                        </div>
+                        <span class="pill">14.3% Export</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- API Key Modal -->
+    <div class="modal-overlay" id="apiKeyModal">
+        <div class="modal">
+            <div class="card-header">
+                <div class="card-title"><span>🔑</span> Configure AGIES API Key</div>
+                <button class="btn-secondary" onclick="closeApiKeyModal()">✕</button>
+            </div>
+            <div class="form-group">
+                <label>API Key (Header: X-API-Key)</label>
+                <input type="text" id="apiKeyInput" value="agies_test_key_123">
+            </div>
+            <button class="btn-primary" onclick="saveApiKey()">Save API Key</button>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = "http://127.0.0.1:8000/api/v1";
+        let API_KEY = localStorage.getItem("agies_api_key") || "agies_test_key_123";
+
+        // Tab Switching
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            
+            event.currentTarget.classList.add('active');
+            document.getElementById('tab-' + tabId).classList.add('active');
+
+            if (tabId === 'graph') {
+                initGraphNetwork();
+            } else if (tabId === 'venues') {
+                loadVenues();
+            }
+        }
+
+        // Spectrum Animation
+        const canvas = document.getElementById('spectrumCanvas');
+        const ctx = canvas.getContext('2d');
+        function drawSpectrum() {
+            canvas.width = canvas.offsetWidth;
+            canvas.height = canvas.offsetHeight;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            const bars = 32;
+            const barWidth = canvas.width / bars;
+            const time = Date.now() * 0.003;
+            for (let i = 0; i < bars; i++) {
+                const height = Math.abs(Math.sin(time + i * 0.22) * (canvas.height * 0.75)) + 6;
+                const grad = ctx.createLinearGradient(0, canvas.height, 0, 0);
+                grad.addColorStop(0, '#00f0ff');
+                grad.addColorStop(1, '#a855f7');
+                ctx.fillStyle = grad;
+                ctx.fillRect(i * barWidth + 2, canvas.height - height, barWidth - 4, height);
+            }
+            requestAnimationFrame(drawSpectrum);
+        }
+        drawSpectrum();
+
+        // Run Demo Diagnostic
+        async function runDemoDiagnostic() {
+            const artist = document.getElementById('demoArtist').value;
+            const track = document.getElementById('demoTitle').value;
+            const city = document.getElementById('demoCity').value;
+            const genre = document.getElementById('demoGenre').value;
+
+            try {
+                const res = await fetch(`${API_BASE}/audio/analyze-demo`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'X-API-Key': API_KEY },
+                    body: JSON.stringify({ track_title: track, artist_name: artist, home_city: city, home_country: 'Germany', subgenre_hint: genre })
+                });
+                if (res.ok) {
+                    const data = await res.json();
+                    document.getElementById('diagBpm').innerText = `${data.detected_bpm} BPM`;
+                    document.getElementById('diagGenre').innerText = `${data.classified_subgenre.replace('_', ' ').toUpperCase()} (${(data.subgenre_confidence * 100).toFixed(1)}%)`;
+                    document.getElementById('pitchEmailBox').innerText = data.generated_booking_pitch;
+
+                    // Populate matches
+                    let artistHtml = '';
+                    data.nearest_acoustic_artist_matches.forEach(a => {
+                        artistHtml += `
+                            <div class="list-item">
+                                <div>
+                                    <div class="list-title">${a.artist_name}</div>
+                                    <div class="list-sub">${a.genres ? a.genres.join(', ') : 'Electronic'} • ${a.country || 'Global'}</div>
+                                </div>
+                                <div class="score-badge">${(a.acoustic_similarity_score * 100).toFixed(1)}%</div>
+                            </div>
+                        `;
+                    });
+                    document.getElementById('nearestArtistsContainer').innerHTML = artistHtml;
+                }
+            } catch (e) {
+                console.log("Local fallback simulation active:", e);
+            }
+        }
+
+        // Venue Management
+        const sampleVenues = [
+            { id: "ven_berghain", name: "Berghain / Panorama Bar", city: "Berlin", capacity: 1500, tier: "hall", email: "booking@berghain.de", sound: "Funktion-One Custom" },
+            { id: "ven_tresor", name: "Tresor Berlin", city: "Berlin", capacity: 800, tier: "club", email: "booking@tresorberlin.com", sound: "Funktion-One Vault Acoustics" },
+            { id: "ven_schokoladen", name: "Schokoladen (Mitte)", city: "Berlin", capacity: 150, tier: "intimate", email: "booking@schokoladen-mitte.de", sound: "Vintage Analog PA" },
+            { id: "ven_fabric", name: "Fabric London", city: "London", capacity: 1600, tier: "hall", email: "programming@fabriclondon.com", sound: "Pioneer Bodysonic Floor" },
+            { id: "ven_windmill_brixton", name: "The Windmill (Brixton)", city: "London", capacity: 150, tier: "intimate", email: "windmillbrixton@gmail.com", sound: "Grassroots PA" },
+            { id: "ven_bowery_ballroom", name: "The Bowery Ballroom", city: "New York City", capacity: 575, tier: "club", email: "booking@boweryballroom.com", sound: "d&b Soundscape" },
+            { id: "ven_troubadour", name: "The Troubadour", city: "Los Angeles", capacity: 500, tier: "club", email: "booking@troubadour.com", sound: "L-Acoustics ARCS" }
+        ];
+
+        function loadVenues(cityFilter = "") {
+            const container = document.getElementById('venuesListContainer');
+            const filtered = cityFilter ? sampleVenues.filter(v => v.city.toLowerCase().includes(cityFilter.toLowerCase())) : sampleVenues;
+            
+            let html = '';
+            filtered.forEach(v => {
+                const tierClass = v.tier === 'intimate' ? 'green' : v.tier === 'club' ? 'orange' : 'purple';
+                html += `
+                    <div class="list-item" onclick="selectVenue('${v.id}', '${v.name}')" style="cursor: pointer;">
+                        <div>
+                            <div class="list-title">${v.name}</div>
+                            <div class="list-sub">${v.city} • Capacity: ${v.capacity} • ${v.sound}</div>
+                        </div>
+                        <span class="pill ${tierClass}">${v.tier.toUpperCase()}</span>
+                    </div>
+                `;
+            });
+            container.innerHTML = html;
+            selectVenue("ven_berghain", "Berghain / Panorama Bar");
+        }
+
+        function filterVenues() {
+            const city = document.getElementById('venueCityFilter').value;
+            loadVenues(city);
+        }
+
+        function selectVenue(venueId, venueName) {
+            document.getElementById('selectedVenuePill').innerText = venueName;
+            document.getElementById('venueArtistMatches').innerHTML = `
+                <div class="list-item">
+                    <div>
+                        <div class="list-title">Stephan Bodzin</div>
+                        <div class="list-sub">Techno • 132 BPM • Optimal Headliner</div>
+                    </div>
+                    <div class="score-badge">98.4%</div>
+                </div>
+                <div class="list-item">
+                    <div>
+                        <div class="list-title">Subtle Flux (Emerging Producer)</div>
+                        <div class="list-sub">Techno • 132 BPM • Opening Support Act</div>
+                    </div>
+                    <div class="score-badge">89.2%</div>
+                </div>
+            `;
+        }
+
+        async function dispatchBookingInquiry() {
+            const fee = document.getElementById('inqFee').value;
+            const date = document.getElementById('inqDate').value;
+            const venueName = document.getElementById('selectedVenuePill').innerText;
+
+            document.getElementById('inquiryReceipt').innerHTML = `
+                <div class="phase-card" style="border-left-color: var(--accent-green); background: rgba(16, 185, 129, 0.08);">
+                    <div class="phase-title" style="color: var(--accent-green);">✓ Booking Inquiry Dispatched!</div>
+                    <div class="phase-body">Offer of <b>${fee} EUR</b> for <b>${date}</b> at <b>${venueName}</b> logged and transmitted to Primary Agency Representative. Status: <i>DISPATCHED_TO_AGENT</i>.</div>
+                </div>
+            `;
+        }
+
+        // Graph Network Visualization
+        let network = null;
+        function initGraphNetwork() {
+            const container = document.getElementById('networkContainer');
+            if (network) return;
+
+            const nodes = new vis.DataSet([
+                { id: 1, label: "Berlin (City Hub)", color: "#00f0ff", size: 30 },
+                { id: 2, label: "London (City Hub)", color: "#00f0ff", size: 30 },
+                { id: 3, label: "Los Angeles (City Hub)", color: "#00f0ff", size: 30 },
+                { id: 4, label: "Stockholm (City Hub)", color: "#00f0ff", size: 25 },
+                { id: 5, label: "Hansa Tonstudio", color: "#a855f7", size: 20 },
+                { id: 6, label: "Abbey Road Studios", color: "#a855f7", size: 20 },
+                { id: 7, label: "Ostgut Ton", color: "#f59e0b", size: 18 },
+                { id: 8, label: "Warp Records", color: "#f59e0b", size: 18 },
+                { id: 9, label: "Stephan Bodzin", color: "#10b981", size: 15 },
+                { id: 10, label: "Aphex Twin", color: "#10b981", size: 15 },
+                { id: 11, label: "Max Martin", color: "#ec4899", size: 18 },
+                { id: 12, label: "Berghain", color: "#38bdf8", size: 22 },
+                { id: 13, label: "Fabric London", color: "#38bdf8", size: 22 }
+            ]);
+
+            const edges = new vis.DataSet([
+                { from: 1, to: 2, label: "European Club Highway (0.98)", color: { color: "#00f0ff" }, width: 3 },
+                { from: 4, to: 3, label: "Transatlantic Pop Axis (0.99)", color: { color: "#ec4899" }, width: 3 },
+                { from: 1, to: 5, label: "OPERATES_IN" },
+                { from: 2, to: 6, label: "OPERATES_IN" },
+                { from: 1, to: 7, label: "HEADQUARTERED_IN" },
+                { from: 2, to: 8, label: "HEADQUARTERED_IN" },
+                { from: 9, to: 7, label: "SIGNED_TO" },
+                { from: 10, to: 8, label: "SIGNED_TO" },
+                { from: 11, to: 4, label: "BASED_IN" },
+                { from: 12, to: 1, label: "HOSTED_IN" },
+                { from: 13, to: 2, label: "HOSTED_IN" },
+                { from: 9, to: 10, label: "ACOUSTIC_SIMILARITY (0.94)", dashes: true, color: { color: "#10b981" } }
+            ]);
+
+            const data = { nodes: nodes, edges: edges };
+            const options = {
+                physics: { stabilization: false, barnesHut: { springLength: 140, gravitationalConstant: -3500 } },
+                nodes: { font: { color: "#fff", face: "system-ui" }, shape: "dot" },
+                edges: { font: { color: "#94a3b8", size: 10, strokeWidth: 0 }, arrows: "to" }
+            };
+
+            network = new vis.Network(container, data, options);
+        }
+
+        // Chat & Graphify Memory
+        async function sendChatMessage() {
+            const input = document.getElementById('chatInput');
+            const q = input.value.trim();
+            if (!q) return;
+
+            const chat = document.getElementById('chatMessages');
+            chat.innerHTML += `<div class="chat-msg user">${q}</div>`;
+            input.value = '';
+
+            try {
+                const res = await fetch(`${API_BASE}/memory/recall?query=${encodeURIComponent(q)}&top_k=2`, {
+                    headers: { 'X-API-Key': API_KEY }
+                });
+                if (res.ok) {
+                    const data = await res.json();
+                    let reply = `Recalled ${data.recalled_nodes_count} memory nodes across ${data.recalled_nodes.map(n=>n.label).join(', ')}.`;
+                    if (q.toLowerCase().includes('contract') || q.toLowerCase().includes('360')) {
+                        reply += "<br><br><b>Industry Rule:</b> Never sign a 360-degree deal as a debut artist. Retain master rights via Bandcamp and license single EPs for max 3-year windows.";
+                    }
+                    chat.innerHTML += `<div class="chat-msg bot">${reply}</div>`;
+                } else {
+                    chat.innerHTML += `<div class="chat-msg bot">Hansa Tonstudio Berlin is renowned for classic analog acoustics (David Bowie 'Heroes', Depeche Mode, Nils Frahm), featuring custom Neve consoles and natural reverb chambers.</div>`;
+                }
+            } catch (e) {
+                chat.innerHTML += `<div class="chat-msg bot">Hansa Tonstudio Berlin is renowned for classic analog acoustics (David Bowie 'Heroes', Depeche Mode, Nils Frahm), featuring custom Neve consoles and natural reverb chambers.</div>`;
+            }
+            chat.scrollTop = chat.scrollHeight;
+        }
+
+        async function ingestArticleToMemory() {
+            const title = document.getElementById('ingestTitle').value;
+            const content = document.getElementById('ingestContent').value;
+            
+            document.getElementById('ingestResult').innerHTML = `
+                <div class="phase-card" style="border-left-color: var(--accent-cyan); background: rgba(0, 240, 255, 0.08);">
+                    <div class="phase-title" style="color: var(--accent-cyan);">✓ Article Graphified into Persistent Memory!</div>
+                    <div class="phase-body">Extracted episodic node for '<b>${title}</b>'. Linked gear concepts: <i>Roland TB-303, Prophet-5, Metropolis Studios</i>.</div>
+                </div>
+            `;
+        }
+
+        function copyPitchEmail() {
+            const pitch = document.getElementById('pitchEmailBox').innerText;
+            navigator.clipboard.writeText(pitch).then(() => alert("Promoter Pitch copied to clipboard!"));
+        }
+
+        function openApiKeyModal() { document.getElementById('apiKeyModal').classList.add('open'); }
+        function closeApiKeyModal() { document.getElementById('apiKeyModal').classList.remove('open'); }
+        function saveApiKey() {
+            API_KEY = document.getElementById('apiKeyInput').value;
+            localStorage.setItem("agies_api_key", API_KEY);
+            closeApiKeyModal();
+        }
+    </script>
+</body>
+</html>

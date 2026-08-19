@@ -1,8 +1,7 @@
-"""FastAPI Application Entrypoint for AGIES API."""
-
+from pathlib import Path
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import RedirectResponse
+from fastapi.responses import FileResponse, RedirectResponse
 
 from agies.api.routes import (
     analytics_router,
@@ -56,8 +55,14 @@ X-API-Key: agies_test_key_123
     app.include_router(memory_router, prefix="/api/v1")
     app.include_router(venues_router, prefix="/api/v1")
 
+    frontend_file = Path(__file__).resolve().parent.parent.parent.parent / "frontend" / "index.html"
+
     @app.get("/", include_in_schema=False)
+    @app.get("/app", include_in_schema=False)
+    @app.get("/studio", include_in_schema=False)
     async def root():
+        if frontend_file.exists():
+            return FileResponse(frontend_file)
         return RedirectResponse(url="/docs")
 
     @app.get("/health", tags=["System"])
