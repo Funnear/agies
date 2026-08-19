@@ -207,6 +207,62 @@ class CityIndustryConnectsEnricher:
         # === NASHVILLE ===
         ("std_oceanway", "city_nashville", "OPERATES_IN_CITY"),
         ("std_blackbird", "city_nashville", "OPERATES_IN_CITY"),
+        # === SÃO PAULO & RIO DE JANEIRO & ITAJAÍ ===
+        ("art_alok", "city_saopaulo", "BASED_IN_CITY"),
+        ("art_vintageculture", "city_saopaulo", "BASED_IN_CITY"),
+        ("art_amontobin", "city_saopaulo", "BASED_IN_CITY"),
+        ("art_anitta", "city_riodejaneiro", "BASED_IN_CITY"),
+        ("lbl_dedge_rec", "city_saopaulo", "HEADQUARTERED_IN"),
+        ("std_warung_std", "city_itajai", "OPERATES_IN_CITY"),
+        # === MEDELLÍN & BOGOTÁ ===
+        ("art_jbalvin", "city_medellin", "BASED_IN_CITY"),
+        ("art_maluma", "city_medellin", "BASED_IN_CITY"),
+        ("art_karolg", "city_medellin", "BASED_IN_CITY"),
+        ("std_infinitymusic", "city_medellin", "OPERATES_IN_CITY"),
+        ("lbl_latino_gang", "city_medellin", "HEADQUARTERED_IN"),
+        ("lbl_baum_rec", "city_bogota", "HEADQUARTERED_IN"),
+        # === MEXICO CITY ===
+        ("art_natanaelcano", "city_cdmx", "BASED_IN_CITY"),
+        ("art_pesopluma", "city_cdmx", "BASED_IN_CITY"),
+        ("lbl_rancho_humilde", "city_cdmx", "HEADQUARTERED_IN"),
+        ("fest_mutek_mx", "city_cdmx", "HOSTED_IN_CITY"),
+        # === BARCELONA & IBIZA ===
+        ("art_rosalia", "city_barcelona", "BASED_IN_CITY"),
+        ("art_elguincho", "city_barcelona", "BASED_IN_CITY"),
+        ("fest_sonar", "city_barcelona", "HOSTED_IN_CITY"),
+        ("fest_primavera", "city_barcelona", "HOSTED_IN_CITY"),
+        ("lbl_elrow_music", "city_barcelona", "HEADQUARTERED_IN"),
+        ("lbl_dc10_rec", "city_ibiza", "HEADQUARTERED_IN"),
+        # === AMSTERDAM ===
+        ("art_armin", "city_amsterdam", "BASED_IN_CITY"),
+        ("art_tiesto", "city_amsterdam", "BASED_IN_CITY"),
+        ("art_martingarrix", "city_amsterdam", "BASED_IN_CITY"),
+        ("fest_ade", "city_amsterdam", "HOSTED_IN_CITY"),
+        ("fest_dekmantel", "city_amsterdam", "HOSTED_IN_CITY"),
+        ("lbl_spinnin", "city_amsterdam", "HEADQUARTERED_IN"),
+        ("lbl_armada", "city_amsterdam", "HEADQUARTERED_IN"),
+        # === MELBOURNE & SYDNEY ===
+        ("art_tameimpala", "city_melbourne", "BASED_IN_CITY"),
+        ("art_flume", "city_sydney", "BASED_IN_CITY"),
+        ("art_rufusdusol", "city_sydney", "BASED_IN_CITY"),
+        ("lbl_futureclassic", "city_sydney", "HEADQUARTERED_IN"),
+        # === JOHANNESBURG ===
+        ("art_blackcoffee", "city_joburg", "BASED_IN_CITY"),
+        ("art_kabzadesmall", "city_joburg", "BASED_IN_CITY"),
+        ("art_djmaphorisa", "city_joburg", "BASED_IN_CITY"),
+        ("lbl_soulistic", "city_joburg", "HEADQUARTERED_IN"),
+        ("lbl_piano_hub", "city_joburg", "HEADQUARTERED_IN"),
+        # === GOA & MUMBAI ===
+        ("art_arrahman", "city_mumbai", "BASED_IN_CITY"),
+        ("art_nucleya", "city_goa", "BASED_IN_CITY"),
+        ("lbl_tseries", "city_mumbai", "HEADQUARTERED_IN"),
+        ("lbl_azadi_records", "city_mumbai", "HEADQUARTERED_IN"),
+        # === BRUSSELS ===
+        ("art_stromae", "city_brussels", "BASED_IN_CITY"),
+        ("art_charlottedewitte", "city_brussels", "BASED_IN_CITY"),
+        ("art_amelielens", "city_brussels", "BASED_IN_CITY"),
+        ("lbl_kntxt", "city_brussels", "HEADQUARTERED_IN"),
+        ("lbl_lenske", "city_brussels", "HEADQUARTERED_IN"),
     ]
 
     INTER_CITY_CORRIDORS: List[Tuple[str, str, str, float]] = [
@@ -223,14 +279,13 @@ class CityIndustryConnectsEnricher:
         (
             "city_lagos",
             "city_london",
-            "Afrobeats UK Crossover & Diaspora Highway",
-            0.95,
+            "Afrobeats Global Mainstream Pipeline",
+            0.98,
         ),
-        ("city_seoul", "city_la", "K-Pop Global Hollywood & Billboard Gateway", 0.94),
-        ("city_paris", "city_london", "French Touch & UK Club Exchange", 0.92),
-        ("city_berlin", "city_cologne", "German Electronic & Showcase Exchange", 0.91),
+        ("city_seoul", "city_la", "K-Pop & American Visual Media Super-Corridor", 0.95),
+        ("city_paris", "city_london", "French Touch & Electronic Trade Channel", 0.94),
+        ("city_cologne", "city_berlin", "Kompakt-Ostgut German Minimal Techno Line", 0.93),
         ("city_la", "city_nyc", "US Coast-to-Coast Major Label Duopoly", 0.98),
-        ("city_atlanta", "city_la", "Trap & Hip-Hop Commercial Pipeline", 0.95),
         ("city_kingston", "city_nyc", "Caribbean Sound to East Coast Rap Bridge", 0.90),
         (
             "city_tokyo",

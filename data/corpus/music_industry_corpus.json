@@ -5055,6 +5055,714 @@
       }
     },
     {
+      "id": "geo_br",
+      "name": "Brazil",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Country",
+        "continent": "South America"
+      }
+    },
+    {
+      "id": "state_br_sp",
+      "name": "S\u00e3o Paulo (State)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "Brazil"
+      }
+    },
+    {
+      "id": "city_saopaulo",
+      "name": "S\u00e3o Paulo",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "S\u00e3o Paulo (State)",
+        "country": "Brazil"
+      }
+    },
+    {
+      "id": "distr_barrafunda_sp",
+      "name": "Barra Funda (Underground Techno & D-Edge)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "S\u00e3o Paulo"
+      }
+    },
+    {
+      "id": "distr_vilamada_sp",
+      "name": "Vila Madalena (Indie, Bossa Nova & Arts)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "S\u00e3o Paulo"
+      }
+    },
+    {
+      "id": "state_br_rj",
+      "name": "Rio de Janeiro (State)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "Brazil"
+      }
+    },
+    {
+      "id": "city_riodejaneiro",
+      "name": "Rio de Janeiro",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "Rio de Janeiro (State)",
+        "country": "Brazil"
+      }
+    },
+    {
+      "id": "distr_lapa_rj",
+      "name": "Lapa (Samba, Choro & Bohemian Nightlife)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Rio de Janeiro"
+      }
+    },
+    {
+      "id": "distr_favela_rj",
+      "name": "Zona Norte Favelas (Baile Funk Ground Zero)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Rio de Janeiro"
+      }
+    },
+    {
+      "id": "state_br_sc",
+      "name": "Santa Catarina",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "Brazil"
+      }
+    },
+    {
+      "id": "city_itajai",
+      "name": "Itaja\u00ed & Balne\u00e1rio Cambori\u00fa",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "Santa Catarina",
+        "country": "Brazil"
+      }
+    },
+    {
+      "id": "distr_praiabrava",
+      "name": "Praia Brava (Warung Beach Club Sanctuary)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Itaja\u00ed & Balne\u00e1rio Cambori\u00fa"
+      }
+    },
+    {
+      "id": "geo_co",
+      "name": "Colombia",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Country",
+        "continent": "South America"
+      }
+    },
+    {
+      "id": "state_co_ant",
+      "name": "Antioquia",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "Colombia"
+      }
+    },
+    {
+      "id": "city_medellin",
+      "name": "Medell\u00edn",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "Antioquia",
+        "country": "Colombia"
+      }
+    },
+    {
+      "id": "distr_elpoblado",
+      "name": "El Poblado (Reggaeton & Global Urban Pop)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Medell\u00edn"
+      }
+    },
+    {
+      "id": "distr_laureles",
+      "name": "Laureles (Independent Studios)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Medell\u00edn"
+      }
+    },
+    {
+      "id": "state_co_cund",
+      "name": "Cundinamarca",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "Colombia"
+      }
+    },
+    {
+      "id": "city_bogota",
+      "name": "Bogot\u00e1",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "Cundinamarca",
+        "country": "Colombia"
+      }
+    },
+    {
+      "id": "distr_chapinero",
+      "name": "Chapinero (Baum Electronic Underground)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Bogot\u00e1"
+      }
+    },
+    {
+      "id": "geo_mx",
+      "name": "Mexico",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Country",
+        "continent": "North America"
+      }
+    },
+    {
+      "id": "state_mx_cdmx",
+      "name": "Mexico City (CDMX)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "Mexico"
+      }
+    },
+    {
+      "id": "city_cdmx",
+      "name": "Mexico City",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "Mexico City (CDMX)",
+        "country": "Mexico"
+      }
+    },
+    {
+      "id": "distr_romacondesa",
+      "name": "Roma-Condesa (Indie & Club Oriente)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Mexico City"
+      }
+    },
+    {
+      "id": "distr_cdmx_centro",
+      "name": "Centro Hist\u00f3rico (Mutek Mexico)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Mexico City"
+      }
+    },
+    {
+      "id": "geo_es",
+      "name": "Spain",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Country",
+        "continent": "Europe"
+      }
+    },
+    {
+      "id": "state_es_cat",
+      "name": "Catalonia",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "Spain"
+      }
+    },
+    {
+      "id": "city_barcelona",
+      "name": "Barcelona",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "Catalonia",
+        "country": "Spain"
+      }
+    },
+    {
+      "id": "distr_poblenou_bcn",
+      "name": "Poblenou (Razzmatazz & S\u00f3nar Festival Hub)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Barcelona"
+      }
+    },
+    {
+      "id": "distr_raval_bcn",
+      "name": "El Raval (Electronic Arts & MACBA)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Barcelona"
+      }
+    },
+    {
+      "id": "state_es_ibz",
+      "name": "Balearic Islands",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "Spain"
+      }
+    },
+    {
+      "id": "city_ibiza",
+      "name": "Ibiza",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "Balearic Islands",
+        "country": "Spain"
+      }
+    },
+    {
+      "id": "distr_playadenbossa",
+      "name": "Playa d'en Bossa (DC10, H\u00ef & Ushua\u00efa)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Ibiza"
+      }
+    },
+    {
+      "id": "distr_sanantonio",
+      "name": "San Antonio (Amnesia & Sunset Strip)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Ibiza"
+      }
+    },
+    {
+      "id": "geo_nl",
+      "name": "Netherlands",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Country",
+        "continent": "Europe"
+      }
+    },
+    {
+      "id": "state_nl_nh",
+      "name": "North Holland",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "Netherlands"
+      }
+    },
+    {
+      "id": "city_amsterdam",
+      "name": "Amsterdam",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "North Holland",
+        "country": "Netherlands"
+      }
+    },
+    {
+      "id": "distr_ndsm_ams",
+      "name": "NDSM Wharf (Dekmantel & ADE Hub)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Amsterdam"
+      }
+    },
+    {
+      "id": "distr_westerpark_ams",
+      "name": "Westerpark (Gashouder & Awakenings)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Amsterdam"
+      }
+    },
+    {
+      "id": "geo_au",
+      "name": "Australia",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Country",
+        "continent": "Oceania"
+      }
+    },
+    {
+      "id": "state_au_vic",
+      "name": "Victoria",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "Australia"
+      }
+    },
+    {
+      "id": "city_melbourne",
+      "name": "Melbourne",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "Victoria",
+        "country": "Australia"
+      }
+    },
+    {
+      "id": "distr_fitzroy_mel",
+      "name": "Fitzroy (Live Music & Indie Scene)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Melbourne"
+      }
+    },
+    {
+      "id": "distr_chapelst_mel",
+      "name": "Chapel Street (Revolver Upstairs Minimal)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Melbourne"
+      }
+    },
+    {
+      "id": "state_au_nsw",
+      "name": "New South Wales",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "Australia"
+      }
+    },
+    {
+      "id": "city_sydney",
+      "name": "Sydney",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "New South Wales",
+        "country": "Australia"
+      }
+    },
+    {
+      "id": "distr_kingscross_syd",
+      "name": "Kings Cross (Club 77 & Electronic)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Sydney"
+      }
+    },
+    {
+      "id": "geo_za",
+      "name": "South Africa",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Country",
+        "continent": "Africa"
+      }
+    },
+    {
+      "id": "state_za_gp",
+      "name": "Gauteng",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "South Africa"
+      }
+    },
+    {
+      "id": "city_joburg",
+      "name": "Johannesburg",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "Gauteng",
+        "country": "South Africa"
+      }
+    },
+    {
+      "id": "distr_soweto",
+      "name": "Soweto (Amapiano Movement Ground Zero)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Johannesburg"
+      }
+    },
+    {
+      "id": "distr_braamfontein",
+      "name": "Braamfontein (Youth Culture & Deep House)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Johannesburg"
+      }
+    },
+    {
+      "id": "geo_in",
+      "name": "India",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Country",
+        "continent": "Asia"
+      }
+    },
+    {
+      "id": "state_in_ga",
+      "name": "Goa",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "India"
+      }
+    },
+    {
+      "id": "city_goa",
+      "name": "Vagator & Anjuna",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "Goa",
+        "country": "India"
+      }
+    },
+    {
+      "id": "distr_hilltop_goa",
+      "name": "HillTop (Psytrance & Global Sanctuary)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Vagator & Anjuna"
+      }
+    },
+    {
+      "id": "state_in_mh",
+      "name": "Maharashtra",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "India"
+      }
+    },
+    {
+      "id": "city_mumbai",
+      "name": "Mumbai",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "Maharashtra",
+        "country": "India"
+      }
+    },
+    {
+      "id": "distr_bandra_mum",
+      "name": "Bandra & Khar (AntiSocial Indie Hub)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Mumbai"
+      }
+    },
+    {
+      "id": "geo_be",
+      "name": "Belgium",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Country",
+        "continent": "Europe"
+      }
+    },
+    {
+      "id": "state_be_bru",
+      "name": "Brussels-Capital",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "State/Region",
+        "country": "Belgium"
+      }
+    },
+    {
+      "id": "city_brussels",
+      "name": "Brussels",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "City/Hub",
+        "state": "Brussels-Capital",
+        "country": "Belgium"
+      }
+    },
+    {
+      "id": "distr_marolles_bru",
+      "name": "Marolles (Fuse Club Techno Sanctuary)",
+      "entity_type": "production_house",
+      "country": null,
+      "genres": [],
+      "attributes": {
+        "category": "Creative District",
+        "city": "Brussels"
+      }
+    },
+    {
       "id": "tax_electronic",
       "name": "Electronic Music",
       "entity_type": "track",
@@ -5611,7 +6319,7 @@
       ],
       "attributes": {
         "artist": "Techno Collective 11",
-        "duration_seconds": 134.5,
+        "duration_seconds": 302.0,
         "audio_format": "mp3",
         "provider": "jamendo",
         "license": "Creative Commons",
@@ -5635,7 +6343,7 @@
       ],
       "attributes": {
         "artist": "Techno Collective 12",
-        "duration_seconds": 298.6,
+        "duration_seconds": 133.9,
         "audio_format": "mp3",
         "provider": "archive",
         "license": "Creative Commons",
@@ -5651,73 +6359,73 @@
     },
     {
       "id": "trk_freesound_tec_freesoun",
-      "name": "Techno Sonic Study No. 8",
+      "name": "Techno Sonic Study No. 13",
       "entity_type": "track",
       "country": null,
       "genres": [
         "Techno"
       ],
       "attributes": {
-        "artist": "Techno Collective 8",
-        "duration_seconds": 212.9,
+        "artist": "Techno Collective 13",
+        "duration_seconds": 331.1,
         "audio_format": "mp3",
         "provider": "freesound",
         "license": "Creative Commons",
-        "detected_bpm": 132.7,
+        "detected_bpm": 130.2,
         "classified_subgenre": "techno",
         "mel_energy_profile": [
-          0.0913,
-          0.0205,
-          0.0377,
-          0.3031
+          0.0381,
+          0.0414,
+          0.1602,
+          0.2915
         ]
       }
     },
     {
       "id": "trk_musopen_tec_musopen_",
-      "name": "Techno Sonic Study No. 9",
+      "name": "Techno Sonic Study No. 14",
       "entity_type": "track",
       "country": null,
       "genres": [
         "Techno"
       ],
       "attributes": {
-        "artist": "Techno Collective 9",
-        "duration_seconds": 165.5,
+        "artist": "Techno Collective 14",
+        "duration_seconds": 205.8,
         "audio_format": "mp3",
         "provider": "musopen",
         "license": "Creative Commons",
-        "detected_bpm": 132.7,
+        "detected_bpm": 130.6,
         "classified_subgenre": "techno",
         "mel_energy_profile": [
-          0.0231,
           0.0,
-          0.1059,
-          0.2347
+          0.0751,
+          0.0946,
+          0.1803
         ]
       }
     },
     {
       "id": "trk_wikimedia_tec_wikimedi",
-      "name": "Techno Sonic Study No. 10",
+      "name": "Techno Sonic Study No. 15",
       "entity_type": "track",
       "country": null,
       "genres": [
         "Techno"
       ],
       "attributes": {
-        "artist": "Techno Collective 10",
-        "duration_seconds": 291.0,
+        "artist": "Techno Collective 15",
+        "duration_seconds": 202.9,
         "audio_format": "mp3",
         "provider": "wikimedia",
         "license": "Creative Commons",
-        "detected_bpm": 133.0,
+        "detected_bpm": 130.8,
         "classified_subgenre": "techno",
         "mel_energy_profile": [
-          0.067,
-          0.148,
-          0.1061,
-          0.1357
+          0.0,
+          0.007,
+          0.187,
+          0.2076
         ]
       }
     },
@@ -5731,7 +6439,7 @@
       ],
       "attributes": {
         "artist": "House Collective 11",
-        "duration_seconds": 222.1,
+        "duration_seconds": 164.6,
         "audio_format": "mp3",
         "provider": "jamendo",
         "license": "Creative Commons",
@@ -5755,7 +6463,7 @@
       ],
       "attributes": {
         "artist": "House Collective 12",
-        "duration_seconds": 289.8,
+        "duration_seconds": 344.3,
         "audio_format": "mp3",
         "provider": "archive",
         "license": "Creative Commons",
@@ -5771,73 +6479,73 @@
     },
     {
       "id": "trk_freesound_hou_freesoun",
-      "name": "House Sonic Study No. 8",
+      "name": "House Sonic Study No. 13",
       "entity_type": "track",
       "country": null,
       "genres": [
         "House"
       ],
       "attributes": {
-        "artist": "House Collective 8",
-        "duration_seconds": 300.3,
+        "artist": "House Collective 13",
+        "duration_seconds": 233.7,
         "audio_format": "mp3",
         "provider": "freesound",
         "license": "Creative Commons",
-        "detected_bpm": 125.4,
+        "detected_bpm": 123.3,
         "classified_subgenre": "house",
         "mel_energy_profile": [
           0.0,
-          0.0,
-          0.0729,
-          0.2282
+          0.1205,
+          0.0931,
+          0.2071
         ]
       }
     },
     {
       "id": "trk_musopen_hou_musopen_",
-      "name": "House Sonic Study No. 9",
+      "name": "House Sonic Study No. 14",
       "entity_type": "track",
       "country": null,
       "genres": [
         "House"
       ],
       "attributes": {
-        "artist": "House Collective 9",
-        "duration_seconds": 164.0,
+        "artist": "House Collective 14",
+        "duration_seconds": 232.9,
         "audio_format": "mp3",
         "provider": "musopen",
         "license": "Creative Commons",
-        "detected_bpm": 124.7,
+        "detected_bpm": 123.7,
         "classified_subgenre": "house",
         "mel_energy_profile": [
-          0.0972,
-          0.0021,
-          0.0611,
-          0.2386
+          0.0182,
+          0.1161,
+          0.1794,
+          0.2163
         ]
       }
     },
     {
       "id": "trk_wikimedia_hou_wikimedi",
-      "name": "House Sonic Study No. 10",
+      "name": "House Sonic Study No. 15",
       "entity_type": "track",
       "country": null,
       "genres": [
         "House"
       ],
       "attributes": {
-        "artist": "House Collective 10",
-        "duration_seconds": 358.9,
+        "artist": "House Collective 15",
+        "duration_seconds": 284.5,
         "audio_format": "mp3",
         "provider": "wikimedia",
         "license": "Creative Commons",
-        "detected_bpm": 124.7,
+        "detected_bpm": 122.5,
         "classified_subgenre": "house",
         "mel_energy_profile": [
-          0.108,
-          0.1213,
-          0.1161,
-          0.138
+          0.0415,
+          0.0933,
+          0.1513,
+          0.1525
         ]
       }
     },
@@ -5851,7 +6559,7 @@
       ],
       "attributes": {
         "artist": "Trance Collective 11",
-        "duration_seconds": 306.8,
+        "duration_seconds": 348.5,
         "audio_format": "mp3",
         "provider": "jamendo",
         "license": "Creative Commons",
@@ -5875,7 +6583,7 @@
       ],
       "attributes": {
         "artist": "Trance Collective 12",
-        "duration_seconds": 307.7,
+        "duration_seconds": 289.2,
         "audio_format": "mp3",
         "provider": "archive",
         "license": "Creative Commons",
@@ -5891,73 +6599,73 @@
     },
     {
       "id": "trk_freesound_tra_freesoun",
-      "name": "Trance Sonic Study No. 8",
+      "name": "Trance Sonic Study No. 13",
       "entity_type": "track",
       "country": null,
       "genres": [
         "Trance"
       ],
       "attributes": {
-        "artist": "Trance Collective 8",
-        "duration_seconds": 185.0,
+        "artist": "Trance Collective 13",
+        "duration_seconds": 132.0,
         "audio_format": "mp3",
         "provider": "freesound",
         "license": "Creative Commons",
         "detected_bpm": 138.3,
         "classified_subgenre": "trance",
         "mel_energy_profile": [
-          0.0537,
-          0.0,
-          0.0894,
-          0.2503
+          0.1095,
+          0.0428,
+          0.1833,
+          0.1857
         ]
       }
     },
     {
       "id": "trk_musopen_tra_musopen_",
-      "name": "Trance Sonic Study No. 9",
+      "name": "Trance Sonic Study No. 14",
       "entity_type": "track",
       "country": null,
       "genres": [
         "Trance"
       ],
       "attributes": {
-        "artist": "Trance Collective 9",
-        "duration_seconds": 170.3,
+        "artist": "Trance Collective 14",
+        "duration_seconds": 160.5,
         "audio_format": "mp3",
         "provider": "musopen",
         "license": "Creative Commons",
-        "detected_bpm": 139.5,
+        "detected_bpm": 138.0,
         "classified_subgenre": "trance",
         "mel_energy_profile": [
           0.0,
-          0.0,
-          0.0708,
-          0.2515
+          0.148,
+          0.1967,
+          0.2306
         ]
       }
     },
     {
       "id": "trk_wikimedia_tra_wikimedi",
-      "name": "Trance Sonic Study No. 10",
+      "name": "Trance Sonic Study No. 15",
       "entity_type": "track",
       "country": null,
       "genres": [
         "Trance"
       ],
       "attributes": {
-        "artist": "Trance Collective 10",
-        "duration_seconds": 353.7,
+        "artist": "Trance Collective 15",
+        "duration_seconds": 328.7,
         "audio_format": "mp3",
         "provider": "wikimedia",
         "license": "Creative Commons",
-        "detected_bpm": 136.2,
+        "detected_bpm": 139.6,
         "classified_subgenre": "trance",
         "mel_energy_profile": [
-          0.0073,
-          0.0477,
-          0.1888,
-          0.1957
+          0.003,
+          0.1035,
+          0.1687,
+          0.1844
         ]
       }
     },
@@ -5971,7 +6679,7 @@
       ],
       "attributes": {
         "artist": "Drum And Bass Collective 11",
-        "duration_seconds": 331.9,
+        "duration_seconds": 246.8,
         "audio_format": "mp3",
         "provider": "jamendo",
         "license": "Creative Commons",
@@ -5995,7 +6703,7 @@
       ],
       "attributes": {
         "artist": "Drum And Bass Collective 12",
-        "duration_seconds": 191.6,
+        "duration_seconds": 328.6,
         "audio_format": "mp3",
         "provider": "archive",
         "license": "Creative Commons",
@@ -6011,73 +6719,73 @@
     },
     {
       "id": "trk_freesound_dru_freesoun",
-      "name": "Drum And Bass Sonic Study No. 8",
+      "name": "Drum And Bass Sonic Study No. 13",
       "entity_type": "track",
       "country": null,
       "genres": [
         "Drum And Bass"
       ],
       "attributes": {
-        "artist": "Drum And Bass Collective 8",
-        "duration_seconds": 197.2,
+        "artist": "Drum And Bass Collective 13",
+        "duration_seconds": 296.6,
         "audio_format": "mp3",
         "provider": "freesound",
         "license": "Creative Commons",
         "detected_bpm": 172.2,
         "classified_subgenre": "drum_and_bass",
         "mel_energy_profile": [
-          0.1068,
-          0.038,
-          0.1432,
-          0.2572
+          0.1108,
+          0.0171,
+          0.0859,
+          0.2666
         ]
       }
     },
     {
       "id": "trk_musopen_dru_musopen_",
-      "name": "Drum And Bass Sonic Study No. 9",
+      "name": "Drum And Bass Sonic Study No. 14",
       "entity_type": "track",
       "country": null,
       "genres": [
         "Drum And Bass"
       ],
       "attributes": {
-        "artist": "Drum And Bass Collective 9",
-        "duration_seconds": 336.4,
+        "artist": "Drum And Bass Collective 14",
+        "duration_seconds": 159.7,
         "audio_format": "mp3",
         "provider": "musopen",
         "license": "Creative Commons",
         "detected_bpm": 173.5,
         "classified_subgenre": "drum_and_bass",
         "mel_energy_profile": [
-          0.0477,
-          0.0947,
-          0.1117,
-          0.3298
+          0.0678,
+          0.1025,
+          0.1479,
+          0.2783
         ]
       }
     },
     {
       "id": "trk_wikimedia_dru_wikimedi",
-      "name": "Drum And Bass Sonic Study No. 10",
+      "name": "Drum And Bass Sonic Study No. 15",
       "entity_type": "track",
       "country": null,
       "genres": [
         "Drum And Bass"
       ],
       "attributes": {
-        "artist": "Drum And Bass Collective 10",
-        "duration_seconds": 261.7,
+        "artist": "Drum And Bass Collective 15",
+        "duration_seconds": 238.1,
         "audio_format": "mp3",
         "provider": "wikimedia",
         "license": "Creative Commons",
-        "detected_bpm": 175.8,
+        "detected_bpm": 174.0,
         "classified_subgenre": "drum_and_bass",
         "mel_energy_profile": [
-          0.0153,
-          0.0034,
-          0.1481,
-          0.2536
+          0.0,
+          0.0,
+          0.1588,
+          0.2659
         ]
       }
     },
@@ -6091,7 +6799,7 @@
       ],
       "attributes": {
         "artist": "Dubstep Collective 11",
-        "duration_seconds": 345.2,
+        "duration_seconds": 213.2,
         "audio_format": "mp3",
         "provider": "jamendo",
         "license": "Creative Commons",
@@ -6115,7 +6823,7 @@
       ],
       "attributes": {
         "artist": "Dubstep Collective 12",
-        "duration_seconds": 341.8,
+        "duration_seconds": 127.1,
         "audio_format": "mp3",
         "provider": "archive",
         "license": "Creative Commons",
@@ -6131,73 +6839,73 @@
     },
     {
       "id": "trk_freesound_dub_freesoun",
-      "name": "Dubstep Sonic Study No. 8",
+      "name": "Dubstep Sonic Study No. 13",
       "entity_type": "track",
       "country": null,
       "genres": [
         "Dubstep"
       ],
       "attributes": {
-        "artist": "Dubstep Collective 8",
-        "duration_seconds": 333.7,
+        "artist": "Dubstep Collective 13",
+        "duration_seconds": 334.2,
         "audio_format": "mp3",
         "provider": "freesound",
         "license": "Creative Commons",
-        "detected_bpm": 141.4,
+        "detected_bpm": 142.5,
         "classified_subgenre": "dubstep",
         "mel_energy_profile": [
-          0.0045,
-          0.0647,
-          0.0602,
-          0.1908
+          0.0118,
+          0.0844,
+          0.1263,
+          0.2037
         ]
       }
     },
     {
       "id": "trk_musopen_dub_musopen_",
-      "name": "Dubstep Sonic Study No. 9",
+      "name": "Dubstep Sonic Study No. 14",
       "entity_type": "track",
       "country": null,
       "genres": [
         "Dubstep"
       ],
       "attributes": {
-        "artist": "Dubstep Collective 9",
-        "duration_seconds": 142.2,
+        "artist": "Dubstep Collective 14",
+        "duration_seconds": 290.2,
         "audio_format": "mp3",
         "provider": "musopen",
         "license": "Creative Commons",
-        "detected_bpm": 142.3,
+        "detected_bpm": 140.8,
         "classified_subgenre": "dubstep",
         "mel_energy_profile": [
-          0.0,
-          0.0886,
-          0.0952,
-          0.2299
+          0.1276,
+          0.0742,
+          0.1013,
+          0.2265
         ]
       }
     },
     {
       "id": "trk_wikimedia_dub_wikimedi",
-      "name": "Dubstep Sonic Study No. 10",
+      "name": "Dubstep Sonic Study No. 15",
       "entity_type": "track",
       "country": null,
       "genres": [
         "Dubstep"
       ],
       "attributes": {
-        "artist": "Dubstep Collective 10",
-        "duration_seconds": 130.5,
+        "artist": "Dubstep Collective 15",
+        "duration_seconds": 158.8,
         "audio_format": "mp3",
         "provider": "wikimedia",
         "license": "Creative Commons",
-        "detected_bpm": 141.2,
+        "detected_bpm": 143.1,
         "classified_subgenre": "dubstep",
         "mel_energy_profile": [
-          0.0414,
           0.0,
-          0.0334,
-          0.3038
+          0.0428,
+          0.1485,
+          0.1434
         ]
       }
     },
@@ -6211,7 +6919,7 @@
       ],
       "attributes": {
         "artist": "Ambient Collective 11",
-        "duration_seconds": 186.6,
+        "duration_seconds": 237.0,
         "audio_format": "mp3",
         "provider": "jamendo",
         "license": "Creative Commons",
@@ -6235,7 +6943,7 @@
       ],
       "attributes": {
         "artist": "Ambient Collective 12",
-        "duration_seconds": 321.1,
+        "duration_seconds": 324.2,
         "audio_format": "mp3",
         "provider": "archive",
         "license": "Creative Commons",
@@ -6251,73 +6959,73 @@
     },
     {
       "id": "trk_freesound_amb_freesoun",
-      "name": "Ambient Sonic Study No. 8",
+      "name": "Ambient Sonic Study No. 13",
       "entity_type": "track",
       "country": null,
       "genres": [
         "Ambient"
       ],
       "attributes": {
-        "artist": "Ambient Collective 8",
-        "duration_seconds": 323.9,
+        "artist": "Ambient Collective 13",
+        "duration_seconds": 228.4,
         "audio_format": "mp3",
         "provider": "freesound",
         "license": "Creative Commons",
-        "detected_bpm": 74.8,
+        "detected_bpm": 73.3,
         "classified_subgenre": "ambient",
         "mel_energy_profile": [
-          0.0158,
-          0.1616,
-          0.11,
-          0.1817
+          0.0234,
+          0.0,
+          0.0932,
+          0.2866
         ]
       }
     },
     {
       "id": "trk_musopen_amb_musopen_",
-      "name": "Ambient Sonic Study No. 9",
+      "name": "Ambient Sonic Study No. 14",
       "entity_type": "track",
       "country": null,
       "genres": [
         "Ambient"
       ],
       "attributes": {
-        "artist": "Ambient Collective 9",
-        "duration_seconds": 349.1,
+        "artist": "Ambient Collective 14",
+        "duration_seconds": 337.2,
         "audio_format": "mp3",
         "provider": "musopen",
         "license": "Creative Commons",
-        "detected_bpm": 74.2,
+        "detected_bpm": 76.3,
         "classified_subgenre": "ambient",
         "mel_energy_profile": [
-          0.0772,
-          0.1072,
-          0.081,
-          0.3327
+          0.0796,
+          0.0974,
+          0.0318,
+          0.3269
         ]
       }
     },
     {
       "id": "trk_wikimedia_amb_wikimedi",
-      "name": "Ambient Sonic Study No. 10",
+      "name": "Ambient Sonic Study No. 15",
       "entity_type": "track",
       "country": null,
       "genres": [
         "Ambient"
       ],
       "attributes": {
-        "artist": "Ambient Collective 10",
-        "duration_seconds": 356.1,
+        "artist": "Ambient Collective 15",
+        "duration_seconds": 144.2,
         "audio_format": "mp3",
         "provider": "wikimedia",
         "license": "Creative Commons",
-        "detected_bpm": 76.8,
+        "detected_bpm": 76.1,
         "classified_subgenre": "ambient",
         "mel_energy_profile": [
-          0.0354,
-          0.04,
-          0.1325,
-          0.3082
+          0.121,
+          0.0142,
+          0.0668,
+          0.1847
         ]
       }
     },
@@ -6331,7 +7039,7 @@
       ],
       "attributes": {
         "artist": "Classical Collective 11",
-        "duration_seconds": 298.0,
+        "duration_seconds": 160.4,
         "audio_format": "mp3",
         "provider": "jamendo",
         "license": "Creative Commons",
@@ -6355,7 +7063,7 @@
       ],
       "attributes": {
         "artist": "Classical Collective 12",
-        "duration_seconds": 174.8,
+        "duration_seconds": 252.4,
         "audio_format": "mp3",
         "provider": "archive",
         "license": "Creative Commons",
@@ -6371,73 +7079,73 @@
     },
     {
       "id": "trk_freesound_cla_freesoun",
-      "name": "Classical Sonic Study No. 8",
+      "name": "Classical Sonic Study No. 13",
       "entity_type": "track",
       "country": null,
       "genres": [
         "Classical"
       ],
       "attributes": {
-        "artist": "Classical Collective 8",
-        "duration_seconds": 134.4,
+        "artist": "Classical Collective 13",
+        "duration_seconds": 329.4,
         "audio_format": "mp3",
         "provider": "freesound",
         "license": "Creative Commons",
-        "detected_bpm": 85.1,
+        "detected_bpm": 84.0,
         "classified_subgenre": "classical",
         "mel_energy_profile": [
-          0.0,
-          0.0658,
-          0.1176,
-          0.1671
+          0.1199,
+          0.1297,
+          0.1336,
+          0.2498
         ]
       }
     },
     {
       "id": "trk_musopen_cla_musopen_",
-      "name": "Classical Sonic Study No. 9",
+      "name": "Classical Sonic Study No. 14",
       "entity_type": "track",
       "country": null,
       "genres": [
         "Classical"
       ],
       "attributes": {
-        "artist": "Classical Collective 9",
-        "duration_seconds": 198.7,
+        "artist": "Classical Collective 14",
+        "duration_seconds": 329.7,
         "audio_format": "mp3",
         "provider": "musopen",
         "license": "Creative Commons",
-        "detected_bpm": 85.7,
+        "detected_bpm": 85.2,
         "classified_subgenre": "classical",
         "mel_energy_profile": [
-          0.0,
-          0.0334,
-          0.179,
-          0.1404
+          0.0402,
+          0.1042,
+          0.146,
+          0.2262
         ]
       }
     },
     {
       "id": "trk_wikimedia_cla_wikimedi",
-      "name": "Classical Sonic Study No. 10",
+      "name": "Classical Sonic Study No. 15",
       "entity_type": "track",
       "country": null,
       "genres": [
         "Classical"
       ],
       "attributes": {
-        "artist": "Classical Collective 10",
-        "duration_seconds": 358.2,
+        "artist": "Classical Collective 15",
+        "duration_seconds": 175.3,
         "audio_format": "mp3",
         "provider": "wikimedia",
         "license": "Creative Commons",
-        "detected_bpm": 84.6,
+        "detected_bpm": 85.1,
         "classified_subgenre": "classical",
         "mel_energy_profile": [
-          0.0766,
-          0.0619,
-          0.0475,
-          0.2789
+          0.0,
+          0.0,
+          0.1516,
+          0.2713
         ]
       }
     },
@@ -6451,7 +7159,7 @@
       ],
       "attributes": {
         "artist": "Hip-Hop Collective 11",
-        "duration_seconds": 345.5,
+        "duration_seconds": 240.4,
         "audio_format": "mp3",
         "provider": "jamendo",
         "license": "Creative Commons",
@@ -6475,7 +7183,7 @@
       ],
       "attributes": {
         "artist": "Hip-Hop Collective 12",
-        "duration_seconds": 310.8,
+        "duration_seconds": 264.4,
         "audio_format": "mp3",
         "provider": "archive",
         "license": "Creative Commons",
@@ -6491,73 +7199,73 @@
     },
     {
       "id": "trk_freesound_hip_freesoun",
-      "name": "Hip-Hop Sonic Study No. 8",
+      "name": "Hip-Hop Sonic Study No. 13",
       "entity_type": "track",
       "country": null,
       "genres": [
         "Hip-Hop"
       ],
       "attributes": {
-        "artist": "Hip-Hop Collective 8",
-        "duration_seconds": 259.5,
+        "artist": "Hip-Hop Collective 13",
+        "duration_seconds": 310.4,
         "audio_format": "mp3",
         "provider": "freesound",
         "license": "Creative Commons",
-        "detected_bpm": 91.9,
+        "detected_bpm": 91.6,
         "classified_subgenre": "hip-hop",
         "mel_energy_profile": [
-          0.0,
-          0.0118,
-          0.0389,
-          0.1648
+          0.1054,
+          0.083,
+          0.1418,
+          0.1716
         ]
       }
     },
     {
       "id": "trk_musopen_hip_musopen_",
-      "name": "Hip-Hop Sonic Study No. 9",
+      "name": "Hip-Hop Sonic Study No. 14",
       "entity_type": "track",
       "country": null,
       "genres": [
         "Hip-Hop"
       ],
       "attributes": {
-        "artist": "Hip-Hop Collective 9",
-        "duration_seconds": 278.8,
+        "artist": "Hip-Hop Collective 14",
+        "duration_seconds": 207.2,
         "audio_format": "mp3",
         "provider": "musopen",
         "license": "Creative Commons",
-        "detected_bpm": 93.3,
+        "detected_bpm": 92.2,
         "classified_subgenre": "hip-hop",
         "mel_energy_profile": [
-          0.0,
-          0.0606,
-          0.1447,
-          0.2033
+          0.1157,
+          0.0962,
+          0.2219,
+          0.3258
         ]
       }
     },
     {
       "id": "trk_wikimedia_hip_wikimedi",
-      "name": "Hip-Hop Sonic Study No. 10",
+      "name": "Hip-Hop Sonic Study No. 15",
       "entity_type": "track",
       "country": null,
       "genres": [
         "Hip-Hop"
       ],
       "attributes": {
-        "artist": "Hip-Hop Collective 10",
-        "duration_seconds": 283.4,
+        "artist": "Hip-Hop Collective 15",
+        "duration_seconds": 214.3,
         "audio_format": "mp3",
         "provider": "wikimedia",
         "license": "Creative Commons",
-        "detected_bpm": 91.3,
+        "detected_bpm": 93.0,
         "classified_subgenre": "hip-hop",
         "mel_energy_profile": [
           0.0,
-          0.0925,
-          0.0842,
-          0.2155
+          0.0578,
+          0.132,
+          0.1683
         ]
       }
     },
@@ -6571,7 +7279,7 @@
       ],
       "attributes": {
         "artist": "Electro Collective 11",
-        "duration_seconds": 348.5,
+        "duration_seconds": 255.0,
         "audio_format": "mp3",
         "provider": "jamendo",
         "license": "Creative Commons",
@@ -6595,7 +7303,7 @@
       ],
       "attributes": {
         "artist": "Electro Collective 12",
-        "duration_seconds": 260.0,
+        "duration_seconds": 257.0,
         "audio_format": "mp3",
         "provider": "archive",
         "license": "Creative Commons",
@@ -6611,73 +7319,73 @@
     },
     {
       "id": "trk_freesound_ele_freesoun",
-      "name": "Electro Sonic Study No. 8",
+      "name": "Electro Sonic Study No. 13",
       "entity_type": "track",
       "country": null,
       "genres": [
         "Electro"
       ],
       "attributes": {
-        "artist": "Electro Collective 8",
-        "duration_seconds": 142.8,
+        "artist": "Electro Collective 13",
+        "duration_seconds": 225.1,
         "audio_format": "mp3",
         "provider": "freesound",
         "license": "Creative Commons",
-        "detected_bpm": 126.7,
+        "detected_bpm": 129.9,
         "classified_subgenre": "electro",
         "mel_energy_profile": [
-          0.0,
-          0.0648,
-          0.1438,
-          0.2724
+          0.1178,
+          0.015,
+          0.0274,
+          0.1667
         ]
       }
     },
     {
       "id": "trk_musopen_ele_musopen_",
-      "name": "Electro Sonic Study No. 9",
+      "name": "Electro Sonic Study No. 14",
       "entity_type": "track",
       "country": null,
       "genres": [
         "Electro"
       ],
       "attributes": {
-        "artist": "Electro Collective 9",
-        "duration_seconds": 237.6,
+        "artist": "Electro Collective 14",
+        "duration_seconds": 250.3,
         "audio_format": "mp3",
         "provider": "musopen",
         "license": "Creative Commons",
-        "detected_bpm": 129.6,
+        "detected_bpm": 129.2,
         "classified_subgenre": "electro",
         "mel_energy_profile": [
-          0.0105,
-          0.057,
-          0.1408,
-          0.2246
+          0.0,
+          0.1063,
+          0.1942,
+          0.2498
         ]
       }
     },
     {
       "id": "trk_wikimedia_ele_wikimedi",
-      "name": "Electro Sonic Study No. 10",
+      "name": "Electro Sonic Study No. 15",
       "entity_type": "track",
       "country": null,
       "genres": [
         "Electro"
       ],
       "attributes": {
-        "artist": "Electro Collective 10",
-        "duration_seconds": 319.0,
+        "artist": "Electro Collective 15",
+        "duration_seconds": 221.8,
         "audio_format": "mp3",
         "provider": "wikimedia",
         "license": "Creative Commons",
-        "detected_bpm": 127.3,
+        "detected_bpm": 128.7,
         "classified_subgenre": "electro",
         "mel_energy_profile": [
-          0.0409,
-          0.0076,
-          0.1909,
-          0.2486
+          0.0,
+          0.0606,
+          0.1996,
+          0.3016
         ]
       }
     },
@@ -6691,7 +7399,7 @@
       ],
       "attributes": {
         "artist": "Disco Collective 11",
-        "duration_seconds": 122.7,
+        "duration_seconds": 309.4,
         "audio_format": "mp3",
         "provider": "jamendo",
         "license": "Creative Commons",
@@ -6715,7 +7423,7 @@
       ],
       "attributes": {
         "artist": "Disco Collective 12",
-        "duration_seconds": 270.9,
+        "duration_seconds": 277.0,
         "audio_format": "mp3",
         "provider": "archive",
         "license": "Creative Commons",
@@ -6731,73 +7439,73 @@
     },
     {
       "id": "trk_freesound_dis_freesoun",
-      "name": "Disco Sonic Study No. 8",
+      "name": "Disco Sonic Study No. 13",
       "entity_type": "track",
       "country": null,
       "genres": [
         "Disco"
       ],
       "attributes": {
-        "artist": "Disco Collective 8",
-        "duration_seconds": 339.5,
+        "artist": "Disco Collective 13",
+        "duration_seconds": 240.8,
         "audio_format": "mp3",
         "provider": "freesound",
         "license": "Creative Commons",
-        "detected_bpm": 120.3,
+        "detected_bpm": 120.7,
         "classified_subgenre": "disco",
         "mel_energy_profile": [
-          0.0,
-          0.1278,
-          0.1799,
-          0.2544
+          0.0754,
+          0.091,
+          0.2068,
+          0.1553
         ]
       }
     },
     {
       "id": "trk_musopen_dis_musopen_",
-      "name": "Disco Sonic Study No. 9",
+      "name": "Disco Sonic Study No. 14",
       "entity_type": "track",
       "country": null,
       "genres": [
         "Disco"
       ],
       "attributes": {
-        "artist": "Disco Collective 9",
-        "duration_seconds": 252.8,
+        "artist": "Disco Collective 14",
+        "duration_seconds": 357.2,
         "audio_format": "mp3",
         "provider": "musopen",
         "license": "Creative Commons",
-        "detected_bpm": 120.0,
+        "detected_bpm": 118.7,
         "classified_subgenre": "disco",
         "mel_energy_profile": [
-          0.0546,
-          0.0,
-          0.0524,
-          0.1691
+          0.03,
+          0.1497,
+          0.1059,
+          0.2199
         ]
       }
     },
     {
       "id": "trk_wikimedia_dis_wikimedi",
-      "name": "Disco Sonic Study No. 10",
+      "name": "Disco Sonic Study No. 15",
       "entity_type": "track",
       "country": null,
       "genres": [
         "Disco"
       ],
       "attributes": {
-        "artist": "Disco Collective 10",
-        "duration_seconds": 215.4,
+        "artist": "Disco Collective 15",
+        "duration_seconds": 311.1,
         "audio_format": "mp3",
         "provider": "wikimedia",
         "license": "Creative Commons",
         "detected_bpm": 118.6,
         "classified_subgenre": "disco",
         "mel_energy_profile": [
-          0.0258,
-          0.0,
-          0.1403,
-          0.234
+          0.0538,
+          0.111,
+          0.0944,
+          0.2924
         ]
       }
     },
@@ -7424,6 +8132,20 @@
       "is_city_anchor": true
     },
     {
+      "source": "lbl_spinnin",
+      "target": "city_amsterdam",
+      "rel_type": "HEADQUARTERED_IN",
+      "weight": 1.0,
+      "is_city_anchor": true
+    },
+    {
+      "source": "lbl_armada",
+      "target": "city_amsterdam",
+      "rel_type": "HEADQUARTERED_IN",
+      "weight": 1.0,
+      "is_city_anchor": true
+    },
+    {
       "source": "lbl_edbanger",
       "target": "city_paris",
       "rel_type": "HEADQUARTERED_IN",
@@ -7494,6 +8216,13 @@
       "is_city_anchor": true
     },
     {
+      "source": "lbl_tseries",
+      "target": "city_mumbai",
+      "rel_type": "HEADQUARTERED_IN",
+      "weight": 1.0,
+      "is_city_anchor": true
+    },
+    {
       "source": "lbl_tuffgong_lbl",
       "target": "city_kingston",
       "rel_type": "HEADQUARTERED_IN",
@@ -7531,6 +8260,20 @@
     {
       "source": "lbl_ybnl",
       "target": "city_lagos",
+      "rel_type": "HEADQUARTERED_IN",
+      "weight": 1.0,
+      "is_city_anchor": true
+    },
+    {
+      "source": "lbl_soulistic",
+      "target": "city_joburg",
+      "rel_type": "HEADQUARTERED_IN",
+      "weight": 1.0,
+      "is_city_anchor": true
+    },
+    {
+      "source": "lbl_futureclassic",
+      "target": "city_sydney",
       "rel_type": "HEADQUARTERED_IN",
       "weight": 1.0,
       "is_city_anchor": true
@@ -11503,6 +12246,13 @@
     },
     {
       "source": "art_tiesto",
+      "target": "city_amsterdam",
+      "rel_type": "BASED_IN_CITY",
+      "weight": 1.0,
+      "is_city_anchor": true
+    },
+    {
+      "source": "art_tiesto",
       "target": "genre_trance",
       "rel_type": "CLASSIFIED_AS_GENRE",
       "weight": 0.997,
@@ -11565,6 +12315,13 @@
     },
     {
       "source": "art_armin",
+      "target": "city_amsterdam",
+      "rel_type": "BASED_IN_CITY",
+      "weight": 1.0,
+      "is_city_anchor": true
+    },
+    {
+      "source": "art_armin",
       "target": "genre_trance",
       "rel_type": "CLASSIFIED_AS_GENRE",
       "weight": 0.9983,
@@ -11624,6 +12381,13 @@
       "weight": 0.9,
       "is_current": true,
       "metadata": {}
+    },
+    {
+      "source": "art_martingarrix",
+      "target": "city_amsterdam",
+      "rel_type": "BASED_IN_CITY",
+      "weight": 1.0,
+      "is_city_anchor": true
     },
     {
       "source": "art_martingarrix",
@@ -14376,6 +15140,13 @@
     },
     {
       "source": "art_blackcoffee",
+      "target": "city_joburg",
+      "rel_type": "BASED_IN_CITY",
+      "weight": 1.0,
+      "is_city_anchor": true
+    },
+    {
+      "source": "art_blackcoffee",
       "target": "genre_house",
       "rel_type": "CLASSIFIED_AS_GENRE",
       "weight": 0.997,
@@ -14616,6 +15387,13 @@
     },
     {
       "source": "art_anitta",
+      "target": "city_riodejaneiro",
+      "rel_type": "BASED_IN_CITY",
+      "weight": 1.0,
+      "is_city_anchor": true
+    },
+    {
+      "source": "art_anitta",
       "target": "genre_electro_pop",
       "rel_type": "CLASSIFIED_AS_GENRE",
       "weight": 0.9997,
@@ -14675,6 +15453,13 @@
       "weight": 0.9,
       "is_current": true,
       "metadata": {}
+    },
+    {
+      "source": "art_alok",
+      "target": "city_saopaulo",
+      "rel_type": "BASED_IN_CITY",
+      "weight": 1.0,
+      "is_city_anchor": true
     },
     {
       "source": "art_alok",
@@ -14870,6 +15655,13 @@
     },
     {
       "source": "art_rosalia",
+      "target": "city_barcelona",
+      "rel_type": "BASED_IN_CITY",
+      "weight": 1.0,
+      "is_city_anchor": true
+    },
+    {
+      "source": "art_rosalia",
       "target": "genre_electro_pop",
       "rel_type": "CLASSIFIED_AS_GENRE",
       "weight": 0.9995,
@@ -14939,6 +15731,13 @@
       "weight": 0.95,
       "is_current": true,
       "metadata": {}
+    },
+    {
+      "source": "art_jbalvin",
+      "target": "city_medellin",
+      "rel_type": "BASED_IN_CITY",
+      "weight": 1.0,
+      "is_city_anchor": true
     },
     {
       "source": "art_jbalvin",
@@ -15026,6 +15825,13 @@
     },
     {
       "source": "art_karolg",
+      "target": "city_medellin",
+      "rel_type": "BASED_IN_CITY",
+      "weight": 1.0,
+      "is_city_anchor": true
+    },
+    {
+      "source": "art_karolg",
       "target": "genre_techno",
       "rel_type": "CLASSIFIED_AS_GENRE",
       "weight": 0.9975,
@@ -15097,6 +15903,13 @@
       "metadata": {
         "collab_type": "international_release"
       }
+    },
+    {
+      "source": "art_pesopluma",
+      "target": "city_cdmx",
+      "rel_type": "BASED_IN_CITY",
+      "weight": 1.0,
+      "is_city_anchor": true
     },
     {
       "source": "art_pesopluma",
@@ -15196,6 +16009,13 @@
     },
     {
       "source": "art_tameimpala",
+      "target": "city_melbourne",
+      "rel_type": "BASED_IN_CITY",
+      "weight": 1.0,
+      "is_city_anchor": true
+    },
+    {
+      "source": "art_tameimpala",
       "target": "genre_electro_pop",
       "rel_type": "CLASSIFIED_AS_GENRE",
       "weight": 0.9996,
@@ -15255,6 +16075,13 @@
       "weight": 0.9,
       "is_current": true,
       "metadata": {}
+    },
+    {
+      "source": "art_flume",
+      "target": "city_sydney",
+      "rel_type": "BASED_IN_CITY",
+      "weight": 1.0,
+      "is_city_anchor": true
     },
     {
       "source": "art_flume",
@@ -16427,14 +17254,6 @@
       "is_city_corridor": true
     },
     {
-      "source": "city_berlin",
-      "target": "city_cologne",
-      "rel_type": "COLLABORATED_WITH",
-      "corridor_name": "German Electronic & Showcase Exchange",
-      "weight": 0.91,
-      "is_city_corridor": true
-    },
-    {
       "source": "distr_fhain_xberg",
       "target": "city_berlin",
       "rel_type": "PARENT_COMPANY_OF",
@@ -16493,6 +17312,14 @@
       "metadata": {
         "hierarchy": "city_to_state"
       }
+    },
+    {
+      "source": "city_cologne",
+      "target": "city_berlin",
+      "rel_type": "COLLABORATED_WITH",
+      "corridor_name": "Kompakt-Ostgut German Minimal Techno Line",
+      "weight": 0.93,
+      "is_city_corridor": true
     },
     {
       "source": "distr_belgisches",
@@ -17003,14 +17830,6 @@
       }
     },
     {
-      "source": "city_atlanta",
-      "target": "city_la",
-      "rel_type": "COLLABORATED_WITH",
-      "corridor_name": "Trap & Hip-Hop Commercial Pipeline",
-      "weight": 0.95,
-      "is_city_corridor": true
-    },
-    {
       "source": "distr_buckhead_atl",
       "target": "city_atlanta",
       "rel_type": "PARENT_COMPANY_OF",
@@ -17158,8 +17977,8 @@
       "source": "city_paris",
       "target": "city_london",
       "rel_type": "COLLABORATED_WITH",
-      "corridor_name": "French Touch & UK Club Exchange",
-      "weight": 0.92,
+      "corridor_name": "French Touch & Electronic Trade Channel",
+      "weight": 0.94,
       "is_city_corridor": true
     },
     {
@@ -17338,8 +18157,8 @@
       "source": "city_seoul",
       "target": "city_la",
       "rel_type": "COLLABORATED_WITH",
-      "corridor_name": "K-Pop Global Hollywood & Billboard Gateway",
-      "weight": 0.94,
+      "corridor_name": "K-Pop & American Visual Media Super-Corridor",
+      "weight": 0.95,
       "is_city_corridor": true
     },
     {
@@ -17406,8 +18225,8 @@
       "source": "city_lagos",
       "target": "city_london",
       "rel_type": "COLLABORATED_WITH",
-      "corridor_name": "Afrobeats UK Crossover & Diaspora Highway",
-      "weight": 0.95,
+      "corridor_name": "Afrobeats Global Mainstream Pipeline",
+      "weight": 0.98,
       "is_city_corridor": true
     },
     {
@@ -17489,6 +18308,654 @@
     {
       "source": "distr_waterhouse",
       "target": "city_kingston",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "district_to_city"
+      }
+    },
+    {
+      "source": "state_br_sp",
+      "target": "geo_br",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "state_to_country"
+      }
+    },
+    {
+      "source": "city_saopaulo",
+      "target": "state_br_sp",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "city_to_state"
+      }
+    },
+    {
+      "source": "distr_barrafunda_sp",
+      "target": "city_saopaulo",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "district_to_city"
+      }
+    },
+    {
+      "source": "distr_vilamada_sp",
+      "target": "city_saopaulo",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "district_to_city"
+      }
+    },
+    {
+      "source": "state_br_rj",
+      "target": "geo_br",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "state_to_country"
+      }
+    },
+    {
+      "source": "city_riodejaneiro",
+      "target": "state_br_rj",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "city_to_state"
+      }
+    },
+    {
+      "source": "distr_lapa_rj",
+      "target": "city_riodejaneiro",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "district_to_city"
+      }
+    },
+    {
+      "source": "distr_favela_rj",
+      "target": "city_riodejaneiro",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "district_to_city"
+      }
+    },
+    {
+      "source": "state_br_sc",
+      "target": "geo_br",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "state_to_country"
+      }
+    },
+    {
+      "source": "city_itajai",
+      "target": "state_br_sc",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "city_to_state"
+      }
+    },
+    {
+      "source": "distr_praiabrava",
+      "target": "city_itajai",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "district_to_city"
+      }
+    },
+    {
+      "source": "state_co_ant",
+      "target": "geo_co",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "state_to_country"
+      }
+    },
+    {
+      "source": "city_medellin",
+      "target": "state_co_ant",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "city_to_state"
+      }
+    },
+    {
+      "source": "distr_elpoblado",
+      "target": "city_medellin",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "district_to_city"
+      }
+    },
+    {
+      "source": "distr_laureles",
+      "target": "city_medellin",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "district_to_city"
+      }
+    },
+    {
+      "source": "state_co_cund",
+      "target": "geo_co",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "state_to_country"
+      }
+    },
+    {
+      "source": "city_bogota",
+      "target": "state_co_cund",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "city_to_state"
+      }
+    },
+    {
+      "source": "distr_chapinero",
+      "target": "city_bogota",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "district_to_city"
+      }
+    },
+    {
+      "source": "state_mx_cdmx",
+      "target": "geo_mx",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "state_to_country"
+      }
+    },
+    {
+      "source": "city_cdmx",
+      "target": "state_mx_cdmx",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "city_to_state"
+      }
+    },
+    {
+      "source": "distr_romacondesa",
+      "target": "city_cdmx",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "district_to_city"
+      }
+    },
+    {
+      "source": "distr_cdmx_centro",
+      "target": "city_cdmx",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "district_to_city"
+      }
+    },
+    {
+      "source": "state_es_cat",
+      "target": "geo_es",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "state_to_country"
+      }
+    },
+    {
+      "source": "city_barcelona",
+      "target": "state_es_cat",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "city_to_state"
+      }
+    },
+    {
+      "source": "distr_poblenou_bcn",
+      "target": "city_barcelona",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "district_to_city"
+      }
+    },
+    {
+      "source": "distr_raval_bcn",
+      "target": "city_barcelona",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "district_to_city"
+      }
+    },
+    {
+      "source": "state_es_ibz",
+      "target": "geo_es",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "state_to_country"
+      }
+    },
+    {
+      "source": "city_ibiza",
+      "target": "state_es_ibz",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "city_to_state"
+      }
+    },
+    {
+      "source": "distr_playadenbossa",
+      "target": "city_ibiza",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "district_to_city"
+      }
+    },
+    {
+      "source": "distr_sanantonio",
+      "target": "city_ibiza",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "district_to_city"
+      }
+    },
+    {
+      "source": "state_nl_nh",
+      "target": "geo_nl",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "state_to_country"
+      }
+    },
+    {
+      "source": "city_amsterdam",
+      "target": "state_nl_nh",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "city_to_state"
+      }
+    },
+    {
+      "source": "distr_ndsm_ams",
+      "target": "city_amsterdam",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "district_to_city"
+      }
+    },
+    {
+      "source": "distr_westerpark_ams",
+      "target": "city_amsterdam",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "district_to_city"
+      }
+    },
+    {
+      "source": "state_au_vic",
+      "target": "geo_au",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "state_to_country"
+      }
+    },
+    {
+      "source": "city_melbourne",
+      "target": "state_au_vic",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "city_to_state"
+      }
+    },
+    {
+      "source": "distr_fitzroy_mel",
+      "target": "city_melbourne",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "district_to_city"
+      }
+    },
+    {
+      "source": "distr_chapelst_mel",
+      "target": "city_melbourne",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "district_to_city"
+      }
+    },
+    {
+      "source": "state_au_nsw",
+      "target": "geo_au",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "state_to_country"
+      }
+    },
+    {
+      "source": "city_sydney",
+      "target": "state_au_nsw",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "city_to_state"
+      }
+    },
+    {
+      "source": "distr_kingscross_syd",
+      "target": "city_sydney",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "district_to_city"
+      }
+    },
+    {
+      "source": "state_za_gp",
+      "target": "geo_za",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "state_to_country"
+      }
+    },
+    {
+      "source": "city_joburg",
+      "target": "state_za_gp",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "city_to_state"
+      }
+    },
+    {
+      "source": "distr_soweto",
+      "target": "city_joburg",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "district_to_city"
+      }
+    },
+    {
+      "source": "distr_braamfontein",
+      "target": "city_joburg",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "district_to_city"
+      }
+    },
+    {
+      "source": "state_in_ga",
+      "target": "geo_in",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "state_to_country"
+      }
+    },
+    {
+      "source": "city_goa",
+      "target": "state_in_ga",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "city_to_state"
+      }
+    },
+    {
+      "source": "distr_hilltop_goa",
+      "target": "city_goa",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "district_to_city"
+      }
+    },
+    {
+      "source": "state_in_mh",
+      "target": "geo_in",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "state_to_country"
+      }
+    },
+    {
+      "source": "city_mumbai",
+      "target": "state_in_mh",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "city_to_state"
+      }
+    },
+    {
+      "source": "distr_bandra_mum",
+      "target": "city_mumbai",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "district_to_city"
+      }
+    },
+    {
+      "source": "state_be_bru",
+      "target": "geo_be",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "state_to_country"
+      }
+    },
+    {
+      "source": "city_brussels",
+      "target": "state_be_bru",
+      "rel_type": "PARENT_COMPANY_OF",
+      "start_year": null,
+      "end_year": null,
+      "weight": 1.0,
+      "is_current": true,
+      "metadata": {
+        "hierarchy": "city_to_state"
+      }
+    },
+    {
+      "source": "distr_marolles_bru",
+      "target": "city_brussels",
       "rel_type": "PARENT_COMPANY_OF",
       "start_year": null,
       "end_year": null,
@@ -18138,1456 +19605,1813 @@
       "source": "trk_jamendo_tec_jamendo_",
       "target": "art_modeselektor",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9414,
+      "weight": 0.9131,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
       "source": "trk_jamendo_tec_jamendo_",
       "target": "art_modeselektor",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.949,
+      "weight": 0.9,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
       "source": "trk_jamendo_tec_jamendo_",
       "target": "art_modeselektor",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8665,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_jamendo_tec_jamendo_",
-      "target": "art_borisbrejcha",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9318,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_jamendo_tec_jamendo_",
-      "target": "art_borisbrejcha",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.89,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_jamendo_tec_jamendo_",
-      "target": "art_borisbrejcha",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9179,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_archive_tec_archive_",
-      "target": "art_modeselektor",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.918,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_archive_tec_archive_",
-      "target": "art_modeselektor",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9328,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_archive_tec_archive_",
-      "target": "art_modeselektor",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8986,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_archive_tec_archive_",
-      "target": "art_borisbrejcha",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8703,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_archive_tec_archive_",
-      "target": "art_borisbrejcha",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8747,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_archive_tec_archive_",
-      "target": "art_borisbrejcha",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9206,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_freesound_tec_freesoun",
-      "target": "art_modeselektor",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9246,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_freesound_tec_freesoun",
-      "target": "art_modeselektor",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9547,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_freesound_tec_freesoun",
-      "target": "art_borisbrejcha",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8626,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_freesound_tec_freesoun",
-      "target": "art_borisbrejcha",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9304,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_musopen_tec_musopen_",
-      "target": "art_modeselektor",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9079,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_musopen_tec_musopen_",
-      "target": "art_modeselektor",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8797,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_musopen_tec_musopen_",
-      "target": "art_borisbrejcha",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9594,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_musopen_tec_musopen_",
-      "target": "art_borisbrejcha",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8779,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_wikimedia_tec_wikimedi",
-      "target": "art_modeselektor",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9284,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_wikimedia_tec_wikimedi",
-      "target": "art_modeselektor",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9165,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_wikimedia_tec_wikimedi",
-      "target": "art_borisbrejcha",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8684,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_wikimedia_tec_wikimedi",
-      "target": "art_borisbrejcha",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.91,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_jamendo_hou_jamendo_",
-      "target": "art_beyonce",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8862,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_jamendo_hou_jamendo_",
-      "target": "art_beyonce",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9291,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_jamendo_hou_jamendo_",
-      "target": "art_beyonce",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9374,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_jamendo_hou_jamendo_",
-      "target": "art_robinschulz",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9485,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_jamendo_hou_jamendo_",
-      "target": "art_robinschulz",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9107,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_jamendo_hou_jamendo_",
-      "target": "art_robinschulz",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8939,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_archive_hou_archive_",
-      "target": "art_beyonce",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9588,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_archive_hou_archive_",
-      "target": "art_beyonce",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9567,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_archive_hou_archive_",
-      "target": "art_beyonce",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9396,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_archive_hou_archive_",
-      "target": "art_robinschulz",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.915,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_archive_hou_archive_",
-      "target": "art_robinschulz",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9527,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_archive_hou_archive_",
-      "target": "art_robinschulz",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9569,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_freesound_hou_freesoun",
-      "target": "art_beyonce",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8853,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_freesound_hou_freesoun",
-      "target": "art_beyonce",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.901,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_freesound_hou_freesoun",
-      "target": "art_robinschulz",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9226,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_freesound_hou_freesoun",
-      "target": "art_robinschulz",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8831,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_musopen_hou_musopen_",
-      "target": "art_beyonce",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.919,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_musopen_hou_musopen_",
-      "target": "art_beyonce",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8902,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_musopen_hou_musopen_",
-      "target": "art_robinschulz",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8694,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_musopen_hou_musopen_",
-      "target": "art_robinschulz",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9558,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_wikimedia_hou_wikimedi",
-      "target": "art_beyonce",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8824,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_wikimedia_hou_wikimedi",
-      "target": "art_beyonce",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8774,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_wikimedia_hou_wikimedi",
-      "target": "art_robinschulz",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9171,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_wikimedia_hou_wikimedi",
-      "target": "art_robinschulz",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.956,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_jamendo_tra_jamendo_",
-      "target": "art_paulvandyk_art",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8693,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_jamendo_tra_jamendo_",
-      "target": "art_paulvandyk_art",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9009,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_jamendo_tra_jamendo_",
-      "target": "art_paulvandyk_art",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.94,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_jamendo_tra_jamendo_",
-      "target": "art_tiesto",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8899,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_jamendo_tra_jamendo_",
-      "target": "art_tiesto",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8727,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_jamendo_tra_jamendo_",
-      "target": "art_tiesto",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9072,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_archive_tra_archive_",
-      "target": "art_paulvandyk_art",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9596,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_archive_tra_archive_",
-      "target": "art_paulvandyk_art",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9258,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_archive_tra_archive_",
-      "target": "art_paulvandyk_art",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9349,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_archive_tra_archive_",
-      "target": "art_tiesto",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8715,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_archive_tra_archive_",
-      "target": "art_tiesto",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9405,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_archive_tra_archive_",
-      "target": "art_tiesto",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9535,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_freesound_tra_freesoun",
-      "target": "art_paulvandyk_art",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.894,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_freesound_tra_freesoun",
-      "target": "art_paulvandyk_art",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8936,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_freesound_tra_freesoun",
-      "target": "art_tiesto",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8948,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_freesound_tra_freesoun",
-      "target": "art_tiesto",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.866,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_musopen_tra_musopen_",
-      "target": "art_paulvandyk_art",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9127,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_musopen_tra_musopen_",
-      "target": "art_paulvandyk_art",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9438,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_musopen_tra_musopen_",
-      "target": "art_tiesto",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9176,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_musopen_tra_musopen_",
-      "target": "art_tiesto",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8803,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_wikimedia_tra_wikimedi",
-      "target": "art_paulvandyk_art",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9575,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_wikimedia_tra_wikimedi",
-      "target": "art_paulvandyk_art",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8682,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_wikimedia_tra_wikimedi",
-      "target": "art_tiesto",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9342,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_wikimedia_tra_wikimedi",
-      "target": "art_tiesto",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9462,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_jamendo_dub_jamendo_",
-      "target": "art_skrillex_art",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8999,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_jamendo_dub_jamendo_",
-      "target": "art_skrillex_art",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9002,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_jamendo_dub_jamendo_",
-      "target": "art_skrillex_art",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9464,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_archive_dub_archive_",
-      "target": "art_skrillex_art",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9367,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_archive_dub_archive_",
-      "target": "art_skrillex_art",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8616,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_archive_dub_archive_",
-      "target": "art_skrillex_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
       "weight": 0.9461,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_freesound_dub_freesoun",
-      "target": "art_skrillex_art",
+      "source": "trk_jamendo_tec_jamendo_",
+      "target": "art_borisbrejcha",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8736,
+      "weight": 0.9073,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_freesound_dub_freesoun",
-      "target": "art_skrillex_art",
+      "source": "trk_jamendo_tec_jamendo_",
+      "target": "art_borisbrejcha",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9339,
+      "weight": 0.8758,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_musopen_dub_musopen_",
-      "target": "art_skrillex_art",
+      "source": "trk_jamendo_tec_jamendo_",
+      "target": "art_borisbrejcha",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8947,
+      "weight": 0.9411,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_musopen_dub_musopen_",
-      "target": "art_skrillex_art",
+      "source": "trk_archive_tec_archive_",
+      "target": "art_modeselektor",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8912,
+      "weight": 0.8892,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_wikimedia_dub_wikimedi",
-      "target": "art_skrillex_art",
+      "source": "trk_archive_tec_archive_",
+      "target": "art_modeselektor",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9593,
+      "weight": 0.9357,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_wikimedia_dub_wikimedi",
-      "target": "art_skrillex_art",
+      "source": "trk_archive_tec_archive_",
+      "target": "art_modeselektor",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9131,
+      "weight": 0.9047,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_jamendo_amb_jamendo_",
-      "target": "art_aphex",
+      "source": "trk_archive_tec_archive_",
+      "target": "art_borisbrejcha",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8826,
+      "weight": 0.9503,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_jamendo_amb_jamendo_",
-      "target": "art_aphex",
+      "source": "trk_archive_tec_archive_",
+      "target": "art_borisbrejcha",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.959,
+      "weight": 0.8647,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_jamendo_amb_jamendo_",
-      "target": "art_aphex",
+      "source": "trk_archive_tec_archive_",
+      "target": "art_borisbrejcha",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8747,
+      "weight": 0.8967,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_jamendo_amb_jamendo_",
-      "target": "art_nilsfrahm_art",
+      "source": "trk_freesound_tec_freesoun",
+      "target": "art_modeselektor",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8895,
+      "weight": 0.8615,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_jamendo_amb_jamendo_",
-      "target": "art_nilsfrahm_art",
+      "source": "trk_freesound_tec_freesoun",
+      "target": "art_modeselektor",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9096,
+      "weight": 0.8742,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_jamendo_amb_jamendo_",
-      "target": "art_nilsfrahm_art",
+      "source": "trk_freesound_tec_freesoun",
+      "target": "art_modeselektor",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9519,
+      "weight": 0.9288,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_amb_archive_",
-      "target": "art_aphex",
+      "source": "trk_freesound_tec_freesoun",
+      "target": "art_borisbrejcha",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8975,
+      "weight": 0.8681,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_amb_archive_",
-      "target": "art_aphex",
+      "source": "trk_freesound_tec_freesoun",
+      "target": "art_borisbrejcha",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9119,
+      "weight": 0.9055,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_amb_archive_",
-      "target": "art_aphex",
+      "source": "trk_freesound_tec_freesoun",
+      "target": "art_borisbrejcha",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.884,
+      "weight": 0.8625,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_amb_archive_",
-      "target": "art_nilsfrahm_art",
+      "source": "trk_musopen_tec_musopen_",
+      "target": "art_modeselektor",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9016,
+      "weight": 0.8743,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_amb_archive_",
-      "target": "art_nilsfrahm_art",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9597,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_archive_amb_archive_",
-      "target": "art_nilsfrahm_art",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9302,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_freesound_amb_freesoun",
-      "target": "art_aphex",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9017,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_freesound_amb_freesoun",
-      "target": "art_aphex",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9259,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_freesound_amb_freesoun",
-      "target": "art_nilsfrahm_art",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8965,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_freesound_amb_freesoun",
-      "target": "art_nilsfrahm_art",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8912,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_musopen_amb_musopen_",
-      "target": "art_aphex",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.895,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_musopen_amb_musopen_",
-      "target": "art_aphex",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9507,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_musopen_amb_musopen_",
-      "target": "art_nilsfrahm_art",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8718,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_musopen_amb_musopen_",
-      "target": "art_nilsfrahm_art",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.933,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_wikimedia_amb_wikimedi",
-      "target": "art_aphex",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9531,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_wikimedia_amb_wikimedi",
-      "target": "art_aphex",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9112,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_wikimedia_amb_wikimedi",
-      "target": "art_nilsfrahm_art",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.954,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_wikimedia_amb_wikimedi",
-      "target": "art_nilsfrahm_art",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8977,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_jamendo_cla_jamendo_",
-      "target": "art_nilsfrahm_art",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8961,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_jamendo_cla_jamendo_",
-      "target": "art_nilsfrahm_art",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.903,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_jamendo_cla_jamendo_",
-      "target": "art_nilsfrahm_art",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9498,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_jamendo_cla_jamendo_",
-      "target": "art_maxrichter",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8685,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_jamendo_cla_jamendo_",
-      "target": "art_maxrichter",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8663,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_jamendo_cla_jamendo_",
-      "target": "art_maxrichter",
+      "source": "trk_musopen_tec_musopen_",
+      "target": "art_modeselektor",
       "rel_type": "ACOUSTIC_SIMILARITY",
       "weight": 0.92,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_cla_archive_",
-      "target": "art_nilsfrahm_art",
+      "source": "trk_musopen_tec_musopen_",
+      "target": "art_modeselektor",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9487,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_tec_musopen_",
+      "target": "art_borisbrejcha",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9193,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_tec_musopen_",
+      "target": "art_borisbrejcha",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8841,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_tec_musopen_",
+      "target": "art_borisbrejcha",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9111,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_tec_wikimedi",
+      "target": "art_modeselektor",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9168,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_tec_wikimedi",
+      "target": "art_modeselektor",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9357,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_tec_wikimedi",
+      "target": "art_modeselektor",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9396,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_tec_wikimedi",
+      "target": "art_borisbrejcha",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8696,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_tec_wikimedi",
+      "target": "art_borisbrejcha",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8863,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_tec_wikimedi",
+      "target": "art_borisbrejcha",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.917,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_jamendo_hou_jamendo_",
+      "target": "art_beyonce",
       "rel_type": "ACOUSTIC_SIMILARITY",
       "weight": 0.8727,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_cla_archive_",
-      "target": "art_nilsfrahm_art",
+      "source": "trk_jamendo_hou_jamendo_",
+      "target": "art_beyonce",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8761,
+      "weight": 0.8779,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_cla_archive_",
-      "target": "art_nilsfrahm_art",
+      "source": "trk_jamendo_hou_jamendo_",
+      "target": "art_beyonce",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.882,
+      "weight": 0.8816,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_cla_archive_",
-      "target": "art_maxrichter",
+      "source": "trk_jamendo_hou_jamendo_",
+      "target": "art_robinschulz",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8911,
+      "weight": 0.9589,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_cla_archive_",
-      "target": "art_maxrichter",
+      "source": "trk_jamendo_hou_jamendo_",
+      "target": "art_robinschulz",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8697,
+      "weight": 0.9244,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_cla_archive_",
-      "target": "art_maxrichter",
+      "source": "trk_jamendo_hou_jamendo_",
+      "target": "art_robinschulz",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9586,
+      "weight": 0.8941,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_freesound_cla_freesoun",
-      "target": "art_nilsfrahm_art",
+      "source": "trk_archive_hou_archive_",
+      "target": "art_beyonce",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.955,
+      "weight": 0.9117,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_freesound_cla_freesoun",
-      "target": "art_nilsfrahm_art",
+      "source": "trk_archive_hou_archive_",
+      "target": "art_beyonce",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9015,
+      "weight": 0.9532,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_freesound_cla_freesoun",
-      "target": "art_maxrichter",
+      "source": "trk_archive_hou_archive_",
+      "target": "art_beyonce",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9395,
+      "weight": 0.9414,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_freesound_cla_freesoun",
-      "target": "art_maxrichter",
+      "source": "trk_archive_hou_archive_",
+      "target": "art_robinschulz",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9527,
+      "weight": 0.9503,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_musopen_cla_musopen_",
-      "target": "art_nilsfrahm_art",
+      "source": "trk_archive_hou_archive_",
+      "target": "art_robinschulz",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8828,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_archive_hou_archive_",
+      "target": "art_robinschulz",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8924,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_hou_freesoun",
+      "target": "art_beyonce",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8742,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_hou_freesoun",
+      "target": "art_beyonce",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8933,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_hou_freesoun",
+      "target": "art_beyonce",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9454,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_hou_freesoun",
+      "target": "art_robinschulz",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8716,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_hou_freesoun",
+      "target": "art_robinschulz",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9089,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_hou_freesoun",
+      "target": "art_robinschulz",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9433,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_hou_musopen_",
+      "target": "art_beyonce",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8886,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_hou_musopen_",
+      "target": "art_beyonce",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9422,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_hou_musopen_",
+      "target": "art_beyonce",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8628,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_hou_musopen_",
+      "target": "art_robinschulz",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9033,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_hou_musopen_",
+      "target": "art_robinschulz",
       "rel_type": "ACOUSTIC_SIMILARITY",
       "weight": 0.8875,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_musopen_cla_musopen_",
-      "target": "art_nilsfrahm_art",
+      "source": "trk_musopen_hou_musopen_",
+      "target": "art_robinschulz",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9276,
+      "weight": 0.8771,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_musopen_cla_musopen_",
-      "target": "art_maxrichter",
+      "source": "trk_wikimedia_hou_wikimedi",
+      "target": "art_beyonce",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9586,
+      "weight": 0.8649,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_musopen_cla_musopen_",
-      "target": "art_maxrichter",
+      "source": "trk_wikimedia_hou_wikimedi",
+      "target": "art_beyonce",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9359,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_hou_wikimedi",
+      "target": "art_beyonce",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9379,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_hou_wikimedi",
+      "target": "art_robinschulz",
       "rel_type": "ACOUSTIC_SIMILARITY",
       "weight": 0.8953,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_wikimedia_cla_wikimedi",
-      "target": "art_nilsfrahm_art",
+      "source": "trk_wikimedia_hou_wikimedi",
+      "target": "art_robinschulz",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9062,
+      "weight": 0.8754,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_wikimedia_cla_wikimedi",
-      "target": "art_nilsfrahm_art",
+      "source": "trk_wikimedia_hou_wikimedi",
+      "target": "art_robinschulz",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8702,
+      "weight": 0.9541,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_wikimedia_cla_wikimedi",
-      "target": "art_maxrichter",
+      "source": "trk_jamendo_tra_jamendo_",
+      "target": "art_paulvandyk_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9056,
+      "weight": 0.9361,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_wikimedia_cla_wikimedi",
-      "target": "art_maxrichter",
+      "source": "trk_jamendo_tra_jamendo_",
+      "target": "art_paulvandyk_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8682,
+      "weight": 0.9149,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_jamendo_hip_jamendo_",
-      "target": "art_kendrick",
+      "source": "trk_jamendo_tra_jamendo_",
+      "target": "art_paulvandyk_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8848,
+      "weight": 0.9499,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_jamendo_hip_jamendo_",
-      "target": "art_kendrick",
+      "source": "trk_jamendo_tra_jamendo_",
+      "target": "art_tiesto",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9029,
+      "weight": 0.9299,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_jamendo_hip_jamendo_",
-      "target": "art_kendrick",
+      "source": "trk_jamendo_tra_jamendo_",
+      "target": "art_tiesto",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8734,
+      "weight": 0.9041,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_jamendo_hip_jamendo_",
-      "target": "art_kanye",
+      "source": "trk_jamendo_tra_jamendo_",
+      "target": "art_tiesto",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9387,
+      "weight": 0.8798,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_jamendo_hip_jamendo_",
-      "target": "art_kanye",
+      "source": "trk_archive_tra_archive_",
+      "target": "art_paulvandyk_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8677,
+      "weight": 0.8719,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_jamendo_hip_jamendo_",
-      "target": "art_kanye",
+      "source": "trk_archive_tra_archive_",
+      "target": "art_paulvandyk_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9247,
+      "weight": 0.8825,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_hip_archive_",
-      "target": "art_kendrick",
+      "source": "trk_archive_tra_archive_",
+      "target": "art_paulvandyk_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9307,
+      "weight": 0.9368,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_hip_archive_",
-      "target": "art_kendrick",
+      "source": "trk_archive_tra_archive_",
+      "target": "art_tiesto",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8642,
+      "weight": 0.8805,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_hip_archive_",
-      "target": "art_kendrick",
+      "source": "trk_archive_tra_archive_",
+      "target": "art_tiesto",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8868,
+      "weight": 0.9522,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_hip_archive_",
-      "target": "art_kanye",
+      "source": "trk_archive_tra_archive_",
+      "target": "art_tiesto",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9501,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_tra_freesoun",
+      "target": "art_paulvandyk_art",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8966,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_tra_freesoun",
+      "target": "art_paulvandyk_art",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8623,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_tra_freesoun",
+      "target": "art_paulvandyk_art",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9098,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_tra_freesoun",
+      "target": "art_tiesto",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.931,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_tra_freesoun",
+      "target": "art_tiesto",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8618,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_tra_freesoun",
+      "target": "art_tiesto",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9184,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_tra_musopen_",
+      "target": "art_paulvandyk_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
       "weight": 0.9491,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_hip_archive_",
-      "target": "art_kanye",
+      "source": "trk_musopen_tra_musopen_",
+      "target": "art_paulvandyk_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9419,
+      "weight": 0.8888,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_hip_archive_",
-      "target": "art_kanye",
+      "source": "trk_musopen_tra_musopen_",
+      "target": "art_paulvandyk_art",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.942,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_tra_musopen_",
+      "target": "art_tiesto",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9129,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_tra_musopen_",
+      "target": "art_tiesto",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.886,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_tra_musopen_",
+      "target": "art_tiesto",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9359,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_tra_wikimedi",
+      "target": "art_paulvandyk_art",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9211,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_tra_wikimedi",
+      "target": "art_paulvandyk_art",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9232,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_tra_wikimedi",
+      "target": "art_paulvandyk_art",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8681,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_tra_wikimedi",
+      "target": "art_tiesto",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8866,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_tra_wikimedi",
+      "target": "art_tiesto",
       "rel_type": "ACOUSTIC_SIMILARITY",
       "weight": 0.8654,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_freesound_hip_freesoun",
-      "target": "art_kendrick",
+      "source": "trk_wikimedia_tra_wikimedi",
+      "target": "art_tiesto",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9327,
+      "weight": 0.91,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_freesound_hip_freesoun",
-      "target": "art_kendrick",
+      "source": "trk_jamendo_dub_jamendo_",
+      "target": "art_skrillex_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9007,
+      "weight": 0.8621,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_freesound_hip_freesoun",
-      "target": "art_kanye",
+      "source": "trk_jamendo_dub_jamendo_",
+      "target": "art_skrillex_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.927,
+      "weight": 0.8985,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_freesound_hip_freesoun",
-      "target": "art_kanye",
+      "source": "trk_jamendo_dub_jamendo_",
+      "target": "art_skrillex_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8914,
+      "weight": 0.9207,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_musopen_hip_musopen_",
-      "target": "art_kendrick",
+      "source": "trk_archive_dub_archive_",
+      "target": "art_skrillex_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9452,
+      "weight": 0.8723,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_musopen_hip_musopen_",
-      "target": "art_kendrick",
+      "source": "trk_archive_dub_archive_",
+      "target": "art_skrillex_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8698,
+      "weight": 0.9597,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_musopen_hip_musopen_",
-      "target": "art_kanye",
+      "source": "trk_archive_dub_archive_",
+      "target": "art_skrillex_art",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8787,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_dub_freesoun",
+      "target": "art_skrillex_art",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9066,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_dub_freesoun",
+      "target": "art_skrillex_art",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.876,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_dub_freesoun",
+      "target": "art_skrillex_art",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9552,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_dub_musopen_",
+      "target": "art_skrillex_art",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9184,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_dub_musopen_",
+      "target": "art_skrillex_art",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9177,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_dub_musopen_",
+      "target": "art_skrillex_art",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.894,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_dub_wikimedi",
+      "target": "art_skrillex_art",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9501,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_dub_wikimedi",
+      "target": "art_skrillex_art",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9136,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_dub_wikimedi",
+      "target": "art_skrillex_art",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9181,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_jamendo_amb_jamendo_",
+      "target": "art_aphex",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8925,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_jamendo_amb_jamendo_",
+      "target": "art_aphex",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9113,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_jamendo_amb_jamendo_",
+      "target": "art_aphex",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.913,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_jamendo_amb_jamendo_",
+      "target": "art_nilsfrahm_art",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8681,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_jamendo_amb_jamendo_",
+      "target": "art_nilsfrahm_art",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9255,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_jamendo_amb_jamendo_",
+      "target": "art_nilsfrahm_art",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8714,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_archive_amb_archive_",
+      "target": "art_aphex",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8724,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_archive_amb_archive_",
+      "target": "art_aphex",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9245,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_archive_amb_archive_",
+      "target": "art_aphex",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9331,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_archive_amb_archive_",
+      "target": "art_nilsfrahm_art",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8802,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_archive_amb_archive_",
+      "target": "art_nilsfrahm_art",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9201,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_archive_amb_archive_",
+      "target": "art_nilsfrahm_art",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8791,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_amb_freesoun",
+      "target": "art_aphex",
       "rel_type": "ACOUSTIC_SIMILARITY",
       "weight": 0.9404,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_musopen_hip_musopen_",
-      "target": "art_kanye",
+      "source": "trk_freesound_amb_freesoun",
+      "target": "art_aphex",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9515,
+      "weight": 0.8949,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_wikimedia_hip_wikimedi",
-      "target": "art_kendrick",
+      "source": "trk_freesound_amb_freesoun",
+      "target": "art_aphex",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8635,
+      "weight": 0.8722,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_wikimedia_hip_wikimedi",
-      "target": "art_kendrick",
+      "source": "trk_freesound_amb_freesoun",
+      "target": "art_nilsfrahm_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9398,
+      "weight": 0.8934,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_wikimedia_hip_wikimedi",
-      "target": "art_kanye",
+      "source": "trk_freesound_amb_freesoun",
+      "target": "art_nilsfrahm_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.929,
+      "weight": 0.8839,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_wikimedia_hip_wikimedi",
-      "target": "art_kanye",
+      "source": "trk_freesound_amb_freesoun",
+      "target": "art_nilsfrahm_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9131,
+      "weight": 0.8766,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_jamendo_ele_jamendo_",
-      "target": "art_radiohead",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8641,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_jamendo_ele_jamendo_",
-      "target": "art_radiohead",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8663,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_jamendo_ele_jamendo_",
-      "target": "art_radiohead",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8942,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_jamendo_ele_jamendo_",
+      "source": "trk_musopen_amb_musopen_",
       "target": "art_aphex",
       "rel_type": "ACOUSTIC_SIMILARITY",
       "weight": 0.9311,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_jamendo_ele_jamendo_",
+      "source": "trk_musopen_amb_musopen_",
       "target": "art_aphex",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8606,
+      "weight": 0.9183,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_jamendo_ele_jamendo_",
+      "source": "trk_musopen_amb_musopen_",
       "target": "art_aphex",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8715,
+      "weight": 0.881,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_ele_archive_",
-      "target": "art_radiohead",
+      "source": "trk_musopen_amb_musopen_",
+      "target": "art_nilsfrahm_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8765,
+      "weight": 0.8705,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_ele_archive_",
-      "target": "art_radiohead",
+      "source": "trk_musopen_amb_musopen_",
+      "target": "art_nilsfrahm_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9459,
+      "weight": 0.9106,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_ele_archive_",
-      "target": "art_radiohead",
+      "source": "trk_musopen_amb_musopen_",
+      "target": "art_nilsfrahm_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9299,
+      "weight": 0.8625,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_ele_archive_",
+      "source": "trk_wikimedia_amb_wikimedi",
+      "target": "art_aphex",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8805,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_amb_wikimedi",
+      "target": "art_aphex",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8936,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_amb_wikimedi",
       "target": "art_aphex",
       "rel_type": "ACOUSTIC_SIMILARITY",
       "weight": 0.9184,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_ele_archive_",
-      "target": "art_aphex",
+      "source": "trk_wikimedia_amb_wikimedi",
+      "target": "art_nilsfrahm_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9111,
+      "weight": 0.8718,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_ele_archive_",
-      "target": "art_aphex",
+      "source": "trk_wikimedia_amb_wikimedi",
+      "target": "art_nilsfrahm_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8853,
+      "weight": 0.8638,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_freesound_ele_freesoun",
-      "target": "art_radiohead",
+      "source": "trk_wikimedia_amb_wikimedi",
+      "target": "art_nilsfrahm_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.899,
+      "weight": 0.9427,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_freesound_ele_freesoun",
-      "target": "art_radiohead",
+      "source": "trk_jamendo_cla_jamendo_",
+      "target": "art_nilsfrahm_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9588,
+      "weight": 0.8882,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_freesound_ele_freesoun",
-      "target": "art_aphex",
+      "source": "trk_jamendo_cla_jamendo_",
+      "target": "art_nilsfrahm_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8749,
+      "weight": 0.9293,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_freesound_ele_freesoun",
-      "target": "art_aphex",
+      "source": "trk_jamendo_cla_jamendo_",
+      "target": "art_nilsfrahm_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8815,
+      "weight": 0.8661,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_musopen_ele_musopen_",
-      "target": "art_radiohead",
+      "source": "trk_jamendo_cla_jamendo_",
+      "target": "art_maxrichter",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9532,
+      "weight": 0.8831,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_musopen_ele_musopen_",
-      "target": "art_radiohead",
+      "source": "trk_jamendo_cla_jamendo_",
+      "target": "art_maxrichter",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8995,
+      "weight": 0.9172,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_musopen_ele_musopen_",
-      "target": "art_aphex",
+      "source": "trk_jamendo_cla_jamendo_",
+      "target": "art_maxrichter",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9114,
+      "weight": 0.9284,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_musopen_ele_musopen_",
-      "target": "art_aphex",
+      "source": "trk_archive_cla_archive_",
+      "target": "art_nilsfrahm_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8709,
+      "weight": 0.8772,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_wikimedia_ele_wikimedi",
-      "target": "art_radiohead",
+      "source": "trk_archive_cla_archive_",
+      "target": "art_nilsfrahm_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8938,
+      "weight": 0.9483,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_wikimedia_ele_wikimedi",
-      "target": "art_radiohead",
+      "source": "trk_archive_cla_archive_",
+      "target": "art_nilsfrahm_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9004,
+      "weight": 0.901,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_wikimedia_ele_wikimedi",
-      "target": "art_aphex",
+      "source": "trk_archive_cla_archive_",
+      "target": "art_maxrichter",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8985,
+      "weight": 0.8877,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_wikimedia_ele_wikimedi",
-      "target": "art_aphex",
+      "source": "trk_archive_cla_archive_",
+      "target": "art_maxrichter",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9211,
+      "weight": 0.9561,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_jamendo_dis_jamendo_",
-      "target": "art_dua",
+      "source": "trk_archive_cla_archive_",
+      "target": "art_maxrichter",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8989,
+      "weight": 0.8928,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_jamendo_dis_jamendo_",
-      "target": "art_dua",
+      "source": "trk_freesound_cla_freesoun",
+      "target": "art_nilsfrahm_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.891,
+      "weight": 0.9353,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_jamendo_dis_jamendo_",
-      "target": "art_dua",
+      "source": "trk_freesound_cla_freesoun",
+      "target": "art_nilsfrahm_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8636,
+      "weight": 0.9383,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_jamendo_dis_jamendo_",
-      "target": "art_daftpunk",
+      "source": "trk_freesound_cla_freesoun",
+      "target": "art_nilsfrahm_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8858,
+      "weight": 0.8831,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_jamendo_dis_jamendo_",
-      "target": "art_daftpunk",
+      "source": "trk_freesound_cla_freesoun",
+      "target": "art_maxrichter",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8675,
+      "weight": 0.8931,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_jamendo_dis_jamendo_",
-      "target": "art_daftpunk",
+      "source": "trk_freesound_cla_freesoun",
+      "target": "art_maxrichter",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9206,
+      "weight": 0.9044,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_dis_archive_",
-      "target": "art_dua",
+      "source": "trk_freesound_cla_freesoun",
+      "target": "art_maxrichter",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9248,
+      "weight": 0.9481,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_dis_archive_",
-      "target": "art_dua",
+      "source": "trk_musopen_cla_musopen_",
+      "target": "art_nilsfrahm_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9307,
+      "weight": 0.9056,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_dis_archive_",
-      "target": "art_dua",
+      "source": "trk_musopen_cla_musopen_",
+      "target": "art_nilsfrahm_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9406,
+      "weight": 0.9503,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_dis_archive_",
-      "target": "art_daftpunk",
+      "source": "trk_musopen_cla_musopen_",
+      "target": "art_nilsfrahm_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9428,
+      "weight": 0.871,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_dis_archive_",
-      "target": "art_daftpunk",
+      "source": "trk_musopen_cla_musopen_",
+      "target": "art_maxrichter",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9329,
+      "weight": 0.928,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_archive_dis_archive_",
-      "target": "art_daftpunk",
+      "source": "trk_musopen_cla_musopen_",
+      "target": "art_maxrichter",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9047,
+      "weight": 0.8924,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_freesound_dis_freesoun",
-      "target": "art_dua",
+      "source": "trk_musopen_cla_musopen_",
+      "target": "art_maxrichter",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9531,
+      "weight": 0.9268,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_freesound_dis_freesoun",
-      "target": "art_dua",
+      "source": "trk_wikimedia_cla_wikimedi",
+      "target": "art_nilsfrahm_art",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9326,
+      "weight": 0.8836,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_freesound_dis_freesoun",
-      "target": "art_daftpunk",
+      "source": "trk_wikimedia_cla_wikimedi",
+      "target": "art_nilsfrahm_art",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8829,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_cla_wikimedi",
+      "target": "art_nilsfrahm_art",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9323,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_cla_wikimedi",
+      "target": "art_maxrichter",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9306,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_cla_wikimedi",
+      "target": "art_maxrichter",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.923,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_cla_wikimedi",
+      "target": "art_maxrichter",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9574,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_jamendo_hip_jamendo_",
+      "target": "art_kendrick",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9024,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_jamendo_hip_jamendo_",
+      "target": "art_kendrick",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9569,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_jamendo_hip_jamendo_",
+      "target": "art_kendrick",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8904,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_jamendo_hip_jamendo_",
+      "target": "art_kanye",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9061,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_jamendo_hip_jamendo_",
+      "target": "art_kanye",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8725,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_jamendo_hip_jamendo_",
+      "target": "art_kanye",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9541,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_archive_hip_archive_",
+      "target": "art_kendrick",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8752,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_archive_hip_archive_",
+      "target": "art_kendrick",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8633,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_archive_hip_archive_",
+      "target": "art_kendrick",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9116,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_archive_hip_archive_",
+      "target": "art_kanye",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9236,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_archive_hip_archive_",
+      "target": "art_kanye",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8652,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_archive_hip_archive_",
+      "target": "art_kanye",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9434,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_hip_freesoun",
+      "target": "art_kendrick",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9249,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_hip_freesoun",
+      "target": "art_kendrick",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8996,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_hip_freesoun",
+      "target": "art_kendrick",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9214,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_hip_freesoun",
+      "target": "art_kanye",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9595,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_hip_freesoun",
+      "target": "art_kanye",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8769,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_hip_freesoun",
+      "target": "art_kanye",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8789,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_hip_musopen_",
+      "target": "art_kendrick",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.903,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_hip_musopen_",
+      "target": "art_kendrick",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.873,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_hip_musopen_",
+      "target": "art_kendrick",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8685,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_hip_musopen_",
+      "target": "art_kanye",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8681,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_hip_musopen_",
+      "target": "art_kanye",
       "rel_type": "ACOUSTIC_SIMILARITY",
       "weight": 0.9336,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_freesound_dis_freesoun",
-      "target": "art_daftpunk",
+      "source": "trk_musopen_hip_musopen_",
+      "target": "art_kanye",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8909,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_hip_wikimedi",
+      "target": "art_kendrick",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9535,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_hip_wikimedi",
+      "target": "art_kendrick",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9022,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_hip_wikimedi",
+      "target": "art_kendrick",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_hip_wikimedi",
+      "target": "art_kanye",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.904,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_hip_wikimedi",
+      "target": "art_kanye",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8803,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_hip_wikimedi",
+      "target": "art_kanye",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8676,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_jamendo_ele_jamendo_",
+      "target": "art_radiohead",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8952,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_jamendo_ele_jamendo_",
+      "target": "art_radiohead",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8908,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_jamendo_ele_jamendo_",
+      "target": "art_radiohead",
       "rel_type": "ACOUSTIC_SIMILARITY",
       "weight": 0.8666,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
-      "source": "trk_musopen_dis_musopen_",
+      "source": "trk_jamendo_ele_jamendo_",
+      "target": "art_aphex",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8946,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_jamendo_ele_jamendo_",
+      "target": "art_aphex",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9466,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_jamendo_ele_jamendo_",
+      "target": "art_aphex",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9397,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_archive_ele_archive_",
+      "target": "art_radiohead",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9595,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_archive_ele_archive_",
+      "target": "art_radiohead",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9227,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_archive_ele_archive_",
+      "target": "art_radiohead",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8874,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_archive_ele_archive_",
+      "target": "art_aphex",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9096,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_archive_ele_archive_",
+      "target": "art_aphex",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9088,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_archive_ele_archive_",
+      "target": "art_aphex",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9409,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_ele_freesoun",
+      "target": "art_radiohead",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8942,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_ele_freesoun",
+      "target": "art_radiohead",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8644,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_ele_freesoun",
+      "target": "art_radiohead",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8692,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_ele_freesoun",
+      "target": "art_aphex",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9529,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_ele_freesoun",
+      "target": "art_aphex",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9513,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_ele_freesoun",
+      "target": "art_aphex",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9009,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_ele_musopen_",
+      "target": "art_radiohead",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8624,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_ele_musopen_",
+      "target": "art_radiohead",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8717,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_ele_musopen_",
+      "target": "art_radiohead",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9147,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_ele_musopen_",
+      "target": "art_aphex",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9304,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_ele_musopen_",
+      "target": "art_aphex",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9051,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_ele_musopen_",
+      "target": "art_aphex",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.934,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_ele_wikimedi",
+      "target": "art_radiohead",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.867,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_ele_wikimedi",
+      "target": "art_radiohead",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9561,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_ele_wikimedi",
+      "target": "art_radiohead",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9458,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_ele_wikimedi",
+      "target": "art_aphex",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9041,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_ele_wikimedi",
+      "target": "art_aphex",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8741,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_ele_wikimedi",
+      "target": "art_aphex",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9045,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_jamendo_dis_jamendo_",
       "target": "art_dua",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.94,
+      "weight": 0.8764,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_jamendo_dis_jamendo_",
+      "target": "art_dua",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9286,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_jamendo_dis_jamendo_",
+      "target": "art_dua",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8887,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_jamendo_dis_jamendo_",
+      "target": "art_daftpunk",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8785,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_jamendo_dis_jamendo_",
+      "target": "art_daftpunk",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9123,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_jamendo_dis_jamendo_",
+      "target": "art_daftpunk",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8738,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_archive_dis_archive_",
+      "target": "art_dua",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9081,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_archive_dis_archive_",
+      "target": "art_dua",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8628,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_archive_dis_archive_",
+      "target": "art_dua",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9477,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_archive_dis_archive_",
+      "target": "art_daftpunk",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9149,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_archive_dis_archive_",
+      "target": "art_daftpunk",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8787,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_archive_dis_archive_",
+      "target": "art_daftpunk",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.88,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_dis_freesoun",
+      "target": "art_dua",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8872,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_dis_freesoun",
+      "target": "art_dua",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9434,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_dis_freesoun",
+      "target": "art_dua",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9239,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_dis_freesoun",
+      "target": "art_daftpunk",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9356,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_dis_freesoun",
+      "target": "art_daftpunk",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9581,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_freesound_dis_freesoun",
+      "target": "art_daftpunk",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9063,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
       "source": "trk_musopen_dis_musopen_",
       "target": "art_dua",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9279,
+      "weight": 0.9149,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_dis_musopen_",
+      "target": "art_dua",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9268,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_dis_musopen_",
+      "target": "art_dua",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.897,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
       "source": "trk_musopen_dis_musopen_",
       "target": "art_daftpunk",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9309,
+      "weight": 0.8952,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
       "source": "trk_musopen_dis_musopen_",
       "target": "art_daftpunk",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9471,
+      "weight": 0.9346,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_musopen_dis_musopen_",
+      "target": "art_daftpunk",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9253,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
       "source": "trk_wikimedia_dis_wikimedi",
       "target": "art_dua",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.869,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_dis_wikimedi",
+      "target": "art_dua",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9595,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_dis_wikimedi",
+      "target": "art_dua",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.8987,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_dis_wikimedi",
+      "target": "art_daftpunk",
+      "rel_type": "ACOUSTIC_SIMILARITY",
+      "weight": 0.9473,
+      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
+    },
+    {
+      "source": "trk_wikimedia_dis_wikimedi",
+      "target": "art_daftpunk",
       "rel_type": "ACOUSTIC_SIMILARITY",
       "weight": 0.9072,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     },
     {
       "source": "trk_wikimedia_dis_wikimedi",
-      "target": "art_dua",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9295,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_wikimedia_dis_wikimedi",
       "target": "art_daftpunk",
       "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.8798,
-      "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
-    },
-    {
-      "source": "trk_wikimedia_dis_wikimedi",
-      "target": "art_daftpunk",
-      "rel_type": "ACOUSTIC_SIMILARITY",
-      "weight": 0.9293,
+      "weight": 0.9337,
       "feature_basis": "Mel-Spectrogram & Tempogram Feature Extraction (arXiv:2110.08862)"
     }
   ],
   "summary": {
-    "total_nodes": 507,
-    "total_edges": 1432,
+    "total_nodes": 570,
+    "total_edges": 1553,
     "nodes_by_type": {
       "record_label": 89,
       "agency": 37,
       "studio": 40,
       "producer": 45,
       "artist": 110,
-      "production_house": 98,
+      "production_house": 161,
       "track": 88
     },
     "edges_by_relationship": {
-      "PARENT_COMPANY_OF": 144,
-      "HEADQUARTERED_IN": 54,
+      "PARENT_COMPANY_OF": 198,
+      "HEADQUARTERED_IN": 59,
       "OPERATES_IN_CITY": 26,
       "ANCHOR_PRODUCER_OF": 26,
       "SIGNED_TO": 105,
       "REPRESENTED_BY": 90,
       "RECORDED_AT": 142,
       "PRODUCED_BY": 58,
-      "COLLABORATED_WITH": 50,
+      "COLLABORATED_WITH": 49,
       "CLASSIFIED_AS_GENRE": 110,
-      "ACOUSTIC_SIMILARITY": 534,
-      "BASED_IN_CITY": 52,
+      "ACOUSTIC_SIMILARITY": 585,
+      "BASED_IN_CITY": 64,
       "A_AND_R_PIPELINE": 18,
       "SHOWCASED_AT": 6,
       "HOSTED_IN_CITY": 2,

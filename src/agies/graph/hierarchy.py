@@ -636,6 +636,234 @@ class GeoTaxonomyHierarchyBuilder:
                     }
                 ],
             },
+            # BRAZIL
+            {
+                "country": ("geo_br", "Brazil", "South America"),
+                "states": [
+                    {
+                        "state": ("state_br_sp", "São Paulo (State)", "Brazil"),
+                        "cities": [
+                            {
+                                "city": ("city_saopaulo", "São Paulo", "state_br_sp", "Brazil"),
+                                "districts": [
+                                    ("distr_barrafunda_sp", "Barra Funda (Underground Techno & D-Edge)", "city_saopaulo"),
+                                    ("distr_vilamada_sp", "Vila Madalena (Indie, Bossa Nova & Arts)", "city_saopaulo"),
+                                ],
+                            }
+                        ],
+                    },
+                    {
+                        "state": ("state_br_rj", "Rio de Janeiro (State)", "Brazil"),
+                        "cities": [
+                            {
+                                "city": ("city_riodejaneiro", "Rio de Janeiro", "state_br_rj", "Brazil"),
+                                "districts": [
+                                    ("distr_lapa_rj", "Lapa (Samba, Choro & Bohemian Nightlife)", "city_riodejaneiro"),
+                                    ("distr_favela_rj", "Zona Norte Favelas (Baile Funk Ground Zero)", "city_riodejaneiro"),
+                                ],
+                            }
+                        ],
+                    },
+                    {
+                        "state": ("state_br_sc", "Santa Catarina", "Brazil"),
+                        "cities": [
+                            {
+                                "city": ("city_itajai", "Itajaí & Balneário Camboriú", "state_br_sc", "Brazil"),
+                                "districts": [
+                                    ("distr_praiabrava", "Praia Brava (Warung Beach Club Sanctuary)", "city_itajai"),
+                                ],
+                            }
+                        ],
+                    },
+                ],
+            },
+            # COLOMBIA
+            {
+                "country": ("geo_co", "Colombia", "South America"),
+                "states": [
+                    {
+                        "state": ("state_co_ant", "Antioquia", "Colombia"),
+                        "cities": [
+                            {
+                                "city": ("city_medellin", "Medellín", "state_co_ant", "Colombia"),
+                                "districts": [
+                                    ("distr_elpoblado", "El Poblado (Reggaeton & Global Urban Pop)", "city_medellin"),
+                                    ("distr_laureles", "Laureles (Independent Studios)", "city_medellin"),
+                                ],
+                            }
+                        ],
+                    },
+                    {
+                        "state": ("state_co_cund", "Cundinamarca", "Colombia"),
+                        "cities": [
+                            {
+                                "city": ("city_bogota", "Bogotá", "state_co_cund", "Colombia"),
+                                "districts": [
+                                    ("distr_chapinero", "Chapinero (Baum Electronic Underground)", "city_bogota"),
+                                ],
+                            }
+                        ],
+                    },
+                ],
+            },
+            # MEXICO
+            {
+                "country": ("geo_mx", "Mexico", "North America"),
+                "states": [
+                    {
+                        "state": ("state_mx_cdmx", "Mexico City (CDMX)", "Mexico"),
+                        "cities": [
+                            {
+                                "city": ("city_cdmx", "Mexico City", "state_mx_cdmx", "Mexico"),
+                                "districts": [
+                                    ("distr_romacondesa", "Roma-Condesa (Indie & Club Oriente)", "city_cdmx"),
+                                    ("distr_cdmx_centro", "Centro Histórico (Mutek Mexico)", "city_cdmx"),
+                                ],
+                            }
+                        ],
+                    },
+                ],
+            },
+            # SPAIN
+            {
+                "country": ("geo_es", "Spain", "Europe"),
+                "states": [
+                    {
+                        "state": ("state_es_cat", "Catalonia", "Spain"),
+                        "cities": [
+                            {
+                                "city": ("city_barcelona", "Barcelona", "state_es_cat", "Spain"),
+                                "districts": [
+                                    ("distr_poblenou_bcn", "Poblenou (Razzmatazz & Sónar Festival Hub)", "city_barcelona"),
+                                    ("distr_raval_bcn", "El Raval (Electronic Arts & MACBA)", "city_barcelona"),
+                                ],
+                            }
+                        ],
+                    },
+                    {
+                        "state": ("state_es_ibz", "Balearic Islands", "Spain"),
+                        "cities": [
+                            {
+                                "city": ("city_ibiza", "Ibiza", "state_es_ibz", "Spain"),
+                                "districts": [
+                                    ("distr_playadenbossa", "Playa d'en Bossa (DC10, Hï & Ushuaïa)", "city_ibiza"),
+                                    ("distr_sanantonio", "San Antonio (Amnesia & Sunset Strip)", "city_ibiza"),
+                                ],
+                            }
+                        ],
+                    },
+                ],
+            },
+            # NETHERLANDS
+            {
+                "country": ("geo_nl", "Netherlands", "Europe"),
+                "states": [
+                    {
+                        "state": ("state_nl_nh", "North Holland", "Netherlands"),
+                        "cities": [
+                            {
+                                "city": ("city_amsterdam", "Amsterdam", "state_nl_nh", "Netherlands"),
+                                "districts": [
+                                    ("distr_ndsm_ams", "NDSM Wharf (Dekmantel & ADE Hub)", "city_amsterdam"),
+                                    ("distr_westerpark_ams", "Westerpark (Gashouder & Awakenings)", "city_amsterdam"),
+                                ],
+                            }
+                        ],
+                    }
+                ],
+            },
+            # AUSTRALIA
+            {
+                "country": ("geo_au", "Australia", "Oceania"),
+                "states": [
+                    {
+                        "state": ("state_au_vic", "Victoria", "Australia"),
+                        "cities": [
+                            {
+                                "city": ("city_melbourne", "Melbourne", "state_au_vic", "Australia"),
+                                "districts": [
+                                    ("distr_fitzroy_mel", "Fitzroy (Live Music & Indie Scene)", "city_melbourne"),
+                                    ("distr_chapelst_mel", "Chapel Street (Revolver Upstairs Minimal)", "city_melbourne"),
+                                ],
+                            }
+                        ],
+                    },
+                    {
+                        "state": ("state_au_nsw", "New South Wales", "Australia"),
+                        "cities": [
+                            {
+                                "city": ("city_sydney", "Sydney", "state_au_nsw", "Australia"),
+                                "districts": [
+                                    ("distr_kingscross_syd", "Kings Cross (Club 77 & Electronic)", "city_sydney"),
+                                ],
+                            }
+                        ],
+                    },
+                ],
+            },
+            # SOUTH AFRICA
+            {
+                "country": ("geo_za", "South Africa", "Africa"),
+                "states": [
+                    {
+                        "state": ("state_za_gp", "Gauteng", "South Africa"),
+                        "cities": [
+                            {
+                                "city": ("city_joburg", "Johannesburg", "state_za_gp", "South Africa"),
+                                "districts": [
+                                    ("distr_soweto", "Soweto (Amapiano Movement Ground Zero)", "city_joburg"),
+                                    ("distr_braamfontein", "Braamfontein (Youth Culture & Deep House)", "city_joburg"),
+                                ],
+                            }
+                        ],
+                    }
+                ],
+            },
+            # INDIA
+            {
+                "country": ("geo_in", "India", "Asia"),
+                "states": [
+                    {
+                        "state": ("state_in_ga", "Goa", "India"),
+                        "cities": [
+                            {
+                                "city": ("city_goa", "Vagator & Anjuna", "state_in_ga", "India"),
+                                "districts": [
+                                    ("distr_hilltop_goa", "HillTop (Psytrance & Global Sanctuary)", "city_goa"),
+                                ],
+                            }
+                        ],
+                    },
+                    {
+                        "state": ("state_in_mh", "Maharashtra", "India"),
+                        "cities": [
+                            {
+                                "city": ("city_mumbai", "Mumbai", "state_in_mh", "India"),
+                                "districts": [
+                                    ("distr_bandra_mum", "Bandra & Khar (AntiSocial Indie Hub)", "city_mumbai"),
+                                ],
+                            }
+                        ],
+                    },
+                ],
+            },
+            # BELGIUM
+            {
+                "country": ("geo_be", "Belgium", "Europe"),
+                "states": [
+                    {
+                        "state": ("state_be_bru", "Brussels-Capital", "Belgium"),
+                        "cities": [
+                            {
+                                "city": ("city_brussels", "Brussels", "state_be_bru", "Belgium"),
+                                "districts": [
+                                    ("distr_marolles_bru", "Marolles (Fuse Club Techno Sanctuary)", "city_brussels"),
+                                ],
+                            }
+                        ],
+                    }
+                ],
+            },
         ]
 
         # Ingest Geo-Spatial Entities & Hierarchy Edges
