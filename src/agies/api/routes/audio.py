@@ -163,3 +163,45 @@ async def classify_audio(
         )
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Classification failed: {e}")
+
+
+class DemoAnalysisRequest(BaseModel):
+    track_title: str = Field(
+        default="Late Night Modular Session", description="Title of your track or demo"
+    )
+    artist_name: str = Field(
+        default="Bedroom Producer Alpha", description="Your artist alias"
+    )
+    home_city: str = Field(default="Berlin", description="Your current base city")
+    home_country: str = Field(default="Germany", description="Your home country")
+    subgenre_hint: Optional[str] = Field(
+        default="Techno", description="Target genre/vibe"
+    )
+    audio_file_path: Optional[str] = Field(
+        default=None, description="Optional local file path to WAV/MP3"
+    )
+
+
+@router.post(
+    "/analyze-demo", summary="Full Bedroom Producer AI Demo & Career Diagnostic"
+)
+async def analyze_bedroom_producer_demo(
+    request: DemoAnalysisRequest,
+    key: APIKeyInfo = Depends(get_api_key),
+):
+    """Run Mel-Tempogram acoustic diagnostic, identify matching artists, find debut venues, and build release roadmap."""
+    from agies.audio.bedroom_producer import BedroomProducerAssistant
+
+    assistant = BedroomProducerAssistant()
+    try:
+        report = assistant.analyze_demo_and_generate_dossier(
+            track_title=request.track_title,
+            artist_name=request.artist_name,
+            home_city=request.home_city,
+            home_country=request.home_country,
+            subgenre_hint=request.subgenre_hint,
+            raw_audio_path=request.audio_file_path,
+        )
+        return report
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Demo analysis failed: {e}")

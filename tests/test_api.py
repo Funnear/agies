@@ -309,3 +309,23 @@ def test_venue_endpoints():
     receipt = inq_res.json()
     assert receipt["status"] == "dispatched"
     assert "5,000.00 EUR" in receipt["offer_fee"]
+
+
+def test_analyze_bedroom_producer_demo_endpoint():
+    res = client.post(
+        "/api/v1/audio/analyze-demo",
+        json={
+            "track_title": "Midnight Resonance",
+            "artist_name": "Sonic Ghost",
+            "home_city": "Berlin",
+            "home_country": "Germany",
+            "subgenre_hint": "Techno",
+        },
+        headers={"X-API-Key": VALID_KEY},
+    )
+    assert res.status_code == 200
+    data = res.json()
+    assert data["artist_name"] == "Sonic Ghost"
+    assert "nearest_acoustic_artist_matches" in data
+    assert "recommended_debut_venues" in data
+    assert "generated_booking_pitch" in data

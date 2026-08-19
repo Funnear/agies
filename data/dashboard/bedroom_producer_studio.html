@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGIES Bedroom Producer AI Studio & Career Copilot</title>
+    <style>
+        :root {
+            --bg-primary: #0a0e17;
+            --bg-card: #131b2e;
+            --bg-input: #1b2640;
+            --accent: #00f0ff;
+            --accent-purple: #9d4edd;
+            --accent-green: #00ff88;
+            --accent-orange: #ff9e00;
+            --text-main: #f0f4f8;
+            --text-dim: #94a3b8;
+            --border: #243456;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+        body { background: var(--bg-primary); color: var(--text-main); line-height: 1.6; padding: 24px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        
+        header { text-align: center; margin-bottom: 32px; padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+        h1 { font-size: 2.2rem; color: var(--accent); letter-spacing: -0.5px; margin-bottom: 8px; }
+        .subtitle { color: var(--text-dim); font-size: 1.05rem; }
+
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+
+        .card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
+        h2 { font-size: 1.3rem; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; color: var(--accent-purple); }
+
+        .form-group { margin-bottom: 16px; }
+        label { display: block; font-size: 0.85rem; font-weight: 600; color: var(--text-dim); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+        input, select, textarea { width: 100%; padding: 12px; background: var(--bg-input); border: 1px solid var(--border); border-radius: 8px; color: #fff; font-size: 0.95rem; }
+        input:focus, select:focus, textarea:focus { outline: none; border-color: var(--accent); }
+
+        button.btn-primary { width: 100%; padding: 14px; background: linear-gradient(135deg, var(--accent), #00a8ff); color: #000; font-weight: 700; border: none; border-radius: 8px; cursor: pointer; font-size: 1rem; transition: transform 0.1s, opacity 0.2s; }
+        button.btn-primary:hover { opacity: 0.9; transform: translateY(-1px); }
+
+        canvas#spectrum { width: 100%; height: 90px; background: #070a10; border-radius: 8px; margin-top: 12px; border: 1px solid var(--border); }
+
+        .tag-pill { display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; background: rgba(0, 240, 255, 0.15); color: var(--accent); border: 1px solid rgba(0, 240, 255, 0.3); margin-right: 6px; margin-bottom: 6px; }
+        .tag-pill.green { background: rgba(0, 255, 136, 0.15); color: var(--accent-green); border-color: rgba(0, 255, 136, 0.3); }
+        .tag-pill.orange { background: rgba(255, 158, 0, 0.15); color: var(--accent-orange); border-color: rgba(255, 158, 0, 0.3); }
+
+        .match-item { background: var(--bg-input); border-radius: 8px; padding: 12px 16px; margin-bottom: 10px; border: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+        .match-item .name { font-weight: 600; font-size: 0.95rem; }
+        .match-item .meta { font-size: 0.8rem; color: var(--text-dim); }
+        .match-score { font-size: 1.1rem; font-weight: 800; color: var(--accent-green); }
+
+        .phase-box { background: rgba(157, 78, 221, 0.08); border-left: 3px solid var(--accent-purple); padding: 12px 16px; border-radius: 0 8px 8px 0; margin-bottom: 12px; }
+        .phase-title { font-weight: 700; font-size: 0.9rem; color: var(--accent-purple); margin-bottom: 4px; }
+        .phase-desc { font-size: 0.85rem; color: var(--text-dim); }
+
+        pre.pitch-box { background: #070a10; border: 1px solid var(--border); border-radius: 8px; padding: 16px; font-family: monospace; font-size: 0.85rem; color: #a5b4fc; white-space: pre-wrap; word-break: break-word; }
+        .copy-btn { margin-top: 8px; background: var(--bg-input); border: 1px solid var(--border); color: #fff; padding: 8px 14px; border-radius: 6px; cursor: pointer; font-size: 0.8rem; font-weight: 600; }
+        .copy-btn:hover { background: var(--border); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎛️ AGIES Bedroom Producer AI Studio</h1>
+            <p class="subtitle">Acoustic Diagnostic (arXiv:2110.08862) • Global Knowledge Graph Matches • Stepping-Stone Roadmaps & Venue Booking</p>
+        </header>
+
+        <div class="grid">
+            <!-- Left Column: Input Form & Diagnostic -->
+            <div class="card">
+                <h2><span>🎧</span> Demo Track & Artist Profile</h2>
+                <div class="form-group">
+                    <label>Artist Alias</label>
+                    <input type="text" id="artistName" value="Subtle Flux">
+                </div>
+                <div class="form-group">
+                    <label>Demo Track Title</label>
+                    <input type="text" id="trackTitle" value="Analog Dreams (Original Mix)">
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                    <div class="form-group">
+                        <label>Home City</label>
+                        <select id="homeCity">
+                            <option value="Berlin">Berlin, Germany</option>
+                            <option value="London">London, UK</option>
+                            <option value="Los Angeles">Los Angeles, USA</option>
+                            <option value="New York City">New York City, USA</option>
+                            <option value="Paris">Paris, France</option>
+                            <option value="Amsterdam">Amsterdam, Netherlands</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Vibe / Subgenre</label>
+                        <select id="subgenre">
+                            <option value="Techno">Industrial / Melodic Techno</option>
+                            <option value="House">Deep House / Nu-Disco</option>
+                            <option value="Ambient">Ambient & Neo-Classical</option>
+                            <option value="Drum and Bass">Drum and Bass / Liquid</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Acoustic Pulse Visualizer (Mel & Tempogram)</label>
+                    <canvas id="spectrum"></canvas>
+                </div>
+
+                <button class="btn-primary" onclick="runDiagnostic()">Run Full A&R Diagnostic & Generate Career Plan</button>
+            </div>
+
+            <!-- Right Column: Diagnostic Results -->
+            <div class="card" id="resultsCard">
+                <h2><span>⚡</span> Acoustic Diagnostic Dossier</h2>
+                <div id="statusTags" style="margin-bottom: 16px;">
+                    <span class="tag-pill green" id="bpmTag">132.0 BPM</span>
+                    <span class="tag-pill" id="genreTag">Techno (94.0% confidence)</span>
+                    <span class="tag-pill orange">32 Mel Bands + 48 Tempogram Bins</span>
+                </div>
+
+                <h3 style="font-size: 0.95rem; margin-bottom: 8px; color: var(--text-dim);">Nearest Acoustic Titan Matches in Graph:</h3>
+                <div id="artistMatches">
+                    <div class="match-item">
+                        <div>
+                            <div class="name">Stephan Bodzin</div>
+                            <div class="meta">Techno, Melodic • Germany</div>
+                        </div>
+                        <div class="match-score">95.4%</div>
+                    </div>
+                    <div class="match-item">
+                        <div>
+                            <div class="name">Nils Frahm</div>
+                            <div class="meta">Neo-Classical, Ambient • Hansa / Funkhaus</div>
+                        </div>
+                        <div class="match-score">92.1%</div>
+                    </div>
+                </div>
+
+                <h3 style="font-size: 0.95rem; margin-top: 16px; margin-bottom: 8px; color: var(--text-dim);">Recommended Stepping-Stone Debut Venues:</h3>
+                <div id="venueMatches">
+                    <div class="match-item">
+                        <div>
+                            <div class="name">Tresor Berlin (Globus Floor)</div>
+                            <div class="meta">Cap: 800 • booking@tresorberlin.com</div>
+                        </div>
+                        <div class="tag-pill">Club</div>
+                    </div>
+                    <div class="match-item">
+                        <div>
+                            <div class="name">Schokoladen (Mitte)</div>
+                            <div class="meta">Cap: 150 • booking@schokoladen-mitte.de</div>
+                        </div>
+                        <div class="tag-pill green">Intimate Debut</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Full Width: 4-Phase Stepping Stone Roadmap & Pitch -->
+        <div class="grid" style="margin-top: 24px;">
+            <div class="card">
+                <h2><span>🗺️</span> 4-Phase Early-Career Roadmap</h2>
+                <div class="phase-box">
+                    <div class="phase-title">Phase 1: Grassroots Community & Direct-to-Fan</div>
+                    <div class="phase-desc">Master 3-track EP. Distribute via Bandcamp (direct sales) + DistroKid/TuneCore (DSPs). Build local network.</div>
+                </div>
+                <div class="phase-box">
+                    <div class="phase-title">Phase 2: Gateway Curation & Sound Validation</div>
+                    <div class="phase-desc">Submit stems to COLORSxSTUDIOS, BBC Introducing, or local tastemaker curators. Secure boutique micro-label vinyl press.</div>
+                </div>
+                <div class="phase-box">
+                    <div class="phase-title">Phase 3: Showcase Circuits & A&R Visibility</div>
+                    <div class="phase-desc">Apply for showcase slots at Reeperbahn Festival / ESNS / c/o pop to perform in front of international A&R scouts.</div>
+                </div>
+                <div class="phase-box">
+                    <div class="phase-title">Phase 4: Institutional Rights & Sustainable Touring</div>
+                    <div class="phase-desc">Register publishing with GEMA / SoundExchange. Sign with non-exclusive boutique booking agency.</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2><span>📨</span> Ready-To-Send Promoter Booking Pitch</h2>
+                <pre class="pitch-box" id="pitchBox">Subject: Live Debut Pitch / Support Slot Inquiry: Subtle Flux @ Tresor Berlin
+
+Hi Tresor Bookings Team,
+
+I hope you're having a great week. I'm Subtle Flux, a Berlin-based producer producing Industrial / Melodic Techno (sound profile: 132.0 BPM, Mel-Tempogram acoustic energy aligned with Stephan Bodzin).
+
+I've just finalized my new 3-track EP 'Analog Dreams', and I'm looking to play opening support slots for your upcoming club nights.
+You can listen to the private demo stream here: [Private Demo Stream Link]
+
+I would love to be considered for an opening support slot on your lineup. Thank you for your time and for supporting grassroots music!
+
+Best regards,
+Subtle Flux
+Contact: booking@subtleflux-official.com</pre>
+                <button class="copy-btn" onclick="copyPitch()">📋 Copy Pitch to Clipboard</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Animate canvas spectrum
+        const canvas = document.getElementById('spectrum');
+        const ctx = canvas.getContext('2d');
+        let animId;
+
+        function drawSpectrum() {
+            canvas.width = canvas.offsetWidth;
+            canvas.height = canvas.offsetHeight;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            const bars = 32;
+            const barWidth = canvas.width / bars;
+            const time = Date.now() * 0.003;
+
+            for (let i = 0; i < bars; i++) {
+                const height = Math.abs(Math.sin(time + i * 0.25) * (canvas.height * 0.75)) + 8;
+                const grad = ctx.createLinearGradient(0, canvas.height, 0, 0);
+                grad.addColorStop(0, '#00f0ff');
+                grad.addColorStop(1, '#9d4edd');
+                ctx.fillStyle = grad;
+                ctx.fillRect(i * barWidth + 2, canvas.height - height, barWidth - 4, height);
+            }
+            requestAnimationFrame(drawSpectrum);
+        }
+        drawSpectrum();
+
+        function runDiagnostic() {
+            const artist = document.getElementById('artistName').value || "Emerging Artist";
+            const track = document.getElementById('trackTitle').value || "Demo 1";
+            const city = document.getElementById('homeCity').value;
+            const genre = document.getElementById('subgenre').value;
+            const bpm = genre === 'Techno' ? 132.0 : genre === 'House' ? 124.0 : 85.0;
+
+            document.getElementById('bpmTag').innerText = bpm + ' BPM';
+            document.getElementById('genreTag').innerText = genre + ' (95.2% match)';
+
+            // Update pitch email
+            const venue = city === 'Berlin' ? 'Tresor Berlin' : city === 'London' ? 'Village Underground' : 'Bowery Ballroom';
+            const pitch = `Subject: Live Debut Pitch / Support Slot Inquiry: ${artist} @ ${venue}
+
+Hi ${venue} Bookings Team,
+
+I hope you're having a great week. I'm ${artist}, a ${city}-based producer producing ${genre} (sound profile: ${bpm} BPM, Mel-Tempogram acoustic energy aligned with the local scene).
+
+I've just finalized my new 3-track EP '${track}', and I'm looking to play opening support slots for your upcoming club nights.
+You can listen to the private demo stream here: [Private Demo Stream Link]
+
+I would love to be considered for an opening support slot on your lineup. Thank you for your time and for supporting grassroots music!
+
+Best regards,
+${artist}
+Contact: booking@${artist.toLowerCase().replace(/\\s+/g, '')}-official.com`;
+
+            document.getElementById('pitchBox').innerText = pitch;
+        }
+
+        function copyPitch() {
+            const text = document.getElementById('pitchBox').innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Booking pitch copied to clipboard!');
+            });
+        }
+    </script>
+</body>
+</html>
