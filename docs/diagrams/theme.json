@@ -1,0 +1,44 @@
+{
+  "theme": "base",
+  "themeVariables": {
+    "darkMode": true,
+
+    "background": "transparent",
+
+    "primaryColor": "#10212b",
+    "primaryTextColor": "#e9eef2",
+    "primaryBorderColor": "#40e0d0",
+
+    "secondaryColor": "#1b3442",
+    "secondaryTextColor": "#e9eef2",
+    "secondaryBorderColor": "#40e0d0",
+
+    "tertiaryColor": "#253f4f",
+    "tertiaryTextColor": "#e9eef2",
+    "tertiaryBorderColor": "#40e0d0",
+
+    "lineColor": "#40e0d0",
+    "defaultLinkColor": "#40e0d0",
+    "textColor": "#e9eef2",
+
+    "mindmapNodeBackground": "#ffffff",
+    "mindmapNodeBorder": "#1b3442",
+    "mindmapNodeTextColor": "#000000",
+
+    "mindmapBranchColor": "#40e0d0",
+    "mindmapLeafColor": "#1b3442"
+  },
+
+  "mindmap": {
+    "root": {
+      "fill": "#ffffff",
+      "stroke": "#1b3442",
+      "color": "#000000"
+    },
+    "child": {
+      "fill": "#ffffff",
+      "stroke": "#1b3442",
+      "color": "#000000"
+    }
+  }
+}

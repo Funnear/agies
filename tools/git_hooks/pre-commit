@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+
+# Fail fast
+set -euo pipefail
+
+echo "== Pre-commit: running lint, format and smoke tests =="
+
+# Resolve project root
+PROJECT_ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
+
+# Ensure env vars and PYTHONPATH are correct
+source "${PROJECT_ROOT}/tools/shell_scripts/export_vars.sh"
+
+# Run checks
+make smoke_test
+
+echo "== Pre-commit checks passed =="

@@ -1,0 +1,31 @@
+# === Standard Python tools ===
+python-dotenv
+pyyaml
+pytest
+
+# === Linting libraries ===
+black
+black[jupyter]
+ruff
+coverage
+
+# === Jupyter & Notebooks ===
+jupyterlab
+ipykernel
+
+# === Data Handling & EDA ===
+pandas
+numpy
+
+# === Data Visualization ===
+matplotlib
+seaborn
+
+# === ML ===
+scikit-learn
+
+# === Front End / UI ===
+
+
+# === Optional Utilities / Images ===
+

@@ -1,0 +1,36 @@
+{
+  // Extensions recommended for all contributors to this repo
+  "recommendations": [
+    // --- Python & Jupyter ---
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-toolsai.jupyter",
+    "ms-toolsai.jupyter-keymap",
+    "ms-toolsai.jupyter-renderers",
+    "ms-toolsai.vscode-jupyter-cell-tags",
+    "ms-toolsai.vscode-jupyter-slideshow",
+
+    // --- Documentation & Diagrams ---
+    "bierner.markdown-mermaid",
+    "davidanson.vscode-markdownlint",
+    "redhat.vscode-yaml",
+    "streetsidesoftware.code-spell-checker", 
+    "yzhang.markdown-all-in-one",
+
+    // --- Git & Collaboration ---
+    "eamodio.gitlens",
+    "github.vscode-pull-request-github",
+
+    // --- Build & Tools ---
+    "ms-vscode.makefile-tools",
+
+    // --- Data / Misc Tools ---
+    "mechatroner.rainbow-csv",
+    "tomoki1207.pdf"
+  ],
+
+  // Extensions that should NOT be used in this workspace
+  "unwantedRecommendations": [
+    "ms-python.black-formatter" // Black is invoked via CLI + Make
+  ]
+}

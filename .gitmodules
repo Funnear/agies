@@ -1,0 +1,3 @@
+[submodule "libs/data_ravers_utils"]
+	path = libs/data_ravers_utils
+	url = https://github.com/funnear/data_ravers_utils.git
