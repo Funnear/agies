@@ -30,7 +30,7 @@ Run once per project.
 [macOS, Linux]
 
 ```bash
-git remote add template git@github.com:ORG/TEMPLATE_REPOSITORY.git ; \
+git remote add template git@github.com:Funnear/data_science_project_template_by_faen.git ; \
 git remote -v
 ```
 
