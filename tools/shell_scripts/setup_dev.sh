@@ -70,20 +70,43 @@ fi
 # ---------------------------
 # Python venv
 # ---------------------------
+PYTHON_BIN=""
+for candidate in python3 python; do
+  if command -v "$candidate" >/dev/null 2>&1 && \
+     "$candidate" -c 'import sys; sys.exit(0 if sys.version_info[0] == 3 else 1)' >/dev/null 2>&1; then
+    PYTHON_BIN="$candidate"
+    break
+  fi
+done
+
+if [[ -z "$PYTHON_BIN" ]]; then
+  log_error "Python 3 is required but was not found (tried: python3, python)."
+  exit 1
+fi
+
 VENVDIR="${PROJECT_ROOT}/venv"
 if [[ ! -d "${VENVDIR}" ]]; then
   log_info "Creating virtual environment at ${VENVDIR}"
-  python3 -m venv "${VENVDIR}"
+  "$PYTHON_BIN" -m venv "${VENVDIR}"
 else
   log_info "Virtual environment already exists at ${VENVDIR}"
 fi
 
+# POSIX venvs put the activate script in bin/, Windows venvs use Scripts/
+if [[ -f "${VENVDIR}/Scripts/activate" ]]; then
+  VENV_BIN_DIR="${VENVDIR}/Scripts"
+else
+  VENV_BIN_DIR="${VENVDIR}/bin"
+fi
+
 # shellcheck disable=SC1090
-source "${VENVDIR}/bin/activate"
+source "${VENV_BIN_DIR}/activate"
 
 log_info "Upgrading pip and installing Python requirements"
-pip install --upgrade pip
-pip install -r "${PROJECT_ROOT}/requirements.txt"
+# Use "python -m pip" rather than "pip install --upgrade pip": on Windows, pip.exe
+# can't overwrite itself while it's the process doing the upgrading.
+python -m pip install --upgrade pip
+python -m pip install -r "${PROJECT_ROOT}/requirements.txt"
 
 # ---------------------------
 # Node tooling (markdownlint-cli)
@@ -176,6 +199,6 @@ log_info "Node:   $(node --version)"
 log_info "npm:    $(npm --version)"
 log_info "Developer setup completed (mode: ${MODE})"
 echo "Next step in this shell:"
-echo "  source venv/bin/activate"
+echo "  source ${VENV_BIN_DIR#$PROJECT_ROOT/}/activate"
 echo "and in the activated shell:"
 echo "  source tools/shell_scripts/export_vars.sh --debug"
