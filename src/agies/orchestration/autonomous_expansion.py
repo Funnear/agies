@@ -109,6 +109,13 @@ class AutonomousKnowledgeGraphExpander:
         india_builder = IndiaMusicEcosystemBuilder()
         india_stats = india_builder.enrich_india_ecosystem(industry_graph)
 
+        # Step 2.9: Deep Multi-Tier Genre Taxonomy Expansion
+        logger.info("-> Expanding Multi-Tier Genre Lineages & Micro-Subgenre Profiles...")
+        from agies.graph.genre_expansion import DeepGenreTaxonomyExpander
+
+        genre_expander = DeepGenreTaxonomyExpander()
+        genre_stats = genre_expander.expand_genre_taxonomies(industry_graph)
+
         # Step 3: Ingest Live Data Connectors
         logger.info(
             "-> 3/7 Ingesting Live Data Connectors (MusicBrainz, Wikidata, Discogs, Festivals)..."
@@ -224,6 +231,7 @@ class AutonomousKnowledgeGraphExpander:
             "wavefront_expansion": wavefront_stats,
             "recursive_wave_propagation": recursive_stats,
             "india_ecosystem": india_stats,
+            "genre_expansion": genre_stats,
             "audio_corpus_expansion": audio_results,
             "web_audio_scraping": web_scraper_results,
             "global_curators": curator_results,
