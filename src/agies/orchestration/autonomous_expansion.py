@@ -146,6 +146,15 @@ class AutonomousKnowledgeGraphExpander:
         web_scraper = WebAudioScraperEnricher()
         web_scraper_results = web_scraper.scrape_and_enrich_all(industry_graph)
 
+        # Step 4.6: Global Curator Broadcast Scraper (Anjuna, Boiler Room, Cercle, Afterlife, Keinemusik)
+        logger.info(
+            "-> Scraping Global Curators & Broadcasts (Anjunadeep, Boiler Room, Cercle, Afterlife, Keinemusik)..."
+        )
+        from agies.audio.curator_scraper import GlobalCuratorWebScraperEnricher
+
+        curator_scraper = GlobalCuratorWebScraperEnricher()
+        curator_results = curator_scraper.scrape_and_enrich_curators(industry_graph)
+
         # Step 5: Deep Mel-Tempogram Graph Enrichment
         logger.info(
             "-> 5/7 Running Deep Mel-Tempogram Acoustic Enrichment (arXiv:2110.08862)..."
@@ -217,6 +226,7 @@ class AutonomousKnowledgeGraphExpander:
             "india_ecosystem": india_stats,
             "audio_corpus_expansion": audio_results,
             "web_audio_scraping": web_scraper_results,
+            "global_curators": curator_results,
             "acoustic_enrichment": enrichment_results,
             "density_inclusion": density_results,
             "description_enrichment": desc_results,
