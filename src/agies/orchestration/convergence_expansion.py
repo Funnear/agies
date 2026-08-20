@@ -16,7 +16,7 @@ from pathlib import Path
 import time
 from typing import Any, Dict, List, Optional
 
-from agies.orchestration.weekly_expansion import WeeklyKnowledgeGraphExpander
+from agies.orchestration.autonomous_expansion import AutonomousKnowledgeGraphExpander
 
 logger = logging.getLogger("agies.orchestration.convergence_expansion")
 
@@ -71,7 +71,7 @@ class AdaptiveConvergenceExpander:
             max_str,
         )
 
-        expander = WeeklyKnowledgeGraphExpander(data_dir=self.data_dir)
+        expander = AutonomousKnowledgeGraphExpander(data_dir=self.data_dir)
         epochs_history: List[ConvergenceEpoch] = []
 
         prev_nodes = 0
