@@ -55,8 +55,8 @@ node --version; npm --version
 [macOS, linux, Windows (Git Bash)]
 
 ```bash
-git clone https://github.com/Funnear/data_science_project_template_by_faen; \
-cd data_science_project_template_by_faen
+git clone https://github.com/Funnear/agies.git; \
+cd agies
 ```
 
 ## Run the developer setup script
