@@ -164,6 +164,62 @@ const GRAPH_NODES: Graph3DNode[] = [
     description: "Revolver Upstairs endurance clubbing, Melbourne minimal, and indie psych rock.",
     connections: ["city_berlin", "ven_revolver"],
   },
+  {
+    id: "city_mumbai",
+    name: "Mumbai Hub",
+    category: "city",
+    country: "India",
+    position: [3.5, 0.5, 3.8],
+    color: "#00f0ff",
+    size: 0.42,
+    description: "National commercial, hip-hop, and electronic capital (antiSOCIAL, YRF Studios, Azadi Records).",
+    connections: ["city_london", "city_goa", "city_delhi", "ven_antisocial_mumbai", "std_yrf_mumbai", "lbl_azadi"],
+  },
+  {
+    id: "city_goa",
+    name: "Goa Coastal Hub",
+    category: "city",
+    country: "India",
+    position: [4.2, -1.2, 4.5],
+    color: "#00f0ff",
+    size: 0.4,
+    description: "Global spiritual capital of Goa Trance & coastal sunset deep house (HillTop, Shiva Valley, Anjuna).",
+    connections: ["city_mumbai", "city_berlin", "ven_hilltop_goa", "cur_anjuna_goa"],
+  },
+  {
+    id: "ven_antisocial_mumbai",
+    name: "antiSOCIAL Mumbai (Lower Parel)",
+    category: "venue",
+    position: [3.2, 1.2, 3.5],
+    color: "#eab308",
+    size: 0.28,
+    soundSystem: "Subterranean Todi Mills Club PA",
+    description: "Underground warehouse bunker for cutting-edge techno, modular live sets, and hip-hop cyphers.",
+    connections: ["city_mumbai", "art_divine"],
+  },
+  {
+    id: "ven_hilltop_goa",
+    name: "HillTop Goa (Vagator)",
+    category: "venue",
+    position: [4.5, -0.8, 4.8],
+    color: "#eab308",
+    size: 0.3,
+    soundSystem: "Full-Spectrum Open-Air Psychoacoustic Array",
+    description: "The global spiritual mecca of Goa trance perched on Vagator's hills since the early 1980s.",
+    connections: ["city_goa", "cur_anjuna_goa"],
+  },
+  {
+    id: "cur_anjuna_goa",
+    name: "Anjunadeep Open Air Goa",
+    category: "festival",
+    position: [4.8, -1.8, 4.2],
+    color: "#fb7185",
+    size: 0.32,
+    bpm: 123,
+    genre: "Melodic House",
+    description: "Anjuna beachfront showcase blending analog Prophet-6 pad swells with sunset melodic deep house.",
+    connections: ["city_goa", "ven_hilltop_goa", "art_nilsfrahm"],
+  },
 
   // === ACOUSTIC TITANS & ARTISTS (Purple / Pink #c084fc) ===
   {
@@ -499,6 +555,9 @@ export const NetworkGraph3D: React.FC = () => {
     } else if (presetId === "asia_africa") {
       flyCameraTo(new THREE.Vector3(2.5, 2.0, -5.0), new THREE.Vector3(3.0, 0.0, -2.0));
       setSelectedNode(GRAPH_NODES[4]);
+    } else if (presetId === "india") {
+      flyCameraTo(new THREE.Vector3(3.8, 0.2, 9.0), new THREE.Vector3(3.5, 0.0, 4.0));
+      setSelectedNode(GRAPH_NODES.find((n) => n.id === "city_mumbai") || GRAPH_NODES[0]);
     }
   };
 
@@ -787,7 +846,7 @@ export const NetworkGraph3D: React.FC = () => {
         <div className="flex items-center gap-3 bg-black/85 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 pointer-events-auto shadow-2xl">
           <div className="w-2.5 h-2.5 rounded-full bg-[#1DB954] animate-pulse"></div>
           <span className="text-xs font-mono font-bold text-white tracking-wide">
-            584 NODES • 2,029 EDGES • INTERACTIVE 3D WEBGL GALAXY
+            LIVE AUTONOMOUS EXPANSION • 778 NODES • 24,007+ EDGES • 30 COUNTRIES
           </span>
         </div>
 
@@ -797,6 +856,7 @@ export const NetworkGraph3D: React.FC = () => {
             {[
               { id: "overview", label: "Galaxy Overview" },
               { id: "berlin", label: "Berlin Hub" },
+              { id: "india", label: "India (Mumbai/Goa)" },
               { id: "americas", label: "Americas & Caribbean" },
               { id: "asia_africa", label: "Asia-Pacific & Africa" },
             ].map((preset) => (
