@@ -2,6 +2,36 @@
 
 ## Preconditions
 
+### Windows: use Git Bash, not PowerShell/cmd
+
+All setup and tooling scripts in this repo are bash scripts. On Windows they must be run from
+**Git Bash** (installed as part of [Git for Windows](https://gitforwindows.org/), which you need
+anyway to clone the repo) — not PowerShell or cmd.exe. Every command below with a `[Windows]` tag
+assumes a Git Bash shell.
+
+### `make` is required (setup shortcut, linting, and the pre-commit hook)
+
+[macOS]
+
+Usually preinstalled with Xcode Command Line Tools. If missing:
+
+```bash
+xcode-select --install
+```
+
+[Windows]
+
+Not installed by default — install GNU Make via winget:
+
+```bash
+winget install GnuWin32.Make
+```
+
+Then make sure `C:\Program Files (x86)\GnuWin32\bin` is on your `PATH` (restart Git Bash after
+installing, or add it for the current session with
+`export PATH="/c/Program Files (x86)/GnuWin32/bin:$PATH"`). Without this, `make setup` and the
+pre-commit hook (which runs `make smoke_test`) will fail with `make: command not found`.
+
 ### Mermaid requires NodeJS, install it
 
 [macOS]
@@ -11,20 +41,31 @@ brew update; \
 brew install node
 ```
 
-## Clone and enter the project
+[Windows]
 
-[macOS, linux]
+Install the LTS release from [nodejs.org](https://nodejs.org/) (or `winget install OpenJS.NodeJS.LTS`),
+then verify `node` and `npm` are on PATH inside Git Bash:
 
 ```bash
-git clone https://github.com/Funnear/data_science_project_template_by_faen; \
-cd data_science_project_template_by_faen
+node --version; npm --version
+```
+
+## Clone and enter the project
+
+[macOS, linux, Windows (Git Bash)]
+
+```bash
+git clone https://github.com/Funnear/agies.git; \
+cd agies
 ```
 
 ## Run the developer setup script
 
 It makes tools executable, creates venv, installs deps, registers Jupyter kernel, installs git hook.
+It auto-detects the platform (Windows vs macOS/Linux) — no separate steps needed per OS, just run it
+from Git Bash on Windows.
 
-[macOS, linux]
+[macOS, linux, Windows (Git Bash)]
 
 ```bash
 chmod +x tools/shell_scripts/setup_dev.sh; \
@@ -33,7 +74,7 @@ chmod +x tools/shell_scripts/setup_dev.sh; \
 
 or better:
 
-[macOS, linux]
+[macOS, linux, Windows (Git Bash)]
 
 ```bash
 chmod +x tools/shell_scripts/setup_dev.sh; \
@@ -42,8 +83,16 @@ make setup
 
 ## Activate the virtual environment for day-to-day work
 
+[macOS, linux]
+
 ```bash
 source venv/bin/activate
+```
+
+[Windows (Git Bash)]
+
+```bash
+source venv/Scripts/activate
 ```
 
 ## Set environment variables
