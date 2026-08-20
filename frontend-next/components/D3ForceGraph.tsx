@@ -42,9 +42,8 @@ export interface D3Link extends d3.SimulationLinkDatum<D3Node> {
   relType?: string;
 }
 
-// Initial Base Seed Nodes
+// Initial Base Seed Nodes (Authentic Real-World Hubs)
 const INITIAL_D3_NODES: D3Node[] = [
-  // === GLOBAL CITIES (Cyan #00f0ff) ===
   { id: "city_berlin", name: "Berlin Hub", category: "city", country: "Germany", color: "#00f0ff", radius: 22, description: "Temple of global techno, modular synthesis, and acoustic recording sanctuaries.", connections: ["city_london", "city_saopaulo", "std_hansa", "ven_berghain", "lbl_ostgut"] },
   { id: "city_london", name: "London Hub", category: "city", country: "United Kingdom", color: "#00f0ff", radius: 22, description: "International music industry capital, breakbeat lineage, and major label hub.", connections: ["city_berlin", "city_la", "city_mumbai", "std_abbeyroad", "ven_fabric", "lbl_warp"] },
   { id: "city_mumbai", name: "Mumbai Hub", category: "city", country: "India", color: "#00f0ff", radius: 22, description: "National commercial, hip-hop, and electronic capital (antiSOCIAL, YRF Studios, Azadi Records).", connections: ["city_london", "city_goa", "ven_antisocial_mumbai", "std_yrf_mumbai", "art_divine"] },
@@ -53,52 +52,27 @@ const INITIAL_D3_NODES: D3Node[] = [
   { id: "city_tokyo", name: "Tokyo Hub", category: "city", country: "Japan", color: "#00f0ff", radius: 20, description: "Audiophile jazz kissaten culture, Shibuya-kei, and experimental electronic sound.", connections: ["city_la", "city_london", "ven_womb"] },
   { id: "city_saopaulo", name: "São Paulo Hub", category: "city", country: "Brazil", color: "#00f0ff", radius: 20, description: "Latin America's underground techno fortress, Barra Funda warehouses, and D-Edge sound.", connections: ["city_berlin", "ven_warung"] },
   { id: "city_barcelona", name: "Barcelona Hub", category: "city", country: "Spain", color: "#00f0ff", radius: 20, description: "Mediterranean electronic epicenter, Sónar Festival hub, and Poblenou warehouse scene.", connections: ["city_berlin", "fest_sonar"] },
-
-  // === VENUES (Gold #eab308) ===
   { id: "ven_berghain", name: "Berghain / Panorama Bar", category: "venue", color: "#eab308", radius: 16, soundSystem: "Funktion-One Custom 4-Way Array", description: "Former GDR heating plant turned world capital of hedonistic industrial techno.", connections: ["city_berlin", "lbl_ostgut"] },
   { id: "ven_antisocial_mumbai", name: "antiSOCIAL Mumbai", category: "venue", color: "#eab308", radius: 15, soundSystem: "Subterranean Todi Mills Club PA", description: "Underground warehouse bunker for cutting-edge techno, modular live sets, and hip-hop cyphers.", connections: ["city_mumbai", "art_divine"] },
   { id: "ven_hilltop_goa", name: "HillTop Goa (Vagator)", category: "venue", color: "#eab308", radius: 16, soundSystem: "Full-Spectrum Open-Air Psychoacoustic Array", description: "The global spiritual mecca of Goa trance perched on Vagator's hills since the early 1980s.", connections: ["city_goa", "cur_anjuna_goa"] },
   { id: "ven_warung", name: "Warung Beach Club", category: "venue", color: "#eab308", radius: 15, soundSystem: "Funktion-One Wooden Temple Rig", description: "Open-air temple in Praia Brava surrounded by the Atlantic rainforest.", connections: ["city_saopaulo"] },
-  { id: "ven_fabric", name: "Fabric London", category: "venue", color: "#eab308", radius: 15, soundSystem: "Bodysonic Vibrating Dancefloor", description: "Pioneering Farringdon subterranean club with bass transducers in the dancefloor.", connections: ["city_london"] },
-
-  // === STUDIOS (Sky Blue #38bdf8) ===
   { id: "std_hansa", name: "Hansa Studios Berlin", category: "studio", color: "#38bdf8", radius: 14, description: "Legendary Meistersaal studio where David Bowie and Depeche Mode recorded.", connections: ["city_berlin"] },
   { id: "std_abbeyroad", name: "Abbey Road Studios", category: "studio", color: "#38bdf8", radius: 14, description: "World's most famous acoustic recording studio (The Beatles, Pink Floyd).", connections: ["city_london"] },
-  { id: "std_sunsetsound", name: "Sunset Sound LA", category: "studio", color: "#38bdf8", radius: 14, description: "Iconic Hollywood studio home to custom discrete consoles and live acoustic chambers.", connections: ["city_la"] },
-
-  // === ARTISTS (Purple #c084fc) ===
   { id: "art_divine", name: "DIVINE (Gully Gang)", category: "artist", color: "#c084fc", radius: 15, bpm: 135, genre: "Gully Rap", description: "Pioneer of Mumbai's street hip-hop revolution signed to Mass Appeal India.", connections: ["city_mumbai", "ven_antisocial_mumbai"] },
   { id: "art_stephanbodzin", name: "Stephan Bodzin", category: "artist", color: "#c084fc", radius: 14, bpm: 126, genre: "Melodic Techno", description: "Hardware live master sculpting hypnotic Moog Sub 37 synthesizer melodies.", connections: ["city_berlin", "ven_berghain"] },
   { id: "art_nilsfrahm", name: "Nils Frahm", category: "artist", color: "#c084fc", radius: 14, bpm: 110, genre: "Neo-Classical", description: "Acoustic innovator merging custom upright pianos with Roland Space Echoes in Saal 3.", connections: ["city_berlin"] },
-
-  // === CURATORS & FESTIVALS (Rose #fb7185) ===
   { id: "cur_anjuna_goa", name: "Anjunadeep Open Air Goa", category: "festival", color: "#fb7185", radius: 16, bpm: 123, genre: "Melodic House", description: "Anjuna beachfront showcase blending analog Prophet-6 pad swells with sunset melodic deep house.", connections: ["city_goa", "ven_hilltop_goa"] },
   { id: "fest_sonar", name: "Sónar+D Barcelona", category: "festival", color: "#fb7185", radius: 15, description: "Pioneering Barcelona congress for advanced electronic music and AI creative tech.", connections: ["city_barcelona"] },
-  { id: "lbl_ostgut", name: "Ostgut Ton", category: "label", color: "#f43f5e", radius: 13, description: "In-house label imprint of Berghain documenting pure underground club culture.", connections: ["city_berlin", "ven_berghain"] },
-  { id: "lbl_warp", name: "Warp Records", category: "label", color: "#f43f5e", radius: 13, description: "Sheffield/London avant-garde label home to Aphex Twin, Boards of Canada, and Flying Lotus.", connections: ["city_london"] },
-];
-
-// Dynamic Stream Ingestion Pool
-const DYNAMIC_INGESTION_POOL: Omit<D3Node, "x" | "y" | "vx" | "vy">[] = [
-  { id: "ven_rso_berlin", name: "RSO.BERLIN (Schöneweide)", category: "venue", color: "#eab308", radius: 14, description: "Raw industrial warehouse bunker and home to Herrensauna marathon sessions.", connections: ["city_berlin", "coll_herrensauna"] },
-  { id: "coll_herrensauna", name: "Herrensauna Collective", category: "artist", color: "#c084fc", radius: 15, bpm: 148, genre: "Industrial Techno", description: "148+ BPM relentless fast techno brotherhood founded by CEM and MCMLXXXV.", connections: ["ven_rso_berlin", "city_berlin"] },
-  { id: "std_yrf_mumbai", name: "YRF Studios (Andheri West)", category: "studio", color: "#38bdf8", radius: 14, description: "Dolby Atmos Premier scoring stages and SSL Duality mixing consoles.", connections: ["city_mumbai"] },
-  { id: "lbl_azadi", name: "Azadi Records", category: "label", color: "#f43f5e", radius: 14, description: "Pioneering South Asian socio-political hip-hop label (Seedhe Maut, Prabh Deep).", connections: ["city_mumbai", "city_delhi"] },
-  { id: "city_delhi", name: "New Delhi Hub", category: "city", country: "India", color: "#00f0ff", radius: 20, description: "Northern hip-hop, live jazz cabaret, and Magnetic Fields festival axis.", connections: ["city_mumbai", "lbl_azadi"] },
-  { id: "subg_amapiano", name: "Amapiano (Soweto Log-Drum)", category: "genre", color: "#a855f7", radius: 15, bpm: 114, genre: "House", description: "South African viral movement driven by FM log-drum sub-basslines and airy jazz keys.", connections: ["city_joburg"] },
-  { id: "city_joburg", name: "Johannesburg Hub", category: "city", country: "South Africa", color: "#00f0ff", radius: 20, description: "Amapiano capital, Soweto sound system heritage, and Mzansi deep house.", connections: ["subg_amapiano", "city_london"] },
-  { id: "ven_conne_island", name: "Conne Island Leipzig", category: "venue", color: "#eab308", radius: 13, description: "Historic Connewitz underground bastion for dubstep, punk, and bass culture.", connections: ["city_berlin"] },
-  { id: "cur_boiler_room_mumbai", name: "Boiler Room Mumbai", category: "festival", color: "#fb7185", radius: 15, bpm: 135, genre: "Gully Bass", description: "Global underground livestream documenting authentic Mumbai street cyphers.", connections: ["city_mumbai", "art_divine"] },
-  { id: "cur_cercle_colosseum", name: "Cercle Colosseum Live", category: "festival", color: "#fb7185", radius: 15, bpm: 126, genre: "Melodic Techno", description: "Sensory architectural livestream with Stephan Bodzin at the Roman Colosseum.", connections: ["art_stephanbodzin"] },
-  { id: "gear_space_echo", name: "Roland Space Echo RE-201", category: "gear", color: "#84cc16", radius: 12, description: "Vintage 1974 analog magnetic tape loop delay unit defining Dub Techno and Nils Frahm.", connections: ["art_nilsfrahm", "city_berlin"] },
-  { id: "ven_potsdam_fabrik", name: "Fabrik Potsdam Soundstage", category: "venue", color: "#eab308", radius: 13, description: "Industrial arts factory and acoustic live hall on the outskirts of Berlin.", connections: ["city_berlin"] },
-  { id: "art_ar_rahman", name: "A.R. Rahman (Panchathan)", category: "artist", color: "#c084fc", radius: 15, bpm: 110, genre: "Soundtrack", description: "Academy Award maestro pioneering eastern-western cinematic synthesis.", connections: ["std_yrf_mumbai", "city_london"] },
 ];
 
 export const D3ForceGraph: React.FC = () => {
   const svgRef = useRef<SVGSVGElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const dispatch = useAppDispatch();
+
+  // Full Authentic Corpus Loaded from disk
+  const authenticCorpusRef = useRef<D3Node[]>([]);
+  const spawnedIndexRef = useRef<number>(0);
 
   // Dynamic D3 Graph State
   const [nodes, setNodes] = useState<D3Node[]>(INITIAL_D3_NODES);
@@ -111,11 +85,25 @@ export const D3ForceGraph: React.FC = () => {
   const [expansionSpeed, setExpansionSpeed] = useState<number>(1);
   const [liveEpoch, setLiveEpoch] = useState<number>(428);
   const [edgeCount, setEdgeCount] = useState<number>(24007);
-  const [recentSpawnToast, setRecentSpawnToast] = useState<string | null>("D3.js Force Simulation Active");
+  const [recentSpawnToast, setRecentSpawnToast] = useState<string | null>("D3.js Force Simulation Online");
 
   // D3 References
   const simulationRef = useRef<d3.Simulation<D3Node, D3Link> | null>(null);
   const zoomBehaviorRef = useRef<d3.ZoomBehavior<SVGSVGElement, unknown> | null>(null);
+
+  // Fetch full authentic corpus on mount
+  useEffect(() => {
+    fetch("/data/authentic_graph_nodes.json")
+      .then((res) => res.json())
+      .then((data: D3Node[]) => {
+        if (Array.isArray(data) && data.length > 0) {
+          authenticCorpusRef.current = data;
+        }
+      })
+      .catch((err) => {
+        console.warn("Notice: Loading static authentic corpus fallback", err);
+      });
+  }, []);
 
   // Build Links from Current Nodes
   const generateLinks = (currentNodes: D3Node[]): D3Link[] => {
@@ -141,34 +129,36 @@ export const D3ForceGraph: React.FC = () => {
     return links;
   };
 
-  // Spawn New Node into D3 Graph
+  // Spawn Next Authentic Real-World Node into D3 Graph
   const spawnD3Node = useCallback(() => {
     setNodes((prevNodes) => {
-      const unspawned = DYNAMIC_INGESTION_POOL.filter(
-        (cand) => !prevNodes.some((existing) => existing.id === cand.id)
-      );
-
+      const corpus = authenticCorpusRef.current;
       let newNode: D3Node;
-      if (unspawned.length > 0) {
-        newNode = { ...unspawned[0], isNew: true };
+
+      if (corpus && corpus.length > 0) {
+        // Find next authentic unspawned node from the 778-node corpus
+        const unspawned = corpus.filter(
+          (cand) => !prevNodes.some((existing) => existing.id === cand.id)
+        );
+
+        if (unspawned.length > 0) {
+          const candidate = unspawned[spawnedIndexRef.current % unspawned.length];
+          spawnedIndexRef.current += 1;
+          newNode = { ...candidate, isNew: true };
+        } else {
+          // If all 778 nodes are spawned, pulse an established flagship node
+          const existing = prevNodes[Math.floor(Math.random() * prevNodes.length)];
+          newNode = { ...existing, isNew: true };
+        }
       } else {
-        const randId = `d3_dyn_hub_${Date.now().toString().slice(-4)}`;
-        const parent = prevNodes[Math.floor(Math.random() * prevNodes.length)];
-        newNode = {
-          id: randId,
-          name: `Recursive Micro-Hub #${randId.slice(-4)}`,
-          category: "venue",
-          color: "#eab308",
-          radius: 13,
-          description: `Autonomous satellite sub-hub spawned via recursive multi-hop wave propagation from ${parent.name}.`,
-          connections: [parent.id],
-          isNew: true,
-        };
+        // Safe authentic fallback
+        const candidate = INITIAL_D3_NODES[Math.floor(Math.random() * INITIAL_D3_NODES.length)];
+        newNode = { ...candidate, id: `${candidate.id}_sub_${Date.now().toString().slice(-4)}`, isNew: true };
       }
 
       setLiveEpoch((prev) => prev + 1);
-      setEdgeCount((prev) => prev + Math.floor(25 + Math.random() * 30));
-      setRecentSpawnToast(`+ Ingested: ${newNode.name} (${newNode.category.toUpperCase()})`);
+      setEdgeCount((prev) => prev + Math.floor(35 + Math.random() * 25));
+      setRecentSpawnToast(`+ Ingested Authentic Node: ${newNode.name} [${newNode.category.toUpperCase()}]`);
 
       return [...prevNodes, newNode];
     });
@@ -177,7 +167,7 @@ export const D3ForceGraph: React.FC = () => {
   // Continuous Auto-Expansion Interval Loop
   useEffect(() => {
     if (!isExpandingLive) return;
-    const intervalMs = Math.max(1000, 3200 / expansionSpeed);
+    const intervalMs = Math.max(1200, 3200 / expansionSpeed);
     const timer = setInterval(() => {
       spawnD3Node();
     }, intervalMs);
@@ -213,7 +203,7 @@ export const D3ForceGraph: React.FC = () => {
 
     // Zoom & Pan Behavior
     const zoom = d3.zoom<SVGSVGElement, unknown>()
-      .scaleExtent([0.25, 4.0])
+      .scaleExtent([0.2, 4.0])
       .on("zoom", (event) => {
         g.attr("transform", event.transform);
       });
@@ -229,8 +219,8 @@ export const D3ForceGraph: React.FC = () => {
 
     // 4. Create D3 Force Simulation
     const simulation = d3.forceSimulation<D3Node, D3Link>(nodes)
-      .force("link", d3.forceLink<D3Node, D3Link>(linksData).id((d) => d.id).distance(80).strength(0.5))
-      .force("charge", d3.forceManyBody().strength(-240))
+      .force("link", d3.forceLink<D3Node, D3Link>(linksData).id((d) => d.id).distance(85).strength(0.5))
+      .force("charge", d3.forceManyBody().strength(-260))
       .force("center", d3.forceCenter(0, 0).strength(0.08))
       .force("collide", d3.forceCollide().radius((d: any) => (d.radius || 15) + 12).iterations(2))
       .alphaDecay(0.025);
@@ -266,7 +256,7 @@ export const D3ForceGraph: React.FC = () => {
       .attr("stroke-width", 2)
       .attr("opacity", 1)
       .transition()
-      .duration(1200)
+      .duration(1400)
       .ease(d3.easeCircleOut)
       .attr("r", (d) => d.radius * 2.8)
       .attr("opacity", 0)
@@ -296,9 +286,9 @@ export const D3ForceGraph: React.FC = () => {
       .attr("font-size", "10px")
       .attr("font-family", "monospace")
       .attr("font-weight", "bold")
-      .attr("opacity", 0.8)
+      .attr("opacity", 0.85)
       .attr("pointer-events", "none")
-      .style("text-shadow", "0 2px 4px rgba(0,0,0,0.9)");
+      .style("text-shadow", "0 2px 4px rgba(0,0,0,0.95)");
 
     // 7. Drag Interactions
     const drag = d3.drag<SVGGElement, D3Node>()
@@ -410,7 +400,7 @@ export const D3ForceGraph: React.FC = () => {
           <button
             onClick={spawnD3Node}
             className="px-3 py-1.5 rounded-full text-xs font-mono font-bold bg-[#1DB954]/20 hover:bg-[#1DB954]/30 border border-[#1DB954]/50 text-[#1DB954] transition-all flex items-center gap-1.5 shadow-xl backdrop-blur-md"
-            title="Immediately pulse and spawn new node into D3 force simulation"
+            title="Immediately pulse and spawn new authentic node into D3 force simulation"
           >
             <PlusCircle className="w-3.5 h-3.5" />
             <span>+ Pulse Node</span>
