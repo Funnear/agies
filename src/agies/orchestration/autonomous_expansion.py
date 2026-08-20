@@ -102,6 +102,13 @@ class AutonomousKnowledgeGraphExpander:
         recursive_engine = RecursiveWavePropagationEngine()
         recursive_stats = recursive_engine.recurse_graph_waves(industry_graph, max_propagation_depth=3)
 
+        # Step 2.8: Ingest India Music Ecosystem Starting from Mumbai
+        logger.info("-> Ingesting Indian Music Ecosystem & Corridors (Mumbai, Goa, Bengaluru, Delhi, Chennai)...")
+        from agies.graph.india_ecosystem import IndiaMusicEcosystemBuilder
+
+        india_builder = IndiaMusicEcosystemBuilder()
+        india_stats = india_builder.enrich_india_ecosystem(industry_graph)
+
         # Step 3: Ingest Live Data Connectors
         logger.info(
             "-> 3/7 Ingesting Live Data Connectors (MusicBrainz, Wikidata, Discogs, Festivals)..."
@@ -207,6 +214,7 @@ class AutonomousKnowledgeGraphExpander:
             "berlin_grassroots": berlin_stats,
             "wavefront_expansion": wavefront_stats,
             "recursive_wave_propagation": recursive_stats,
+            "india_ecosystem": india_stats,
             "audio_corpus_expansion": audio_results,
             "web_audio_scraping": web_scraper_results,
             "acoustic_enrichment": enrichment_results,
