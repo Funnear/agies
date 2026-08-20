@@ -9,6 +9,29 @@ All setup and tooling scripts in this repo are bash scripts. On Windows they mus
 anyway to clone the repo) — not PowerShell or cmd.exe. Every command below with a `[Windows]` tag
 assumes a Git Bash shell.
 
+### `make` is required (setup shortcut, linting, and the pre-commit hook)
+
+[macOS]
+
+Usually preinstalled with Xcode Command Line Tools. If missing:
+
+```bash
+xcode-select --install
+```
+
+[Windows]
+
+Not installed by default — install GNU Make via winget:
+
+```bash
+winget install GnuWin32.Make
+```
+
+Then make sure `C:\Program Files (x86)\GnuWin32\bin` is on your `PATH` (restart Git Bash after
+installing, or add it for the current session with
+`export PATH="/c/Program Files (x86)/GnuWin32/bin:$PATH"`). Without this, `make setup` and the
+pre-commit hook (which runs `make smoke_test`) will fail with `make: command not found`.
+
 ### Mermaid requires NodeJS, install it
 
 [macOS]
