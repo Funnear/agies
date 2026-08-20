@@ -36,8 +36,8 @@ def main():
     parser.add_argument(
         "--max-epochs",
         type=int,
-        default=10,
-        help="Maximum expansion epochs before terminating (default: 10)",
+        default=0,
+        help="Maximum expansion epochs (default: 0 = UNLIMITED, runs until flattened)",
     )
     parser.add_argument(
         "--delay",
@@ -47,11 +47,12 @@ def main():
     )
 
     args = parser.parse_args()
+    max_epochs_val = args.max_epochs if args.max_epochs > 0 else None
 
     expander = AdaptiveConvergenceExpander(
         convergence_threshold=args.threshold,
         patience_epochs=args.patience,
-        max_epochs=args.max_epochs,
+        max_epochs=max_epochs_val,
     )
 
     results = expander.run_until_flattened(

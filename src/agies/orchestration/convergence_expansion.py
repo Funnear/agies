@@ -1,7 +1,7 @@
 """Autonomous Adaptive Expansion Loop with Dynamic Convergence & Saturation Detection.
 
 Runs continuous autonomous ingestion, web scraping, and acoustic enrichment cycles
-until the Knowledge Graph expansion velocity flattens (plateaus) below a convergence threshold:
+without epoch limits until the Knowledge Graph expansion velocity flattens (plateaus) below a convergence threshold:
 - Computes Growth Velocity: g(t) = (Δ|V| / |V|) + (Δ|E| / |E|)
 - Detects Plateau / Saturation across consecutive steady-state epochs
 - Saves convergence history logs to `data/corpus/convergence_history.json`
@@ -37,7 +37,7 @@ class ConvergenceEpoch:
 
 
 class AdaptiveConvergenceExpander:
-    """Executes recurring expansion cycles autonomously until graph growth flattens."""
+    """Executes recurring expansion cycles autonomously without epoch limits until graph growth flattens."""
 
     DEFAULT_CONVERGENCE_THRESHOLD = 0.002  # Less than 0.2% growth
     DEFAULT_PATIENCE_EPOCHS = 2  # Number of consecutive flat epochs to confirm convergence
@@ -47,7 +47,7 @@ class AdaptiveConvergenceExpander:
         data_dir: Optional[Path] = None,
         convergence_threshold: float = DEFAULT_CONVERGENCE_THRESHOLD,
         patience_epochs: int = DEFAULT_PATIENCE_EPOCHS,
-        max_epochs: int = 15,
+        max_epochs: Optional[int] = None,  # None = Unlimited
     ):
         self.project_root = Path(__file__).resolve().parent.parent.parent.parent
         self.data_dir = Path(data_dir or (self.project_root / "data" / "corpus"))
@@ -62,12 +62,13 @@ class AdaptiveConvergenceExpander:
         initial_target_audio_per_genre: int = 15,
         delay_between_epochs_sec: float = 0.5,
     ) -> Dict[str, Any]:
-        """Execute expansion iterations until graph growth velocity flattens."""
+        """Execute continuous expansion iterations until graph growth velocity flattens."""
         start_time = time.time()
+        max_str = f"{self.max_epochs} Epochs" if self.max_epochs else "UNLIMITED (Runs until Flat)"
         logger.info(
-            "=== LAUNCHING AUTONOMOUS EXPANSION UNTIL FLATTENED (Threshold: %.4f, Max Epochs: %d) ===",
+            "=== LAUNCHING UNLIMITED EXPANSION UNTIL FLATTENED (Threshold: %.4f, Limit: %s) ===",
             self.convergence_threshold,
-            self.max_epochs,
+            max_str,
         )
 
         expander = WeeklyKnowledgeGraphExpander(data_dir=self.data_dir)
@@ -76,13 +77,19 @@ class AdaptiveConvergenceExpander:
         prev_nodes = 0
         prev_edges = 0
         consecutive_flat_epochs = 0
-        final_status = "max_epochs_reached"
+        final_status = "converged_and_flattened"
+        epoch_idx = 0
 
-        for epoch_idx in range(1, self.max_epochs + 1):
+        while True:
+            epoch_idx += 1
+            if self.max_epochs and epoch_idx > self.max_epochs:
+                final_status = "max_epochs_reached"
+                break
+
             epoch_start = time.time()
             target_audio = initial_target_audio_per_genre + (epoch_idx - 1) * 3
 
-            logger.info("-> Starting Expansion Epoch %d/%d...", epoch_idx, self.max_epochs)
+            logger.info("-> Starting Expansion Epoch #%d (Target Audio: %d)...", epoch_idx, target_audio)
             cycle_result = expander.run_weekly_cycle(target_audio_per_genre=target_audio)
 
             curr_nodes = cycle_result["total_nodes"]
@@ -103,7 +110,7 @@ class AdaptiveConvergenceExpander:
             if is_flat:
                 consecutive_flat_epochs += 1
                 logger.info(
-                    "   Epoch %d Growth Velocity: %.5f <= Threshold %.4f (Flat Streak: %d/%d)",
+                    "   Epoch #%d Growth Velocity: %.5f <= Threshold %.4f (Flat Streak: %d/%d)",
                     epoch_idx,
                     growth_velocity,
                     self.convergence_threshold,
@@ -113,7 +120,7 @@ class AdaptiveConvergenceExpander:
             else:
                 consecutive_flat_epochs = 0
                 logger.info(
-                    "   Epoch %d Growth Velocity: %.5f (Nodes: %d [+%d], Edges: %d [+%d])",
+                    "   Epoch #%d Growth Velocity: %.5f (Nodes: %d [+%d], Edges: %d [+%d])",
                     epoch_idx,
                     growth_velocity,
                     curr_nodes,
@@ -135,23 +142,38 @@ class AdaptiveConvergenceExpander:
             )
             epochs_history.append(epoch_telemetry)
 
+            # Persist live progress immediately after every epoch
+            interim_summary = {
+                "status": "running" if consecutive_flat_epochs < self.patience_epochs else "converged_and_flattened",
+                "last_updated": datetime.now(timezone.utc).isoformat(),
+                "total_elapsed_seconds": round(time.time() - start_time, 2),
+                "total_epochs_executed": len(epochs_history),
+                "final_total_nodes": curr_nodes,
+                "final_total_edges": curr_edges,
+                "convergence_threshold": self.convergence_threshold,
+                "patience_epochs": self.patience_epochs,
+                "epochs_trajectory": [asdict(e) for e in epochs_history],
+            }
+            with open(self.history_file, "w", encoding="utf-8") as f:
+                json.dump(interim_summary, f, indent=2)
+
             prev_nodes = curr_nodes
             prev_edges = curr_edges
 
             if consecutive_flat_epochs >= self.patience_epochs:
                 final_status = "converged_and_flattened"
                 logger.info(
-                    "=== CONVERGENCE ACHIEVED: Expansion curve flattened after %d epochs! ===",
+                    "=== CONVERGENCE ACHIEVED: Expansion curve mathematically flattened after %d epochs! ===",
                     epoch_idx,
                 )
                 break
 
-            if epoch_idx < self.max_epochs and delay_between_epochs_sec > 0:
+            if delay_between_epochs_sec > 0:
                 time.sleep(delay_between_epochs_sec)
 
         total_elapsed = round(time.time() - start_time, 2)
 
-        # Save History to Disk
+        # Save Final History to Disk
         convergence_summary = {
             "status": final_status,
             "completed_at": datetime.now(timezone.utc).isoformat(),
