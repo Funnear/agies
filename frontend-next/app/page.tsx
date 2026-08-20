@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { AudioVisualizer3D } from "@/components/AudioVisualizer3D";
 import { NetworkGraph3D } from "@/components/NetworkGraph3D";
+import { D3ForceGraph } from "@/components/D3ForceGraph";
 import { useAppDispatch, useAppSelector } from "@/store";
 import {
   togglePlay,
@@ -72,6 +73,7 @@ import {
   Link2,
   Search,
   Waves,
+  Zap,
 } from "lucide-react";
 
 export default function SpotifyPolishedApp() {
@@ -79,6 +81,7 @@ export default function SpotifyPolishedApp() {
   const [activeNav, setActiveNav] = useState<
     "home" | "studio" | "venues" | "discovery" | "galaxy" | "memory" | "analytics"
   >("home");
+  const [graphEngineMode, setGraphEngineMode] = useState<"d3" | "threejs">("d3");
 
   // Redux Global State
   const { currentTrack, isPlaying, volume, isLiked, showRightDrawer } =
@@ -962,11 +965,45 @@ Contact: booking@${artistName.toLowerCase().replace(/\s+/g, "")}-official.com`;
             )}
 
             {/* ---------------------------------------------------- */}
-            {/* VIEW 4: 3D GALAXY NETWORK                            */}
+            {/* VIEW 4: D3.JS & 3D GALAXY NETWORK                     */}
             {/* ---------------------------------------------------- */}
             {activeNav === "galaxy" && (
               <div className="space-y-4">
-                <NetworkGraph3D />
+                {/* Engine Selector Toggle */}
+                <div className="flex items-center justify-between bg-[#181818] p-3 rounded-xl border border-white/10 shadow-lg">
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs font-mono text-white/50 uppercase">Rendering Engine:</span>
+                    <div className="flex bg-black/60 p-1 rounded-lg border border-white/10 text-xs font-mono">
+                      <button
+                        onClick={() => setGraphEngineMode("d3")}
+                        className={`px-3 py-1 rounded-md transition-all flex items-center gap-1.5 ${
+                          graphEngineMode === "d3"
+                            ? "bg-[#1DB954] text-black font-extrabold shadow-md"
+                            : "text-white/60 hover:text-white"
+                        }`}
+                      >
+                        <Zap className="w-3.5 h-3.5" /> D3.js Force Physics (Live Expansion)
+                      </button>
+                      <button
+                        onClick={() => setGraphEngineMode("threejs")}
+                        className={`px-3 py-1 rounded-md transition-all flex items-center gap-1.5 ${
+                          graphEngineMode === "threejs"
+                            ? "bg-[#1DB954] text-black font-extrabold shadow-md"
+                            : "text-white/60 hover:text-white"
+                        }`}
+                      >
+                        <Globe2 className="w-3.5 h-3.5" /> Three.js 3D WebGL Galaxy
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className="text-[11px] font-mono text-[#1DB954] bg-[#1DB954]/10 px-3 py-1 rounded-full border border-[#1DB954]/30 flex items-center gap-1.5">
+                    <span className="w-2 h-2 rounded-full bg-[#1DB954] animate-ping"></span>
+                    Autonomous Wavefront Growth Active
+                  </div>
+                </div>
+
+                {graphEngineMode === "d3" ? <D3ForceGraph /> : <NetworkGraph3D />}
               </div>
             )}
 
