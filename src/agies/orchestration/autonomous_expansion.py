@@ -88,6 +88,13 @@ class AutonomousKnowledgeGraphExpander:
         grassroots_harvester = BerlinGrassrootsAudioHarvester()
         grassroots_harvester.harvest_all_grassroots_audio()
 
+        # Step 2.6: Slow-Start Concentric Wave-Front Expansion Outward from Berlin
+        logger.info("-> Ingesting Concentric Wave-Front Expansion Outward from Berlin (Waves 1-3)...")
+        from agies.graph.wavefront_expansion import ConcentricGeographicWaveFrontExpander
+
+        wavefront_engine = ConcentricGeographicWaveFrontExpander()
+        wavefront_stats = wavefront_engine.expand_concentric_wavefront(industry_graph, max_wave=3)
+
         # Step 3: Ingest Live Data Connectors
         logger.info(
             "-> 3/7 Ingesting Live Data Connectors (MusicBrainz, Wikidata, Discogs, Festivals)..."
@@ -191,6 +198,7 @@ class AutonomousKnowledgeGraphExpander:
             "total_nodes": summary["total_nodes"],
             "total_edges": summary["total_edges"],
             "berlin_grassroots": berlin_stats,
+            "wavefront_expansion": wavefront_stats,
             "audio_corpus_expansion": audio_results,
             "web_audio_scraping": web_scraper_results,
             "acoustic_enrichment": enrichment_results,

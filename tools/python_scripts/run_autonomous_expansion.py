@@ -42,7 +42,7 @@ def main():
     print(f"Total Graph Entities:   {results['total_nodes']} Nodes")
     print(f"Total Graph Relations:  {results['total_edges']} Edges")
     print(
-        f"Audio Tracks Ingested:  {results['audio_corpus_expansion']['total_tracks_ingested']} Tracks"
+        f"Audio Tracks Ingested:  {results['audio_corpus_expansion'].get('tracks_injected_to_graph', 0)} Tracks"
     )
     print(
         f"Acoustic Edges Injected:{results['acoustic_enrichment']['classified_edges_count'] + results['acoustic_enrichment']['acoustic_similarity_edges_count']} Edges"
@@ -53,7 +53,7 @@ def main():
     print("Top Predictive Breakout A&R Candidates:")
     for c in results["predictive_breakout_artists"]:
         print(
-            f"  * {c['artist_name']} ({c['predicted_subgenre']}) -> Velocity: {c['growth_velocity']} [{c['classification']}]"
+            f"  * {c['artist_name']} ({c.get('classified_subgenre', 'Electronic')}) -> Velocity: {c.get('breakout_velocity_score', 1.0)} [{c.get('recommendation', 'Anchor')}]"
         )
     print("=" * 60 + "\n")
 
