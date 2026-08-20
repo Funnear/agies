@@ -95,6 +95,13 @@ class AutonomousKnowledgeGraphExpander:
         wavefront_engine = ConcentricGeographicWaveFrontExpander()
         wavefront_stats = wavefront_engine.expand_concentric_wavefront(industry_graph, max_wave=3)
 
+        # Step 2.7: Recurse Waves Through Every Node in Knowledge Graph
+        logger.info("-> Recursing Waves Hop-by-Hop Through EVERY Graph Node (Multi-Hop Propagation)...")
+        from agies.graph.recursive_wave import RecursiveWavePropagationEngine
+
+        recursive_engine = RecursiveWavePropagationEngine()
+        recursive_stats = recursive_engine.recurse_graph_waves(industry_graph, max_propagation_depth=3)
+
         # Step 3: Ingest Live Data Connectors
         logger.info(
             "-> 3/7 Ingesting Live Data Connectors (MusicBrainz, Wikidata, Discogs, Festivals)..."
@@ -199,6 +206,7 @@ class AutonomousKnowledgeGraphExpander:
             "total_edges": summary["total_edges"],
             "berlin_grassroots": berlin_stats,
             "wavefront_expansion": wavefront_stats,
+            "recursive_wave_propagation": recursive_stats,
             "audio_corpus_expansion": audio_results,
             "web_audio_scraping": web_scraper_results,
             "acoustic_enrichment": enrichment_results,
