@@ -41,22 +41,11 @@ maintenance changes within that milestone.
 
 ### Planned milestones
 
-  -----------------------------------------------------------------------
-  Version                             Milestone
-  ----------------------------------- -----------------------------------
-  `0.1.0`                             Hackathon submission review:
-                                      shortlisted-candidate submission
-                                      with the performance-evaluation
-                                      baseline
-
-  `0.2.0`                             Hackathon-ready scope: all
-                                      functionality required immediately
-                                      before the event
-
-  `1.0.0`                             Hackathon result: first major
-                                      release containing the completed
-                                      hackathon work, if shortlisted
-  -----------------------------------------------------------------------
+| Version | Milestone |
+| --- | --- |
+| `0.1.0` | Hackathon submission review: shortlisted-candidate submission with the performance-evaluation baseline |
+| `0.2.0` | Hackathon-ready scope: all functionality required immediately before the event |
+| `1.0.0` | Hackathon result: first major release containing the completed hackathon work, if shortlisted |
 
 The exact version may be adjusted if the project scope changes, but the
 milestone meaning should remain explicit in the release notes.
@@ -74,10 +63,10 @@ Example:
 
 Use a patch release for:
 
--   bug fixes
--   small corrections
--   non-functional maintenance
--   fixes required after a milestone release
+- bug fixes
+- small corrections
+- non-functional maintenance
+- fixes required after a milestone release
 
 A patch release should not introduce a new project milestone.
 
@@ -87,9 +76,9 @@ Create a release branch when work for a milestone is ready to be
 organized and stabilized:
 
 ``` bash
-git switch main
-git pull origin main
-git switch -c release/0.1.0
+git switch main; \
+git pull origin main; \
+git switch -c release/0.1.0; \
 git push -u origin release/0.1.0
 ```
 
@@ -105,12 +94,12 @@ Only the project owner approves and merges the PR into `main`.
 
 Before a release is merged:
 
--   required feature and bugfix PRs are merged into the release branch;
--   required automated checks pass;
--   the milestone's performance evaluation is completed where
+- required feature and bugfix PRs are merged into the release branch;
+- required automated checks pass;
+- the milestone's performance evaluation is completed where
     applicable;
--   release documentation and notes are updated;
--   the release version is finalized.
+- release documentation and notes are updated;
+- the release version is finalized.
 
 The release PR may be reviewed by any project-team member. One approval
 is sufficient.
@@ -120,16 +109,16 @@ is sufficient.
 After the release is merged into `main`, create a Git tag:
 
 ``` bash
-git switch main
-git pull origin main
-git tag -a v0.1.0 -m "Release v0.1.0"
+git switch main; \
+git pull origin main; \
+git tag -a v0.1.0 -m "Release v0.1.0"; \
 git push origin v0.1.0
 ```
 
 For a later release:
 
 ``` bash
-git tag -a v0.2.0 -m "Release v0.2.0"
+git tag -a v0.2.0 -m "Release v0.2.0"; \
 git push origin v0.2.0
 ```
 
@@ -139,11 +128,11 @@ Tags provide immutable references to released versions.
 
 Each release should briefly record:
 
--   milestone achieved;
--   major features;
--   important bug fixes;
--   performance-evaluation results when applicable;
--   known limitations, if relevant.
+- milestone achieved;
+- major features;
+- important bug fixes;
+- performance-evaluation results when applicable;
+- known limitations, if relevant.
 
 Keep release notes focused on what changed in that version; detailed
 branching and review rules belong in [Git Branching, Pull Requests &

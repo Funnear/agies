@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env bash
 # Minimal environment initializer for tests and CLI tools
 set -euo pipefail
 
