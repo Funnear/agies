@@ -38,13 +38,13 @@ Running without flags will:
 Preview (dry-run):
 
 ```sh
-./tools/env_reset.sh --all
+./tools/shell_scripts/env_reset.sh --all
 ```
 
 Apply (actually deletes caches):
 
 ```sh
-./tools/env_reset.sh --all --apply
+./tools/shell_scripts/env_reset.sh --all --apply
 ```
 
 ---
@@ -52,7 +52,7 @@ Apply (actually deletes caches):
 ### 2) Reset only test caches
 
 ```sh
-./tools/env_reset.sh --test-cache --apply
+./tools/shell_scripts/env_reset.sh --test-cache --apply
 ```
 
 Effect:
@@ -72,7 +72,7 @@ Recommended when:
 ### 3) Reset only logs
 
 ```sh
-./tools/env_reset.sh --logs --apply
+./tools/shell_scripts/env_reset.sh --logs --apply
 ```
 
 Effect:
@@ -129,7 +129,7 @@ pip install -r requirements.txt
 Then restore development setup:
 
 ```sh
-./tools/setup_dev.sh
+./tools/shell_scripts/setup_dev.sh
 ```
 
 ---
@@ -150,7 +150,7 @@ Then restore development setup:
 Run:
 
 ```sh
-make test
+make smoke_test
 ```
 
 Or run demo:
