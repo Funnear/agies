@@ -4,7 +4,7 @@ Markdown files are checked with `markdownlint-cli`.
 
 ## One-time setup (already done in the repo)
 
-[macOS, linux]
+[macOS, linux, Windows (Git Bash)]
 
 ```bash
 npm init -y; \
@@ -13,10 +13,10 @@ npm install --save-dev markdownlint-cli
 
 ## Run markdown linting
 
-`make test` automatically runs:
+`make lint` automatically runs:
 
 ```bash
-npm run lint:md
+npx --yes markdownlint-cli@latest --fix "README.md" "docs/**/*.md" "docs/diagrams/sources/*.md"
 ```
 
 This fixes most issues in place.

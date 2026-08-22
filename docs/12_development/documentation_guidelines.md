@@ -30,6 +30,10 @@ Tag every OS-specific shell snippet, right above its code fence:
 * `[linux]` — linux only.
 * `[macOS, linux]` — works on both as-is.
 * `[windows]` — PowerShell or `cmd`, not a POSIX shell.
+* `[Windows (Git Bash)]` — Windows via Git Bash, running the same POSIX command as the
+  `[macOS, linux]` tag. This repo's setup and tooling scripts are bash-only (see
+  [setup_workspace.md](../10_setup/setup_workspace.md)), so most Windows guidance in this repo
+  uses this tag rather than native PowerShell/cmd.
 
 If a snippet you need is missing, or untagged: add both the tag and the snippet.
 
