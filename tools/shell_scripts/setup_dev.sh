@@ -70,24 +70,45 @@ fi
 # ---------------------------
 # Python venv
 # ---------------------------
-PYTHON_BIN=""
+# data_ravers_utils (installed later as an editable package) requires >=3.13,
+# so the venv must be built with at least that version or the submodule
+# install fails outright.
+MIN_PY_MINOR=13
+
+version_ok() {
+  "$@" -c "import sys; sys.exit(0 if sys.version_info[:2] >= (3, ${MIN_PY_MINOR}) else 1)" >/dev/null 2>&1
+}
+
+PYTHON_CMD=()
 for candidate in python3 python; do
-  if command -v "$candidate" >/dev/null 2>&1 && \
-     "$candidate" -c 'import sys; sys.exit(0 if sys.version_info[0] == 3 else 1)' >/dev/null 2>&1; then
-    PYTHON_BIN="$candidate"
+  if command -v "$candidate" >/dev/null 2>&1 && version_ok "$candidate"; then
+    PYTHON_CMD=("$candidate")
     break
   fi
 done
 
-if [[ -z "$PYTHON_BIN" ]]; then
-  log_error "Python 3 is required but was not found (tried: python3, python)."
+# Windows commonly manages multiple Python installs via the `py` launcher
+# rather than PATH — plain python3/python may resolve to an older version
+# even when a compatible one is installed, so check the launcher explicitly.
+if [[ ${#PYTHON_CMD[@]} -eq 0 ]] && command -v py >/dev/null 2>&1; then
+  if version_ok py "-3.${MIN_PY_MINOR}"; then
+    PYTHON_CMD=(py "-3.${MIN_PY_MINOR}")
+  elif version_ok py -3; then
+    PYTHON_CMD=(py -3)
+  fi
+fi
+
+if [[ ${#PYTHON_CMD[@]} -eq 0 ]]; then
+  log_error "Python >=3.${MIN_PY_MINOR} is required but was not found."
+  log_error "Tried: python3, python, and (on Windows) 'py -3.${MIN_PY_MINOR}' / 'py -3'."
+  log_error "Install Python 3.${MIN_PY_MINOR}+ from https://www.python.org/downloads/ (on Windows, keep the 'py launcher' option checked during install)."
   exit 1
 fi
 
 VENVDIR="${PROJECT_ROOT}/venv"
 if [[ ! -d "${VENVDIR}" ]]; then
   log_info "Creating virtual environment at ${VENVDIR}"
-  "$PYTHON_BIN" -m venv "${VENVDIR}"
+  "${PYTHON_CMD[@]}" -m venv "${VENVDIR}"
 else
   log_info "Virtual environment already exists at ${VENVDIR}"
 fi
