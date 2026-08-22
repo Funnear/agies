@@ -1,5 +1,18 @@
 #!/usr/bin/env bash
 # Minimal environment initializer for tests and CLI tools
+#
+# This script is meant to be sourced, so 'set -euo pipefail' below would
+# otherwise leak into the caller's shell permanently once sourcing returns
+# (unlike running a script as its own process). Save the caller's options
+# and restore them on return so sourcing this script has no lasting effect
+# on an interactive shell.
+_export_vars_restore_opts="$(set +o)"
+trap '
+  eval "$_export_vars_restore_opts"
+  trap - RETURN
+  unset _export_vars_restore_opts
+' RETURN
+
 set -euo pipefail
 
 PROJECT_ROOT="$(git rev-parse --show-toplevel)"
