@@ -44,8 +44,8 @@ It covers preconditions, cloning, running `make setup`, and activating the envir
 
 ### 20_concept
 
-Placeholder for product/concept docs (problem statement, scope, requirements). Empty in
-the template — add your project's concept docs here.
+* [audio_file_sources.md](20_concept/audio_file_sources.md) — research and implementation
+  guide for free, royalty-free audio file providers (Jamendo, Archive.org, Freesound).
 
 ### diagrams
 
