@@ -1,6 +1,19 @@
 # ~~~~~~ Add yours here ~~~~~~
-
-
+## audio files and downloaded raw audio
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+*.aac
+*.aiff
+*.aif
+*.wma
+*.opus
+data/audio/
+data/raw_audio/
+data/audio_dataset/
+data/scraped_audio/
 
 # ~~~~~~ FAEN's Data Science project template ~~~~~~
 # VS Code shared files
