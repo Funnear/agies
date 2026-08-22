@@ -6,16 +6,20 @@ set -euo pipefail
 PROJECT_ROOT="$(git rev-parse --show-toplevel)"
 cd "$PROJECT_ROOT"
 
-# Project env defaults
-export PYTHONPATH="${PROJECT_ROOT}/src:${PYTHONPATH:-}"
+# Project env defaults (native Windows Python needs ';', not ':')
+case "$(uname -s)" in
+  MINGW*|MSYS*|CYGWIN*) PATH_SEP=';' ;;
+  *) PATH_SEP=':' ;;
+esac
+export PYTHONPATH="${PROJECT_ROOT}/src${PATH_SEP}${PYTHONPATH:-}"
 export LOG_LEVEL="${LOG_LEVEL:-INFO}"
 export TRANSFORMERS_VERBOSITY="${TRANSFORMERS_VERBOSITY:-info}"
 
 echo "== Pytest with coverage =="
 
 if [ "$#" -eq 0 ]; then
-  echo "\n== Running ALL tests with coverage =="
-  echo "\n== Pytest with coverage =="
+  printf '\n== Running ALL tests with coverage ==\n'
+  printf '\n== Pytest with coverage ==\n'
   coverage run -m pytest
 else
   marker_expr="$1"
@@ -24,10 +28,10 @@ else
     marker_expr="${marker_expr} or ${m}"
   done
 
-  echo "\n== Running tests with markers: ${marker_expr} =="
-  echo "\n== Pytest with coverage =="
+  printf '\n== Running tests with markers: %s ==\n' "${marker_expr}"
+  printf '\n== Pytest with coverage ==\n'
   coverage run -m pytest -m "${marker_expr}"
 fi
 
-echo "\n== Coverage report =="
+printf '\n== Coverage report ==\n'
 coverage report

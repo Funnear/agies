@@ -30,8 +30,12 @@ elif [[ -n "${1-}" ]]; then
   return 1 2>/dev/null || exit 1
 fi
 
-# PYTHONPATH for imports
-export PYTHONPATH="${PROJECT_ROOT}/src:${PYTHONPATH:-}"
+# PYTHONPATH for imports (native Windows Python needs ';', not ':')
+case "$(uname -s)" in
+  MINGW*|MSYS*|CYGWIN*) PATH_SEP=';' ;;
+  *) PATH_SEP=':' ;;
+esac
+export PYTHONPATH="${PROJECT_ROOT}/src${PATH_SEP}${PYTHONPATH:-}"
 
 # Logging defaults (info by default)
 if [[ "${MODE}" == "debug" ]]; then
