@@ -1,19 +1,20 @@
 """Unit tests for the Audio Sources library.
 
 Tests the BaseAudioSource interface, models, manager, and concrete providers.
-Does NOT call live APIs — all HTTP calls are mocked.
+Uses mock HTTP responses to verify JSON parsing, query generation, and error handling.
 """
 
-import pytest
 from unittest.mock import MagicMock, patch
 
-from agies.audio.models import AudioTrack
-from agies.audio.base import BaseAudioSource
-from agies.audio.manager import AudioSourcesManager
-from agies.audio.jamendo import JamendoSource
-from agies.audio.archive import ArchiveOrgSource
-from agies.audio.freesound import FreesoundSource
+import pytest
+import requests
 
+from agies.audio.archive import ArchiveOrgSource
+from agies.audio.base import BaseAudioSource
+from agies.audio.freesound import FreesoundSource
+from agies.audio.jamendo import JamendoSource
+from agies.audio.manager import AudioSourcesManager
+from agies.audio.models import AudioTrack
 
 # ---------------------------------------------------------------------------
 # Model tests
@@ -90,7 +91,13 @@ class TestAudioSourcesManager:
 
         assert len(results) == 1
         assert results[0].title == "Mock Track"
-        mock_source.search.assert_called_once()
+        mock_source.search.assert_called_once_with(
+            query="electronic",
+            genre=None,
+            min_duration=None,
+            max_duration=None,
+            limit=10,
+        )
 
     def test_filter_by_provider(self):
         manager = AudioSourcesManager()
@@ -129,28 +136,70 @@ class TestAudioSourcesManager:
 
 
 # ---------------------------------------------------------------------------
-# Provider tests (mocked HTTP)
+# Provider tests with mocked network responses
 # ---------------------------------------------------------------------------
 
 
 @pytest.mark.unit
 class TestJamendoSource:
-    """Test JamendoSource with mocked HTTP."""
+    """Test JamendoSource JSON parsing and parameters."""
 
     def test_search_without_key_returns_empty(self):
         source = JamendoSource(client_id="")
         results = source.search(query="techno")
         assert results == []
 
-    @patch("agies.audio.jamendo.JamendoSource.search")
-    def test_search_with_key(self, mock_search):
-        mock_search.return_value = [
-            AudioTrack(id="j1", title="Techno Track", provider="jamendo")
-        ]
+    @patch("requests.Session.get")
+    def test_search_success_parsing(self, mock_get):
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_resp.json.return_value = {
+            "results": [
+                {
+                    "id": "12345",
+                    "name": "Deep Resonance",
+                    "artist_name": "Artist Alpha",
+                    "duration": 180.0,
+                    "license_ccurl": "https://creativecommons.org/licenses/by/4.0/",
+                    "audiodownload": "https://download.jamendo.com/12345.mp3",
+                    "audio": "https://stream.jamendo.com/12345.mp3",
+                    "shareurl": "https://www.jamendo.com/track/12345",
+                    "musicinfo": {"tags": {"genres": ["techno", "electronic"]}},
+                }
+            ]
+        }
+        mock_get.return_value = mock_resp
+
+        source = JamendoSource(client_id="test_key")
+        results = source.search(
+            query="techno", genre="electronic", min_duration=60, max_duration=300
+        )
+
+        assert len(results) == 1
+        track = results[0]
+        assert track.id == "12345"
+        assert track.title == "Deep Resonance"
+        assert track.artist == "Artist Alpha"
+        assert track.provider == "jamendo"
+        assert track.download_url == "https://download.jamendo.com/12345.mp3"
+        assert "techno" in track.tags
+
+    @patch("requests.Session.get")
+    def test_search_request_exception(self, mock_get):
+        mock_get.side_effect = requests.exceptions.RequestException(
+            "Connection timeout"
+        )
         source = JamendoSource(client_id="test_key")
         results = source.search(query="techno")
-        assert len(results) == 1
-        assert results[0].provider == "jamendo"
+        assert results == []
+
+    @patch("requests.Session.get")
+    def test_is_available_true(self, mock_get):
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_get.return_value = mock_resp
+        source = JamendoSource(client_id="test_key")
+        assert source.is_available() is True
 
     def test_is_available_without_key(self):
         source = JamendoSource(client_id="")
@@ -159,28 +208,118 @@ class TestJamendoSource:
 
 @pytest.mark.unit
 class TestArchiveOrgSource:
-    """Test ArchiveOrgSource with mocked HTTP."""
+    """Test ArchiveOrgSource JSON parsing and queries."""
 
-    @patch("agies.audio.archive.ArchiveOrgSource.search")
-    def test_search(self, mock_search):
-        mock_search.return_value = [
-            AudioTrack(id="ia1", title="Public Domain Jazz", provider="archive_org")
-        ]
+    @patch("requests.Session.get")
+    def test_search_success_parsing(self, mock_get):
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_resp.json.return_value = {
+            "response": {
+                "docs": [
+                    {
+                        "identifier": "audio_sample_01",
+                        "title": "Public Domain Classical",
+                        "creator": "Symphony Orchestra",
+                        "licenseurl": "https://creativecommons.org/publicdomain/zero/1.0/",
+                    }
+                ]
+            }
+        }
+        mock_get.return_value = mock_resp
+
         source = ArchiveOrgSource()
-        results = source.search(query="jazz")
+        results = source.search(query="classical", genre="symphony", limit=5)
+
         assert len(results) == 1
-        assert results[0].provider == "archive_org"
+        track = results[0]
+        assert track.id == "audio_sample_01"
+        assert track.title == "Public Domain Classical"
+        assert track.artist == "Symphony Orchestra"
+        assert track.provider == "archive_org"
+        assert "archive.org/download/audio_sample_01" in track.download_url
+
+    @patch("requests.Session.get")
+    def test_search_error_handling(self, mock_get):
+        mock_get.side_effect = requests.exceptions.RequestException("Server error")
+        source = ArchiveOrgSource()
+        results = source.search(query="test")
+        assert results == []
+
+    @patch("requests.Session.get")
+    def test_is_available_true(self, mock_get):
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_get.return_value = mock_resp
+        source = ArchiveOrgSource()
+        assert source.is_available() is True
 
 
 @pytest.mark.unit
 class TestFreesoundSource:
-    """Test FreesoundSource with mocked HTTP."""
+    """Test FreesoundSource JSON parsing and queries."""
 
     def test_search_without_key_returns_empty(self):
         source = FreesoundSource(api_key="")
         results = source.search(query="drums")
         assert results == []
 
+    @patch("requests.Session.get")
+    def test_search_success_parsing(self, mock_get):
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_resp.json.return_value = {
+            "results": [
+                {
+                    "id": 998877,
+                    "name": "Analog Synth Loop 120BPM",
+                    "username": "synth_master",
+                    "duration": 8.0,
+                    "license": "http://creativecommons.org/licenses/by/3.0/",
+                    "previews": {
+                        "preview-hq-mp3": "https://cdn.freesound.org/previews/998/998877_hq.mp3",
+                        "preview-lq-mp3": "https://cdn.freesound.org/previews/998/998877_lq.mp3",
+                    },
+                    "tags": ["synth", "analog", "loop"],
+                    "samplerate": 48000,
+                    "type": "wav",
+                }
+            ]
+        }
+        mock_get.return_value = mock_resp
+
+        source = FreesoundSource(api_key="valid_token")
+        results = source.search(
+            query="analog", genre="synth", min_duration=2, max_duration=10
+        )
+
+        assert len(results) == 1
+        track = results[0]
+        assert track.id == "998877"
+        assert track.title == "Analog Synth Loop 120BPM"
+        assert track.artist == "synth_master"
+        assert track.provider == "freesound"
+        assert (
+            track.stream_url == "https://cdn.freesound.org/previews/998/998877_hq.mp3"
+        )
+        assert track.sample_rate == 48000
+        assert track.format == "wav"
+
+    @patch("requests.Session.get")
+    def test_search_error_handling(self, mock_get):
+        mock_get.side_effect = requests.exceptions.RequestException("401 Unauthorized")
+        source = FreesoundSource(api_key="bad_token")
+        results = source.search(query="drums")
+        assert results == []
+
     def test_is_available_without_key(self):
         source = FreesoundSource(api_key="")
         assert source.is_available() is False
+
+    @patch("requests.Session.get")
+    def test_is_available_with_key(self, mock_get):
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_get.return_value = mock_resp
+        source = FreesoundSource(api_key="valid_token")
+        assert source.is_available() is True
