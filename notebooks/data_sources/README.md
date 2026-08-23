@@ -42,3 +42,45 @@ Source: https://www.kaggle.com/datasets/ofurkancoban/discogs-datasets-january-20
 
 License: CC0 (Public Domain) — https://creativecommons.org/publicdomain/zero/1.0/. No restrictions on use, including commercial use. No raw audio included, metadata only.
 
+## MusicBrainz 
+
+Source: https://musicbrainz.org/ws/2/release-group/
+Docs: https://musicbrainz.org/doc/MusicBrainz_API
+Genre list: https://musicbrainz.org/genres
+
+### Setup
+- No account or API key required for read-only search
+- Only requirement: set a descriptive `User-Agent` header identifying your app (e.g., `"AGIes/0.1 (your-email@example.com)"`)
+- Rate limit: max 1 request/second — must be respected or your IP may be temporarily blocked
+- Endpoint used: `https://musicbrainz.org/ws/2/release-group/`
+
+### Findings
+- Searched via `tag:edm` — **5,746 total release-groups** tagged "edm" in MusicBrainz's database
+- Tested a sample of 400 records (7% of total) via paginated requests
+- Genre/subgenre data lives in a `tags` field — crowd-sourced/user-submitted, not a fixed curated list like Discogs' `styles_style`
+- Top tags found in the 400-record sample:
+
+| Tag | Count |
+|---|---|
+| edm | 380 |
+| electronic | 178 |
+| dance | 39 |
+| trap | 26 |
+| trap edm | 25 |
+| pop | 23 |
+| house | 19 |
+| dubstep | 13 |
+| hardbass | 12 |
+| idm | 12 |
+| trance | 9 |
+
+- Tag naming is inconsistent/messy — e.g. `edm`, `trap edm`, `dance & edm`, `gaming edm`, `lithuanian edm` all appear as separate tags, unlike Discogs' cleaner fixed genre/style taxonomy
+- No audio — metadata only, same as Discogs
+
+### License 
+- Core MusicBrainz data is CC0 (Public Domain)
+- **Genre/tag data specifically is CC BY-NC-SA** (non-commercial) — would require a separate commercial license from MetaBrainz if used in a monetized product later
+
+### Verdict
+Usable as a supplementary genre-label source, but noisier/less structured than Discogs. Worth considering if broader genre coverage or crowd-sourced tagging diversity is valuable, but Discogs remains the cleaner primary option for structured genre/style labels.
+
