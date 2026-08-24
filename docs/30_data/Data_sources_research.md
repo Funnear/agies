@@ -6,13 +6,13 @@ and automated dataset curation.
 
 ## Data Sources — Capability & Metadata Matrix
 
-| Data Source | Access | Auth | Data Type | Audio? | License | Verdict |
-|---|---|---|---|---|---|---|
-| Kaggle: Discogs Masters (2025) | Bulk CSV, 2.38M rows | Kaggle token | Genre/style metadata | No | CC0 | **Primary** — baseline genre ontology |
-| Kaggle: Discogs Electronic (1990–2000) | Bulk CSV, 34.9k rows | Kaggle token | Metadata + price/popularity | No | Open | **Secondary** — pricing/popularity signals |
-| Kaggle: EDM Music Genres | Bulk CSV, 40k clips | Kaggle token | Audio + labels, pre-split | Yes (3s clips) | MIT | **Primary** — only audio+label pair found |
-| MusicBrainz | REST API | None (User-Agent only) | Metadata, crowd tags | No | CC0 core / CC-BY-NC-SA tags | **Cross-reference** — validate/cross-check genres |
-| Freesound | REST API | API key | Metadata + samples | Yes (samples only) | Per-file CC | **Reviewed** — sample-level, not full tracks |
+| Data Source | Access | Auth | Data Type | Audio? | License | Url |
+| --- | --- | --- | --- | --- | --- | --- |
+| Kaggle: Discogs Masters (2025) | Bulk CSV, 2.38M rows | Kaggle token | Genre/style metadata | No | CC0 | [Kaggle](https://www.kaggle.com/datasets/ofurkancoban/discogs-datasets-january-2025) |
+| Kaggle: Discogs Electronic (1990–2000) | Bulk CSV, 34.9k rows | Kaggle token | Metadata + price/popularity | No | Open | [Kaggle](https://www.kaggle.com/datasets/justinpakzad/discogs-electronic-music-dataset-1990-2000) |
+| Kaggle: EDM Music Genres | Bulk CSV, 40k clips | Kaggle token | Audio + labels, pre-split | Yes (3s clips) | MIT | [Kaggle](https://www.kaggle.com/datasets/sivadithiyan/edm-music-genres) |
+| MusicBrainz | REST API | None (User-Agent only) | Metadata, crowd tags | No | CC0 core / CC-BY-NC-SA tags | [API](https://musicbrainz.org/ws/2/release-group/) [Docs](https://musicbrainz.org/doc/MusicBrainz_API) |
+| Freesound | REST API | API key | Metadata + samples | Yes (samples only) | Per-file CC | [API](https://freesound.org/apiv2/) [Docs](https://freesound.org/docs/api/) |
 
 ### Notes
 
@@ -28,16 +28,6 @@ and automated dataset curation.
   kicks), not full tracks. License per-file. Fetching already implemented in
   `agies.audio` (PR #11).
 
-## License Notes
-
-- **CC0** (Discogs sources): fully unrestricted, including commercial use, no
-  attribution required.
-- **CC BY-NC-SA 3.0** (MusicBrainz genre/tag data specifically): non-commercial only —
-  requires a separate commercial license from MetaBrainz before any monetized use.
-- **MIT** (EDM Music Genres): permissive, commercial use allowed, requires keeping the
-  original license notice.
-- **Freesound**: per-file license, must be checked individually — not one blanket
-  license for the whole source.
 
 ## Provider Registration & API Key Instructions
 
@@ -65,7 +55,7 @@ descriptive `User-Agent` header identifying the app (e.g.
 ### Freesound
 
 1. Create a free account at freesound.org.
-2. Apply for API credentials: https://freesound.org/apiv2/apply
+2. Apply for API credentials: <https://freesound.org/apiv2/apply>
 3. Store the key as `FREESOUND_API_KEY` in your local `.env` file — never hardcode it
    in notebooks or source files.
 
