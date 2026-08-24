@@ -1,4 +1,6 @@
 # === Standard Python tools ===
+pydantic
+requests
 python-dotenv
 pyyaml
 pytest
