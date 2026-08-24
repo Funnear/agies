@@ -26,6 +26,8 @@ scikit-learn
 
 # === Front End / UI ===
 
+# === Data Sources ===
+kagglehub
 
 # === Optional Utilities / Images ===
 
