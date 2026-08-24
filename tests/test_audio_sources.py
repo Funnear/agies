@@ -1,7 +1,7 @@
-"""Unit tests for the Audio Sources library.
+"""Unit tests for the Audio Providers library.
 
-Tests the BaseAudioSource interface, models, manager, and concrete providers.
-Uses mock HTTP responses to verify JSON parsing, query generation, and error handling.
+Tests the BaseAudioProvider interface, models, search service, and concrete providers.
+Uses mock HTTP responses to verify JSON parsing, query generation, and domain error handling.
 """
 
 from unittest.mock import MagicMock, patch
@@ -9,12 +9,21 @@ from unittest.mock import MagicMock, patch
 import pytest
 import requests
 
-from agies.audio.archive import ArchiveOrgSource
-from agies.audio.base import BaseAudioSource
-from agies.audio.freesound import FreesoundSource
-from agies.audio.jamendo import JamendoSource
-from agies.audio.manager import AudioSourcesManager
+from agies.audio.base_audio_provider import (
+    AudioProviderAuthenticationError,
+    AudioProviderConnectionError,
+    AudioProviderResponseError,
+    BaseAudioProvider,
+)
 from agies.audio.models import AudioTrack
+from agies.audio.provider_archive_org import ProviderArchiveOrg
+from agies.audio.provider_freesound import ProviderFreesound
+from agies.audio.provider_jamendo import ProviderJamendo
+from agies.audio.search_service import AudioSearchService
+
+_MOCK_TEST_CLIENT_ID = "mock_test_client_id_123"
+_MOCK_TEST_API_KEY = "mock_test_api_key_456"
+
 
 # ---------------------------------------------------------------------------
 # Model tests
@@ -32,6 +41,7 @@ class TestAudioTrackModel:
         assert track.artist == "Unknown Artist"
         assert track.license == "Unknown"
         assert track.tags == []
+        assert track.audio_file_format is None
 
     def test_full_track(self):
         track = AudioTrack(
@@ -46,12 +56,13 @@ class TestAudioTrackModel:
             provider="jamendo",
             genre="synthwave",
             sample_rate=44100,
-            format="mp3",
+            audio_file_format="mp3",
             tags=["synthwave", "retrowave"],
             source_url="https://example.com/track",
         )
         assert track.duration_seconds == 213.4
         assert track.sample_rate == 44100
+        assert track.audio_file_format == "mp3"
         assert "synthwave" in track.tags
 
 
@@ -61,37 +72,37 @@ class TestAudioTrackModel:
 
 
 @pytest.mark.unit
-class TestBaseAudioSource:
-    """Test that BaseAudioSource cannot be instantiated directly."""
+class TestBaseAudioProvider:
+    """Test that BaseAudioProvider cannot be instantiated directly."""
 
     def test_cannot_instantiate_abstract(self):
         with pytest.raises(TypeError):
-            BaseAudioSource(name="abstract")
+            BaseAudioProvider(name="abstract")  # type: ignore[abstract]
 
 
 # ---------------------------------------------------------------------------
-# Manager tests
+# Search Service tests
 # ---------------------------------------------------------------------------
 
 
 @pytest.mark.unit
-class TestAudioSourcesManager:
-    """Test the AudioSourcesManager facade."""
+class TestAudioSearchService:
+    """Test the AudioSearchService facade."""
 
     def test_register_and_search(self):
-        manager = AudioSourcesManager()
-        mock_source = MagicMock(spec=BaseAudioSource)
-        mock_source.name = "mock_provider"
-        mock_source.search.return_value = [
+        service = AudioSearchService()
+        mock_provider = MagicMock(spec=BaseAudioProvider)
+        mock_provider.name = "mock_provider"
+        mock_provider.search.return_value = [
             AudioTrack(id="1", title="Mock Track", provider="mock_provider")
         ]
 
-        manager.register(mock_source)
-        results = manager.search(query="electronic")
+        service.register(mock_provider)
+        results = service.search(query="electronic")
 
         assert len(results) == 1
         assert results[0].title == "Mock Track"
-        mock_source.search.assert_called_once_with(
+        mock_provider.search.assert_called_once_with(
             query="electronic",
             genre=None,
             min_duration=None,
@@ -100,39 +111,57 @@ class TestAudioSourcesManager:
         )
 
     def test_filter_by_provider(self):
-        manager = AudioSourcesManager()
-        source_a = MagicMock(spec=BaseAudioSource)
-        source_a.name = "provider_a"
-        source_a.search.return_value = [
+        service = AudioSearchService()
+        provider_a = MagicMock(spec=BaseAudioProvider)
+        provider_a.name = "provider_a"
+        provider_a.search.return_value = [
             AudioTrack(id="a1", title="Track A", provider="provider_a")
         ]
-        source_b = MagicMock(spec=BaseAudioSource)
-        source_b.name = "provider_b"
-        source_b.search.return_value = []
+        provider_b = MagicMock(spec=BaseAudioProvider)
+        provider_b.name = "provider_b"
+        provider_b.search.return_value = []
 
-        manager.register(source_a)
-        manager.register(source_b)
+        service.register(provider_a)
+        service.register(provider_b)
 
-        results = manager.search(query="test", provider="provider_a")
+        results = service.search(query="test", provider="provider_a")
         assert len(results) == 1
-        source_a.search.assert_called_once()
-        source_b.search.assert_not_called()
+        provider_a.search.assert_called_once()
+        provider_b.search.assert_not_called()
 
-    def test_list_available_sources(self):
-        sources = AudioSourcesManager.list_available_sources()
-        assert "jamendo" in sources
-        assert "archive_org" in sources
-        assert "freesound" in sources
+    def test_list_registered_sources(self):
+        service = AudioSearchService()
+        provider_a = MagicMock(spec=BaseAudioProvider)
+        provider_a.name = "jamendo"
+        provider_b = MagicMock(spec=BaseAudioProvider)
+        provider_b.name = "archive_org"
 
-    def test_provider_error_does_not_crash_manager(self):
-        manager = AudioSourcesManager()
-        bad_source = MagicMock(spec=BaseAudioSource)
-        bad_source.name = "broken"
-        bad_source.search.side_effect = RuntimeError("API down")
+        service.register(provider_a)
+        service.register(provider_b)
 
-        manager.register(bad_source)
-        results = manager.search(query="test")
+        assert service.list_registered_sources() == ["jamendo", "archive_org"]
+
+    def test_provider_domain_error_handled_gracefully(self):
+        service = AudioSearchService()
+        bad_provider = MagicMock(spec=BaseAudioProvider)
+        bad_provider.name = "broken"
+        bad_provider.search.side_effect = AudioProviderConnectionError(
+            "Connection timeout"
+        )
+
+        service.register(bad_provider)
+        results = service.search(query="test")
         assert results == []
+
+    def test_unexpected_programming_bug_propagates(self):
+        service = AudioSearchService()
+        buggy_provider = MagicMock(spec=BaseAudioProvider)
+        buggy_provider.name = "buggy"
+        buggy_provider.search.side_effect = AttributeError("Unexpected code bug")
+
+        service.register(buggy_provider)
+        with pytest.raises(AttributeError):
+            service.search(query="test")
 
 
 # ---------------------------------------------------------------------------
@@ -141,13 +170,13 @@ class TestAudioSourcesManager:
 
 
 @pytest.mark.unit
-class TestJamendoSource:
-    """Test JamendoSource JSON parsing and parameters."""
+class TestProviderJamendo:
+    """Test ProviderJamendo JSON parsing and error handling."""
 
-    def test_search_without_key_returns_empty(self):
-        source = JamendoSource(client_id="")
-        results = source.search(query="techno")
-        assert results == []
+    def test_search_without_key_raises_auth_error(self):
+        provider = ProviderJamendo(client_id="")
+        with pytest.raises(AudioProviderAuthenticationError):
+            provider.search(query="techno")
 
     @patch("requests.Session.get")
     def test_search_success_parsing(self, mock_get):
@@ -170,8 +199,8 @@ class TestJamendoSource:
         }
         mock_get.return_value = mock_resp
 
-        source = JamendoSource(client_id="test_key")
-        results = source.search(
+        provider = ProviderJamendo(client_id=_MOCK_TEST_CLIENT_ID)
+        results = provider.search(
             query="techno", genre="electronic", min_duration=60, max_duration=300
         )
 
@@ -182,33 +211,43 @@ class TestJamendoSource:
         assert track.artist == "Artist Alpha"
         assert track.provider == "jamendo"
         assert track.download_url == "https://download.jamendo.com/12345.mp3"
+        assert track.audio_file_format == "mp3"
         assert "techno" in track.tags
 
     @patch("requests.Session.get")
-    def test_search_request_exception(self, mock_get):
-        mock_get.side_effect = requests.exceptions.RequestException(
-            "Connection timeout"
-        )
-        source = JamendoSource(client_id="test_key")
-        results = source.search(query="techno")
-        assert results == []
+    def test_search_connection_exception(self, mock_get):
+        mock_get.side_effect = requests.exceptions.ConnectionError("Connection failed")
+        provider = ProviderJamendo(client_id=_MOCK_TEST_CLIENT_ID)
+        with pytest.raises(AudioProviderConnectionError):
+            provider.search(query="techno")
+
+    @patch("requests.Session.get")
+    def test_search_malformed_json(self, mock_get):
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_resp.json.side_effect = ValueError("Invalid JSON")
+        mock_get.return_value = mock_resp
+
+        provider = ProviderJamendo(client_id=_MOCK_TEST_CLIENT_ID)
+        with pytest.raises(AudioProviderResponseError):
+            provider.search(query="techno")
 
     @patch("requests.Session.get")
     def test_is_available_true(self, mock_get):
         mock_resp = MagicMock()
         mock_resp.status_code = 200
         mock_get.return_value = mock_resp
-        source = JamendoSource(client_id="test_key")
-        assert source.is_available() is True
+        provider = ProviderJamendo(client_id=_MOCK_TEST_CLIENT_ID)
+        assert provider.is_available() is True
 
     def test_is_available_without_key(self):
-        source = JamendoSource(client_id="")
-        assert source.is_available() is False
+        provider = ProviderJamendo(client_id="")
+        assert provider.is_available() is False
 
 
 @pytest.mark.unit
-class TestArchiveOrgSource:
-    """Test ArchiveOrgSource JSON parsing and queries."""
+class TestProviderArchiveOrg:
+    """Test ProviderArchiveOrg JSON parsing and error handling."""
 
     @patch("requests.Session.get")
     def test_search_success_parsing(self, mock_get):
@@ -228,8 +267,8 @@ class TestArchiveOrgSource:
         }
         mock_get.return_value = mock_resp
 
-        source = ArchiveOrgSource()
-        results = source.search(query="classical", genre="symphony", limit=5)
+        provider = ProviderArchiveOrg()
+        results = provider.search(query="classical", genre="symphony", limit=5)
 
         assert len(results) == 1
         track = results[0]
@@ -237,32 +276,35 @@ class TestArchiveOrgSource:
         assert track.title == "Public Domain Classical"
         assert track.artist == "Symphony Orchestra"
         assert track.provider == "archive_org"
-        assert "archive.org/download/audio_sample_01" in track.download_url
+        assert (
+            track.download_url is not None
+            and "archive.org/download/audio_sample_01" in track.download_url
+        )
 
     @patch("requests.Session.get")
-    def test_search_error_handling(self, mock_get):
-        mock_get.side_effect = requests.exceptions.RequestException("Server error")
-        source = ArchiveOrgSource()
-        results = source.search(query="test")
-        assert results == []
+    def test_search_connection_error(self, mock_get):
+        mock_get.side_effect = requests.exceptions.Timeout("Request timeout")
+        provider = ProviderArchiveOrg()
+        with pytest.raises(AudioProviderConnectionError):
+            provider.search(query="test")
 
     @patch("requests.Session.get")
     def test_is_available_true(self, mock_get):
         mock_resp = MagicMock()
         mock_resp.status_code = 200
         mock_get.return_value = mock_resp
-        source = ArchiveOrgSource()
-        assert source.is_available() is True
+        provider = ProviderArchiveOrg()
+        assert provider.is_available() is True
 
 
 @pytest.mark.unit
-class TestFreesoundSource:
-    """Test FreesoundSource JSON parsing and queries."""
+class TestProviderFreesound:
+    """Test ProviderFreesound JSON parsing and error handling."""
 
-    def test_search_without_key_returns_empty(self):
-        source = FreesoundSource(api_key="")
-        results = source.search(query="drums")
-        assert results == []
+    def test_search_without_key_raises_auth_error(self):
+        provider = ProviderFreesound(api_key="")
+        with pytest.raises(AudioProviderAuthenticationError):
+            provider.search(query="drums")
 
     @patch("requests.Session.get")
     def test_search_success_parsing(self, mock_get):
@@ -288,8 +330,8 @@ class TestFreesoundSource:
         }
         mock_get.return_value = mock_resp
 
-        source = FreesoundSource(api_key="valid_token")
-        results = source.search(
+        provider = ProviderFreesound(api_key=_MOCK_TEST_API_KEY)
+        results = provider.search(
             query="analog", genre="synth", min_duration=2, max_duration=10
         )
 
@@ -303,23 +345,25 @@ class TestFreesoundSource:
             track.stream_url == "https://cdn.freesound.org/previews/998/998877_hq.mp3"
         )
         assert track.sample_rate == 48000
-        assert track.format == "wav"
+        assert track.audio_file_format == "wav"
 
     @patch("requests.Session.get")
-    def test_search_error_handling(self, mock_get):
-        mock_get.side_effect = requests.exceptions.RequestException("401 Unauthorized")
-        source = FreesoundSource(api_key="bad_token")
-        results = source.search(query="drums")
-        assert results == []
+    def test_search_auth_error(self, mock_get):
+        mock_resp = MagicMock()
+        mock_resp.status_code = 401
+        mock_get.return_value = mock_resp
+        provider = ProviderFreesound(api_key="invalid_key")
+        with pytest.raises(AudioProviderAuthenticationError):
+            provider.search(query="drums")
 
     def test_is_available_without_key(self):
-        source = FreesoundSource(api_key="")
-        assert source.is_available() is False
+        provider = ProviderFreesound(api_key="")
+        assert provider.is_available() is False
 
     @patch("requests.Session.get")
     def test_is_available_with_key(self, mock_get):
         mock_resp = MagicMock()
         mock_resp.status_code = 200
         mock_get.return_value = mock_resp
-        source = FreesoundSource(api_key="valid_token")
-        assert source.is_available() is True
+        provider = ProviderFreesound(api_key=_MOCK_TEST_API_KEY)
+        assert provider.is_available() is True

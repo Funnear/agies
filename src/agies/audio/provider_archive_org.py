@@ -1,4 +1,4 @@
-"""Internet Archive (archive.org) audio source — public domain and CC audio.
+"""Internet Archive (archive.org) audio provider — public domain and CC audio.
 
 The Internet Archive hosts millions of free audio recordings under
 public domain and CC licenses. No API key required.
@@ -8,36 +8,39 @@ License: Public Domain, CC-BY, CC-BY-SA, and other open licenses.
 GDPR: archive.org is a US non-profit; no personal data is collected by this client.
 """
 
+import json
 import logging
-from typing import List, Optional
 
 import requests
 
-from agies.audio.base import BaseAudioSource
+from agies.audio.base_audio_provider import (
+    AudioProviderConnectionError,
+    AudioProviderResponseError,
+    BaseAudioProvider,
+)
 from agies.audio.models import AudioTrack
 
-logger = logging.getLogger("agies.audio.archive")
+logger = logging.getLogger("agies.audio.provider_archive_org")
 
 _IA_SEARCH_URL = "https://archive.org/advancedsearch.php"
-_IA_METADATA_URL = "https://archive.org/metadata"
 _IA_DOWNLOAD_URL = "https://archive.org/download"
 
 
-class ArchiveOrgSource(BaseAudioSource):
-    """Internet Archive audio source — no API key required."""
+class ProviderArchiveOrg(BaseAudioProvider):
+    """Internet Archive audio provider — no API key required."""
 
-    def __init__(self):
+    def __init__(self) -> None:
         super().__init__(name="archive_org")
         self.session = requests.Session()
 
     def search(
         self,
         query: str = "",
-        genre: Optional[str] = None,
-        min_duration: Optional[float] = None,
-        max_duration: Optional[float] = None,
+        genre: str | None = None,
+        min_duration: float | None = None,
+        max_duration: float | None = None,
         limit: int = 10,
-    ) -> List[AudioTrack]:
+    ) -> list[AudioTrack]:
         """Search Internet Archive for audio files."""
         q_parts = ["mediatype:audio"]
         if query:
@@ -59,15 +62,22 @@ class ArchiveOrgSource(BaseAudioSource):
             resp.raise_for_status()
             data = resp.json()
         except requests.exceptions.RequestException as exc:
-            logger.error("Internet Archive search failed: %s", exc)
-            return []
-        except Exception as exc:
-            logger.error("Unexpected error querying Internet Archive: %s", exc)
-            raise
+            logger.error("Internet Archive search connection failed: %s", exc)
+            raise AudioProviderConnectionError(
+                f"Failed to connect to Internet Archive API: {exc}"
+            ) from exc
+        except (json.JSONDecodeError, ValueError) as exc:
+            logger.error("Internet Archive returned malformed response: %s", exc)
+            raise AudioProviderResponseError(
+                f"Failed to parse Internet Archive response: {exc}"
+            ) from exc
 
-        tracks = []
-        for doc in data.get("response", {}).get("docs", []):
+        tracks: list[AudioTrack] = []
+        docs = data.get("response", {}).get("docs", [])
+        for doc in docs:
             identifier = doc.get("identifier", "")
+            if not identifier:
+                continue
             tracks.append(
                 AudioTrack(
                     id=identifier,
@@ -77,7 +87,7 @@ class ArchiveOrgSource(BaseAudioSource):
                     license_url=doc.get("licenseurl"),
                     download_url=f"{_IA_DOWNLOAD_URL}/{identifier}",
                     provider=self.name,
-                    genre=genre or "",
+                    genre=genre,
                     source_url=f"https://archive.org/details/{identifier}",
                 )
             )
@@ -96,6 +106,6 @@ class ArchiveOrgSource(BaseAudioSource):
                 timeout=10,
             )
             return resp.status_code == 200
-        except Exception as exc:
-            logger.error("Internet Archive availability check failed: %s", exc)
+        except requests.exceptions.RequestException as exc:
+            logger.warning("Internet Archive availability check failed: %s", exc)
             return False

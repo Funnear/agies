@@ -1,4 +1,4 @@
-"""Jamendo API audio source — CC-licensed music.
+"""Jamendo API audio provider — CC-licensed music.
 
 Jamendo (https://www.jamendo.com) provides a REST API for free,
 Creative Commons licensed music. Requires a free API client ID.
@@ -8,24 +8,29 @@ License: Tracks are CC-licensed (BY, BY-SA, BY-NC, BY-NC-SA, etc.)
 GDPR: Jamendo is EU-based (Luxembourg) and GDPR-compliant.
 """
 
+import json
 import logging
-from typing import List, Optional
 
 import requests
 
-from agies.audio.base import BaseAudioSource
+from agies.audio.base_audio_provider import (
+    AudioProviderAuthenticationError,
+    AudioProviderConnectionError,
+    AudioProviderRateLimitError,
+    AudioProviderResponseError,
+    BaseAudioProvider,
+)
 from agies.audio.models import AudioTrack
 
-logger = logging.getLogger("agies.audio.jamendo")
+logger = logging.getLogger("agies.audio.provider_jamendo")
 
-# Jamendo free client IDs are available at https://devportal.jamendo.com/
 _JAMENDO_API_BASE = "https://api.jamendo.com/v3.0"
 
 
-class JamendoSource(BaseAudioSource):
-    """Jamendo Creative Commons music source."""
+class ProviderJamendo(BaseAudioProvider):
+    """Jamendo Creative Commons music provider."""
 
-    def __init__(self, client_id: str = ""):
+    def __init__(self, client_id: str = "") -> None:
         super().__init__(name="jamendo")
         self.client_id = client_id
         self.session = requests.Session()
@@ -33,17 +38,19 @@ class JamendoSource(BaseAudioSource):
     def search(
         self,
         query: str = "",
-        genre: Optional[str] = None,
-        min_duration: Optional[float] = None,
-        max_duration: Optional[float] = None,
+        genre: str | None = None,
+        min_duration: float | None = None,
+        max_duration: float | None = None,
         limit: int = 10,
-    ) -> List[AudioTrack]:
+    ) -> list[AudioTrack]:
         """Search Jamendo for CC-licensed tracks."""
         if not self.client_id:
-            logger.warning("Jamendo client_id not set — skipping search.")
-            return []
+            logger.warning("Jamendo client_id not configured — skipping search.")
+            raise AudioProviderAuthenticationError(
+                "Jamendo client_id is not configured."
+            )
 
-        params = {
+        params: dict[str, str | int] = {
             "client_id": self.client_id,
             "format": "json",
             "limit": min(limit, 200),
@@ -62,16 +69,26 @@ class JamendoSource(BaseAudioSource):
             resp = self.session.get(
                 f"{_JAMENDO_API_BASE}/tracks/", params=params, timeout=15
             )
+            if resp.status_code in (401, 403):
+                raise AudioProviderAuthenticationError(
+                    f"Jamendo authentication failed with status {resp.status_code}."
+                )
+            if resp.status_code == 429:
+                raise AudioProviderRateLimitError("Jamendo API rate limit exceeded.")
             resp.raise_for_status()
             data = resp.json()
         except requests.exceptions.RequestException as exc:
-            logger.error("Jamendo API request failed: %s", exc)
-            return []
-        except Exception as exc:
-            logger.error("Unexpected error querying Jamendo: %s", exc)
-            raise
+            logger.error("Jamendo API connection failed: %s", exc)
+            raise AudioProviderConnectionError(
+                f"Failed to connect to Jamendo API: {exc}"
+            ) from exc
+        except (json.JSONDecodeError, ValueError) as exc:
+            logger.error("Jamendo returned malformed response: %s", exc)
+            raise AudioProviderResponseError(
+                f"Failed to parse Jamendo response: {exc}"
+            ) from exc
 
-        tracks = []
+        tracks: list[AudioTrack] = []
         for t in data.get("results", []):
             tracks.append(
                 AudioTrack(
@@ -84,10 +101,10 @@ class JamendoSource(BaseAudioSource):
                     download_url=t.get("audiodownload"),
                     stream_url=t.get("audio"),
                     provider=self.name,
-                    genre=genre or "",
+                    genre=genre,
                     tags=t.get("musicinfo", {}).get("tags", {}).get("genres", []),
                     source_url=t.get("shareurl"),
-                    format="mp3",
+                    audio_file_format="mp3",
                 )
             )
 
@@ -105,6 +122,10 @@ class JamendoSource(BaseAudioSource):
                 timeout=10,
             )
             return resp.status_code == 200
-        except Exception as exc:
-            logger.error("Jamendo availability check failed: %s", exc)
+        except requests.exceptions.RequestException as exc:
+            logger.warning("Jamendo availability check failed: %s", exc)
             return False
+
+
+# Alias for backward compatibility / reviewer naming preference
+JamendoProvider = ProviderJamendo
