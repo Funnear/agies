@@ -13,6 +13,7 @@ and automated dataset curation.
 | Kaggle: EDM Music Genres | Bulk CSV, 40k clips | Kaggle token | Audio + labels, pre-split | Yes (3s clips) | MIT | [Kaggle](https://www.kaggle.com/datasets/sivadithiyan/edm-music-genres) |
 | MusicBrainz | REST API | None (User-Agent only) | Metadata, crowd tags | No | CC0 core / CC-BY-NC-SA tags | [API](https://musicbrainz.org/ws/2/release-group/) [Docs](https://musicbrainz.org/doc/MusicBrainz_API) |
 | Freesound | REST API | API key | Metadata + samples | Yes (samples only) | Per-file CC | [API](https://freesound.org/apiv2/) [Docs](https://freesound.org/docs/api/) |
+| Last.fm | REST API | API key | Metadata + crowdsourced tags | No | Non-commercial | [API](https://www.last.fm/api) [Docs](https://www.last.fm/api/show/tag.getTopTracks) |
 
 ### Notes
 
@@ -27,7 +28,9 @@ and automated dataset curation.
 - **Freesound**: 4,037 results for "edm" query. Confirmed sample/loop-level (builds,
   kicks), not full tracks. License per-file. Fetching already implemented in
   `agies.audio` (PR #11).
-
+- **Last.fm**: High-resolution user tags (`tag.getTopTracks`, `artist.getTopTags`). 
+Contains nested attributes (`name`, `artist`, `mbid`, `url`, `@attr`). Useful for 
+multi-label genre classification and artist similarity graphs.
 
 ## Provider Registration & API Key Instructions
 
@@ -62,6 +65,15 @@ descriptive `User-Agent` header identifying the app (e.g.
 See also `docs/20_concept/audio_file_sources.md` (PR #11) for the full production
 implementation.
 
+### Last.fm API Key
+
+1. Register a free account at `last.fm`.
+2. Apply for credentials at `last.fm/api/account/create`
+(Application Name: `AGIES Data Exploration`).
+3. Copy the generated API Key.
+4. Store the key as `LASTFM_API_KEY` in your local `.env` file — never hardcode it
+in notebooks or source files.
+
 ## Repository Exploration Notebooks
 
 Code for downloading, loading, and running EDA on each source lives in its own
@@ -75,3 +87,6 @@ see the linked notebook for the actual loading/analysis code.
 - `notebooks/data_sources/freesound_exploration.ipynb` — Freesound EDM tag/sample
   review (4,037 results for "edm" query; confirms sample-level content, not full
   tracks)
+- `notebooks/data_sources/lastfm_exploration.ipynb` — Last.fm EDM tag/track metadata
+exploration (queries `tag.getTopTracks`, evaluates MBID link coverage,
+and checks raw nested payload structure).
