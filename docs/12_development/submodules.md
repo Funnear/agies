@@ -8,7 +8,7 @@ Reference: [Git Book — Submodules](https://git-scm.com/book/en/v2/Git-Tools-Su
 
 * [tools/shell_scripts/setup_dev.sh](../../tools/shell_scripts/setup_dev.sh) adds and
   initializes it automatically — no manual step needed.
-* Path: `src/data_ravers_utils`
+* Path: `libs/data_ravers_utils`
 
 The rest of this page is a generic how-to for adding **other** submodules the same way.
 

@@ -32,6 +32,30 @@ installing, or add it for the current session with
 `export PATH="/c/Program Files (x86)/GnuWin32/bin:$PATH"`). Without this, `make setup` and the
 pre-commit hook (which runs `make smoke_test`) will fail with `make: command not found`.
 
+### Python >=3.13 is required
+
+`data_ravers_utils` (the internal library submodule that `setup_dev.sh` installs automatically —
+see [submodules.md](../12_development/submodules.md)) requires Python 3.13 or newer.
+`tools/shell_scripts/setup_dev.sh` looks for a compatible `python3`/`python` on `PATH` first; on
+Windows it also falls back to the `py` launcher (`py -3.13`) if plain `python`/`python3` resolves
+to an older version. It exits with an error if nothing >=3.13 is found.
+
+[macOS]
+
+```bash
+brew install python@3.13
+```
+
+[Windows]
+
+Install from [python.org](https://www.python.org/downloads/) (or
+`winget install Python.Python.3.13`), keeping the **"py launcher"** option checked during install.
+List installed versions with:
+
+```bash
+py -0p
+```
+
 ### Mermaid requires NodeJS, install it
 
 [macOS]

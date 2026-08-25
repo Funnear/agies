@@ -23,7 +23,7 @@ if [[ -f "$DST_HOOK" && "${1-}" != "--force" ]]; then
   echo "[WARN] Pre-commit hook already exists at:"
   echo "       $DST_HOOK"
   echo "[WARN] Not overwriting. Use:"
-  echo "       tools/update_githook.sh --force"
+  echo "       tools/shell_scripts/update_githook.sh --force"
   exit 0
 fi
 

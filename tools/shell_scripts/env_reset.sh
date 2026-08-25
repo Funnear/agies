@@ -14,7 +14,7 @@ DRY_RUN=true
 
 usage() {
   cat <<'USAGE'
-Usage: ./tools/env_reset.sh [options]
+Usage: ./tools/shell_scripts/env_reset.sh [options]
 
 Model cache options:
 
@@ -28,8 +28,8 @@ Execution:
   --apply                      Actually perform deletions (dry-run is default)
 
 Examples:
-  ./tools/env_reset.sh --node --apply
-  ./tools/env_reset.sh --all --apply
+  ./tools/shell_scripts/env_reset.sh --node --apply
+  ./tools/shell_scripts/env_reset.sh --all --apply
 USAGE
   exit 1
 }
