@@ -21,7 +21,7 @@ This guide explains how to perform a **safe, explicit, minimal reset** of the de
 The project provides a unified reset tool:
 
 ```sh
-./tools/env_reset.sh
+tools/shell_scripts/env_reset.sh
 ```
 
 Running without flags will:
@@ -38,13 +38,13 @@ Running without flags will:
 Preview (dry-run):
 
 ```sh
-./tools/shell_scripts/env_reset.sh --all
+tools/shell_scripts/env_reset.sh --all
 ```
 
 Apply (actually deletes caches):
 
 ```sh
-./tools/shell_scripts/env_reset.sh --all --apply
+tools/shell_scripts/env_reset.sh --all --apply
 ```
 
 ---
@@ -52,7 +52,7 @@ Apply (actually deletes caches):
 ### 2) Reset only test caches
 
 ```sh
-./tools/shell_scripts/env_reset.sh --test-cache --apply
+tools/shell_scripts/env_reset.sh --test-cache --apply
 ```
 
 Effect:
@@ -72,7 +72,7 @@ Recommended when:
 ### 3) Reset only logs
 
 ```sh
-./tools/shell_scripts/env_reset.sh --logs --apply
+tools/shell_scripts/env_reset.sh --logs --apply
 ```
 
 Effect:
@@ -103,6 +103,16 @@ pip install --upgrade pip; \
 pip install --force-reinstall -r requirements.txt
 ```
 
+[Windows (Git Bash)]
+
+```sh
+python -m pip install --upgrade pip; \
+python -m pip install --force-reinstall -r requirements.txt
+```
+
+`python -m pip` is required here instead of `pip install --upgrade pip` directly — on Windows,
+`pip.exe` can't overwrite itself while it's the process doing the upgrading.
+
 Useful when:
 
 - notebooks fail to import modules
@@ -122,14 +132,30 @@ deactivate || true; \
 rm -rf venv; \
 python3 -m venv venv; \
 source venv/bin/activate; \
-pip install --upgrade pip; \
-pip install -r requirements.txt
+python -m pip install --upgrade pip; \
+python -m pip install -r requirements.txt
 ```
+
+[Windows (Git Bash)]
+
+```sh
+deactivate || true; \
+rm -rf venv; \
+py -3.13 -m venv venv; \
+source venv/Scripts/activate; \
+python -m pip install --upgrade pip; \
+python -m pip install -r requirements.txt
+```
+
+`data_ravers_utils` (installed separately as an editable package, see
+[submodules.md](../12_development/submodules.md)) requires Python >=3.13. On Windows, use the
+`py` launcher (`py -3.13`) to select it explicitly — plain `python3`/`python` may resolve to an
+older version even when 3.13 is installed.
 
 Then restore development setup:
 
 ```sh
-./tools/shell_scripts/setup_dev.sh
+tools/shell_scripts/setup_dev.sh
 ```
 
 ---

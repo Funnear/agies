@@ -4,7 +4,7 @@
 
 ```bash
 # Run formatting, linting, and smoke tests (fast CI / pre-commit)
-make test
+make smoke_test
 
 # Run formatting, linting, smoke + performance tests
 make performance
@@ -14,11 +14,11 @@ make performance
 
 test decorator | argument | call
 --- | --- | ---
-`@pytest.mark.smoke` | smoke | ./tools/run_tests smoke
-`@pytest.mark.performance` | performance | ./tools/run_tests performance
+`@pytest.mark.smoke` | smoke | tools/shell_scripts/run_tests.sh smoke
+`@pytest.mark.performance` | performance | tools/shell_scripts/run_tests.sh performance
 
 Several arguments can be called for one test run:
 
 ```bash
-./tools/run_tests smoke performance
+tools/shell_scripts/run_tests.sh smoke performance
 ```

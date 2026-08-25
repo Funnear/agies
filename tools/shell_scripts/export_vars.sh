@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 # Minimal environment initializer for tests and CLI tools
-set -euo pipefail
+#
+# Meant to be sourced, not executed - callers (e.g. setup_dev.sh) own
+# 'set -euo pipefail' for their own shell. Enabling it here too would
+# permanently change the caller's interactive shell options once sourcing
+# returns.
 
 PROJECT_ROOT="$(git rev-parse --show-toplevel)"
-cd "$PROJECT_ROOT"
 
 usage() {
   cat <<'USAGE'
@@ -30,8 +33,12 @@ elif [[ -n "${1-}" ]]; then
   return 1 2>/dev/null || exit 1
 fi
 
-# PYTHONPATH for imports
-export PYTHONPATH="${PROJECT_ROOT}/src:${PYTHONPATH:-}"
+# PYTHONPATH for imports (native Windows Python needs ';', not ':')
+case "$(uname -s)" in
+  MINGW*|MSYS*|CYGWIN*) PATH_SEP=';' ;;
+  *) PATH_SEP=':' ;;
+esac
+export PYTHONPATH="${PROJECT_ROOT}/src${PATH_SEP}${PYTHONPATH:-}"
 
 # Logging defaults (info by default)
 if [[ "${MODE}" == "debug" ]]; then
