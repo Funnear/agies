@@ -33,4 +33,5 @@ Several arguments can be called for one test run:
 
 ```bash
 tools/shell_scripts/run_tests.sh unit component
+tools/shell_scripts/run_tests.sh smoke performance
 ```
