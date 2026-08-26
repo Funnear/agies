@@ -1,5 +1,7 @@
 """Pydantic models for audio track metadata."""
 
+from typing import Literal
+
 from pydantic import BaseModel, Field
 
 
@@ -62,7 +64,7 @@ class AudioTrack(BaseModel):
         default=None,
         description="Sample rate in Hz",
     )
-    audio_file_format: str | None = Field(
+    audio_file_format: Literal["mp3", "wav", "flac", "ogg", "aiff"] | None = Field(
         default=None,
-        description="Audio format (mp3, wav, flac, ogg)",
+        description="Audio format supported by the registered providers",
     )

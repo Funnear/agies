@@ -92,10 +92,3 @@ for track in tracks:
     print(f"[{track.provider}] {track.artist} - {track.title} ({track.license})")
     print(f"Format: {track.audio_file_format} | Stream: {track.stream_url}")
 ```
-
-## Backlog / Future Enhancements
-
-* **Service Access Monitoring & Handshake:** Implement automated health-checking / handshake probes
-  to monitor real-time availability of audio providers from the executing machine.
-* **Environment-Based Provider Auto-Registration:** Implement configuration loaders that
-  automatically instantiate and register configured providers from `.env` settings.

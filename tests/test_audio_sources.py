@@ -8,10 +8,12 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 import requests
+from pydantic import ValidationError
 
 from agies.audio.base_audio_provider import (
     AudioProviderAuthenticationError,
     AudioProviderConnectionError,
+    AudioProviderNotRegisteredError,
     AudioProviderResponseError,
     BaseAudioProvider,
 )
@@ -65,6 +67,15 @@ class TestAudioTrackModel:
         assert track.audio_file_format == "mp3"
         assert "synthwave" in track.tags
 
+    def test_rejects_unsupported_audio_file_format(self):
+        with pytest.raises(ValidationError):
+            AudioTrack(
+                id="42",
+                title="Unsupported",
+                provider="test",
+                audio_file_format="m4a",
+            )
+
 
 # ---------------------------------------------------------------------------
 # Base class tests
@@ -93,6 +104,7 @@ class TestAudioSearchService:
         service = AudioSearchService()
         mock_provider = MagicMock(spec=BaseAudioProvider)
         mock_provider.name = "mock_provider"
+        mock_provider.is_available.return_value = True
         mock_provider.search.return_value = [
             AudioTrack(id="1", title="Mock Track", provider="mock_provider")
         ]
@@ -114,11 +126,13 @@ class TestAudioSearchService:
         service = AudioSearchService()
         provider_a = MagicMock(spec=BaseAudioProvider)
         provider_a.name = "provider_a"
+        provider_a.is_available.return_value = True
         provider_a.search.return_value = [
             AudioTrack(id="a1", title="Track A", provider="provider_a")
         ]
         provider_b = MagicMock(spec=BaseAudioProvider)
         provider_b.name = "provider_b"
+        provider_b.is_available.return_value = True
         provider_b.search.return_value = []
 
         service.register(provider_a)
@@ -129,22 +143,29 @@ class TestAudioSearchService:
         provider_a.search.assert_called_once()
         provider_b.search.assert_not_called()
 
-    def test_list_registered_sources(self):
+    def test_register_replaces_provider_with_same_name(self):
         service = AudioSearchService()
-        provider_a = MagicMock(spec=BaseAudioProvider)
-        provider_a.name = "jamendo"
-        provider_b = MagicMock(spec=BaseAudioProvider)
-        provider_b.name = "archive_org"
+        first_provider = MagicMock(spec=BaseAudioProvider)
+        first_provider.name = "archive_org"
+        first_provider.is_available.return_value = True
+        first_provider.search.return_value = []
+        replacement_provider = MagicMock(spec=BaseAudioProvider)
+        replacement_provider.name = "archive_org"
+        replacement_provider.is_available.return_value = True
+        replacement_provider.search.return_value = []
 
-        service.register(provider_a)
-        service.register(provider_b)
+        service.register(first_provider)
+        service.register(replacement_provider)
+        service.search(query="test")
 
-        assert service.list_registered_sources() == ["jamendo", "archive_org"]
+        first_provider.search.assert_not_called()
+        replacement_provider.search.assert_called_once()
 
     def test_provider_domain_error_handled_gracefully(self):
         service = AudioSearchService()
         bad_provider = MagicMock(spec=BaseAudioProvider)
         bad_provider.name = "broken"
+        bad_provider.is_available.return_value = True
         bad_provider.search.side_effect = AudioProviderConnectionError(
             "Connection timeout"
         )
@@ -157,11 +178,29 @@ class TestAudioSearchService:
         service = AudioSearchService()
         buggy_provider = MagicMock(spec=BaseAudioProvider)
         buggy_provider.name = "buggy"
+        buggy_provider.is_available.return_value = True
         buggy_provider.search.side_effect = AttributeError("Unexpected code bug")
 
         service.register(buggy_provider)
         with pytest.raises(AttributeError):
             service.search(query="test")
+
+    def test_skips_unavailable_provider(self):
+        service = AudioSearchService()
+        unavailable_provider = MagicMock(spec=BaseAudioProvider)
+        unavailable_provider.name = "unavailable"
+        unavailable_provider.is_available.return_value = False
+
+        service.register(unavailable_provider)
+
+        assert service.search(query="test") == []
+        unavailable_provider.search.assert_not_called()
+
+    def test_raises_for_unregistered_provider(self):
+        service = AudioSearchService()
+
+        with pytest.raises(AudioProviderNotRegisteredError):
+            service.search(query="test", provider="missing")
 
 
 # ---------------------------------------------------------------------------
@@ -172,6 +211,13 @@ class TestAudioSearchService:
 @pytest.mark.unit
 class TestProviderJamendo:
     """Test ProviderJamendo JSON parsing and error handling."""
+
+    def test_session_is_created_lazily(self):
+        provider = ProviderJamendo(client_id=_MOCK_TEST_CLIENT_ID)
+
+        assert provider._session is None
+        assert isinstance(provider.session, requests.Session)
+        assert provider._session is provider.session
 
     def test_search_without_key_raises_auth_error(self):
         provider = ProviderJamendo(client_id="")
@@ -249,6 +295,13 @@ class TestProviderJamendo:
 class TestProviderArchiveOrg:
     """Test ProviderArchiveOrg JSON parsing and error handling."""
 
+    def test_session_is_created_lazily(self):
+        provider = ProviderArchiveOrg()
+
+        assert provider._session is None
+        assert isinstance(provider.session, requests.Session)
+        assert provider._session is provider.session
+
     @patch("requests.Session.get")
     def test_search_success_parsing(self, mock_get):
         mock_resp = MagicMock()
@@ -300,6 +353,13 @@ class TestProviderArchiveOrg:
 @pytest.mark.unit
 class TestProviderFreesound:
     """Test ProviderFreesound JSON parsing and error handling."""
+
+    def test_session_is_created_lazily(self):
+        provider = ProviderFreesound(api_key=_MOCK_TEST_API_KEY)
+
+        assert provider._session is None
+        assert isinstance(provider.session, requests.Session)
+        assert provider._session is provider.session
 
     def test_search_without_key_raises_auth_error(self):
         provider = ProviderFreesound(api_key="")

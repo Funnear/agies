@@ -33,7 +33,14 @@ class ProviderJamendo(BaseAudioProvider):
     def __init__(self, client_id: str = "") -> None:
         super().__init__(name="jamendo")
         self.client_id = client_id
-        self.session = requests.Session()
+        self._session: requests.Session | None = None
+
+    @property
+    def session(self) -> requests.Session:
+        """Create the HTTP session only when this provider is first used."""
+        if self._session is None:
+            self._session = requests.Session()
+        return self._session
 
     def search(
         self,

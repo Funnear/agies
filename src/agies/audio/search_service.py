@@ -6,7 +6,11 @@ Implements the Dependency Inversion principle: the search service depends on the
 
 import logging
 
-from agies.audio.base_audio_provider import AudioProviderError, BaseAudioProvider
+from agies.audio.base_audio_provider import (
+    AudioProviderError,
+    AudioProviderNotRegisteredError,
+    BaseAudioProvider,
+)
 from agies.audio.models import AudioTrack
 
 logger = logging.getLogger("agies.audio.search_service")
@@ -16,12 +20,15 @@ class AudioSearchService:
     """Facade that aggregates audio file search across registered providers."""
 
     def __init__(self) -> None:
-        self._providers: list[BaseAudioProvider] = []
+        self._providers: dict[str, BaseAudioProvider] = {}
 
     def register(self, provider: BaseAudioProvider) -> None:
         """Register an audio provider with the search service."""
-        self._providers.append(provider)
-        logger.info("Registered audio provider: %s", provider.name)
+        self._providers[provider.name] = provider
+        logger.info(
+            "Registered audio provider: %s",
+            self._providers[provider.name].name,
+        )
 
     def search(
         self,
@@ -47,12 +54,13 @@ class AudioSearchService:
         """
         results: list[AudioTrack] = []
 
-        for p in self._providers:
-            if provider and p.name != provider:
+        for current_provider in self._select_providers(provider):
+            if not current_provider.is_available():
+                logger.warning("Provider '%s' is unavailable.", current_provider.name)
                 continue
 
             try:
-                tracks = p.search(
+                tracks = current_provider.search(
                     query=query,
                     genre=genre,
                     min_duration=min_duration,
@@ -60,16 +68,26 @@ class AudioSearchService:
                     limit=limit_per_provider,
                 )
                 results.extend(tracks)
-                logger.info("Provider '%s' returned %d tracks.", p.name, len(tracks))
+                logger.info(
+                    "Provider '%s' returned %d tracks.",
+                    current_provider.name,
+                    len(tracks),
+                )
             except AudioProviderError as exc:
                 logger.warning(
                     "Provider '%s' failed during search: %s",
-                    p.name,
+                    current_provider.name,
                     exc,
                 )
 
         return results
 
-    def list_registered_sources(self) -> list[str]:
-        """Return the names of all currently registered providers."""
-        return [p.name for p in self._providers]
+    def _select_providers(self, provider: str | None) -> list[BaseAudioProvider]:
+        """Select a specific registered provider or all registered providers."""
+        if provider is None:
+            return list(self._providers.values())
+
+        try:
+            return [self._providers[provider]]
+        except KeyError as exc:
+            raise AudioProviderNotRegisteredError(provider) from exc

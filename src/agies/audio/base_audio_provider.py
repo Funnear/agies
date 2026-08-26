@@ -45,6 +45,10 @@ class AudioProviderUnavailableError(AudioProviderError):
     """Raised when a provider is temporarily unavailable or returns a service-level failure."""
 
 
+class AudioProviderNotRegisteredError(AudioProviderError):
+    """Raised when a requested audio provider is not registered."""
+
+
 # ---------------------------------------------------------------------------
 # Base Provider Interface
 # ---------------------------------------------------------------------------

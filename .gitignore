@@ -10,10 +10,6 @@
 *.aif
 *.wma
 *.opus
-data/audio/
-data/raw_audio/
-data/audio_dataset/
-data/scraped_audio/
 
 # ~~~~~~ FAEN's Data Science project template ~~~~~~
 # VS Code shared files
