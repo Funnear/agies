@@ -1,9 +1,31 @@
-# data_science_project_template_by_faen
+# Agentic Genre Intelligence Expert System [AGIES]
 
-A template to kick-start Data Science OSS projects — Data Analysis, Machine Learning,
-GenAI, and Agentic AI applications and frameworks.
+The Agentic Genre Intelligence Expert System is a human-in-the-loop multi-agent application for
+high-quality music genre and subgenre classification. The system combines deterministic signal
+processing, supervised machine learning, deep learning models for audio understanding, and
+LLM-assisted reasoning to produce expert-validated genre annotations and high-quality datasets.
 
-Author: Faniia Prazdnikova aka Faen.
+Rather than relying exclusively on LLMs, agents use the most appropriate execution strategy for
+each task. Lightweight agents perform deterministic metadata analysis, rule-based validation,
+dataset quality checks, taxonomy management, and workflow orchestration without token
+consumption. Compute-intensive agents perform spectrogram generation, audio embedding
+extraction, and deep neural network inference on selected tracks. LLM-powered agents are used
+only where semantic reasoning or expert interaction provides additional value.
+
+The initial MVP focuses on Electronic Dance Music (EDM), where fine-grained genre taxonomy
+presents a challenging classification problem. The architecture is genre-agnostic and is designed
+to expand to other music domains after the EDM scope proofs the general idea.
+
+The project will adopt TOON (Token-Oriented Object Notation) as the primary structured
+interchange format for LLM-enabled agents and MCP tool interactions. We will extend the existing
+TOON ecosystem with reusable Python components and domain-specific schema definitions for
+music genre intelligence, enabling compact, strongly typed communication between agents and
+MCP servers. These TOON schemas will standardize requests and responses for tasks such as genre
+taxonomy lookup, metadata enrichment, annotation workflows, and model inference. The Agentic
+Genre Intelligence Expert System will serve as a real-world validation environment, demonstrating
+how TOON-based MCP interfaces can reduce token consumption, improve interoperability, and
+simplify the development of AI applications that combine deterministic pipelines, deep learning
+models, and LLM-powered reasoning.
 
 ## Start Here
 
