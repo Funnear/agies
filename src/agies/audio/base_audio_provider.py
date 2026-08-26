@@ -4,8 +4,8 @@ Every audio source provider must inherit from ``BaseAudioProvider`` and raise
 domain-specific ``AudioProviderError`` subclasses upon expected failures.
 """
 
-from abc import ABC, abstractmethod
 import logging
+from abc import ABC, abstractmethod
 
 from agies.audio.models import AudioTrack
 
