@@ -6,7 +6,8 @@ set -euo pipefail
 echo "== Pre-commit: running lint, format and smoke tests =="
 
 # Resolve project root
-PROJECT_ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
+PROJECT_ROOT="$(git rev-parse --show-toplevel)"
+cd "$PROJECT_ROOT"
 
 # Ensure env vars and PYTHONPATH are correct
 source "${PROJECT_ROOT}/tools/shell_scripts/export_vars.sh"
