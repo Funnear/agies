@@ -1,5 +1,4 @@
 SHELL := /bin/bash
-.ONESHELL:
 .SHELLFLAGS := -eu -o pipefail -c
 
 .PHONY: test performance lint format diagrams setup
@@ -20,20 +19,16 @@ autofix:
 smoke_test: format autofix lint
 
 performance: format autofix lint
-	source tools/shell_scripts/export_vars.sh --debug
-	tools/shell_scripts/run_tests.sh performance
+	source tools/shell_scripts/export_vars.sh --debug && tools/shell_scripts/run_tests.sh performance
 
 test_units: format autofix lint
-	source tools/shell_scripts/export_vars.sh --debug
-	tools/shell_scripts/run_tests.sh unit
+	source tools/shell_scripts/export_vars.sh --debug && tools/shell_scripts/run_tests.sh unit
 
 test_components: format autofix lint
-	source tools/shell_scripts/export_vars.sh --debug
-	tools/shell_scripts/run_tests.sh component
+	source tools/shell_scripts/export_vars.sh --debug && tools/shell_scripts/run_tests.sh component
 
 test_integration: format autofix lint
-	source tools/shell_scripts/export_vars.sh --debug
-	tools/shell_scripts/run_tests.sh integration
+	source tools/shell_scripts/export_vars.sh --debug && tools/shell_scripts/run_tests.sh integration
 
 diagrams:
 	@echo "== Generating UML diagrams =="
