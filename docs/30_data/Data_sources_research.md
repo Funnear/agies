@@ -33,8 +33,8 @@ and automated dataset curation.
 Contains nested attributes (`name`, `artist`, `mbid`, `url`, `@attr`). Useful for
 multi-label genre classification and artist similarity graphs.
 - **Wikidata**: Graph-based ontological query service (`wd:Q212805` for EDM).
- Uses SPARQL property paths (`wdt:P279*` for subclass hierarchy, 
- `wdt:P136` for artist genre tags) to fetch structured parent-child 
+ Uses SPARQL property paths (`wdt:P279*` for subclass hierarchy,
+ `wdt:P136` for artist genre tags) to fetch structured parent-child
  sub-genre relationships. Requires custom `User-Agent` identification header.
 
 ## Provider Registration & API Key Instructions
@@ -81,8 +81,8 @@ in notebooks or source files.
 
 ### Wikidata SPARQL Endpoint
 
-No account or API key required. Requests require a custom `User-Agent` header 
-(e.g. `"AGIES/0.1 (info@dataravers.space)"`) and 
+No account or API key required. Requests require a custom `User-Agent` header
+(e.g. `"AGIES/0.1 (info@dataravers.space)"`) and
 `Accept: application/sparql-results+json`.
 
 ## Repository Exploration Notebooks
