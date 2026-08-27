@@ -14,6 +14,7 @@ and automated dataset curation.
 | MusicBrainz | REST API | None (User-Agent only) | Metadata, crowd tags | No | CC0 core / CC-BY-NC-SA tags | [API](https://musicbrainz.org/ws/2/release-group/) [Docs](https://musicbrainz.org/doc/MusicBrainz_API) |
 | Freesound | REST API | API key | Metadata + samples | Yes (samples only) | Per-file CC | [API](https://freesound.org/apiv2/) [Docs](https://freesound.org/docs/api/) |
 | Last.fm | REST API | API key | Metadata + crowdsourced tags | No | Non-commercial | [API](https://www.last.fm/api) [Docs](https://www.last.fm/api/show/tag.getTopTracks) |
+| Wikidata | SPARQL Endpoint | None (User-Agent only) | Ontological Graph & Sub-genres | No | CC0 | [SPARQL](https://query.wikidata.org/sparql) [Docs](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service) |
 
 ### Notes
 
@@ -28,9 +29,13 @@ and automated dataset curation.
 - **Freesound**: 4,037 results for "edm" query. Confirmed sample/loop-level (builds,
   kicks), not full tracks. License per-file. Fetching already implemented in
   `agies.audio` (PR #11).
-- **Last.fm**: High-resolution user tags (`tag.getTopTracks`, `artist.getTopTags`). 
-Contains nested attributes (`name`, `artist`, `mbid`, `url`, `@attr`). Useful for 
+- **Last.fm**: High-resolution user tags (`tag.getTopTracks`, `artist.getTopTags`).
+Contains nested attributes (`name`, `artist`, `mbid`, `url`, `@attr`). Useful for
 multi-label genre classification and artist similarity graphs.
+- **Wikidata**: Graph-based ontological query service (`wd:Q212805` for EDM).
+ Uses SPARQL property paths (`wdt:P279*` for subclass hierarchy, 
+ `wdt:P136` for artist genre tags) to fetch structured parent-child 
+ sub-genre relationships. Requires custom `User-Agent` identification header.
 
 ## Provider Registration & API Key Instructions
 
@@ -74,6 +79,12 @@ implementation.
 4. Store the key as `LASTFM_API_KEY` in your local `.env` file — never hardcode it
 in notebooks or source files.
 
+### Wikidata SPARQL Endpoint
+
+No account or API key required. Requests require a custom `User-Agent` header 
+(e.g. `"AGIES/0.1 (info@dataravers.space)"`) and 
+`Accept: application/sparql-results+json`.
+
 ## Repository Exploration Notebooks
 
 Code for downloading, loading, and running EDA on each source lives in its own
@@ -90,3 +101,5 @@ see the linked notebook for the actual loading/analysis code.
 - `notebooks/data_sources/lastfm_exploration.ipynb` — Last.fm EDM tag/track metadata
 exploration (queries `tag.getTopTracks`, evaluates MBID link coverage,
 and checks raw nested payload structure).
+- `notebooks/data_sources/wikidata_exploration.ipynb` — Wikidata SPARQL EDM sub-genre taxonomy,
+ graph hierarchy, and artist attribute mapping.
