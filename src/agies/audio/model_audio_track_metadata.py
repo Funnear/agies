@@ -1,4 +1,4 @@
-"""Pydantic models for audio track metadata."""
+"""Pydantic model for audio track metadata."""
 
 from typing import Literal
 

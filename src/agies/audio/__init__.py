@@ -27,7 +27,7 @@ from agies.audio.base_audio_provider import (
     AudioProviderUnavailableError,
     BaseAudioProvider,
 )
-from agies.audio.models import AudioTrack
+from agies.audio.model_audio_track_metadata import AudioTrack
 from agies.audio.provider_archive_org import ProviderArchiveOrg
 from agies.audio.provider_freesound import ProviderFreesound
 from agies.audio.provider_jamendo import JamendoProvider, ProviderJamendo

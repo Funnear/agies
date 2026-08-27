@@ -64,7 +64,8 @@ The `agies.audio` module follows SOLID design principles:
   [`src/agies/audio/search_service.py`](../../src/agies/audio/search_service.py) consumes
   `BaseAudioProvider` abstractions.
 * **Single Responsibility (SRP):** The `AudioTrack` model in
-  [`src/agies/audio/models.py`](../../src/agies/audio/models.py) unifies metadata across providers.
+  [`src/agies/audio/model_audio_track_metadata.py`](../../src/agies/audio/model_audio_track_metadata.py)
+  unifies metadata across providers.
 * **Domain Exception Handling:** Network and API errors are caught and converted into domain-level
   `AudioProviderError` subclasses (`AudioProviderConnectionError`,
   `AudioProviderAuthenticationError`, etc.).

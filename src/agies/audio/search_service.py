@@ -11,7 +11,7 @@ from agies.audio.base_audio_provider import (
     AudioProviderNotRegisteredError,
     BaseAudioProvider,
 )
-from agies.audio.models import AudioTrack
+from agies.audio.model_audio_track_metadata import AudioTrack
 
 logger = logging.getLogger("agies.audio.search_service")
 
@@ -24,10 +24,18 @@ class AudioSearchService:
 
     def register(self, provider: BaseAudioProvider) -> None:
         """Register an audio provider with the search service."""
-        self._providers[provider.name] = provider
+        provider_name = provider.name
+        if provider_name in self._providers:
+            logger.warning(
+                "Audio provider '%s' is already registered; registration skipped.",
+                provider_name,
+            )
+            return
+
+        self._providers[provider_name] = provider
         logger.info(
             "Registered audio provider: %s",
-            self._providers[provider.name].name,
+            self._providers[provider_name].name,
         )
 
     def search(

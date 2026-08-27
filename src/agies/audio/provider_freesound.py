@@ -20,7 +20,7 @@ from agies.audio.base_audio_provider import (
     AudioProviderResponseError,
     BaseAudioProvider,
 )
-from agies.audio.models import AudioTrack
+from agies.audio.model_audio_track_metadata import AudioTrack
 
 logger = logging.getLogger("agies.audio.provider_freesound")
 

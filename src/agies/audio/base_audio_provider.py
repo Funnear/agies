@@ -7,7 +7,7 @@ domain-specific ``AudioProviderError`` subclasses upon expected failures.
 import logging
 from abc import ABC, abstractmethod
 
-from agies.audio.models import AudioTrack
+from agies.audio.model_audio_track_metadata import AudioTrack
 
 logger = logging.getLogger("agies.audio.base_audio_provider")
 

@@ -17,7 +17,7 @@ from agies.audio.base_audio_provider import (
     AudioProviderResponseError,
     BaseAudioProvider,
 )
-from agies.audio.models import AudioTrack
+from agies.audio.model_audio_track_metadata import AudioTrack
 from agies.audio.provider_archive_org import ProviderArchiveOrg
 from agies.audio.provider_freesound import ProviderFreesound
 from agies.audio.provider_jamendo import ProviderJamendo
@@ -143,7 +143,7 @@ class TestAudioSearchService:
         provider_a.search.assert_called_once()
         provider_b.search.assert_not_called()
 
-    def test_register_replaces_provider_with_same_name(self):
+    def test_register_skips_provider_with_duplicate_name(self, caplog):
         service = AudioSearchService()
         first_provider = MagicMock(spec=BaseAudioProvider)
         first_provider.name = "archive_org"
@@ -152,14 +152,14 @@ class TestAudioSearchService:
         replacement_provider = MagicMock(spec=BaseAudioProvider)
         replacement_provider.name = "archive_org"
         replacement_provider.is_available.return_value = True
-        replacement_provider.search.return_value = []
 
         service.register(first_provider)
         service.register(replacement_provider)
         service.search(query="test")
 
-        first_provider.search.assert_not_called()
-        replacement_provider.search.assert_called_once()
+        first_provider.search.assert_called_once()
+        replacement_provider.search.assert_not_called()
+        assert "already registered; registration skipped" in caplog.text
 
     def test_provider_domain_error_handled_gracefully(self):
         service = AudioSearchService()
