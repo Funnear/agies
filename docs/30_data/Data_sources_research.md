@@ -15,6 +15,50 @@ and automated dataset curation.
 | Freesound | REST API | API key | Metadata + samples | Yes (samples only) | Per-file CC | [API](https://freesound.org/apiv2/) [Docs](https://freesound.org/docs/api/) |
 | Last.fm | REST API | API key | Metadata + crowdsourced tags | No | Non-commercial | [API](https://www.last.fm/api) [Docs](https://www.last.fm/api/show/tag.getTopTracks) |
 | Wikidata | SPARQL Endpoint | None (User-Agent only) | Ontological Graph & Sub-genres | No | CC0 | [SPARQL](https://query.wikidata.org/sparql) [Docs](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service) |
+| Jamendo | REST API | API key (Client ID) | Metadata + full audio | Yes (full tracks) | Creative Commons (CC-BY, CC-SA, CC0) | [API](https://developer.jamendo.com/v3.0) [Docs](https://devportal.jamendo.com/) |
+
+## Evaluated & Deprecated / Restricted Sources
+
+### 🎧 AcousticBrainz
+
+- **Evaluation Notebook:** `notebooks/data_sources/acousticbrainz_exploration.ipynb`
+- **Status:** Evaluated & Sunset (Deprecated)
+- **Live API Status:** Live HTTP REST endpoints (`https://acousticbrainz.org/api/v1/...`) 
+return `404 Not Found` errors because MetaBrainz officially froze online lookup 
+servers in 2022.
+- **Data Access Path:** Requires downloading official offline dataset dumps 
+(`.tar.zst` archives) directly from MetaBrainz: 
+`https://data.metabrainz.org/pub/musicbrainz/acousticbrainz/dumps/`
+- **Confirmed Essentia Schema Mapping (Verified via MetaBrainz Docs):**
+  - **BPM / Tempo:** `rhythm.bpm`
+  - **Key Signature:** `tonal.key_key` (e.g., `"C"`, `"A#"`)
+  - **Musical Scale:** `tonal.key_scale` (`"major"` / `"minor"`)
+  - **Danceability Score:** `rhythm.danceable`
+
+---
+
+### 🎛️ Beatport
+
+- **Evaluation Notebook:** `notebooks/data_sources/beatport_exploration.ipynb`
+- **Status:** Evaluated & Restricted (Partner OAuth2 Required)
+- **Data Offered:** High-precision EDM metadata, exact key signatures 
+(Camelot key wheel compatible), precise sub-genre taxonomies, target tempos (BPM), 
+and track waveforms.
+- **Access Status:** Public REST endpoints return `401 Unauthorized`
+ / `403 Forbidden` errors. Beatport API v4 requires an approved 
+ Enterprise/Partner OAuth2 client application.
+
+---
+
+### ☁️ SoundCloud
+
+- **Evaluation Notebook:** `notebooks/data_sources/soundcloud_exploration.ipynb`
+- **Status:** Evaluated & Restricted (API Registration Suspended)
+- **Data Offered:** User-generated EDM tracks, tag metadata, genre waveforms, 
+duration, play/like metrics, and audio samples.
+- **Access Status:** Public API application registration is currently closed 
+on the SoundCloud Developer Portal. Requests without an registered `client_id` 
+return `401 Unauthorized`.
 
 ### Notes
 
@@ -36,6 +80,9 @@ multi-label genre classification and artist similarity graphs.
  Uses SPARQL property paths (`wdt:P279*` for subclass hierarchy,
  `wdt:P136` for artist genre tags) to fetch structured parent-child
  sub-genre relationships. Requires custom `User-Agent` identification header.
+- **Jamendo**: 55k+ full-length tracks with high-resolution tag metadata (`fuzzytags`),
+ mood tags, Creative Commons licensing details, MP3 streaming URLs, and
+ pre-computed amplitude waveform peak arrays (`waveform`).
 
 ## Provider Registration & API Key Instructions
 
@@ -64,9 +111,7 @@ descriptive `User-Agent` header identifying the app (e.g.
 
 1. Create a free account at freesound.org.
 2. Apply for API credentials: <https://freesound.org/apiv2/apply>
-3. Store the key as `FREESOUND_API_KEY` in your local `.env` file — never hardcode it
-   in notebooks or source files.
-
+3. Store the key as `FREESOUND_API_KEY` in your local `.env` file .
 See also `docs/20_concept/audio_file_sources.md` (PR #11) for the full production
 implementation.
 
@@ -76,14 +121,22 @@ implementation.
 2. Apply for credentials at `last.fm/api/account/create`
 (Application Name: `AGIES Data Exploration`).
 3. Copy the generated API Key.
-4. Store the key as `LASTFM_API_KEY` in your local `.env` file — never hardcode it
-in notebooks or source files.
+4. Store the key as `LASTFM_API_KEY` in your local `.env` file.
 
 ### Wikidata SPARQL Endpoint
 
 No account or API key required. Requests require a custom `User-Agent` header
 (e.g. `"AGIES/0.1 (info@dataravers.space)"`) and
 `Accept: application/sparql-results+json`.
+
+### Jamendo API (Client ID)
+
+1. Create a free account at [jamendo.com](https://www.jamendo.com).
+2. Go to the [Jamendo Developer Portal](https://devportal.jamendo.com/).
+3. Click **Create an Application** and fill in your project details.
+4. Copy the generated **Client ID**.
+5. Store the key as `JAMENDO_CLIENT_ID` in your local `.env`
+file.
 
 ## Repository Exploration Notebooks
 
@@ -103,3 +156,5 @@ exploration (queries `tag.getTopTracks`, evaluates MBID link coverage,
 and checks raw nested payload structure).
 - `notebooks/data_sources/wikidata_exploration.ipynb` — Wikidata SPARQL EDM sub-genre taxonomy,
  graph hierarchy, and artist attribute mapping.
+- `notebooks/data_sources/jamendo_exploration.ipynb` — Jamendo full-track
+EDM metadata, audio preview streaming, and waveform payload analysis.
