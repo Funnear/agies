@@ -23,11 +23,11 @@ and automated dataset curation.
 
 - **Evaluation Notebook:** `notebooks/data_sources/acousticbrainz_exploration.ipynb`
 - **Status:** Evaluated & Sunset (Deprecated)
-- **Live API Status:** Live HTTP REST endpoints (`https://acousticbrainz.org/api/v1/...`) 
-return `404 Not Found` errors because MetaBrainz officially froze online lookup 
+- **Live API Status:** Live HTTP REST endpoints (`https://acousticbrainz.org/api/v1/...`)
+return `404 Not Found` errors because MetaBrainz officially froze online lookup
 servers in 2022.
-- **Data Access Path:** Requires downloading official offline dataset dumps 
-(`.tar.zst` archives) directly from MetaBrainz: 
+- **Data Access Path:** Requires downloading official offline dataset dumps
+(`.tar.zst` archives) directly from MetaBrainz:
 `https://data.metabrainz.org/pub/musicbrainz/acousticbrainz/dumps/`
 - **Confirmed Essentia Schema Mapping (Verified via MetaBrainz Docs):**
   - **BPM / Tempo:** `rhythm.bpm`
@@ -41,11 +41,11 @@ servers in 2022.
 
 - **Evaluation Notebook:** `notebooks/data_sources/beatport_exploration.ipynb`
 - **Status:** Evaluated & Restricted (Partner OAuth2 Required)
-- **Data Offered:** High-precision EDM metadata, exact key signatures 
-(Camelot key wheel compatible), precise sub-genre taxonomies, target tempos (BPM), 
+- **Data Offered:** High-precision EDM metadata, exact key signatures
+(Camelot key wheel compatible), precise sub-genre taxonomies, target tempos (BPM),
 and track waveforms.
 - **Access Status:** Public REST endpoints return `401 Unauthorized`
- / `403 Forbidden` errors. Beatport API v4 requires an approved 
+ / `403 Forbidden` errors. Beatport API v4 requires an approved
  Enterprise/Partner OAuth2 client application.
 
 ---
@@ -54,10 +54,10 @@ and track waveforms.
 
 - **Evaluation Notebook:** `notebooks/data_sources/soundcloud_exploration.ipynb`
 - **Status:** Evaluated & Restricted (API Registration Suspended)
-- **Data Offered:** User-generated EDM tracks, tag metadata, genre waveforms, 
+- **Data Offered:** User-generated EDM tracks, tag metadata, genre waveforms,
 duration, play/like metrics, and audio samples.
-- **Access Status:** Public API application registration is currently closed 
-on the SoundCloud Developer Portal. Requests without an registered `client_id` 
+- **Access Status:** Public API application registration is currently closed
+on the SoundCloud Developer Portal. Requests without an registered `client_id`
 return `401 Unauthorized`.
 
 ### Notes
