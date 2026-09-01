@@ -21,7 +21,7 @@ and automated dataset curation.
 
 ### 🎧 AcousticBrainz
 
-- **Evaluation Notebook:** `notebooks/data_sources/acousticbrainz_exploration.ipynb`
+- **Evaluation Notebook:** `notebooks/explore_data_sources/acousticbrainz_exploration.ipynb`
 - **Status:** Evaluated & Sunset (Deprecated)
 - **Live API Status:** Live HTTP REST endpoints (`https://acousticbrainz.org/api/v1/...`)
 return `404 Not Found` errors because MetaBrainz officially froze online lookup
@@ -39,7 +39,7 @@ servers in 2022.
 
 ### 🎛️ Beatport
 
-- **Evaluation Notebook:** `notebooks/data_sources/beatport_exploration.ipynb`
+- **Evaluation Notebook:** `notebooks/explore_data_sources/beatport_exploration.ipynb`
 - **Status:** Evaluated & Restricted (Partner OAuth2 Required)
 - **Data Offered:** High-precision EDM metadata, exact key signatures
 (Camelot key wheel compatible), precise sub-genre taxonomies, target tempos (BPM),
@@ -52,7 +52,7 @@ and track waveforms.
 
 ### ☁️ SoundCloud
 
-- **Evaluation Notebook:** `notebooks/data_sources/soundcloud_exploration.ipynb`
+- **Evaluation Notebook:** `notebooks/explore_data_sources/soundcloud_exploration.ipynb`
 - **Status:** Evaluated & Restricted (API Registration Suspended)
 - **Data Offered:** User-generated EDM tracks, tag metadata, genre waveforms,
 duration, play/like metrics, and audio samples.
@@ -144,17 +144,17 @@ Code for downloading, loading, and running EDA on each source lives in its own
 notebook — this document covers *what* each source offers and *how to get access*;
 see the linked notebook for the actual loading/analysis code.
 
-- `notebooks/data_sources/kaggle_exploration.ipynb` — Discogs Masters, Discogs
+- `notebooks/explore_data_sources/kaggle_exploration.ipynb` — Discogs Masters, Discogs
   Electronic (1990–2000), EDM Music Genres
-- `notebooks/data_sources/musicbrainz_exploration.ipynb` — MusicBrainz tag/genre
+- `notebooks/explore_data_sources/musicbrainz_exploration.ipynb` — MusicBrainz tag/genre
   exploration
-- `notebooks/data_sources/freesound_exploration.ipynb` — Freesound EDM tag/sample
+- `notebooks/explore_data_sources/freesound_exploration.ipynb` — Freesound EDM tag/sample
   review (4,037 results for "edm" query; confirms sample-level content, not full
   tracks)
-- `notebooks/data_sources/lastfm_exploration.ipynb` — Last.fm EDM tag/track metadata
+- `notebooks/explore_data_sources/lastfm_exploration.ipynb` — Last.fm EDM tag/track metadata
 exploration (queries `tag.getTopTracks`, evaluates MBID link coverage,
 and checks raw nested payload structure).
-- `notebooks/data_sources/wikidata_exploration.ipynb` — Wikidata SPARQL EDM sub-genre taxonomy,
+- `notebooks/explore_data_sources/wikidata_exploration.ipynb` — Wikidata SPARQL EDM sub-genre taxonomy,
  graph hierarchy, and artist attribute mapping.
-- `notebooks/data_sources/jamendo_exploration.ipynb` — Jamendo full-track
+- `notebooks/explore_data_sources/jamendo_exploration.ipynb` — Jamendo full-track
 EDM metadata, audio preview streaming, and waveform payload analysis.
